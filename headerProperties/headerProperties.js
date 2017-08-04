@@ -4,7 +4,15 @@ function addNonUserHeader() {
 	$(".headerSection").append(
 		`
 			<div class="">
-				Login   Sign Up
+				<div class="loginButton">
+					Login
+				</div>   
+				<div 
+					class="registerationButton"
+					onclick='location.href="userRegisteration/signUp.html"'
+				>
+					Sign Up
+				</div>
 			</div>
 		`
 	)
