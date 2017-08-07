@@ -1,0 +1,159 @@
+body {
+	background-color: #1A2C37;
+	font-family: 'Muli', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+input {
+    -webkit-appearance: none; 
+    box-shadow: none !important; 
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
+}
+
+button:focus {
+	outline: 0 !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	background-color: rgba(0,0,0,0);
+	font-family: 'Muli', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-size: 30px;
+	opacity: 0.5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	background-color: rgba(0,0,0,0);
+	font-family: 'Muli', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-size: 30px;
+	opacity: 0.5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	background-color: rgba(0,0,0,0);
+	font-family: 'Muli', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-size: 30px;
+	opacity: 0.5;
+}
+:-moz-placeholder { /* Firefox 18- */
+	background-color: rgba(0,0,0,0);
+	font-family: 'Muli', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-size: 30px;
+	opacity: 0.5;
+}
+
+.indexHeader {
+	width: 98vw;
+    overflow: auto;
+    color: white;
+    font-size: 30px;
+}
+
+#indexHeaderLeft {
+	float: left;
+	width: 30vw;
+	overflow: auto;
+	margin: 2vw 0 0 2vw;
+}
+
+#indexHeaderRight {
+    float: right;
+    width: 30vw;
+    overflow: auto;
+    margin: 2vw 2vw 0 0;
+    text-align: right;
+}
+
+#indexHeaderRight:hover {
+    cursor: pointer
+}
+
+.emailRegComponent {
+	width: 600px;
+    height: 35px;
+    border-bottom: solid 1px #979797 !important;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-left: calc( 48vw - 300px);
+    margin-top: 5vh;
+}
+
+.loginButtonGroup {
+	width: auto;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-left: calc( 48vw - 300px);
+    font-size: 3vmin;
+    font-weight: 100;
+}
+
+.groupLeft {
+	float: left;
+    width: 300px;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    border: 1px solid white;
+}
+
+.groupRight {
+	float: left;
+    width: 300px;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    border: 1px solid white;
+}
+
+.emailRegisterationFields {
+    width: auto;
+    overflow: auto;
+    color: white;
+    margin-top: 15vh;
+}
+
+.forgotPassword {
+	text-align: center;
+	margin-top: 30px;
+	margin-left: -40px;
+	cursor: pointer;
+}
+
+.groupLeft:hover {
+	color: #231F20;
+	background-color: white;
+	cursor: pointer;
+}
+
+.groupRight:hover {
+	color: #231F20;
+	background-color: white;
+	cursor: pointer;
+}
+
+.errorMessageSection {
+	width: 400px;
+    overflow: auto;
+    text-align: center;
+    margin-left: calc( 48vw - 200px);
+    margin-top: 15px;
+    line-height: 2;
+}

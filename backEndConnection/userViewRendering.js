@@ -1,11 +1,21 @@
-function renderNonUserView() {
-	addNonUserHeader();
+function showNonUserDashboard() {
 	$(".nonUserView").css("cssText", "display: inline-block;");
 	$(".userView").css("cssText", "display: none;");
 }
 
-function renderUserView() {
-	addUserHeader("Won Jun");
+function showUserDashboard() {
 	$(".nonUserView").css("cssText", "display: none;");
-	$(".userView").css("cssText", "display: inline-block;");
+	$(".userView").css("cssText", "display: inline-block;");	
+}
+
+
+
+function renderNonUserView() {
+	addNonUserHeader();
+	showNonUserDashboard();
+}
+
+function renderUserView(userName) {
+	addUserHeader(userName);
+	showUserDashboard();
 }

@@ -1,44 +1,53 @@
-var userInfomation = null;
+var userInfomation;
 
+var config = {
+	apiKey: "AIzaSyC1emm-nnqa9iXrI8JFrfxmi4nFFFF8vjU",
+	authDomain: "cureconnectdev.firebaseapp.com",
+	databaseURL: "https://cureconnectdev.firebaseio.com",
+	projectId: "cureconnectdev",
+	storageBucket: "",
+	messagingSenderId: "695867102096"
+};
 
+var firebaseAuth;
+
+var provider;
+
+var userDB; //setting up the global variable as user data will be loaded after creating a session
+
+var userType = "employer";
+
+// This is subjected to change as we implement whether one is recruiter vs. talents
 
 $( document ).ready(function() {
 
-	// this javascript is used to centralize all the sessions
+	console.log("firebase connection called")
 
- //    var firebaseAuth = firebase.auth();
-	// var provider = new firebase.auth.GoogleAuthProvider();
+	firebase.initializeApp(config);
+	firebaseDB = firebase.database();
+    firebaseAuth = firebase.auth();
+	provider = new firebase.auth.GoogleAuthProvider()
 
-	// firebaseAuth.signInWithPopup(provider).then(function(result) {
+	setTimeout(
+		function() { 
+			if(document.readyState === 'complete'){
+				userInfomation =  firebase.auth().currentUser;
 
-	// 	firebaseDB = firebase.database();
+			    // if userid is not, render addNonUserHeader() to add the header to all main pages
+			    // if userid is verified, render addUserHeader(user information details) to add the header
+				if (userInfomation === null) {
+					console.log("non user view rendered")
+					renderNonUserView();
+				} else {
+					console.log(userInfomation)
+					renderUserView(userInfomation.displayName);
+				}	
+		    }
+		}, 1000
 
-	// 	localStorage.setItem('userInfo', JSON.stringify(result.user));
+//WARNING -- this needs to be fixed. How would I know someone will be able to fetch his
+//or her information within one second?
 
-	// 	console.log("localItemset");
-
-	// 	userDB = firebaseDB.ref(firebase.auth().currentUser.uid).set({
-	// 		userProfile: {
-	// 			userID: firebase.auth().currentUser.uid,
-	// 			userEmail: firebase.auth().currentUser.email,
-	// 			userName: firebase.auth().currentUser.displayName,
-	// 			userType: userType		
-	// 		}
-	// 	});
-
-	// }).then(function() {
-	// 	window.location.href = "/professionalsDashboard/myStory.html";
-	// })
-
-	// if userid is not, render addNonUserHeader() to add the header to all main pages
-
-	if (userInfomation === null) {
-		renderNonUserView();
-	} else {
-		renderUserView();
-	}
-
-	// if userid is verified, render addUserHeader(user information details) to add the header
-
+	);
 
 });

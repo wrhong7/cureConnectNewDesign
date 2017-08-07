@@ -15,9 +15,13 @@
 
 <!-- Connecting this html file to css and js files -->
 	<link rel="stylesheet" href="registeration.css" />
-	<script src="credentials.js"></script>
 
-<!-- Firebase Development Environment Initialization -->
+<!-- Following three must be rendered to constantly check the user session. -->
+	<script src="/backEndConnection/firebaseConnection.js"></script>
+	<script src="/backEndConnection/userViewRendering.js"></script>
+	<script src="/headerProperties/headerProperties.js"></script>
+
+<!-- 	Following two are just for the registeration purposes -->
 	<script src="googleRegister.js"></script>
 	<script src="emailRegister.js"></script>
 
@@ -51,6 +55,7 @@
 		<div class="gmailRegisterationCircle">
 			<div 
 				class="circleText signInWithGoogle"
+				onclick="googleRegister()" 
 			>
 				Google<br>Account
 			</div>
@@ -58,6 +63,7 @@
 		<div class="emailRegisterationCircle">
 			<div 
 				class="circleText signInWithEmail"
+				onclick='location.href="credential.html"'
 			>
 				Email & Password<br>Registeration
 			</div>
