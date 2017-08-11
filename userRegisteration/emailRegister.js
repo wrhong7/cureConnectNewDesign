@@ -1,3 +1,9 @@
+function userTypeSelected() {
+	userType = $(".userTypeSelection").val();
+	localStorage.setItem('userType', userType);
+	location.href="credential.html"; 
+}
+
 function validateEmail(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(email);
@@ -21,12 +27,12 @@ function triggerRegErrorMessage(errorMessage) {
 }
 
 function emailPWRegisteration() {
+	userType = localStorage.getItem('userType');
+	console.log(userType)
 	var emailEntered = $(".userEmail").val();
 	var pwEntered = $(".userPW").val();
 	var pwConfirmation = $(".userPWConfirmation").val();
 	var emailCheck = validateEmail(emailEntered);
-
-	console.log(userType);
 
 	if (emailCheck == true) {
 		if (pwEntered == pwConfirmation) {
@@ -44,7 +50,9 @@ function emailPWRegisteration() {
 					userProfile: {
 						userID: firebase.auth().currentUser.uid,
 						userEmail: firebase.auth().currentUser.email,
-						userName: firebase.auth().currentUser.displayName	
+						userName: firebase.auth().currentUser.displayName,
+						userType: userType,
+						completionStatus: "preCompletion"
 					}
 				});
 

@@ -5,3 +5,35 @@
 .userView {
 	display: none;
 }
+
+.preCompletionView {
+	display: none;
+}
+
+.postCompletionView {
+	display: none;
+}
+
+.professionalPreCompletionView {
+	display: none;
+}
+
+.hospitalRecruiterPreCompletionView {
+	display: none;
+}
+
+.independentRecruiterPreCompletionView {
+	display: none;
+}
+
+.professionalCompletionView {
+	display: none;
+}
+
+.hospitalRecruiterCompletionView {
+	display: none;
+}
+
+.independentRecruiterCompletionView {
+	display: none;	
+}

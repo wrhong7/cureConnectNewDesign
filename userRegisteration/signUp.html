@@ -29,6 +29,14 @@
 
 <body>
 
+	<div class="userTypeSelectionCover">
+		<select class="userTypeSelection">
+		  <option value="professional">Healthcare Professional</option>
+		  <option value="hospitalRecruiter">Hospital Recruiter</option>
+		  <option value="independentRecruiter">Independent Recruiter</option>
+		</select>
+	</div>
+
 	<div class="thirdFloor">
 		<div class="backgroundHalfCircleCover">
 			<div class="backgroundHalfCircle">
@@ -63,7 +71,7 @@
 		<div class="emailRegisterationCircle">
 			<div 
 				class="circleText signInWithEmail"
-				onclick='location.href="credential.html"'
+				onclick='userTypeSelected();'
 			>
 				Email & Password<br>Registeration
 			</div>

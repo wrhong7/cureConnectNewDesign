@@ -9,13 +9,13 @@ function showUserDashboard() {
 }
 
 
-
 function renderNonUserView() {
 	addNonUserHeader();
 	showNonUserDashboard();
 }
 
-function renderUserView(userName) {
+function renderUserView(userName, userType, profileCompletionStatus) {
+	console.log(userType)
 	addUserHeader(userName);
 	showUserDashboard();
 }
