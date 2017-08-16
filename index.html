@@ -27,6 +27,27 @@
 <!-- 		<script type="text/javascript" src="userLogInOut/in.js"></script> -->
 		<script type="text/javascript" src="userLogInOut/out.js"></script>
 
+	<link rel="stylesheet" type="text/css" src="css/cookieconsent.min.css" />
+	<script src="js/cookieconsent.min.js"></script>
+	<script>
+	  window.cookieconsent.initialise({
+	    container: document.getElementById("content"),
+	    palette:{
+	      popup: {background: "#fff"},
+	      button: {background: "#aa0000"},
+	    },
+	    revokable:true,
+	    onStatusChange: function(status) {
+	      console.log(this.hasConsented() ?
+	        'enable cookies' : 'disable cookies');
+	    },
+	    law: {
+	      regionalLaw: false,
+	    },
+	    location: true,
+	  });
+	</script>
+
 	</head>
 
 	<body>
@@ -66,16 +87,20 @@
 
 			<div class="preCompletionView">
 				<div class="professionalPreCompletionView">
-					<div>
+					<div
+						onclick='location.href="/preComp/healthcareProfessionals/basicInfo.html"'>
 						Basic Information
 					</div>
-					<div>
+					<div
+						onclick='location.href="/preComp/healthcareProfessionals/resumeUpload.html"'>
 						Resume Upload
 					</div>
-					<div>
+					<div
+						onclick='location.href="/preComp/healthcareProfessionals/preference.html"'>
 						Preference Questions
 					</div>
-					<div>
+					<div
+						onclick='location.href="/preComp/healthcareProfessionals/contactInfo.html"'>
 						Contact Info & Settings
 					</div>
 				</div>
@@ -126,30 +151,36 @@
 				</div>
 				<div class="hospitalRecruiterCompletionView">
 					<div>
-						Recruiter & Hospital Info
+						Hospital & Recruiter Information
 					</div>
 					<div>
-						Track my Application
+						Open Positions
+					</div>
+					<div>
+						Candidate Management
 					</div>
 					<div>
 						Messages
 					</div>
 					<div>
-						See our candidaates
+						Reach out to Candidates
 					</div>
 				</div>
 				<div class="independentRecruiterCompletionView">
 					<div>
-						Recruiter & Hospital Info
+						Recruiter Information
 					</div>
 					<div>
-						Track my Application
+						Open Positions
+					</div>
+					<div>
+						Candidate Management
 					</div>
 					<div>
 						Messages
 					</div>
 					<div>
-						See our candidaates
+						Reach out to Candidates
 					</div>
 				</div>
 			</div>	

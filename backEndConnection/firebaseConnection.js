@@ -1,13 +1,14 @@
 var userInfomation;
 
 var config = {
-	apiKey: "AIzaSyC1emm-nnqa9iXrI8JFrfxmi4nFFFF8vjU",
-	authDomain: "cureconnectdev.firebaseapp.com",
-	databaseURL: "https://cureconnectdev.firebaseio.com",
-	projectId: "cureconnectdev",
-	storageBucket: "",
-	messagingSenderId: "695867102096"
+	apiKey: "AIzaSyBF3JnpTUuSgzRfWWw9EWG9cDMmTgfC46M",
+	authDomain: "cureconnectdevenv.firebaseapp.com",
+	databaseURL: "https://cureconnectdevenv.firebaseio.com",
+	projectId: "cureconnectdevenv",
+	storageBucket: "cureconnectdevenv.appspot.com",
+	messagingSenderId: "784234563595"
 };
+
 
 var firebaseAuth;
 
@@ -20,8 +21,6 @@ var userType; //loaded from DB
 // This is subjected to change as we implement whether one is recruiter vs. talents
 
 $( document ).ready(function() {
-
-	console.log("firebase connection called")
 
 	firebase.initializeApp(config);
 	firebaseDB = firebase.database();
@@ -37,7 +36,6 @@ $( document ).ready(function() {
 			    // if userid is not, render addNonUserHeader() to add the header to all main pages
 			    // if userid is verified, render addUserHeader(user information details) to add the header
 				if (userInfomation === null) {
-					console.log("non user view rendered")
 					renderNonUserView();
 				} else {
 					userData = firebase.database().ref(userInfomation.uid);
@@ -45,11 +43,11 @@ $( document ).ready(function() {
 						var userDataDecrypted = data.val();
 						userType = userDataDecrypted["userProfile"].userType;
 						userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
-						renderUserView(userInfomation.displayName, userType);
+						renderUserView(userInfomation.displayName, userType, userCompletionStatus);
 					})		
 				}	
 		    }
-		}, 1000
+		}, 100
 	)
 
 	
