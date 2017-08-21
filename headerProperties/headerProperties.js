@@ -18,6 +18,7 @@ function addNonUserHeader() {
 	showNonUserDashboard();
 	$(".headerLoginSection").append(	
 		'<div class="headerButtonContainer">'+ 
+			'<div class="headerForEmployersButton">For Employers</div>'+
 			'<div class="loginButton headerButtons" onclick="moveToLoginPage()">Login</div>' + 
 			'<div class="registerationButton headerButtons" onclick="goToRegisterationSection()">' +
 				'Sign Up' +

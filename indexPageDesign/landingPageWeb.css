@@ -44,14 +44,14 @@ body {
 }
 
 .searchSection {
-    margin-top: 5vh;
+    margin-top: 3vh;
     text-align: center;
     min-height: 50vh;
 	width: auto;
 	overflow: auto;
 	padding: 0;
     text-align: center;
-    background-image: url('../imageAsset/indexImageSmall.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/indexImageSmall.PNG?alt=media&token=e193b10b-27b8-4e5b-9192-b28d148f97de');
 }
 
 .searchScript {
@@ -60,16 +60,17 @@ body {
 
 .searchPositionType {
 	float: left;
-    margin-left: 20vw;
     width: 23.9vw;
+    min-width: 200px;
     margin-right: 0.1vw;
     height: 30px;
     font-size: 30px;
     height: 35px;
 }
 .searchZipCode {
-	float: left;
+    float: left;
     width: 23.9vw;
+    min-width: 200px;
     margin-left: 0.1vw;
     height: 30px;
     font-size: 30px;
@@ -84,10 +85,11 @@ body {
 }
 
 .searchButton {
-	text-align: center;
+    text-align: center;
     border: solid 1px;
     border-color: red;
     width: 10vw;
+    min-width: 200px;
     margin-left: 0.2vw;
     float: left;
     padding-top: 3px;
@@ -95,13 +97,14 @@ body {
 }
 
 .searchFields {
-	width: auto;
-	overflow: auto;
+	width: 840px;
+    overflow: auto;
+    margin-left: calc( 50vw - 420px);
 }
 
 .scrollDownArrow {
 	position: absolute;
-	bottom: 20px;
+	bottom: 3vh;
 	width: 20vw;
 	margin-left: 40vw;
 	margin-right: 40vw;
@@ -111,4 +114,79 @@ body {
 .bufferForSignUpMessage {
 	width: 100vw;
 	height: 20vh;
+}
+
+@media screen and (max-width: 700px) {
+
+	.searchInputs {
+		width: auto;
+	    overflow: auto;
+	    color: red;
+	    margin-top: 3vw;
+	}
+
+	.searchFields {
+	    width: auto;
+	    overflow: auto;
+	    margin: 0 !important;
+	    padding-bottom: 3vh;
+	}
+
+	.searchPositionType {
+		float: left;
+	    width: 60vw;
+	    min-width: 200px;
+	    margin-left: 20vw;
+	    height: 30px;
+	    font-size: 30px;
+	    height: 35px;
+	}
+
+	.searchZipCode {
+	    float: left;
+	    width: 23.9vw;
+	    min-width: 200px;
+	    margin-left: 0.1vw;
+	    height: 30px;
+	    font-size: 30px;
+	    height: 35px;
+	    width: 60vw;
+	    min-width: 200px;
+	    margin-left: 20vw;	
+	}
+
+	.searchButton {
+		float: left;
+	    width: 23.9vw;
+	    min-width: 200px;
+	    margin-left: 0.1vw;
+	    height: 30px;
+	    font-size: 30px;
+	    height: 35px;
+	    width: 60.3vw;
+	    min-width: 200px;
+	    margin-left: 20vw;
+	}
+
+}
+
+/*Here are the configurations for the placeholder design*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 1.2rem;
+    padding-left: 1vw;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #909;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #909;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #909;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #909;
 }

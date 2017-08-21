@@ -1,0 +1,70 @@
+.headerSection  {
+    width: auto;
+    min-height: 55px;
+    overflow: auto;
+    margin-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.headerLoginSection {
+	color: red;
+	width: auto;
+	float: right;
+}
+
+.headerButtons {
+	float: right;
+    min-width: 75px;
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 1.2rem;
+}
+
+.headerForEmployersButton {
+    font-size: 1rem;
+    border: solid 1px;
+    text-align: center;
+    padding: 0.3vw;
+    width: 13vw;
+    min-width: 176px;
+    margin-left: 0.7vw;
+    border-radius: 10px;
+}
+
+.headerButtonContainer {
+	width: auto;
+	overflow: auto;
+}
+
+.cureConnectHeaderLogo {
+	float: left;
+	margin-top: 5px;
+}
+
+.signUpScript {
+    text-align: center;
+    width: 90vw;
+    margin-left: 5vw;
+    height: 20vh;
+    overflow: auto;
+    line-height: 1.5;
+    padding-top: 2vh;
+}
+
+.signUpSubScript {
+	font-size: 1rem;
+}
+
+.signUpSpan {
+	color: #EF433F;
+}
+
+.signUpButton {
+	font-size: 1.5rem;
+	color: red;
+	border: solid 1px red;
+	width: 10vw;
+	margin-left: 45vw;
+	margin-right: 45vw;
+}

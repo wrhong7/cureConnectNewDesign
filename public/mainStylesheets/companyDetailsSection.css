@@ -1,0 +1,60 @@
+.detailComponent {
+    float: left;
+    width: 20vw;
+    min-width: 200px;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.companyDetails {
+	width: auto;
+    height: 30vh;
+    margin-top: 20vh;
+    padding-left: 10vw;
+}
+
+.bottomDisclosures {
+	width: auto;
+    overflow: auto;
+    background-color: #CEB2BB;
+    color: #16436A;
+    padding-bottom: 10vh;
+}
+
+.bottomDisclosureLogo {
+	font-size: 1rem !important;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.bottomLogoC {
+	font-size: 1.2rem;
+}
+
+.bottomDisclosureComponent {
+	width: auto;
+	overflow: auto;
+}
+.bottomDisclosureCol {
+    float: left;
+    width: 20vw;
+    min-width: 200px;
+    margin-left: 4vw;
+    margin-top: 5vh;
+    font-size: 1rem;
+}
+
+.companyAddress {
+	text-align: center;
+    font-size: 1rem;
+    margin-top: 1vh;
+}
+
+.bottomDisclosureColSubtitle {
+	margin-top: 2vh;
+	font-weight: 600;
+}
+
+.bottomDisclosureColOptions {
+	margin-top: 2vh;
+}

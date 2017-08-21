@@ -1,6 +1,6 @@
 .headerSection  {
     width: auto;
-    min-height: 50px;
+    min-height: 55px;
     overflow: auto;
     margin-top: 2vw;
     padding-left: 2vw;
@@ -15,8 +15,21 @@
 
 .headerButtons {
 	float: right;
-	text-align: center;
-	margin: 10px;
+    min-width: 75px;
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 1.2rem;
+}
+
+.headerForEmployersButton {
+    font-size: 1rem;
+    border: solid 1px;
+    text-align: center;
+    padding: 0.3vw;
+    width: 13vw;
+    min-width: 176px;
+    margin-left: 0.7vw;
+    border-radius: 10px;
 }
 
 .headerButtonContainer {
@@ -30,8 +43,9 @@
 }
 
 .signUpScript {
-	text-align: center;
-    width: 100vw;
+    text-align: center;
+    width: 90vw;
+    margin-left: 5vw;
     height: 20vh;
     overflow: auto;
     line-height: 1.5;

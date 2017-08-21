@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CureConnect</title>
+
+<!-- Pulling Firebase -->
+
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<!-- 	Pulling jQuery -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<!-- Pulling font from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+<!-- Connecting this html file to css and js files -->
+	<link rel="stylesheet" href="registeration.css" />
+
+<!-- Following three must be rendered to constantly check the user session. -->
+	<script src="/backEndConnection/firebaseConnection.js"></script>
+	<script src="/backEndConnection/userViewRendering.js"></script>
+	<script src="/headerProperties/headerProperties.js"></script>
+
+<!-- 	Following two are just for the registeration purposes -->
+	<script src="googleRegister.js"></script>
+	<script src="emailRegister.js"></script>
+
+</head>
+
+<body>
+
+	<div class="userTypeSelectionCover">
+		<select class="userTypeSelection">
+		  <option value="professional">Healthcare Professional</option>
+		  <option value="hospitalRecruiter">Hospital Recruiter</option>
+		  <option value="independentRecruiter">Independent Recruiter</option>
+		</select>
+	</div>
+
+	<div class="thirdFloor">
+		<div class="backgroundHalfCircleCover">
+			<div class="backgroundHalfCircle">
+			</div>
+		</div>
+		<div class="indexCircles">
+			<div class="circle circle1">
+				<div class="insideCirlceNumber">1</div>
+			</div>
+			<div class="circle circle2">
+			</div>
+			<div class="circle circle3">
+			</div>
+			<div class="circle circle4">
+			</div>
+		</div>
+	</div>
+
+	<div class="secondFloor">
+		Register
+	</div>
+
+	<div class="firstFloor">
+		<div class="gmailRegisterationCircle">
+			<div 
+				class="circleText signInWithGoogle"
+				onclick="googleRegister()" 
+			>
+				Google<br>Account
+			</div>
+		</div>
+		<div class="emailRegisterationCircle">
+			<div 
+				class="circleText signInWithEmail"
+				onclick='userTypeSelected();'
+			>
+				Email & Password<br>Registeration
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

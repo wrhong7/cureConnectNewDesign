@@ -2,6 +2,8 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
 	color: #16436A;
+	-webkit-font-smoothing: antialiased;
+
 }
 
 .logoC {
@@ -9,12 +11,12 @@ body {
 }
 
 .keyScript {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: #EF4440;
 }
 
 .subscript {
-	font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1vw;
     font-weight: 600;
 }
@@ -23,9 +25,4 @@ body {
 	text-align: center;
     width: auto;
     overflow: auto;
-}
-
-.searchSection  {
-	margin-top: 4vw;
-	text-align: center;
 }
