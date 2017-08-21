@@ -37,3 +37,78 @@
 .independentRecruiterCompletionView {
 	display: none;	
 }
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.searchSection {
+    margin-top: 5vh;
+    text-align: center;
+    min-height: 50vh;
+	width: auto;
+	overflow: auto;
+	padding: 0;
+    text-align: center;
+    background-image: url('../imageAsset/indexImageSmall.png');
+}
+
+.searchScript {
+	margin-top: 4vw;
+}
+
+.searchPositionType {
+	float: left;
+    margin-left: 20vw;
+    width: 23.9vw;
+    margin-right: 0.1vw;
+    height: 30px;
+    font-size: 30px;
+    height: 35px;
+}
+.searchZipCode {
+	float: left;
+    width: 23.9vw;
+    margin-left: 0.1vw;
+    height: 30px;
+    font-size: 30px;
+    height: 35px;
+}
+
+.searchInputs {
+	width: auto;
+	overflow: auto;
+	color: red;
+	margin-top: 3vw;
+}
+
+.searchButton {
+	text-align: center;
+    border: solid 1px;
+    border-color: red;
+    width: 10vw;
+    margin-left: 0.2vw;
+    float: left;
+    padding-top: 3px;
+    height: 35px;
+}
+
+.searchFields {
+	width: auto;
+	overflow: auto;
+}
+
+.scrollDownArrow {
+	position: absolute;
+	bottom: 20px;
+	width: 20vw;
+	margin-left: 40vw;
+	margin-right: 40vw;
+	text-align: center;
+}
+
+.bufferForSignUpMessage {
+	width: 100vw;
+	height: 20vh;
+}

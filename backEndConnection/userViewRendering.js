@@ -45,11 +45,13 @@ function showUserDashboard(userType, profileCompletionStatus) {
 }
 
 function renderNonUserView() {
+	$(".bufferForSignUpMessage").css("display", "none")
 	addNonUserHeader();
 	showNonUserDashboard();
 }
 
 function renderUserView(userName, userType, profileCompletionStatus) {
+	console.log("this has been hit")
 	addUserHeader(userName);
 	showUserDashboard(userType, profileCompletionStatus);
 }

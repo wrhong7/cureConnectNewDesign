@@ -14,12 +14,12 @@ function moveToLoginPage() {
 }
 
 function addNonUserHeader() {
-	$(".headerSection").empty();
+	$(".headerLoginSection").empty();
 	showNonUserDashboard();
-	$(".headerSection").append(	
-		'<div>'+ 
-			'<div class="loginButton" onclick="moveToLoginPage()">Login</div>' + 
-			'<div class="registerationButton" onclick="goToRegisterationSection()">' +
+	$(".headerLoginSection").append(	
+		'<div class="headerButtonContainer">'+ 
+			'<div class="loginButton headerButtons" onclick="moveToLoginPage()">Login</div>' + 
+			'<div class="registerationButton headerButtons" onclick="goToRegisterationSection()">' +
 				'Sign Up' +
 			'</div>' +
 		'</div>'
@@ -27,16 +27,17 @@ function addNonUserHeader() {
 }
 
 function addUserHeader(userName) {
-	$(".headerSection").empty();
+	$(".headerLoginSection").empty();
+
 	showUserDashboard()
 	if (userName === null) {
-		$(".headerSection").append(
+		$(".headerLoginSection").append(
 			'<div class="">' +
 				'Welcome<br><div>Profile</div><div onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'
 		);
 	} else {
-		$(".headerSection").append(
+		$(".headerLoginSection").append(
 			'<div class="">' +
 				'Welcome '+userName+'<br><div>Profile</div>' +
 				'<div onclick="logOutButtonClicked()">Log Out</div>' +

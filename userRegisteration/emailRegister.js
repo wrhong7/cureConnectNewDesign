@@ -46,7 +46,8 @@ function emailPWRegisteration() {
 			}).then(function() {
 
 				firebaseDB = firebase.database();
-				userDB = firebaseDB.ref(firebase.auth().currentUser.uid).set({
+
+				userDB = firebaseDB.ref('usersDB/allUsers/'+firebase.auth().currentUser.uid).set({
 					userProfile: {
 						userID: firebase.auth().currentUser.uid,
 						userEmail: firebase.auth().currentUser.email,
@@ -56,8 +57,38 @@ function emailPWRegisteration() {
 					}
 				});
 
-				console.log("the user has been registered")
-
+				if (userType == "professional") {
+					//this database is configured to mirror one another in order to leverage on analytics at the later stage
+					userDB = firebaseDB.ref('usersDB/professional/'+firebase.auth().currentUser.uid).set({
+						userProfile: {
+							userID: firebase.auth().currentUser.uid,
+							userEmail: firebase.auth().currentUser.email,
+							userName: firebase.auth().currentUser.displayName,
+							userType: userType,
+							completionStatus: "preCompletion"
+						}
+					});
+				} else if (userType == "hospitalRecruiter") {
+					userDB = firebaseDB.ref('usersDB/hospitalRecruiter/'+firebase.auth().currentUser.uid).set({
+						userProfile: {
+							userID: firebase.auth().currentUser.uid,
+							userEmail: firebase.auth().currentUser.email,
+							userName: firebase.auth().currentUser.displayName,
+							userType: userType,
+							completionStatus: "preCompletion"
+						}
+					});
+				} else if (userType == "independentRecruiter") {
+					userDB = firebaseDB.ref('usersDB/independentRecruiter/'+firebase.auth().currentUser.uid).set({
+						userProfile: {
+							userID: firebase.auth().currentUser.uid,
+							userEmail: firebase.auth().currentUser.email,
+							userName: firebase.auth().currentUser.displayName,
+							userType: userType,
+							completionStatus: "preCompletion"
+						}
+					});
+				}
 			}).then(function(){
 				window.location.href = "/index.html";
 			});		

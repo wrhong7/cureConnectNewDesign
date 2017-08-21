@@ -10,24 +10,7 @@ $( document ).ready(function() {
 
 function loginWithGoogle() {
 	var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithRedirect(provider);
-		// function(result) {
-		// 	var currentUser = firebase.auth().currentUser;
-		// 	var currentUserID = currentUser.uid;
-		// 	var userData = firebase.database().ref(currentUserID);
-		// 	//this must be in a format of string to get the access
-		// 	userData.on('value', function(data) {
-		// 		var userDataDecrypted = data.val();
-		// 		if (userDataDecrypted["userProfile"].userType == "professional") {
-		// 			window.location.href = "/professionalsDashboard/myStory.html"
-		// 		} else if (userDataDecrypted["userProfile"].userType == "recruiter") {
-		// 			window.location.href = "/recruitersDashboard/status.html"
-		// 		} else {
-		// 			console.log("this is clear an error")
-		// 		}
-		// 	});
-		// }
-	
+    firebase.auth().signInWithRedirect(provider);	
 }
 
 function passwordLogin() {

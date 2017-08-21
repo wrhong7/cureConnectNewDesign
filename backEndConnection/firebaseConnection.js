@@ -26,7 +26,6 @@ $( document ).ready(function() {
 	firebaseDB = firebase.database();
     firebaseAuth = firebase.auth();
 	provider = new firebase.auth.GoogleAuthProvider()
-
 	userInfomation = firebase.auth().currentUser;
 
 	setTimeout(
@@ -38,24 +37,18 @@ $( document ).ready(function() {
 				if (userInfomation === null) {
 					renderNonUserView();
 				} else {
-					userData = firebase.database().ref(userInfomation.uid);
+					var userData;
+					userData = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);
 					userData.on('value', function(data) {
 						var userDataDecrypted = data.val();
 						userType = userDataDecrypted["userProfile"].userType;
 						userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
 						renderUserView(userInfomation.displayName, userType, userCompletionStatus);
-					})		
-				}	
-		    }
-		}, 100
+					})	
+				}
+			}
+		}, 2000
 	)
-
-	
-
-	// userData.on('value', function(data) {
-	// 	var userDataDecrypted = data.val();
-	// 	userType = userDataDecrypted["userProfile"].userType;
-	// })
 
 
 //WARNING -- this needs to be fixed. How would I know someone will be able to fetch his
