@@ -18,7 +18,7 @@ function addNonUserHeader() {
 	showNonUserDashboard();
 	$(".headerLoginSection").append(	
 		'<div class="headerButtonContainer">'+ 
-			'<div class="headerForEmployersButton">For Employers</div>'+
+			'<div class="headerForEmployersButton">Employer\'s Section</div>'+
 			'<div class="loginButton headerButtons" onclick="moveToLoginPage()">Login</div>' + 
 			'<div class="registerationButton headerButtons" onclick="goToRegisterationSection()">' +
 				'Sign Up' +
@@ -34,7 +34,8 @@ function addUserHeader(userName) {
 	if (userName === null) {
 		$(".headerLoginSection").append(
 			'<div class="userLoginCredentials">' +
-				'Welcome<br><div class="userProfileButton">Profile</div>'+
+				'<div class="welcomeAndName">Hi Won Jun</div>'+
+				'<div class="userProfileButton">Profile</div>'+
 				'<div class="userLogOutButton" onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'
 		);
