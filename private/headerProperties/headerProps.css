@@ -68,3 +68,19 @@
 	margin-left: 45vw;
 	margin-right: 45vw;
 }
+
+.userLoginCredentials {
+    width: 20vw;
+    background-color: red;
+    overflow: auto;
+}
+
+.userProfileButton {
+    width: 9vw;
+    float: left;
+}
+
+.userLogOutButton {
+    width: 9vw;
+    float: left;
+}

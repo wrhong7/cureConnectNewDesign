@@ -33,18 +33,19 @@ function addUserHeader(userName) {
 	showUserDashboard()
 	if (userName === null) {
 		$(".headerLoginSection").append(
-			'<div class="">' +
-				'Welcome<br><div>Profile</div><div onclick="logOutButtonClicked()">Log Out</div>' +
+			'<div class="userLoginCredentials">' +
+				'Welcome<br><div class="userProfileButton">Profile</div>'+
+				'<div class="userLogOutButton" onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'
 		);
 	} else {
+		console.log("this has been rendered")
 		$(".headerLoginSection").append(
-			'<div class="">' +
-				'Welcome '+userName+'<br><div>Profile</div>' +
-				'<div onclick="logOutButtonClicked()">Log Out</div>' +
+			'<div class="userLoginCredentials">' +
+				'Welcome '+userName+'<br>'+
+				'<div class="userProfileButton">Profile</div>' +
+				'<div class="userLogOutButton" onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'
 		);	
 	}
-
-
 }
