@@ -30,20 +30,29 @@ $( document ).ready(function() {
 
 	setTimeout(
 		function() { 
-			if(document.readyState === 'complete'){
-				userInfomation =  firebase.auth().currentUser;
+			if (document.readyState === 'complete') {
 			    // if userid is not, render addNonUserHeader() to add the header to all main pages
-			    // if userid is verified, render addUserHeader(user information details) to add the header
+		   		// if userid is verified, render addUserHeader(user information details) to add the header
+				userInfomation = firebase.auth().currentUser;
 				if (userInfomation === null) {
 					renderNonUserView();
 				} else {
+				//There is one case 
 					var userData;
 					userData = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);
 					userData.on('value', function(data) {
 						var userDataDecrypted = data.val();
-						userType = userDataDecrypted["userProfile"].userType;
-						userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
-						renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+						if (userDataDecrypted == null) {
+							console.log("force move the user to register section")
+							//There might be a weird case where a user will fail to register with google
+							//but directly logs in with google, a case in which registeraton is not complete.
+							//for this case, we will force user to register by redirecting them.
+						} else {
+							userType = userDataDecrypted["userProfile"].userType;
+							userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
+							renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+						}
+
 					})	
 				}
 			}

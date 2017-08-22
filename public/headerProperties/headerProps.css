@@ -1,6 +1,6 @@
 .headerSection  {
     width: auto;
-    min-height: 55px;
+    min-height: 66px;
     overflow: auto;
     margin-top: 2vw;
     padding-left: 2vw;
@@ -67,4 +67,20 @@
 	width: 10vw;
 	margin-left: 45vw;
 	margin-right: 45vw;
+}
+
+.userLoginCredentials {
+    width: 20vw;
+    overflow: auto;
+    text-align: center;
+}
+
+.userProfileButton {
+    width: 9vw;
+    float: left;
+}
+
+.userLogOutButton {
+    width: 9vw;
+    float: left;
 }

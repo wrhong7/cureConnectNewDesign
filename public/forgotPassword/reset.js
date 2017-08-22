@@ -1,17 +1,22 @@
+function emptyMessageSection() {
+	$(".forgotPasswordErrorMessageSection").empty();
+}
+
 function restorePWClicked() {
-
 	var emailEntered = $(".emailPWReset").val()
-
 	var auth = firebase.auth();
-
-	console.log(emailEntered)
-	
 	var emailAddress = emailEntered;
-
 	auth.sendPasswordResetEmail(emailAddress).then(function() {
-	  // Email sent.
+		emptyMessageSection();
+		$(".forgotPasswordErrorMessageSection").append("Please check your email ("+emailAddress+")");
 	}).catch(function(error) {
-	  // An error happened.
+		if (error.code == "auth/invalid-email") {
+			emptyMessageSection();
+			$(".forgotPasswordErrorMessageSection").append("Please enter a valid email address.");
+		} else if (error.code == "auth/user-not-found") {
+			emptyMessageSection();
+			$(".forgotPasswordErrorMessageSection").append("We do not have this account registered.");
+		}
 	});
 
 }
