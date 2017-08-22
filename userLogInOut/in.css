@@ -157,3 +157,11 @@ button:focus {
     margin-top: 15px;
     line-height: 2;
 }
+
+.headerSection {
+    position: absolute;
+    top: 1vh;
+    width: 99vw;
+    height: 5vh;
+    background-color: red;
+}

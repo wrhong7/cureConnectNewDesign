@@ -175,18 +175,40 @@ body {
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     font-size: 1.2rem;
     padding-left: 1vw;
+	font-family: 'Raleway', sans-serif;
+	color: #16436A;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.6;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
-   opacity:  1;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+	font-family: 'Raleway', sans-serif;
+	color: #16436A;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.6;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
-   opacity:  1;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+	font-family: 'Raleway', sans-serif;
+	color: #16436A;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.6;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #909;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+	font-family: 'Raleway', sans-serif;
+	color: #16436A;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.6;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #909;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+	font-family: 'Raleway', sans-serif;
+	color: #16436A;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.6;
 }

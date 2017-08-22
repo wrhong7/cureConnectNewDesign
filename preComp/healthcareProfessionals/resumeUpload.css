@@ -3,9 +3,9 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;	
 	background-color: #1A2C37;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+	width: auto;
+	height: auto;
+	overflow: auto;
 	padding-top: 2vh;
 }
 
