@@ -230,7 +230,7 @@ float: left;
 
 }
 
-@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
 
 	body {
 
@@ -288,6 +288,7 @@ float: left;
 	.searchSection {
 	width: 100%;
     height: 60vh;
+        min-height: 940px;
     background-size: cover;
 	background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobilePortraitImage.png?alt=media&token=64a58ce8-30eb-49a9-883d-03a727572de5');
 	}
@@ -312,8 +313,8 @@ float: left;
 float: left;
     width: 90vw;
     /* min-width: 200px; */
+    min-height: 75px;
     margin-right: 0.1vw;
-    height: 30px;
     font-size: 30px;
     height: 5vh;
 	}
@@ -321,9 +322,9 @@ float: left;
 	.searchZipCode {
     float: left;
     width: 90vw;
+    min-height: 75px;
     min-width: 200px;
     margin-left: 0.1vw;
-    height: 30px;
     font-size: 30px;
     height: 5vh;
 	}
@@ -338,12 +339,13 @@ text-align: center;
     padding-bottom: 1rem;
     float: left;
     /* padding-top: 18px; */
-    height: 35px;
     font-size: 3rem;
-    height: 3vh !important;
+    height: 3vh;
+    min-height: 50px;
 	}
 
 	.searchFields {
+		min-height: 160px;
 width: 90vw;
     margin-left: 5vw;
     overflow: auto;
