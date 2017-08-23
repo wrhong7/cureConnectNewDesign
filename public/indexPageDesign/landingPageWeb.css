@@ -262,10 +262,10 @@ float: left;
 	}
 
 	.headerLoginSection {
-		width: 40vw !important;
-		overflow: auto;
-		margin-left: 30vw;
-		float: left !important;
+    width: 80vw !important;
+    overflow: auto;
+    margin-left: 10vw;
+    float: left !important;
 	}
 
 	.headerForEmployersButton {
@@ -273,16 +273,19 @@ float: left;
 	}
 
 	.headerButtons {
-		float: right;
-		min-width: 75px;
-		text-align: center;
-		margin: 0.5vw;
-		font-size: 2.5rem !important;
+    /* float: left !important; */
+    min-width: 75px;
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    width: 29vw;
 	}
 
 	.headerButtonContainer {
-		width: 33vw !important;
-		overflow: auto;
+    width: 60vw !important;
+    margin-left: 10vw;
+    overflow: auto;
 	}
 
 	.searchSection {
