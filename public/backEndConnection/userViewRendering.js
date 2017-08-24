@@ -51,7 +51,6 @@ function renderNonUserView() {
 }
 
 function renderUserView(userName, userType, profileCompletionStatus) {
-	console.log("this has been hit")
 	addUserHeader(userName);
 	showUserDashboard(userType, profileCompletionStatus);
 }

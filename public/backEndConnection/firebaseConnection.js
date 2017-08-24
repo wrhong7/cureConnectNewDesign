@@ -9,7 +9,6 @@ var config = {
 	messagingSenderId: "784234563595"
 };
 
-
 var firebaseAuth;
 
 var provider;
@@ -20,48 +19,56 @@ var userType; //loaded from DB
 
 // This is subjected to change as we implement whether one is recruiter vs. talents
 
-$( document ).ready(function() {
+
+function callFirebase() { 
+	console.log("this function has been rendered repeatedly")
+	if (document.readyState === 'complete') {
+	    // if userid is not, render addNonUserHeader() to add the header to all main pages
+   		// if userid is verified, render addUserHeader(user information details) to add the header
+		userInfomation = firebase.auth().currentUser;
+		if (userInfomation === null) {
+			renderNonUserView();
+		} else {
+		//There is one case 
+			var userData;
+			userData = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);
+			userData.on('value', function(data) {
+				var userDataDecrypted = data.val();
+				if (userDataDecrypted == null) {
+					console.log("force move the user to register section")
+					//There might be a weird case where a user will fail to register with google
+					//but directly logs in with google, a case in which registeraton is not complete.
+					//for this case, we will force user to register by redirecting them.
+				} else {
+					userType = userDataDecrypted["userProfile"].userType;
+					userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
+					renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+				}
+
+			})	
+		}
+	}
+}
+
+function hideEmployerNameForNonUsers() {
+	console.log("triggered")
+	$(".employerName").empty();
+	$(".employerName").append("Employer names are visible after you sign up");
+}
+
+$(document).ready(function() {
 
 	firebase.initializeApp(config);
 	firebaseDB = firebase.database();
     firebaseAuth = firebase.auth();
 	provider = new firebase.auth.GoogleAuthProvider()
 	userInfomation = firebase.auth().currentUser;
-
-	setTimeout(
-		function() { 
-			if (document.readyState === 'complete') {
-			    // if userid is not, render addNonUserHeader() to add the header to all main pages
-		   		// if userid is verified, render addUserHeader(user information details) to add the header
-				userInfomation = firebase.auth().currentUser;
-				if (userInfomation === null) {
-					renderNonUserView();
-				} else {
-				//There is one case 
-					var userData;
-					userData = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);
-					userData.on('value', function(data) {
-						var userDataDecrypted = data.val();
-						if (userDataDecrypted == null) {
-							console.log("force move the user to register section")
-							//There might be a weird case where a user will fail to register with google
-							//but directly logs in with google, a case in which registeraton is not complete.
-							//for this case, we will force user to register by redirecting them.
-						} else {
-							userType = userDataDecrypted["userProfile"].userType;
-							userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
-							renderUserView(userInfomation.displayName, userType, userCompletionStatus);
-						}
-
-					})	
-				}
-			}
-		}, 2000
-	)
-
-
-//WARNING -- this needs to be fixed. How would I know someone will be able to fetch his
-//or her information within one second?
+	console.log(userInfomation)
+	//Backend database is loaded after the firebase has been fully connected
+	window.onload = function() { 
+		console.log("funciton called");
+		callFirebase();
+	}
 
 });
 
