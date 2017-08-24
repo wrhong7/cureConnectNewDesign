@@ -14,7 +14,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
 <!-- Connecting this html file to css and js files -->
-	<link rel="stylesheet" href="registeration.css" />
+	<link rel="stylesheet" href="/mainStylesheets/font.css" />
+	<link rel="stylesheet" href="signUp.css" />
 
 <!-- Following three must be rendered to constantly check the user session. -->
 	<script src="/backEndConnection/firebaseConnection.js"></script>
@@ -22,6 +23,7 @@
 	<script src="/headerProperties/headerProperties.js"></script>
 
 <!-- 	Following two are just for the registeration purposes -->
+	<script src="signUp.js"></script>
 	<script src="googleRegister.js"></script>
 	<script src="emailRegister.js"></script>
 
@@ -29,53 +31,79 @@
 
 <body>
 
-	<div class="userTypeSelectionCover">
-		<select class="userTypeSelection">
-		  <option value="professional">Healthcare Professional</option>
-		  <option value="hospitalRecruiter">Hospital Recruiter</option>
-		  <option value="independentRecruiter">Independent Recruiter</option>
-		</select>
-	</div>
-
-	<div class="thirdFloor">
-		<div class="backgroundHalfCircleCover">
-			<div class="backgroundHalfCircle">
+		<div class="productStrengthSynopsis">
+			<div class="synopsisForProfessionals">
+				Easy: Building profile takes 6 mins and Applying takes 1 click.<br>
+				Transparent: Know compensation, hours and workload before applying.<br>
+				Efficient: Track your application status, schedule interview and message recruiter.<br>
+				Custom Tailored: CureConnect's unique human and machine tailored algorithms recommend you with fitting careers based on your expereience and our data.
+			</div>
+			<div class="synopsisForRecruiters">
+				Quick: Upload all your jobs with CSV upload.<br>
+				Efficient: Candidates Board Certified States, Licenses, Experience, Expected Compensations and other important details are visible to you before you start communicating with candidates.
+				Easy: Instead of emailing back and forth, communicate and schedule interview with candidates one click.
 			</div>
 		</div>
-		<div class="indexCircles">
-			<div class="circle circle1">
-				<div class="insideCirlceNumber">1</div>
-			</div>
-			<div class="circle circle2">
-			</div>
-			<div class="circle circle3">
-			</div>
-			<div class="circle circle4">
-			</div>
+
+	<div class="registerationContainer">
+		<div class="registerationAccountTypeSelection">
+			I am a
 		</div>
-	</div>
 
-	<div class="secondFloor">
-		Register
-	</div>
-
-	<div class="firstFloor">
-		<div class="gmailRegisterationCircle">
+		<div class="userTypeSelectionContainer">
 			<div 
-				class="circleText signInWithGoogle"
+				class="userTypeSelectionOption optionHospitalRecruiter"
+				onclick="clickAccountType('hospitalRecruiter')"
+			>
+				Hospital Recruiter
+			</div>
+			<div 
+				class="userTypeSelectionOption optionHealthcareProfessonal"
+				onclick="clickAccountType('healthcareProfessional')"
+			>
+				Healthcare Professional
+			</div>
+			<div 
+				class="userTypeSelectionOption optionIndepndentRecruiter"
+				onclick="clickAccountType('independentRecruiter')"
+			>
+				Independent Recruiter
+			</div>
+		</div>
+
+	<!-- this display is hidden -->
+		<div class="userTypeSelectionCoverHiddenOptions">
+			<select class="userTypeSelection">
+			  <option value="professional">Healthcare Professional</option>
+			  <option value="hospitalRecruiter">Hospital Recruiter</option>
+			  <option value="independentRecruiter">Independent Recruiter</option>
+			</select>
+		</div>
+
+
+		<div class="registerationModeSelection">
+			Register with
+		</div>
+
+		<div class="registerationSelectionOptionCover">
+			<div 
+				class="registerationOption signInWithGoogle"
 				onclick="googleRegister()" 
 			>
-				Google<br>Account
+				Google
 			</div>
-		</div>
-		<div class="emailRegisterationCircle">
 			<div 
-				class="circleText signInWithEmail"
+				class="registerationOption signInWithEmail"
 				onclick='userTypeSelected();'
 			>
-				Email & Password<br>Registeration
+				ID + Password
 			</div>
 		</div>
+
+		<div class="signUpDisclosure">
+			By signing up you agree to Cure Connect's <u>Terms of Service</u> and <u>Privacy Policy</u>. You also agree to receive subsequent email and affiliated party communications.
+		</div>
+
 	</div>
 
 </body>

@@ -1,1 +1,92 @@
-landingPageTablet.css
+@media only screen and (max-width: 961px) {
+
+	.keyScript {
+		margin-top: 5vh !important;
+	}
+
+	.headerSection {
+		margin-top: 5vh;
+	}
+
+	.searchSection {
+		margin-top: 5vh !important;
+		padding-bottom: 5vh;
+	}
+
+	.subScript {
+		margin-top: 5vh !important;
+		padding-bottom: 10vh !important;
+	}
+
+	.searchInputs {
+		width: auto;
+	    overflow: auto;
+	    color: red;
+	    margin-top: 3vw;
+	}
+
+	.searchScript {
+		text-align: center;
+	    width: auto;
+	    overflow: auto;
+	    margin-top: 5vh;
+	}
+
+	.searchFields {
+	    width: 72vw;
+	    margin-left: 13vw;
+	    overflow: auto;
+	}
+
+	.searchButtonText {
+		margin-top: 0vh;
+		font-size: 2rem;
+	}
+
+	.searchPositionType {
+		float: left;
+		width: 72vw;
+		min-width: 200px;
+		height: 30px;
+		font-size: 30px;
+		height: 35px;
+	}
+
+	.searchZipCode {
+		float: left;
+		width: 23.9vw;
+		min-width: 200px;
+		margin-left: 0.1vw;
+		height: 30px;
+		font-size: 30px;
+		height: 35px;
+		width: 72vw;
+		min-width: 200px;
+	}
+
+	.searchButton {
+		float: left;
+		width: 23.9vw;
+		min-width: 200px;
+		margin-left: 0.1vw;
+		height: 30px;
+		font-size: 30px;
+		height: 35px;
+		width: 71.5vw;
+		min-width: 200px;
+	}
+
+	.searchScript {
+		display: inline-block !important;
+	}
+
+	.mobileSearchScript {
+		display: none !important;
+		
+	}
+
+	.signUpSubScript {
+		display: none;
+	}
+
+}

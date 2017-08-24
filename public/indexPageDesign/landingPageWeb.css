@@ -43,351 +43,114 @@ body {
 	padding: 0 !important;
 }
 
-	.searchSection {
-		margin-top: 3vh;
-	    text-align: center;
-	    min-height: 50vh;
-	    width: auto;
-	    overflow: auto;
-	    padding: 0;
-	    text-align: center;
-	    /* background-size: 100%; */
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/indexImageSmall.PNG?alt=media&token=e193b10b-27b8-4e5b-9192-b28d148f97de');
-	}
-
-	.searchPositionType {
-		float: left;
-		width: 30vw;
-		height: 7vh;
-		font-size: 30px;
-		height: 35px;
-		margin-top: 0.5vh;
-	}
-	.searchZipCode {
-		float: left;
-		width: 30vw;
-		height: 7vh;
-		font-size: 30px;
-		height: 35px;
-		margin-top: 0.5vh;
-	}
-
-	.searchInputs {
-		width: auto;
-		overflow: auto;
-		color: red;
-		margin-top: 3vw;
-	}
-
-	.searchButton {
-text-align: center;
-    border: solid 1px;
-    border-color: red;
-    float: left;
-    width: 10vw;
-    height: 5vh !important;
-    padding-top: 3px;
-    height: 35px;
-    margin-top: 0.5vh;
-	}
-
-	.searchFields {
-	    width: 72vw;
-	    margin-left: 13vw;
-	    overflow: auto;
-	}
-
-	.scrollDownArrow {
-		position: absolute;
-		bottom: 3vh;
-		width: 20vw;
-		margin-left: 40vw;
-		margin-right: 40vw;
-		text-align: center;
-	}
-
-	.bufferForSignUpMessage {
-		width: 100vw;
-		height: 20vh;
-	}
-
-	.logoC {
-		font-size: 30px;
-	}
-
-	.keyScript {
-		font-size: 3rem;
-		color: #EF4440;
-		margin-top: 10vh;
-	}
-
-	.subscript {
-	    font-size: 1.5rem;
-	    margin-top: 1vw;
-	    font-weight: 600;
-	}
-
-	.searchScript {
-		text-align: center;
-	    width: auto;
-	    overflow: auto;
-	}
-
-	.mobileSearchScript {
-		display: none;
-	}
-
-@media only screen and (max-width: 961px) {
-
-	.keyScript {
-		margin-top: 5vh !important;
-	}
-
-	.headerSection {
-		margin-top: 5vh;
-	}
-
-	.searchSection {
-		margin-top: 5vh !important;
-		padding-bottom: 5vh;
-	}
-
-	.subScript {
-		margin-top: 5vh !important;
-		padding-bottom: 10vh !important;
-	}
-
-	.searchInputs {
-		width: auto;
-	    overflow: auto;
-	    color: red;
-	    margin-top: 3vw;
-	}
-
-	.searchScript {
-		text-align: center;
-	    width: auto;
-	    overflow: auto;
-	    margin-top: 5vh;
-	}
-
-	.searchFields {
-	    width: 72vw;
-	    margin-left: 13vw;
-	    overflow: auto;
-	}
-
-	.searchPositionType {
-float: left;
-    width: 72vw;
-    min-width: 200px;
-    /* margin-left: 20vw; */
-    height: 30px;
-    font-size: 30px;
-    height: 35px;
-	}
-
-	.searchZipCode {
-float: left;
-    width: 23.9vw;
-    min-width: 200px;
-    margin-left: 0.1vw;
-    height: 30px;
-    font-size: 30px;
-    height: 35px;
-    width: 72vw;
-    min-width: 200px;
-    /* margin-left: 20vw; */
-	}
-
-	.searchButton {
-    float: left;
-    width: 23.9vw;
-    min-width: 200px;
-    margin-left: 0.1vw;
-    height: 30px;
-    font-size: 30px;
-    height: 35px;
-    width: 71.5vw;
-    min-width: 200px;
-    /* margin-left: 20vw; */
-	}
-
-	.searchScript {
-		display: inline-block !important;
-	}
-
-	.mobileSearchScript {
-		display: none !important;
-		
-	}
-
-	.signUpSubScript {
-		display: none;
-	}
-
+.searchSection {
+	margin-top: 3vh;
+    text-align: center;
+    min-height: 50vh;
+    width: auto;
+    overflow: auto;
+    padding: 0;
+    text-align: center;
+    /* background-size: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/indexImageSmall.PNG?alt=media&token=e193b10b-27b8-4e5b-9192-b28d148f97de');
 }
 
-@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+.searchPositionType {
+	float: left;
+	width: 30vw;
+	font-size: 30px;
+	min-height: 35px;
+	height: 7vh;
+	margin-top: 0.5vh;
+}
+.searchZipCode {
+	float: left;
+	width: 30vw;
+	font-size: 30px;
+	min-height: 35px;
+	height: 7vh;
+	margin-top: 0.5vh;
+}
 
-	body {
+.searchInputs {
+	width: auto;
+	overflow: auto;
+	color: red;
+	margin-top: 3vw;
+}
 
-	}
+.searchButton {
+	text-align: center;
+	border: solid 1px;
+	border-color: red;
+	float: left;
+	width: 10vw;
+	padding-top: 3px;
+	min-height: 35px;
+	height: 7vh;
+	margin-top: 0.5vh;
+	font-size: 2.4rem;
+}
 
-	.headerSection {
-		min-height: 155px !important;
-	}
+.searchButtonText {
+	margin-top: 1.5vh;
+	font-size: 2rem;
+}
 
-	.searchScript {
-		display: none !important;
-	}
-
-	.mobileSearchScript {
-		display: inline-block !important;
-	}
-
-	.cureConnectHeaderLogo {
-		float: left;
-	    margin-top: 5px;
-	    width: 85vw;
-	    text-align: center;
-	    margin-left: 5vw;
-	    font-size: 60px;
-	}
-
-	.logoC {
-		font-size: 80px;
-	}
-
-	.headerLoginSection {
-    width: 80vw !important;
+.searchFields {
+    width: 72vw;
+    margin-left: 13vw;
     overflow: auto;
-    margin-left: 10vw;
-    float: left !important;
-	}
+}
 
-	.headerForEmployersButton {
-		display: none;
-	}
+.scrollDownArrow {
+	position: absolute;
+	bottom: 3vh;
+	width: 20vw;
+	margin-left: 40vw;
+	margin-right: 40vw;
+	text-align: center;
+}
 
-	.headerButtons {
-    /* float: left !important; */
-    min-width: 75px;
-    text-align: center;
-    margin: 0.5vw;
-    font-size: 2.5rem !important;
-    text-align: center !important;
-    width: 29vw;
-	}
+.bufferForSignUpMessage {
+	width: 100vw;
+	height: 20vh;
+}
 
-	.headerButtonContainer {
-    width: 60vw !important;
-    margin-left: 10vw;
-    overflow: auto;
-	}
+.logoC {
+	font-size: 30px;
+}
 
-	.searchSection {
-	width: 100%;
-    height: 60vh;
-        min-height: 940px;
-    background-size: cover;
-	background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobilePortraitImage.png?alt=media&token=64a58ce8-30eb-49a9-883d-03a727572de5');
-	}
+.keyScript {
+	font-size: 3rem;
+	color: #EF4440;
+	margin-top: 10vh;
+}
 
-	.keyScript {
-		font-size: 6rem;
-	    color: #EF4440;
-	    margin-top: 5vh;
-	    width: 80vw;
-	}
-
-	.subScript {
-		    font-size: 3rem;
+.subscript {
+    font-size: 1.5rem;
     margin-top: 1vw;
     font-weight: 600;
-    width: 50vw;
-    margin-left: 25vw;
-    margin-top: 5vh;
-	}
+}
 
-	.searchPositionType {
-float: left;
-    width: 90vw;
-    /* min-width: 200px; */
-    min-height: 75px;
-    margin-right: 0.1vw;
-    font-size: 30px;
-    height: 5vh;
-	}
-
-	.searchZipCode {
-    float: left;
-    width: 90vw;
-    min-height: 75px;
-    min-width: 200px;
-    margin-left: 0.1vw;
-    font-size: 30px;
-    height: 5vh;
-	}
-
-	.searchButton {
-text-align: center;
-    border: solid 1px;
-    border-color: red;
-    width: 89.5vw !important;
-    min-width: 100px;
-    margin-left: 0.2vw;
-    padding-bottom: 1rem;
-    float: left;
-    /* padding-top: 18px; */
-    font-size: 3rem;
-    height: 3vh;
-    min-height: 50px;
-	}
-
-	.searchFields {
-		min-height: 160px;
-width: 90vw;
-    margin-left: 5vw;
+.searchScript {
+	text-align: center;
+    width: auto;
     overflow: auto;
-	}
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: red !important;
-  font-size: 3rem !important;
-  text-align: center !important;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: red !important;
-  font-size: 3rem !important;
-  text-align: center !important;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: red !important;
-  font-size: 3rem !important;
-  text-align: center !important;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: red !important;
-  font-size: 3rem !important;
-  text-align: center !important;
 }
 
-.mobileLineBreak {
-	display: inline-block;
-}
-
-.signUpScriptLarge {
-	font-size: 3rem;
-}
-
-.signUpSubScript {
+.mobileSearchScript {
 	display: none;
 }
 
-}
+
+
+
+
+
 
 @media only screen and (max-device-width: 480px) and (orientation: landscape) {
 

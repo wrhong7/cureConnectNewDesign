@@ -1,3 +1,197 @@
 .containerMobileView {
 	display: none;
 }
+
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+
+	body {
+
+	}
+
+	.headerSection {
+		min-height: 155px !important;
+	}
+
+	.searchScript {
+		display: none !important;
+	}
+
+	.mobileSearchScript {
+		display: inline-block !important;
+	}
+
+	.cureConnectHeaderLogo {
+		float: left !important;
+	    margin-top: 5px !important;
+	    width: 85vw !important;
+	    text-align: center !important;
+	    margin-left: 5vw !important;
+	    font-size: 60px !important;
+	}
+
+	.logoC {
+		font-size: 80px !important;
+	}
+
+	.searchButtonText {
+		margin-top: 0vh !important;
+		font-size: 4rem !important;
+	}
+
+	.headerLoginSection {
+		width: 80vw !important;
+		overflow: auto !important;
+		margin-left: 10vw !important;
+		float: left !important;
+	}
+
+	.headerForEmployersButton {
+		display: none !important;
+	}
+
+	.headerButtons {
+		min-width: 75px !important;
+		text-align: center !important;
+		margin: 0.5vw !important;
+		font-size: 2.5rem !important;
+		text-align: center !important;
+		width: 29vw !important;
+	}
+
+	.headerButtonContainer {
+		width: 60vw !important;
+		margin-left: 10vw !important;
+		overflow: auto !important;
+	}
+
+	.searchSection {
+		width: 100% !important;
+		height: 60vh !important;
+	    min-height: 940px !important;
+		background-size: cover !important;
+		background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobilePortraitImage.png?alt=media&token=64a58ce8-30eb-49a9-883d-03a727572de5') !important;
+	}
+
+	.keyScript {
+		font-size: 6rem !important;
+	    color: #EF4440 !important;
+	    margin-top: 5vh !important;
+	    width: 80vw !important;
+	}
+
+	.subScript {
+		font-size: 3rem !important;
+		margin-top: 1vw !important;
+		font-weight: 600 !important;
+		width: 50vw !important;
+		margin-left: 25vw !important;
+		margin-top: 5vh !important;
+	}
+
+	.searchPositionType {
+		float: left !important;
+		width: 90vw !important;
+		min-height: 75px !important;
+	    height: 5vh !important;
+		margin-right: 0.1vw !important;
+		font-size: 30px !important;
+	}
+
+	.searchZipCode {
+		float: left !important;
+		width: 90vw !important;
+		min-height: 75px !important;
+	    height: 5vh !important;
+		min-width: 200px !important;
+		margin-left: 0.1vw !important;
+		font-size: 30px !important;
+	}
+
+	.searchButton {
+		text-align: center !important;
+		border: solid 0.2vw !important;
+		border-color: red !important;
+		width: 89.5vw !important;
+		min-width: 100px !important;
+		margin-left: 0.1vw !important;
+		float: left !important;
+		font-size: 3rem !important;
+		min-height: 75px !important;
+	    height: 5vh !important;
+	}
+
+	.searchFields {
+		min-height: 160px !important;
+		width: 90vw !important;
+		margin-left: 5vw !important;
+		overflow: auto !important;
+	}
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: red !important;
+		font-size: 3rem !important;
+		text-align: center !important;
+	}
+
+	::-moz-placeholder { /* Firefox 19+ */
+		color: red !important;
+		font-size: 3rem !important;
+		text-align: center !important;
+	}
+
+	:-ms-input-placeholder { /* IE 10+ */
+		color: red !important;
+		font-size: 3rem !important;
+		text-align: center !important;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: red !important;
+		font-size: 3rem !important;
+		text-align: center !important;
+	}
+
+	.mobileLineBreak {
+		display: inline-block !important;
+	}
+
+	.signUpScriptLarge {
+		font-size: 3rem !important;
+	}
+
+	.signUpSubScript {
+		display: none !important;
+	}
+
+	.detailComponent {
+	    width: 80vw !important;
+	    height: 10vh !important;
+	    font-size: 4rem !important;
+	}
+
+	.bottomDisclosureCol {
+	    width: 80vw !important;
+	    min-width: 200px !important;
+	    margin-left: 10vw !important;
+	    margin-top: 5vh !important;
+	    font-size: 3rem !important;
+	    text-align: left !important;
+	}
+
+	.bottomDisclosures {
+		width: 100vw !important;	
+	}
+
+	.bottomDisclosureLogo {
+		font-size: 3rem !important;
+	}
+
+	.bottomLogoC {
+		font-size: 4rem !important;
+	}
+
+	.companyAddress {
+		font-size: 2.5rem !important;
+	}
+
+}

@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.registerationContainer {
+	background-color: #F3F3F3;
+	margin-top: 15vh;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+
+.registerationAccountTypeSelection {
+	width: 100vw;
+    text-align: center;
+}
+
+.userTypeSelectionContainer {
+	width: 97vw;
+    overflow: auto;
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+.userTypeSelectionOption {
+	float: left;
+    width: 30vw;
+    min-width: 135px;
+    overflow: auto;
+    padding: 1vw;
+    text-align: center;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+.optionHospitalRecruiter {
+
+}
+
+.optionHealthcareProfessonal {
+	background-color: #e56262;
+}
+
+.optionIndepndentRecruiter {
+
+}
+
+.registerationModeSelection {
+	text-align: center;
+    margin-top: 10vh;
+}
+
+.registerationSelectionOptionCover {
+	margin-top: 5vh;
+    width: 77vw;
+    overflow: auto;
+    margin-left: 11.5vw;
+}
+
+.registerationOption {
+	float: left;
+    width: 38vw;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border: solid 1px;
+}
+
+.userTypeSelectionCoverHiddenOptions {
+	display: none;
+}
+
+.signUpDisclosure {
+	font-size: 1rem;
+    opacity: 2.5;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+
+
+
+
