@@ -21,7 +21,6 @@ var userType; //loaded from DB
 
 
 function callFirebase() { 
-	console.log("this function has been rendered repeatedly")
 	if (document.readyState === 'complete') {
 	    // if userid is not, render addNonUserHeader() to add the header to all main pages
    		// if userid is verified, render addUserHeader(user information details) to add the header
@@ -66,7 +65,6 @@ $(document).ready(function() {
 	console.log(userInfomation)
 	//Backend database is loaded after the firebase has been fully connected
 	window.onload = function() { 
-		console.log("funciton called");
 		callFirebase();
 	}
 
