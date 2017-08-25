@@ -17,19 +17,18 @@ var userDB; //setting up the global variable as user data will be loaded after c
 
 var userType; //loaded from DB
 
-// This is subjected to change as we implement whether one is recruiter vs. talents
-
-
 function callFirebase() { 
+
 	if (document.readyState === 'complete') {
 	    // if userid is not, render addNonUserHeader() to add the header to all main pages
    		// if userid is verified, render addUserHeader(user information details) to add the header
 		userInfomation = firebase.auth().currentUser;
+
 		if (userInfomation === null) {
 			renderNonUserView();
 		} else {
 		//There is one case 
-			var userData;
+			// var userData;
 			userData = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);
 			userData.on('value', function(data) {
 				var userDataDecrypted = data.val();
@@ -55,6 +54,8 @@ function hideEmployerNameForNonUsers() {
 	$(".employerName").append("Employer names are visible after you sign up");
 }
 
+
+
 $(document).ready(function() {
 
 	firebase.initializeApp(config);
@@ -62,12 +63,9 @@ $(document).ready(function() {
     firebaseAuth = firebase.auth();
 	provider = new firebase.auth.GoogleAuthProvider()
 	userInfomation = firebase.auth().currentUser;
-	console.log(userInfomation)
-	//Backend database is loaded after the firebase has been fully connected
-	window.onload = function() { 
-		callFirebase();
-	}
 
+	window.onload = function () { callFirebase(); }
+	
 });
 
 

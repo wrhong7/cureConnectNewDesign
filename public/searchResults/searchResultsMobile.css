@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1000px) {
+	.searchPositionType {
+		width: 80vw !important;
+	}
+	.searchZipCode {
+		width: 80vw !important;
+	}
+	.searchButton {
+	    width: 76vw !important;
+	    text-align: center;
+	}
+}

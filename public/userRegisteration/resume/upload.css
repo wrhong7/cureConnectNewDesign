@@ -1,0 +1,83 @@
+.leftColumn {
+	float: left;
+	width: 20vw;
+	height: 60vh;
+	margin-left: 8vw;
+	margin-right: 0.5vw;
+	border: solid 1px;
+}
+
+.middleColumn {
+	float: left;
+	width: 29vw;
+	height: 60vh;
+	margin-right: 0.5vw;
+	border: solid 1px;
+}
+
+.rightColumn {
+	float: left;
+	width: 29vw;
+	height: 60vh;
+	margin-right: 8vw;
+	border: solid 1px;
+}
+
+.entryField {
+	width: 99%;
+    margin-top: 1vh;
+    height: 30px;
+}
+
+.circle {
+    float: left;
+    font-size: 30px;
+    border: solid 1px;
+    padding: 3px;
+    border-radius: 100%;
+    margin-right: 9vw;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    z-index: 1;
+    background-color: red;
+}
+
+.progressBarLine {
+    width: 77.5%;
+    height: 5px;
+    background-color: blue;
+    margin-top: 2.9vh;
+    z-index: -1;
+}
+
+.registerationProgressBar {
+	width: 50vw;
+    overflow: auto;
+    margin-left: 30vw;
+    padding-top: 6vh;
+}
+
+.circle1 {
+
+}
+
+.circle2 {
+
+}
+
+.circle3 {
+
+}
+
+.circle4 {
+
+}
+
+.nextButton {
+    position: absolute;
+    right: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}

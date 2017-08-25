@@ -29,7 +29,6 @@
 		text-align: center;
 	    width: auto;
 	    overflow: auto;
-	    margin-top: 5vh;
 	}
 
 	.searchFields {
@@ -45,7 +44,7 @@
 
 	.searchPositionType {
 		float: left;
-		width: 72vw;
+		width: 99% !important;
 		min-width: 200px;
 		height: 30px;
 		font-size: 30px;
@@ -60,7 +59,7 @@
 		height: 30px;
 		font-size: 30px;
 		height: 35px;
-		width: 72vw;
+		width: 99% !important;
 		min-width: 200px;
 	}
 
@@ -72,8 +71,9 @@
 		height: 30px;
 		font-size: 30px;
 		height: 35px;
-		width: 71.5vw;
+		width: 99% !important;
 		min-width: 200px;
+		margin-bottom: 5vh;
 	}
 
 	.searchScript {

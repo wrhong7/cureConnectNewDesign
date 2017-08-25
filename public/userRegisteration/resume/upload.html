@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+
+<!-- Pulling jQuery -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<!-- Pulling Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script src="/userRegisteration/backendScript/backendConnection.js"></script>
+
+<!-- Pulling font from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
+
+<!-- Following two are just for the registeration purposes -->
+	<script src="/userRegisteration/backendScript/googleRegister.js"></script>
+	<script src="/userRegisteration/backendScript/emailRegister.js"></script>
+
+<!-- Following three must be rendered to constantly check the user session. -->
+	<script src="/backEndConnection/userViewRendering.js"></script>
+	<script src="/headerProperties/headerProperties.js"></script>
+
+<!-- Resume Upload Stylesheets -->
+	<link rel="stylesheet" href="/headerProperties/headerProps.css"/>
+	<link rel="stylesheet" href="/userRegisteration/resume/upload.css"/>
+
+</head>
+<body>
+
+	<div 
+		class="nextButton"
+		onclick='location.href="/userRegisteration/preference/selection.html"'
+	>
+		></br>Next
+	</div>
+
+	<div class="container">
+
+		<div class="headerSection">
+			<div class="cureConnectHeaderLogo">
+				<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
+			</div>
+			<div class="headerLoginSection">
+			</div>
+			<!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
+		</div>
+
+		<div class="resumeUploadCover">
+			<div class="leftColumn">
+				<button>Upload Resume</button>
+			</div>
+			<div class="middleColumn">
+				<div class="nameTitle">
+					Name
+				</div>
+				<input 
+					class="nameEntry entryField"
+					placeholder="Name" 
+				>
+				</input>
+				<div class="nameTitle">
+					Zip Code
+				</div>
+				<input 
+					class="zipcodeEntry entryField"
+					placeholder="Zip Code" 
+				>			
+				</input>
+				<div class="nameTitle">
+					Medical Profession
+				</div>
+				<input 
+					class="positionEntry entryField"
+					placeholder="MedicalProfession"
+				>
+				<div class="nameTitle">
+					Practicing Since
+				</div>					
+				</input>
+				<input 
+					class="practicingSince entryField"
+					placeholder="Practicing Since"
+				>
+				</input>
+			</div>
+			<div class="rightColumn">
+				<div class="nameTitle">
+					Certified Licenses
+				</div>
+				<input 
+					class="certifiedLicenses entryField"
+					placeholder="Certified Licenses"
+				>
+				<div class="nameTitle">
+					Certified States 
+				</div>					
+				</input>
+				<input 
+					class="certifiedStates entryField"
+					placeholder="Certified States"
+				>
+				<div class="nameTitle">
+					Languages
+				</div>				
+				</input>
+				<input 
+					class="languages entryField"
+					placeholder="Languages"
+				>	
+				</input>
+				<div class="nameTitle">
+					Work Authorization
+				</div>
+				<input 
+					class="workAuthorization entryField"
+					placeholder="Work Authorization"
+				>
+					
+				</input>
+			</div>
+		</div>
+
+		<div class="registerationProgressBar">
+			<div class="circle1 circle">1</div>
+			<div class="circle2 circle">2</div>
+			<div class="circle3 circle">3</div>
+			<div class="circle4 circle">4</div>
+			<div class="progressBarLine"></div>
+		</div>
+
+
+
+	</div>
+
+</body>
+</html>

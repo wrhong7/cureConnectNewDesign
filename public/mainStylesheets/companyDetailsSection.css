@@ -1,20 +1,23 @@
 .detailComponent {
     float: left;
-    width: 20vw;
+    width: 40vw;
     min-width: 200px;
     text-align: center;
     margin-top: 2vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .companyDetails {
-	width: auto;
+    width: 80vw;
     height: 30vh;
-    margin-top: 20vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
     padding-left: 10vw;
 }
 
 .bottomDisclosures {
-	width: auto;
+    width: 100%;
     overflow: auto;
     background-color: #CEB2BB;
     color: #16436A;
@@ -57,4 +60,11 @@
 
 .bottomDisclosureColOptions {
 	margin-top: 2vh;
+}
+
+@media only screen and (max-width: 961px) {
+
+    .bottomDisclosureCol {
+        margin-left: 12vw !important;
+    }
 }

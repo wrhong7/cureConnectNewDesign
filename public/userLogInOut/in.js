@@ -60,26 +60,27 @@ function passwordLogin() {
 	);	
 }
 
-window.onload = function () { 
-	firebase.auth().getRedirectResult().then(
-		function(result) {
-			if (result.credential) {
-				fetchSuccessfulSignInMessage();
-				window.location.href = "/index.html"
-			}
-		}
-	);
+// window.onload = function () { 
 
-}
+// 	firebase.auth().getRedirectResult().then(
+// 		function(result) {
+// 			if (result.credential) {
+// 				fetchSuccessfulSignInMessage();
+// 				window.location.href = "/index.html"
+// 			}
+// 		}
+// 	);
+
+// }
 
 //If Login Logout Section is not redirected to index even after you log in, then please reactive this and remove the top
 // $( document ).ready(function() {
-	// firebase.auth().getRedirectResult().then(
-	// 	function(result) {
-	// 		if (result.credential) {
-	// 			fetchSuccessfulSignInMessage();
-	// 			window.location.href = "/index.html"
-	// 		}
-	// 	}
-	// );
+// 	firebase.auth().getRedirectResult().then(
+// 		function(result) {
+// 			if (result.credential) {
+// 				fetchSuccessfulSignInMessage();
+// 				window.location.href = "/index.html"
+// 			}
+// 		}
+// 	);
 // })
