@@ -86,6 +86,9 @@ body {
     margin-bottom: 0.5vh;
 }
 
+.cureConnectHeaderLogo {
+    width: 100% !important;
+}
 .employerName {
     padding-left: 2vw;
     margin-top: 0.5vh;
@@ -98,7 +101,10 @@ body {
 }
 
 .headerSectionLeft {
-    width: 80%;
+    width: 60%;
+    min-width: 360px;
+    overflow: auto;
+    float: left;
 }
 
 .searchClassifier {
@@ -107,13 +113,30 @@ body {
     font-size: 1.2rem;
 }
 
-.headerSectionLeft {
-    width: 30%;
-    min-width: 360px;
+.lowerFloor {
+    width: auto;
     overflow: auto;
+}
+
+.lowerFloorLeft {
+    width: 48%;
     float: left;
 }
 
+.lowerFloorRight {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
 
+.searchHeaderAdded {
+    width: 100%;
+    overflow: auto;
+}
 
-
+.advSearchFieldButton {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4vh;
+}

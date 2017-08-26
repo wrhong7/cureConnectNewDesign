@@ -17,6 +17,12 @@ var userDB; //setting up the global variable as user data will be loaded after c
 
 var userType; //loaded from DB
 
+function hideEmployerNameForNonUsers() {
+	console.log("triggered")
+	$(".employerName").empty();
+	$(".employerName").append("Employer names are visible after you sign up");
+}
+
 function callFirebase() { 
 
 	if (document.readyState === 'complete') {
@@ -47,14 +53,6 @@ function callFirebase() {
 		}
 	}
 }
-
-function hideEmployerNameForNonUsers() {
-	console.log("triggered")
-	$(".employerName").empty();
-	$(".employerName").append("Employer names are visible after you sign up");
-}
-
-
 
 $(document).ready(function() {
 
