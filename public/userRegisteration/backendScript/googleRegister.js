@@ -54,10 +54,9 @@ function googleRegister() {
 		//Once you are done, the browser will be redirected to your index page to 
 		//confirm your dahsboard. Once you get to the index page,
 		//user redentials will be recalled, and infomration will be fetched.
-		window.location.href="/index.html"
 
 	}).then(function() {
-		console.log("registered")
+		pageRedirectionBasedOnUserType(userType)
 	})	
 }
 

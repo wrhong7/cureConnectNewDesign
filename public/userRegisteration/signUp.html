@@ -3,12 +3,14 @@
 <head>
 	<title>CureConnect</title>
 
-<!-- Pulling Firebase -->
-
-	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-
-<!-- 	Pulling jQuery -->
+<!-- Pulling jQuery -->
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<!-- Pulling Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script type="text/javascript" src="/userRegisteration/backendScript/signUp.js"></script>
+	<script type="text/javascript" src="/backEndConnection/globalVariables.js"></script>
+	<script type="text/javascript" src="/backEndConnection/secondaryPagesBackendConnection.js"></script>
 
 <!-- Pulling font from Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -18,12 +20,10 @@
 	<link rel="stylesheet" href="stylesheets/signUp.css" />
 
 <!-- Following three must be rendered to constantly check the user session. -->
-	<script src="/backEndConnection/firebaseConnection.js"></script>
 	<script src="/backEndConnection/userViewRendering.js"></script>
 	<script src="/headerProperties/headerProperties.js"></script>
 
-<!-- 	Following two are just for the registeration purposes -->
-	<script src="backendScriptsignUp.js"></script>
+<!-- Following two are just for the registeration purposes -->
 	<script src="backendScript/googleRegister.js"></script>
 	<script src="backendScript/emailRegister.js"></script>
 
@@ -31,19 +31,19 @@
 
 <body>
 
-		<div class="productStrengthSynopsis">
-			<div class="synopsisForProfessionals">
-				Easy: Building profile takes 6 mins and Applying takes 1 click.<br>
-				Transparent: Know compensation, hours and workload before applying.<br>
-				Efficient: Track your application status, schedule interview and message recruiter.<br>
-				Custom Tailored: CureConnect's unique human and machine tailored algorithms recommend you with fitting careers based on your expereience and our data.
-			</div>
-			<div class="synopsisForRecruiters">
-				Quick: Upload all your jobs with CSV upload.<br>
-				Efficient: Candidates Board Certified States, Licenses, Experience, Expected Compensations and other important details are visible to you before you start communicating with candidates.
-				Easy: Instead of emailing back and forth, communicate and schedule interview with candidates one click.
-			</div>
+	<div class="productStrengthSynopsis">
+		<div class="synopsisForProfessionals">
+			Easy: Building profile takes 6 mins and Applying takes 1 click.<br>
+			Transparent: Know compensation, hours and workload before applying.<br>
+			Efficient: Track your application status, schedule interview and message recruiter.<br>
+			Custom Tailored: CureConnect's unique human and machine tailored algorithms recommend you with fitting careers based on your expereience and our data.
 		</div>
+		<div class="synopsisForRecruiters">
+			Quick: Upload all your jobs with CSV upload.<br>
+			Efficient: Candidates Board Certified States, Licenses, Experience, Expected Compensations and other important details are visible to you before you start communicating with candidates.
+			Easy: Instead of emailing back and forth, communicate and schedule interview with candidates one click.
+		</div>
+	</div>
 
 	<div class="registerationContainer">
 		<div class="registerationAccountTypeSelection">

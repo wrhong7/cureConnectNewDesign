@@ -19,7 +19,7 @@
 .bottomDisclosures {
     width: 100%;
     overflow: auto;
-    background-color: #CEB2BB;
+    background-color: rgba(206, 178, 187, 0.6);
     color: #16436A;
     padding-bottom: 10vh;
 }

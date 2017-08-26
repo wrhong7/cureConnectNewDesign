@@ -1,0 +1,60 @@
+.prevButton {
+    position: absolute;
+    left: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.nextButton {
+    position: absolute;
+    right: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.basicInfoContainer {
+    width: auto;
+    overflow: auto;
+}
+
+.recruiterInfo {
+    width: 40vw;
+    height: 70vh;
+    float: left;
+    margin-left: 10vw;
+}
+.hospitalInfo {
+    width: 40vw;
+    height: 70vh;
+    float: left;
+}
+
+.linkedInButton {
+    width: 20vw;
+    overflow: auto;
+    padding: 1vw;
+    border: solid 1px;
+    margin-top: 2vh;
+    text-align: center;
+    margin-left: 38vw;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.entryTitle {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.entryField {
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 1.5rem;
+}

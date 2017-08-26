@@ -90,7 +90,7 @@ function emailPWRegisteration() {
 					});
 				}
 			}).then(function(){
-				window.location.href = "/index.html";
+				pageRedirectionBasedOnUserType(userType)
 			});		
 		} else {
 			triggerRegErrorMessage("pwMatching");

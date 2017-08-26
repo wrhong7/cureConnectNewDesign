@@ -5,7 +5,6 @@ function highlightOptionButton(selector) {
 	$(selector).css("background-color", "#e56262");
 }	
 
-
 function clickAccountType(accountType) {
 	if (accountType == "healthcareProfessional") {
 		$(".userTypeSelection").val("professional");
@@ -17,4 +16,14 @@ function clickAccountType(accountType) {
 		$(".userTypeSelection").val("independentRecruiter");
 		highlightOptionButton(".optionIndepndentRecruiter");
 	}
+}
+
+function pageRedirectionBasedOnUserType(userType) {
+	if (userType == "professional") {
+		window.location.href="/userRegisteration/resume/upload"
+	} else if (userType == "hospitalRecruiter") {
+		window.location.href="/userRegisteration/hospitalRecruiters/basicInfo"
+	} else if (userType == "independentRecruiter") {
+		window.location.href="/userRegisteration/independentRecruiters/recruitingAgencyInfo"
+	}	
 }

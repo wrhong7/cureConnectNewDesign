@@ -66,6 +66,7 @@ body {
 	height: 7vh;
 	margin-top: 0.5vh;
 }
+
 .searchZipCode {
 	float: left;
 	width: 30vw;
@@ -91,6 +92,7 @@ body {
 	min-height: 35px;
 	height: 7.2vh;
 	margin-top: 0.5vh;
+	margin-left: 0.02vw;
 	font-size: 2.4rem;
 }
 
@@ -145,19 +147,12 @@ body {
 }
 
 
-
-
-
-
-
 @media only screen and (max-device-width: 480px) and (orientation: landscape) {
 
 	body {
 
 	}
 }
-
-
 
 /*Here are the configurations for the placeholder design*/
 
