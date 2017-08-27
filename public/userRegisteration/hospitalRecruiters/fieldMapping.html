@@ -6,6 +6,8 @@
     <!-- Pulling jQuery -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 
+    <script src="/userRegisteration/hospitalRecruiters/backend/fieldMapping.js"></script>
+
     <!-- Pulling Firebase -->
     <script type="text/javascript" src="/backEndConnection/globalVariables.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
@@ -22,16 +24,16 @@
     <script src="/backEndConnection/userViewRendering.js"></script>
     <script src="/headerProperties/headerProperties.js"></script>
 
-    <!-- Upload Stylesheets -->
-    <link rel="stylesheet" href="/headerProperties/headerProps.css"/>
-    <link rel="stylesheet" href="/userRegisteration/hospitalRecruiters/stylesheets/basicInfo.css"/>
+<!-- Upload Stylesheets -->
+<link rel="stylesheet" href="/headerProperties/headerProps.css"/>
+<link rel="stylesheet" href="/userRegisteration/hospitalRecruiters/stylesheets/fieldMapping.css"/>
 
 </head>
 <body>
 
 <div class="nextButton"
-     onclick='location.href="/userRegisteration/preference/selection.html"''>
-></br>Next
+     onclick='location.href="/userRegisteration/preference/selection.html"'>
+    ></br>Next
 </div>
 
 <div class="container">
@@ -42,6 +44,33 @@
         <div class="headerLoginSection">
         </div>
         <!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
+    </div>
+</div>
+
+<div class="cureConnectColumns">
+    <div class="cureConnectColumnTitle">Internal Job Requisition Number</div>
+    <div id="internalRequisitionNumber" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cureConnectColumnTitle">Assigned Recruiter Name</div>
+    <div id="assignedRecruiterName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+    <div class="cureConnectColumnTitle">Hospital Name</div>
+    <div id="hospitalName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+</div>
+
+<div class="csvColumns">
+    <div class="csvColumnTitle">CSV File Columns</div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">Job ID</div>
+        <div class="csvTableField" id="drag2" draggable="true" ondragstart="drag(event)">Dedicated Recruiter</div>
+        <div class="csvTableField" id="drag3" draggable="true" ondragstart="drag(event)">Hospital Name</div>
+        <div class="csvTableField" id="drag4" draggable="true" ondragstart="drag(event)">CSV Column4</div>
+        <div class="csvTableField" id="drag5" draggable="true" ondragstart="drag(event)">CSV Column5</div>
+        <div class="csvTableField" id="drag6" draggable="true" ondragstart="drag(event)">CSV Column6</div>
+        <div class="csvTableField" id="drag7" draggable="true" ondragstart="drag(event)">CSV Column7</div>
+        <div class="csvTableField" id="drag8" draggable="true" ondragstart="drag(event)">CSV Column8</div>
+        <div class="csvTableField" id="drag9" draggable="true" ondragstart="drag(event)">CSV Column9</div>
+        <div class="csvTableField" id="drag10" draggable="true" ondragstart="drag(event)">CSV Column10</div>
     </div>
 </div>
 

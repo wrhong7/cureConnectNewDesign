@@ -1,0 +1,28 @@
+#div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.cureConnectColumns {
+    width: 60vw;
+    height: 60vh;
+    background-color: red;
+    float: left;
+}
+
+.csvColumns {
+    width: 30vw;
+    height: 60vh;
+    background-color: blue;
+    float: left;
+}
+
+.dragDropBox {
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+}

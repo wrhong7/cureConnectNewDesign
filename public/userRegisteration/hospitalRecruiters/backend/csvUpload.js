@@ -29,7 +29,7 @@ function postJobButtonClicked() {
     userDB = firebaseDB.ref('jobsDB/'+job["hospitalZipCode"]).push({
       recruiterInfo: {
         internalRequisitionNumber: job["internalRequisitionNumber"],
-        recruiterName: job["recruiterName"],
+        recruiterName: job["assignedRecruiterName"],
         recruiterCureConnectCode: job["recruiterCureConnectCode"],
       },
       hospitalInfo: {
@@ -136,12 +136,15 @@ function printTable(file) {
 
     csvFileView = csv;
 
-    var data = $.csv.toArrays(csv);
+    data = $.csv.toArrays(csv);
     //this data is being fed into the functions to show the user the imported csv fields
 
-    var result = $.csv.toObjects(csv);
+
+    result = $.csv.toObjects(csv);
 
     jobPostings = result;
+
+    localStorage.setItem("csvArray", JSON.stringify(jobPostings));
 
     //this obj data is fed into the functions to feed the data to firebase
     var html = '';

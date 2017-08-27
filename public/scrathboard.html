@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #div1, #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .cureConnectColumns {
+            width: 60vw;
+            height: 60vh;
+            background-color: red;
+            float: left;
+        }
+
+        .csvColumns {
+            width: 30vw;
+            height: 60vh;
+            background-color: blue;
+            float: left;
+        }
+
+        .dragDropBox {
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+        }
+
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      var mappedDict = {};
+
+
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+
+        mappedDict["internalRequisitionNumber"] = $("#internalRequisitionNumber").children(".csvTableField").text();
+        mappedDict["assignedRecruiterName"] = $("#assignedRecruiterName").children(".csvTableField").text();
+        mappedDict["hospitalName"] = $("#hospitalName").children(".csvTableField").text();
+
+        console.log(mappedDict);
+      }
+
+    </script>
+</head>
+<body>
+
+
+
+
+<h2>Drag and Drop</h2>
+<p>Drag the image back and forth between the two div elements.</p>
+
+    <div class="cureConnectColumns">
+        <div class="cureConnectColumnTitle">Internal Job Requisition Number</div>
+        <div id="internalRequisitionNumber" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="cureConnectColumnTitle">Assigned Recruiter Name</div>
+        <div id="assignedRecruiterName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div class="cureConnectColumnTitle">Hospital Name</div>
+        <div id="hospitalName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <!--<div class="cureConnectColumnTitle">hospitalAddress</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">hospitalZipCode</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">recruitingPosition</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">recruitingDepartment</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">responsibility</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">minExperience</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">reqLicense</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">boardCertifiedStates</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">compRangeBottom</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">compRangeTop</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">vacationPolicy</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">shift</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">expSchedule</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">weekendDuty</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">callDuty</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">hoursPerWeek</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">contractType</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">union</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">educationCredit</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">patientTypes</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">patientImbursementTypes</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+        <!--<div class="cureConnectColumnTitle">patientRatio</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+
+        <!--<div class="cureConnectColumnTitle">insuranceAndPension</div>-->
+        <!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+            <!--<div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">CureConnect Name</div>-->
+        <!--</div>-->
+    </div>
+
+    <div class="csvColumns">
+        <div class="csvColumnTitle">CSV File Columns</div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="csvTableField" id="drag1" draggable="true" ondragstart="drag(event)">Job ID</div>
+            <div class="csvTableField" id="drag2" draggable="true" ondragstart="drag(event)">Dedicated Recruiter</div>
+            <div class="csvTableField" id="drag3" draggable="true" ondragstart="drag(event)">Hospital Name</div>
+            <div class="csvTableField" id="drag4" draggable="true" ondragstart="drag(event)">CSV Column4</div>
+            <div class="csvTableField" id="drag5" draggable="true" ondragstart="drag(event)">CSV Column5</div>
+            <div class="csvTableField" id="drag6" draggable="true" ondragstart="drag(event)">CSV Column6</div>
+            <div class="csvTableField" id="drag7" draggable="true" ondragstart="drag(event)">CSV Column7</div>
+            <div class="csvTableField" id="drag8" draggable="true" ondragstart="drag(event)">CSV Column8</div>
+            <div class="csvTableField" id="drag9" draggable="true" ondragstart="drag(event)">CSV Column9</div>
+            <div class="csvTableField" id="drag10" draggable="true" ondragstart="drag(event)">CSV Column10</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
