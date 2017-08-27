@@ -1,3 +1,5 @@
+
+
 var jobPostings;
 
 $(document).ready(function() {

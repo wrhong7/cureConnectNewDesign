@@ -1,0 +1,49 @@
+.prevButton {
+    position: absolute;
+    left: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.nextButton {
+    position: absolute;
+    right: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.postJobOptionContainer {
+    width: 80vw;
+    height: 50vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.jobOptionLeft {
+    width: 39vw;
+    height: 50vh;
+    float: left;
+    border: solid 1px;
+}
+
+.jobOptionTitleContainer {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20vh;
+}
+
+.jobOptionRight {
+    width: 39vw;
+    height: 50vh;
+    float: left;
+    border: solid 1px;
+}
+
+.csvFileUploadContainer {
+    width: 80vw;
+    margin-left: 10vw;
+    display: none;
+    overflow-x: scroll;
+}

@@ -1,3 +1,8 @@
+function uploadWithCSVClicked() {
+  $(".postJobOptionContainer").hide();
+  $(".csvFileUploadContainer").css("display", "inline-block");
+}
+
 var jobPostings;
 
 $(document).ready(function() {
@@ -70,7 +75,7 @@ function postJobButtonClicked() {
 }
 
 function uploadDifferentButtonClicked() {
-  location.href="jobUpload.html";
+  location.href="postJobs.html";
 }
 
 function isAPIAvailable() {
