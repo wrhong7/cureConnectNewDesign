@@ -50,7 +50,14 @@ $( document ).ready(function() {
 						} else {
 							userType = userDataDecrypted["userProfile"].userType;
 							userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
-							renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+
+							if (userInfomation.displayName == null) {
+								userName = userDataDecrypted["userProfile"].userName;
+							}
+
+							//Here we need to add user's first name based on the data that we read from the database, that are non-Google users
+							console.log(userName);
+							renderUserView(userName, userType, userCompletionStatus);
 						}
 
 					})	

@@ -1,3 +1,19 @@
+.prevButton {
+    position: absolute;
+    left: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.nextButton {
+    position: absolute;
+    right: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
 #div1, #div2 {
     float: left;
     width: 100px;
@@ -9,6 +25,7 @@
 
 .cureConnectColumns {
     width: 60vw;
+    margin-left: 4vw;
     height: 60vh;
     background-color: red;
     float: left;
