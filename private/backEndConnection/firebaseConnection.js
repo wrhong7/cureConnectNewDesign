@@ -48,16 +48,18 @@ $( document ).ready(function() {
 							//but directly logs in with google, a case in which registeraton is not complete.
 							//for this case, we will force user to register by redirecting them.
 						} else {
-							userType = userDataDecrypted["userProfile"].userType;
-							userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
+              userType = userDataDecrypted["userProfile"].userType;
+              userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
 
-							if (userInfomation.displayName == null) {
-								userName = userDataDecrypted["userProfile"].userName;
+              console.log("logging")
+
+              if (userInfomation.displayName == null) {
+                userName = userDataDecrypted["userProfile"].userName;
+                renderUserView(userName, userType, userCompletionStatus);
+              } else {
+                renderUserView(userName, userType, userCompletionStatus);
 							}
 
-							//Here we need to add user's first name based on the data that we read from the database, that are non-Google users
-							console.log(userName);
-							renderUserView(userName, userType, userCompletionStatus);
 						}
 
 					})	

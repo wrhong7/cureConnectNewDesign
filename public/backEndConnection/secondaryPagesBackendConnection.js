@@ -27,15 +27,20 @@ $(document).ready(function() {
 							//but directly logs in with google, a case in which registeraton is not complete.
 							//for this case, we will force user to register by redirecting them.
 						} else {
-							userType = userDataDecrypted["userProfile"].userType;
-							userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
-							renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+              userType = userDataDecrypted["userProfile"].userType;
+              userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
+              if (userInfomation == null) {
+                userName = userDataDecrypted["userProfile"].userName;
+                console.log(userName);
+                renderUserView(userName, userType, userCompletionStatus);
+              } else {
+                renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+              }
 						}
-
 					})	
 				}
 			}
-		}, 2000);
+		}, 3000);
 
 	}
 });

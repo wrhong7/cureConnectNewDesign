@@ -39,7 +39,14 @@
 }
 
 .dragDropBox {
-    width: 200px;
-    height: 100px;
+    width: 170px;
+    height: 40px;
     border: 1px solid;
+}
+
+.cureConnectColumn {
+    width: 180px;
+    overflow: auto;
+    margin-right: 5px;
+    float: left;
 }

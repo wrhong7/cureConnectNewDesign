@@ -6,6 +6,8 @@ function googleRegister() {
 
 	console.log(userType);
 
+	//google sign in with popup needs to be fixed immediately
+
 	firebaseAuth.signInWithPopup(provider).then(function(result) {
 
 		firebaseDB = firebase.database();
