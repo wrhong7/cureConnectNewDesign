@@ -49,6 +49,7 @@ function postJobButtonClicked() {
         union: job["union"],
         patientTypes: job["patientTypes"],
         patientImbursementTypes: job["patientImbursementTypes"],
+        requiredAcademicDegree: job["requiredAcademicDegree"],
         patientRatio: job["patientRatio"],
       },
       requirements: {

@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4d88003d-de4c-4e83-b69c-bbff1edb6514" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/backEndConnection/firebaseConnection.js" afterPath="$PROJECT_DIR$/private/backEndConnection/firebaseConnection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js" afterPath="$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js" afterPath="$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/scrathboard.html" afterPath="$PROJECT_DIR$/public/scrathboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userLogInOut/in.js" afterPath="$PROJECT_DIR$/public/userLogInOut/in.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegisteration/backendScript/googleRegister.js" afterPath="$PROJECT_DIR$/public/userRegisteration/backendScript/googleRegister.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js" afterPath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js" afterPath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html" afterPath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html" afterPath="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,61 +23,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="postJobs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html">
+      <file leaf-file-name="fieldMapping.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="650">
+              <caret line="112" column="32" lean-forward="false" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+              <folding>
+                <element signature="n#!!block;n#drop#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebaseConnection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js">
+      <file leaf-file-name="csvUpload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="1103">
+              <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+              <folding>
+                <marker date="1504104401450" expanded="true" signature="3671:3688" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondaryPagesBackendConnection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js">
+      <file leaf-file-name="fieldMapping.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="googleRegister.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/userRegisteration/backendScript/googleRegister.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrathboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/scrathboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="in.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/userLogInOut/in.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="-1450">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,16 +75,23 @@
       <find>onclick</find>
       <find>window</find>
       <find>shift</find>
-      <find>jobPostings</find>
       <find>hi Won Jun</find>
       <find>postJobButtonClicked</find>
-      <find>append</find>
       <find>employes</find>
       <find>hi</find>
       <find>userName</find>
       <find>renderUserVIew</find>
       <find>showUSerD</find>
       <find>renderUserView</find>
+      <find>force move to</find>
+      <find>force move</find>
+      <find>.dragDr</find>
+      <find>.append</find>
+      <find>append</find>
+      <find>csvColumns</find>
+      <find>jquery</find>
+      <find>csvColumnField</find>
+      <find>jobPostings</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,26 +106,26 @@
         <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/linkedin.js" />
         <option value="$PROJECT_DIR$/public/jobUploader/jobUpload.js" />
         <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/postJobs.css" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/basicInfo.html" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/contactInfo.html" />
         <option value="$PROJECT_DIR$/public/userRegisteration/resume/upload.html" />
         <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/basicInfo.css" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/fieldMapping.css" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js" />
         <option value="$PROJECT_DIR$/private/jobUploader/jobUpload.js" />
         <option value="$PROJECT_DIR$/public/employers.html" />
         <option value="$PROJECT_DIR$/public/employers/employers.html" />
         <option value="$PROJECT_DIR$/public/headerProperties/headerProperties.js" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js" />
-        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/private/backEndConnection/firebaseConnection.js" />
         <option value="$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js" />
         <option value="$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js" />
-        <option value="$PROJECT_DIR$/public/userLogInOut/in.js" />
         <option value="$PROJECT_DIR$/public/scrathboard.html" />
         <option value="$PROJECT_DIR$/public/userRegisteration/backendScript/googleRegister.js" />
+        <option value="$PROJECT_DIR$/public/userLogInOut/in.js" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/fieldMapping.css" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/contactInfo.html" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/basicInfo.html" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js" />
+        <option value="$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js" />
       </list>
     </option>
   </component>
@@ -167,7 +143,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+    <option name="x" value="361" />
+    <option name="y" value="-11" />
     <option name="width" value="980" />
     <option name="height" value="1030" />
   </component>
@@ -189,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,18 +183,6 @@
               <item name="devLoginImproved" type="b2602c69:ProjectViewProjectNode" />
               <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="backEndConnection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devLoginImproved" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="userLogInOut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devLoginImproved" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="userRegisteration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -224,14 +190,21 @@
               <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="userRegisteration" type="462c0819:PsiDirectoryNode" />
-              <item name="backendScript" type="462c0819:PsiDirectoryNode" />
+              <item name="hospitalRecruiters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devLoginImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="userRegisteration" type="462c0819:PsiDirectoryNode" />
+              <item name="hospitalRecruiters" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,12 +246,14 @@
       <workItem from="1503840249935" duration="8377000" />
       <workItem from="1503858753411" duration="5818000" />
       <workItem from="1503935465422" duration="2617000" />
-      <workItem from="1503968886392" duration="5186000" />
+      <workItem from="1503968886392" duration="6408000" />
+      <workItem from="1504057919637" duration="6881000" />
+      <workItem from="1504070009277" duration="6682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29803000" />
+    <option name="totallyTimeSpent" value="44588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,21 +268,21 @@
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.221875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -340,7 +315,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -349,22 +324,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/jobUploader/jobUpload.html" />
     <entry file="file://$PROJECT_DIR$/public/jobUploader/jobUpload.js" />
     <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
-            <element signature="n#!!block;n#uploadWithCSVClicked#0" expanded="false" />
-            <element signature="e#186#268#0" expanded="false" />
-            <element signature="n#!!block;n#postJobButtonClicked#0" expanded="false" />
-            <element signature="e#741#939#0" expanded="false" />
-            <element signature="e#961#1062#0" expanded="false" />
-            <element signature="n#!!block;n#isAPIAvailable#0" expanded="false" />
-            <element signature="n#!!block;n#handleFileSelect#0" expanded="false" />
-            <element signature="n#!!block;n#printTable#0" expanded="false" />
-            <marker date="1503969013452" expanded="true" signature="3608:3625" ph="..." />
+            <marker date="1504104401450" expanded="true" signature="3671:3688" ph="..." />
           </folding>
         </state>
       </provider>
@@ -428,14 +394,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/jobUploader/jobUpload.js" />
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/basicInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/userRegisteration/independentRecruiters/postJobs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -483,7 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="119" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="119" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/fieldMapping.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/postJobs.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
@@ -520,28 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/contactInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="32" column="75" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/framework.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -560,15 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,7 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1400">
           <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,25 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24625">
-          <caret line="1134" column="35" lean-forward="true" selection-start-line="1134" selection-start-column="35" selection-end-line="1134" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!block;n#uploadWithCSVClicked#0" expanded="false" />
-            <element signature="e#186#268#0" expanded="false" />
-            <element signature="n#!!block;n#postJobButtonClicked#0" expanded="false" />
-            <element signature="e#741#939#0" expanded="false" />
-            <element signature="e#961#1062#0" expanded="false" />
-            <element signature="n#!!block;n#isAPIAvailable#0" expanded="false" />
-            <element signature="n#!!block;n#handleFileSelect#0" expanded="false" />
-            <element signature="n#!!block;n#printTable#0" expanded="false" />
-            <marker date="1503969013452" expanded="true" signature="3608:3625" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,15 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,15 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/backEndConnection/firebaseConnection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
           <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,23 +530,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html">
+    <entry file="file://$PROJECT_DIR$/public/search/Results.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/backEndConnection/firebaseConnection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="554">
+          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -674,15 +558,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/userLogInOut/in.js">
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/backendScript/googleRegister.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="275">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -690,15 +572,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userLogInOut/in.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="119" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegisteration/backendScript/googleRegister.js">
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/basicInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/stylesheets/fieldMapping.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/contactInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="6" column="115" lean-forward="false" selection-start-line="6" selection-start-column="115" selection-end-line="6" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/fieldMapping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/framework.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/csvUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1103">
+          <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding>
+            <marker date="1504104401450" expanded="true" signature="3671:3688" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/postJobs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="71" column="10" lean-forward="false" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegisteration/hospitalRecruiters/backend/fieldMapping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="112" column="32" lean-forward="false" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!block;n#drop#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
