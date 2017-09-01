@@ -2,15 +2,15 @@ function goToRegisterationSection() {
 //Warning -- this home URL needs to be changed
 	var homeUrl = 'http://localhost:8080/';	
 	if (document.URL == homeUrl) {
-	    location.href="userRegisteration/signUp.html"
+	    location.href="userRegistration/signUp.html"
 	} else {
-	    location.href="/userRegisteration/signUp.html"
+	    location.href="/userRegistration/signUp.html"
 	}
 }
 
 function moveToLoginPage() {
 	location.href="/userLogInOut/in.html"
-	console.log("redirectd")
+	console.log("redirect")
 }
 
 function moveToEmployerSection() {
@@ -33,8 +33,7 @@ function addNonUserHeader() {
 
 function addUserHeader(userName) {
 	$(".headerLoginSection").empty();
-
-	showUserDashboard()
+	showUserDashboard();
 	if (userName === null) {
 		$(".headerLoginSection").append(
 			'<div class="userLoginCredentials">' +

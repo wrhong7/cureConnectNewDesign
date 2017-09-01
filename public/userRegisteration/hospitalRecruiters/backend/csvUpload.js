@@ -5,76 +5,6 @@ function uploadWithCSVClicked() {
 
 var jobPostings;
 
-$(document).ready(function() {
-  if(isAPIAvailable()) {
-    $('#files').bind('change', handleFileSelect);
-  }
-});
-
-function postJobButtonClicked() {
-
-  console.log(jobPostings);
-
-  var zipCodeData = firebase.database().ref("jobsDB");
-  var zipCodeArray;
-
-  zipCodeData.on('value', function(data) {
-    var zipcodeDataDecrypted = data.val();
-    console.log(zipcodeDataDecrypted["zipcodes"]);
-    var zipCodeArray = zipcodeDataDecrypted["zipcodes"];
-  })
-
-  jobPostings.forEach(function(job) {
-
-    userDB = firebaseDB.ref('jobsDB/'+job["hospitalZipCode"]).push({
-      recruiterInfo: {
-        internalRequisitionNumber: job["internalRequisitionNumber"],
-        recruiterName: job["assignedRecruiterName"],
-        recruiterCureConnectCode: job["recruiterCureConnectCode"],
-      },
-      hospitalInfo: {
-        hospitalName: job["hospitalName"],
-        hospitalAddress: job["hospitalAddress"],
-      },
-      jobInfo: {
-        recruitingPosition: job["recruitingPosition"],
-        recruitingDepartment: job["recruitingDepartment"],
-        responsibility: job["responsibility"],
-        shift: job["shift"],
-        expSchedule: job["expSchedule"],
-        weekendDuty: job["weekendDuty"],
-        callDuty: job["callDuty"],
-        hoursPerWeek: job["hoursPerWeek"],
-        contractType: job["contractType"],
-        union: job["union"],
-        patientTypes: job["patientTypes"],
-        patientImbursementTypes: job["patientImbursementTypes"],
-        requiredAcademicDegree: job["requiredAcademicDegree"],
-        patientRatio: job["patientRatio"],
-      },
-      requirements: {
-        minExperience: job["minExperience"],
-        reqLicense: job["reqLicense"],
-        boardCertifiedStates: job["boardCertifiedStates"],
-      },
-      compensations: {
-        compRangeBottom: job["compRangeBottom"],
-        compRangeTop: job["compRangeTop"],
-        vacationPolicy: job["vacationPolicy"],
-        educationCredit: job["educationCredit"],
-        insuranceAndPension: job["insuranceAndPension"],
-      },
-      zipCode: job["hospitalZipCode"],
-    })
-
-    // zipCodeArray.forEach(function(zipcode) {
-    // 	if (zipcode == job["hospitalZipCode"]) {
-    // 		//insert this into the existing zipcode bucket
-    // 	} else {
-    // })
-  })
-}
-
 function uploadDifferentButtonClicked() {
   location.href="postJobs.html";
 }
@@ -1143,3 +1073,9 @@ RegExp.escape= function(s) {
   }
 
 }).call( this );
+
+$(document).ready(function() {
+  if(isAPIAvailable()) {
+    $('#files').bind('change', handleFileSelect);
+  }
+});

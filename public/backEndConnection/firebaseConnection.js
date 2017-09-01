@@ -64,7 +64,7 @@ $(document).ready(function() {
 
 	firebase.initializeApp(config);
 	firebaseDB = firebase.database();
-    firebaseAuth = firebase.auth();
+	firebaseAuth = firebase.auth();
 	provider = new firebase.auth.GoogleAuthProvider()
 	userInfomation = firebase.auth().currentUser;
 

@@ -1,13 +1,9 @@
-var cureConnectJobPostingFields =
-  [
-    "internalRequisitionNumber", "recruitingPosition", "expectedSchedule",
-    "union", "reqLicense", "compRangeBottom", "zipCode", "recruiterName",
-    "recruitingDepartment", "hoursPerWeek", "contractType", "boardCertifiedStates",
-    "compRangeTop", "insuranceAndPension", "hospitalName", "responsibility",
-    "callDuty", "patientTypes", "minExperience", "educationCredit", "hospitalAddress",
-    "shift", "weekendDuty", "patientRatio", "requiredAcademicDegree", "vacationPolicy"
-  ]
-
+var cureConnectJobPostingFields = ["internalRequisitionNumber", "recruitingPosition", "expectedSchedule", "union", "reqLicense", "compRangeBottom",
+  "zipCode", "recruiterName", "recruitingDepartment", "hoursPerWeek", "contractType", "boardCertifiedStates", "compRangeTop", "insuranceAndPension",
+  "hospitalName", "responsibility", "callDuty", "patientTypes", "minExperience", "educationCredit", "hospitalAddress", "shift", "weekendDuty",
+  "patientRatio", "requiredAcademicDegree", "vacationPolicy"]
+var newlyMappedArray = [];
+var objectArrayToBePushedToFirebase = [];
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -29,6 +25,47 @@ function drop(ev) {
   })
 }
 
+function filterOutNullObjects(obj) {
+  for (var propName in obj) {
+    if (obj[propName] === null || obj[propName] === undefined) {
+      delete obj[propName];
+    }
+  }
+}
+
+function submitMappedData() {
+  loadCSVArray.forEach(function(jobObject) {
+
+    var eachJobObject = {};
+    cureConnectJobPostingFields.forEach(function(eachField) {
+      if ($("#"+eachField).children(".csvTableField").text() != null) {
+        eachJobObject[eachField] = jobObject[mappedDict[eachField]];
+      }
+    })
+    newlyMappedArray.push(eachJobObject);
+  })
+  // console.log(newlyMappedArray);
+
+  newlyMappedArray.forEach(function(job) {
+
+    //get all the objects if the value is not null
+
+    filterOutNullObjects(job);
+    console.log(job);
+
+    var keysAfterFilteredOut = Object.keys(job);
+
+    console.log(keysAfterFilteredOut);
+    //
+    userDB = firebaseDB.ref('jobsDB/'+job["zipCode"]).push(job);
+  })
+
+}
+
+function mandatoryFieldEnforcer() {
+  //Pleaes complete this functionality to ensure users to fill up the mandatory fields.
+}
+
 $( document ).ready(function() {
   loadCSVArray = JSON.parse(localStorage.getItem("csvArray"));
   mappedDict = {};
@@ -40,63 +77,4 @@ $( document ).ready(function() {
   });
 });
 
-var newlyMappedArray = [];
 
-function submitMappedData() {
-  loadCSVArray.forEach(function(jobObject) {
-    var eachJobObject = {};
-
-    cureConnectJobPostingFields.forEach(function(eachField) {
-      if ($("#"+eachField).children(".csvTableField").text() != null) {
-        eachJobObject[eachField] = jobObject[mappedDict[eachField]];
-      }
-    })
-    newlyMappedArray.push(eachJobObject);
-  })
-  console.log(newlyMappedArray);
-
-  newlyMappedArray.forEach(function(job) {
-    //here we need to solve the undefined property issue other than that we are good to go
-    userDB = firebaseDB.ref('jobsDB/'+job["hospitalZipCode"]).push({
-      recruiterInfo: {
-        internalRequisitionNumber: job["internalRequisitionNumber"],
-        recruiterName: job["assignedRecruiterName"],
-        recruiterCureConnectCode: job["recruiterCureConnectCode"],
-      },
-      hospitalInfo: {
-        hospitalName: job["hospitalName"],
-        hospitalAddress: job["hospitalAddress"],
-      },
-      jobInfo: {
-        recruitingPosition: job["recruitingPosition"],
-        recruitingDepartment: job["recruitingDepartment"],
-        responsibility: job["responsibility"],
-        shift: job["shift"],
-        expSchedule: job["expSchedule"],
-        weekendDuty: job["weekendDuty"],
-        callDuty: job["callDuty"],
-        hoursPerWeek: job["hoursPerWeek"],
-        contractType: job["contractType"],
-        union: job["union"],
-        patientTypes: job["patientTypes"],
-        patientImbursementTypes: job["patientImbursementTypes"],
-        requiredAcademicDegree: job["requiredAcademicDegree"],
-        patientRatio: job["patientRatio"],
-      },
-      requirements: {
-        minExperience: job["minExperience"],
-        reqLicense: job["reqLicense"],
-        boardCertifiedStates: job["boardCertifiedStates"],
-      },
-      compensations: {
-        compRangeBottom: job["compRangeBottom"],
-        compRangeTop: job["compRangeTop"],
-        vacationPolicy: job["vacationPolicy"],
-        educationCredit: job["educationCredit"],
-        insuranceAndPension: job["insuranceAndPension"],
-      },
-      zipCode: job["hospitalZipCode"],
-    })
-  })
-
-}

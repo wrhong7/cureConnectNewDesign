@@ -1,12 +1,13 @@
+
+
 $(document).ready(function() {
 
 	firebase.initializeApp(config);
 	firebaseDB = firebase.database();
-    firebaseAuth = firebase.auth();
+	firebaseAuth = firebase.auth();
 	provider = new firebase.auth.GoogleAuthProvider();
 
 	//Backend database is loaded after the firebase has been fully connected
-	window.onload = function() { 
 		setTimeout(function(){ 
 			if (document.readyState === 'complete') {
 			    // if userid is not, render addNonUserHeader() to add the header to all main pages
@@ -40,7 +41,6 @@ $(document).ready(function() {
 					})	
 				}
 			}
-		}, 3000);
+		}, 2000);
 
-	}
 });
