@@ -19,20 +19,16 @@ function convertToBase64() {
 
             resumePDFBinary = base64
             $(".resumeContainer").replaceWith(
-                `
-                <div class="resumeContainer">
-                    <div class="replaceResumeSection">
-						<input class="inputFile" name="file" type="file" id="file" onchange="convertToBase64();" />
-						<label for="file" class="uploadResumeButton">Replace Resume</label>
-                    </div>
-                </div>
-                `
+                '<div class=\"resumeContainer\">'+
+									'<div class="replaceResumeSection">'+
+										'<input class="inputFile" name="file" type="file" id="file" onchange="convertToBase64();" />'+
+										'<label for="file" class="uploadResumeButton">Replace Resume</label>'+
+									'</div>'+
+                '</div>'
             );
 
             $(".resumeContainer").append(
-            	`
-            	<iframe src="${base64}"  class="resumeiFrame"></iframe>
-            	`
+            	'<iframe src="${base64}"  class="resumeiFrame"></iframe>'
             )
         };
         // Convert data to base64

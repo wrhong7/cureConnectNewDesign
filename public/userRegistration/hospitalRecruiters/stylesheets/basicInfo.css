@@ -6,14 +6,6 @@
     text-align: center;
 }
 
-.nextButton {
-    position: absolute;
-    right: 10px;
-    top: 45vh;
-    width: 40px;
-    text-align: center;
-}
-
 .basicInfoContainer {
     width: auto;
     overflow: auto;
@@ -56,4 +48,27 @@
     margin-left: 5%;
     margin-top: 2%;
     font-size: 1.2rem;
+}
+
+.prevButton {
+    position: absolute;
+    left: 30px;
+    width: 80px;
+    text-align: center;
+    bottom: 20px;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+}
+
+.nextButton {
+    position: absolute;
+    right: 30px;
+    width: 80px;
+    text-align: center;
+    bottom: 20px;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 15px;
 }

@@ -1,0 +1,85 @@
+.prevButton {
+    position: absolute;
+    left: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.nextButton {
+    position: absolute;
+    right: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.container {
+    width: 90vw;
+    height: 80vh;
+    margin-left: 5vw;
+}
+
+.descriptionContainer {
+    font-size: 30px;
+}
+
+.desiredJobType {
+    width: 100%;
+    overflow: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.desiredJobTypeOption {
+    float: left;
+    font-size: 30px;
+    width: 20%;
+    min-width: 150px;
+    border: solid 1px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 3%;
+}
+
+.preferredWorkSettings {
+    width: 100%;
+    overflow: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.preferredWorkSettingsOption {
+    float: left;
+    font-size: 20px;
+    width: 15%;
+    min-width: 150px;
+    border: solid 1px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 3%;
+    height: 70px;
+}
+
+.hospitalSizeSubscripts {
+    font-size: 15px;
+}
+
+.tolerableInconveniences {
+    width: 100%;
+    overflow: auto;
+}
+
+.tolerableInconvenienceOption {
+    float: left;
+    font-size: 20px;
+    border: solid 1px;
+    padding: 10px;
+    width: 15%;
+    height: 25px;
+    min-width: 170px;
+    margin-right: 3%;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}

@@ -1,0 +1,90 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
+}
+
+.prevButton {
+    position: absolute;
+    left: 30px;
+    width: 80px;
+    text-align: center;
+    bottom: 20px;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.nextButton {
+    position: absolute;
+    right: 30px;
+    width: 80px;
+    text-align: center;
+    bottom: 20px;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cureConnectColumns {
+    width: 69vw;
+    margin-left: 5vw;
+    height: 80vh;
+    float: left;
+    color: #189eb2;
+}
+
+.csvColumns {
+    width: 21vw;
+    min-width: 149px;
+    height: 80vh;
+    float: left;
+    color: #189eb2;
+    font-size: 15px;
+}
+
+.csvColumnTitle {
+    color: #4F6A8C;
+    font-size: 18px;
+}
+
+.dragDropBox {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.2vh;
+    border: solid 1px #9FACBE;
+    overflow: hidden;
+}
+
+.cureConnectColumn {
+    width: 210px;
+    overflow: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+.cureConnectColumnContainer {
+    height: 60px;
+    margin-top: 5px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.csvColumnField {
+    border: solid 1px #9FACBE;
+    overflow-y: auto;
+    height: 72.7vh;
+    width: 21vw;
+}
+
+.csvTableField {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: #4F6A8C;
+}
+
+.cureConnectHeaderLogo {
+    font-size: 20px;
+    color: #4F6A8C;
+}

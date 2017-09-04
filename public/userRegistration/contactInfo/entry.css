@@ -1,0 +1,107 @@
+.prevButton {
+    position: absolute;
+    left: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.nextButton {
+    position: absolute;
+    right: 10px;
+    top: 45vh;
+    width: 40px;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.emailContactOptionContainer {
+    font-size: 20px;
+    width: 100%;
+    overflow: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.emailContactOption {
+    width: 20%;
+    min-width: 200px;
+    border: solid 1px;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    margin-left: 3%;
+}
+
+.emailHeaderSubscript {
+    font-size: 15px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.mobileContactOptionContainer {
+    width: 100%;
+    overflow: auto;
+    margin-top: 2vh;
+}
+
+.mobileContactOption {
+    width: 15%;
+    font-size: 20px;
+    min-width: 180px;
+    text-align: center;
+    border: solid 1px;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.emailEntryComponent {
+    float: left;
+}
+
+.emailEntryForm {
+    font-size: 20px;
+    width: 30vw;
+    margin-left: 3%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.emailEntryButton {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 20px;
+    border: solid 1px;
+    padding: 1.5px;
+    margin-left: 1vw;
+    width: 250px;
+    text-align: center;
+}
+
+.phoneNumberEntryComponent {
+    float: left;
+}
+
+.phoneNumberEntryField {
+    font-size: 20px;
+    width: 30vw;
+    margin-left: 3%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.phoneNumberEntryButton {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 20px;
+    border: solid 1px;
+    padding: 1.5px;
+    margin-left: 1vw;
+    width: 250px;
+    text-align: center;
+}

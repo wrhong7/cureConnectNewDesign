@@ -20,10 +20,10 @@ function clickAccountType(accountType) {
 
 function pageRedirectionBasedOnUserType(userType) {
 	if (userType == "professional") {
-		window.location.href="/userRegisteration/resume/upload"
+		window.location.href="/userRegistration/contactInfo/entry.html"
 	} else if (userType == "hospitalRecruiter") {
-		window.location.href="/userRegisteration/hospitalRecruiters/basicInfo"
+		window.location.href="/userRegistration/hospitalRecruiters/basicInfo.html"
 	} else if (userType == "independentRecruiter") {
-		window.location.href="/userRegisteration/independentRecruiters/recruitingAgencyInfo"
+		window.location.href="/userRegistration/independentRecruiters/recruitingAgencyInfo.html"
 	}	
 }

@@ -1,17 +1,25 @@
 .prevButton {
     position: absolute;
-    left: 10px;
-    top: 45vh;
-    width: 40px;
+    left: 20px;
+    border: 1px solid;
+    bottom: 30px;
+    width: 60px;
     text-align: center;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .nextButton {
     position: absolute;
-    right: 10px;
-    top: 45vh;
-    width: 40px;
+    right: 20px;
+    border: 1px solid;
+    bottom: 30px;
+    width: 60px;
     text-align: center;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .postJobOptionContainer {
@@ -46,4 +54,16 @@
     margin-left: 10vw;
     display: none;
     overflow-x: scroll;
+    height: 80vh;
+}
+
+tr, td {
+    font-size: 15px;
+    height: 20px;
+}
+
+#contents {
+    margin-top: 1vh;
+    height: 80vw;
+    overflow: scroll;
 }

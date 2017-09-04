@@ -35,23 +35,15 @@ function isAPIAvailable() {
 function handleFileSelect(evt) {
   var files = evt.target.files; // FileList object
   var file = files[0];
-
-  var output = ''
-  output += '<span style="font-weight:bold;">' + escape(file.name) + '</span><br />\n';
-  output += ' - FileType: ' + (file.type || 'n/a') + '<br />\n';
-  output += ' - FileSize: ' + file.size + ' bytes<br />\n';
-  output += ' - LastModified: ' + (file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() : 'n/a') + '<br />\n';
+  //
+  // var output = ''
+  // output += '<span style="font-weight:bold;">' + escape(file.name) + '</span><br />\n';
+  // output += ' - FileType: ' + (file.type || 'n/a') + '<br />\n';
+  // output += ' - FileSize: ' + file.size + ' bytes<br />\n';
+  // output += ' - LastModified: ' + (file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() : 'n/a') + '<br />\n';
 
   // read the file contents
   printTable(file);
-
-  // post the results
-  $('#list').append(
-    "<button class='postJobsButton' onclick='postJobButtonClicked()'>Post Jobs</button>"
-  );
-  $('#list').append(
-    "<button class='uploadDifferentFileButton' onclick='uploadDifferentButtonClicked()'>Upload Different File</button>"
-  );
   $('#list').append(output);
 }
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+
+<!-- Pulling jQuery -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<!-- Pulling Firebase -->
+	<script type="text/javascript" src="/backEndConnection/globalVariables.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script type="text/javascript" src="/backEndConnection/secondaryPagesBackendConnection.js"></script>
+
+	<!-- Pulling font from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"/>
+	<link rel="stylesheet" href="/mainStylesheets/font.css"/>
+
+<!-- Following two are just for the registeration purposes -->
+	<script src="/userRegistration/backendScript/googleRegister.js"></script>
+	<script src="/userRegistration/backendScript/emailRegister.js"></script>
+
+<!-- Following three must be rendered to constantly check the user session. -->
+	<script src="/backEndConnection/userViewRendering.js"></script>
+	<script src="/headerProperties/headerProperties.js"></script>
+
+<!-- Resume Upload Stylesheets -->
+	<link rel="stylesheet" href="/headerProperties/headerProps.css"/>
+	<link rel="stylesheet" href="selection.css"/>
+
+	<script src="selection.js"></script>
+
+</head>
+
+<body>
+
+	<div class="button prevButton"
+	onclick='location.href="/userRegistration/resume/upload.html"'>
+		<</br>Prev
+	</div>
+
+	<div class="button nextButton"
+	onclick='location.href="/userRegistration/contactInfo/entry.html"'>
+		></br>Next
+	</div>
+
+	<div class="headerSection">
+		<div class="cureConnectHeaderLogo">
+			<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
+		</div>
+		<div class="headerLoginSection">
+		</div>
+		<!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
+	</div>
+
+	<div class="container">
+		<div class="descriptionContainer">I am looking for...</div>
+		<div class="desiredJobType">
+			<div class="button desiredJobTypeOption" id="optionFullTime" onclick="selectThisField('optionFullTime')">Full Time</div>
+			<div class="button desiredJobTypeOption" id="optionPartTime" onclick="selectThisField('optionPartTime')">Part Time</div>
+			<div class="button desiredJobTypeOption" id="optionDayShift" onclick="selectThisField('optionDayShift')">Day Shift</div>
+			<div class="button desiredJobTypeOption" id="optionNightShift" onclick="selectThisField('optionNightShift')">Night Shift</div>
+		</div>
+
+		<div class="descriptionContainer">I prefer these work environments.</div>
+		<div class="preferredWorkSettings">
+			<div class="button preferredWorkSettingsOption individuallyOwnedClinics" id="optionIndividuallyOwnedClinics" onclick="selectThisField('optionIndividuallyOwnedClinics')">
+				Individually Owned Clinics<br>
+				<span class="hospitalSizeSubscripts">(1-10 Employees)</span>
+			</div>
+			<div class="button preferredWorkSettingsOption communityClinic" id="optionCommunityClinic" onclick="selectThisField('optionCommunityClinic')">
+				Community<br>Clinics<br>
+				<span class="hospitalSizeSubscripts">(10-50 Employees)</span>
+			</div>
+			<div class="button preferredWorkSettingsOption regionalComplexHospital" id="optionRegionalComplexHospital" onclick="selectThisField('optionRegionalComplexHospital')">
+				Regional Complex Hospitals<br>
+				<span class="hospitalSizeSubscripts">(50-1000 Employees)</span>
+			</div>
+			<div class="button preferredWorkSettingsOption regionalSpecialtyHospital" id="optionRegionalSpecialtyHospital" onclick="selectThisField('optionRegionalSpecialtyHospital')">
+				Regional Specialty Hospitals<br>
+				<span class="hospitalSizeSubscripts">(50-1000 Employees)</span>
+			</div>
+			<div class="button preferredWorkSettingsOption largeHospital" id="optionLargeHospital" onclick="selectThisField('optionLargeHospital')">
+				Large<br>Hospitals<br>
+				<span class="hospitalSizeSubscripts">(1000+ Employees)</span>
+			</div>
+		</div>
+
+		<div class="descriptionContainer">I am okay with these.</div>
+		<div class="tolerableInconveniences">
+			<div class="button tolerableInconvenienceOption" id="optionOnCall" onclick="selectThisField('optionOnCall')">On Call</div>
+			<div class="button tolerableInconvenienceOption" id="optionWeekendDuty" onclick="selectThisField('optionWeekendDuty')">Weekend Duty</div>
+			<div class="button tolerableInconvenienceOption" id="optionMandatoryOvertime" onclick="selectThisField('optionMandatoryOvertime')">Mandatory Overtime</div>
+			<div class="button tolerableInconvenienceOption" id="optionNightDuty" onclick="selectThisField('optionNightDuty')">Night Duty</div>
+			<div class="button tolerableInconvenienceOption" id="optionHighPatientRatio" onclick="selectThisField('optionHighPatientRatio')">High Patient Ratio</div>
+			<div class="button tolerableInconvenienceOption" id="optionTwelveHourWorkday" onclick="selectThisField('optionTwelveHourWorkday')">12 Hour Workday</div>
+			<div class="button tolerableInconvenienceOption" id="optionPrivatePayers" onclick="selectThisField('optionPrivatePayers')">Private Payers</div>
+			<div class="button tolerableInconvenienceOption" id="optionToBeAdded" onclick="selectThisField('optionToBeAdded')">To Be Added</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -81,3 +81,45 @@
     width: 40px;
     text-align: center;
 }
+
+.resumeiFrameContainer {
+
+}
+
+.resumeiFrame {
+    width: 100%;
+    height: 53vh;
+}
+
+iframe {
+    position: relative !important;
+}
+
+.inputFile {
+    display: none;
+}
+
+.resumeContainer {
+    width: 100%;
+    height: 57vh;
+    overflow: hidden;
+}
+
+.uploadResumeButtonContainer {
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 18vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: solid 1px;
+    margin-top: 25vh;
+}
+
+.uploadResumeButton {
+
+}
+
+.csviFrameSizeAdjustment {
+    overflow: hidden;
+}
