@@ -12,3 +12,17 @@ body {
 .searchButton {
 	cursor: pointer;
 }
+
+#professionalFields {
+	width: 200px;
+}
+
+#professionalFields {
+	width: 200px;
+	float: left;
+}
+
+#zipCodeEntry {
+	width: 200px;
+	float: left;
+}

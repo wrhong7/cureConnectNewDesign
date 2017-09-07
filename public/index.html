@@ -43,6 +43,11 @@
 	<!-- Stylesheet Components -->
 		<link rel="stylesheet" href="mainStylesheets/companyDetailsSection.css"/>
 
+		<!--Script for jQuery Autofill-->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+		<script src="/backEndConnection/searchAutoComplete.js"></script>
+
 	</head>
 
 	<body>
@@ -77,10 +82,14 @@
 
 					<div class="searchInputs">
 						<div class="searchFields">
-							<input class="searchPositionType" placeholder="I am a ..."></input>
-							<input class="searchZipCode" placeholder="Enter Your Zipcode"></input>
+							<div class="searchPositionType">
+								<select class="js-example-basic-multiple " id="professionalFields" multiple="multiple"></select>
+							</div>
+							<div class="searchZipCode">
+								<select class="js-example-basic-multiple" id="zipCodeEntry" multiple="multiple"></select>
+							</div>
 							<div class="searchButton">
-								<div 
+								<div
 									class="searchButtonText"
 									onclick='location.href="search/Results.html"'
 								>Search</div>

@@ -1,26 +1,37 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>jQuery File Upload Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>jQuery UI Autocomplete - Multiple values</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <script type="text/javascript">
+
+        var professionalFields = ["doctor", "nurse", "recruiter"]
+
+      $(document).ready(function() {
+        $("#professionalFields").select2();
+        professionalFields.forEach(function(profession) {
+          $("#professionalFields").append(
+            "<option value="+profession+">"+profession+"</option>"
+          )
+        })
+      });
+    </script>
 </head>
 <body>
-<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/vendor/jquery.ui.widget.js"></script>
-<script src="js/jquery.iframe-transport.js"></script>
-<script src="js/jquery.fileupload.js"></script>
-<script>
-  $(function () {
-    $('#fileupload').fileupload({
-      dataType: 'json',
-      done: function (e, data) {
-        $.each(data.result.files, function (index, file) {
-          $('<p/>').text(file.name).appendTo(document.body);
-        });
-      }
-    });
-  });
-</script>
+
+
+
+<select class="js-example-basic-multiple" id="professionalFields" multiple="multiple">
+
+</select>
+
+
 </body>
 </html>

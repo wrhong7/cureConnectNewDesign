@@ -38,6 +38,11 @@
 	display: none;	
 }
 
+.select2-container {
+	width: 100% !important;
+	float: left;
+}
+
 body {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -60,7 +65,7 @@ body {
 
 .searchPositionType {
 	float: left;
-	width: 30vw;
+	width: 40vw;
 	font-size: 30px;
 	min-height: 35px;
 	height: 7vh;
@@ -69,7 +74,7 @@ body {
 
 .searchZipCode {
 	float: left;
-	width: 30vw;
+	width: 20vw;
 	font-size: 30px;
 	min-height: 35px;
 	height: 7vh;

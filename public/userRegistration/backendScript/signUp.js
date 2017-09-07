@@ -20,7 +20,7 @@ function clickAccountType(accountType) {
 
 function pageRedirectionBasedOnUserType(userType) {
 	if (userType == "professional") {
-		window.location.href="/userRegistration/contactInfo/entry.html"
+		window.location.href="/userRegistration/resume/upload.html"
 	} else if (userType == "hospitalRecruiter") {
 		window.location.href="/userRegistration/hospitalRecruiters/basicInfo.html"
 	} else if (userType == "independentRecruiter") {
