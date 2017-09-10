@@ -2,9 +2,9 @@ function goToRegisterationSection() {
 //Warning -- this home URL needs to be changed
 	var homeUrl = 'http://localhost:8080/';	
 	if (document.URL == homeUrl) {
-	    location.href="userRegisteration/signUp.html"
+	    location.href="userRegistration/signUp.html"
 	} else {
-	    location.href="/userRegisteration/signUp.html"
+	    location.href="/userRegistration/signUp.html"
 	}
 }
 

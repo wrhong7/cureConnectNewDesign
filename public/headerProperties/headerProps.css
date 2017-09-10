@@ -1,6 +1,6 @@
 .headerSection  {
     width: auto;
-    min-height: 66px;
+    min-height: 11vh;
     overflow: auto;
     margin-top: 2vw;
     padding-left: 2vw;
@@ -14,21 +14,21 @@
 }
 
 .headerButtons {
-	float: right;
+    float: right;
     min-width: 75px;
     text-align: center;
     margin: 0.5vw;
-    font-size: 1.2rem;
+    font-size: 3vh;
 }
 
 .headerForEmployersButton {
-    font-size: 1rem;
-    border: solid 1px;
+    font-size: 3vh;
+    border: solid 0.2vh;
     text-align: center;
     padding: 0.3vw;
     min-width: 176px;
     margin-left: 0.7vw;
-    border-radius: 10px;
+    border-radius: 1vh;
 }
 
 .headerButtonContainer {
@@ -39,7 +39,8 @@
 .cureConnectHeaderLogo {
     float: left;
     margin-top: 5px;
-    width: 205px;
+    min-width: 230px;
+    font-size: 3.5vh;
 }
 
 .signUpScript {
@@ -49,10 +50,11 @@
     overflow: auto;
     line-height: 1.5;
     padding-top: 2vh;
+    font-size: 4vh;
 }
 
 .signUpSubScript {
-	font-size: 1rem;
+	font-size: 2.5vh;
 }
 
 .signUpSpan {
@@ -74,7 +76,7 @@
     overflow: auto;
     text-align: center;
     float: left;
-    font-size: 1.5rem;
+    font-size: 3.5vh;
 }
 
 .userProfileButton {
@@ -82,7 +84,7 @@
     margin-right: 1vw;
     float: left;
     text-align: right;
-    font-size: 1rem;
+    font-size: 2.5vh;
 }
 
 .userLogOutButton {
@@ -90,5 +92,5 @@
     margin-left: 1vw;
     float: left;
     text-align: left;
-    font-size: 1rem;
+    font-size: 2.5vh;
 }

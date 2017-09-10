@@ -1,9 +1,13 @@
 .nonUserView {
 	display: none;
+	margin-top: 15vh;
 }
 
 .userView {
 	display: none;
+	width: 80vw;
+	margin-top: 30vh;
+	margin-left: 10vw;
 }
 
 .preCompletionView {
@@ -49,66 +53,77 @@ body {
 }
 
 .searchSection {
-	margin-top: 3vh;
-    text-align: center;
-    min-height: 50vh;
-    width: auto;
-    overflow: auto;
-    padding: 0;
-    text-align: center;
-    /* background-size: 100%; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/indexImageSmall.PNG?alt=media&token=e193b10b-27b8-4e5b-9192-b28d148f97de');
+	text-align: center;
+	min-height: 50vh;
+	width: auto;
+	overflow: auto;
+	padding: 0;
+	text-align: center;
+}
+
+.indexPageBackground {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 105vh;
+	margin-top: -10vh;
+	background-color: #E4F5FE;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/backgroundAnimation.png?alt=media&token=5e83c2a8-012c-4809-b665-a8402a1345b8');
 }
 
 .searchPositionType {
 	float: left;
-	width: 40vw;
-	font-size: 30px;
-	min-height: 35px;
-	height: 7vh;
+	width: 30vw;
+	font-size: 5vh;
+	height: 7.5vh;
 	margin-top: 0.5vh;
 }
 
 .searchZipCode {
 	float: left;
-	width: 20vw;
-	font-size: 30px;
-	min-height: 35px;
-	height: 7vh;
+	width: 15vw;
+	font-size: 5vh;
+	height: 8vh;
 	margin-top: 0.5vh;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
 }
 
 .searchInputs {
 	width: auto;
-	color: red;
-	margin-top: 3vw;
+	overflow: auto;
+	color: #2AA6B9;
+	margin-top: 1vw;
 }
 
 .searchButton {
 	text-align: center;
-	border: solid 1px;
-	border-color: red;
+	border: solid 0.2vh;
+	border-color: #2AA6B9;
 	float: left;
 	width: 10vw;
 	padding-top: 3px;
-	min-height: 35px;
-	height: 7.2vh;
+	min-height: 7.5vh;
+	height: 2vh;
 	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
 	margin-left: 0.02vw;
 	font-size: 2.4rem;
+	border-radius: 0.5vh;
 }
 
 .searchButtonText {
 	margin-top: 0.5vh;
-	font-size: 2rem;
+	font-size: 4.5vh;
 }
 
 .searchFields {
-    width: 73vw;
-    margin-left: 12vw;
+	width: 60vw;
+	margin-left: 20vw;
+	height: 8vh;
 }
 
 .scrollDownArrow {
@@ -118,6 +133,7 @@ body {
 	margin-left: 40vw;
 	margin-right: 40vw;
 	text-align: center;
+	font-size: 4vh;
 }
 
 .bufferForSignUpMessage {
@@ -126,19 +142,19 @@ body {
 }
 
 .logoC {
-	font-size: 30px;
+	font-size: 4.5vh;
 }
 
 .keyScript {
-	font-size: 3rem;
-	color: #EF4440;
-	margin-top: 10vh;
+	font-size: 8vh;
+	color: #2AA6B9;
+	margin-top: 2vh;
 }
 
 .subscript {
-    font-size: 1.5rem;
-    margin-top: 1vw;
-    font-weight: 600;
+	font-size: 5vh;
+	margin-top: 1vw;
+	font-weight: 200;
 }
 
 .searchScript {
@@ -151,18 +167,104 @@ body {
 	display: none;
 }
 
+.select2-search__field {
+	color: #2aa6b9;
+	height: 4vh;
+}
 
-@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+.productIntroUpperLevel {
+	text-align: center;
+}
 
-	body {
+.productIntroCompanyName {
+	font-size: 5vh;
+}
 
-	}
+.productIntroPhonetic {
+	font-size: 2.5vh;
+	font-weight: 400;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	color: #878787;
+}
+
+.productIntroDefinition {
+	font-size: 3vh;
+	font-weight: 400;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	color: #878787;
+}
+
+.productIntroLowerLevel {
+	margin-top: 5vh;
+	width: 70vw;
+	margin-left: 5vw;
+	font-size: 4vh;
+}
+
+.productLowerLevelHeader {
+	margin-top: 10vh;
+}
+
+.productLowerLevelDesc {
+	font-size: 3vh;
+	color: #878787;
+	margin-top: 1vh;
+}
+
+.select2-selection--multiple {
+	border: solid 0.2vh #2aa6b9 !important;
+	border-radius: 1vh !important;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+	font-size: 4vh !important;
+}
+
+..select2-container--default .select2-selection--multiple {
+	border-radius: 1vh !important;
+}
+
+.select2-results {
+	font-size: 3.5vh !important;
+}
+.select2-results__option select2-results {
+	font-size: 3.5vh !important;
+}
+
+.select2-results__options {
+	max-height: 30vh !important;
+}
+
+.searchZipcodeInputBox {
+	width: 100%;
+	border: solid 0.2vh;
+	height: 100%;
+	border-radius: 1vh;
+	color: #2aa6b9;
+	font-size: 4vh;
+}
+
+.productIntro {
+	margin-left: 4vh;
+	margin-top: 2vh;
+}
+
+.productIntroHeader {
+}
+
+.productIntroPointHeader {
+	margin-left: 4vh;
+}
+
+.productIntroSubPoints {
 }
 
 /*Here are the configurations for the placeholder design*/
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    font-size: 1.2rem;
+    font-size: 3vh;
     padding-left: 1vw;
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
@@ -170,7 +272,7 @@ body {
 	opacity: 0.6;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    font-size: 1.2rem;
+    font-size: 3vh;
     padding-left: 1vw;
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
@@ -178,7 +280,7 @@ body {
 	opacity: 0.6;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    font-size: 1.2rem;
+    font-size: 3vh;
     padding-left: 1vw;
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
@@ -186,18 +288,24 @@ body {
 	opacity: 0.6;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font-size: 1.2rem;
-    padding-left: 1vw;
+    font-size: 3vh;
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-    font-size: 1.2rem;
-    padding-left: 1vw;
+    font-size: 3vh;
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
+}
+
+input {
+	outline-width: 0;
+}
+
+textarea:focus, input:focus{
+	outline: none;
 }

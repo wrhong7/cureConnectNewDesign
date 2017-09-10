@@ -1,17 +1,19 @@
 .detailComponent {
     float: left;
-    width: 40vw;
+    width: 49vw;
     min-width: 200px;
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    font-size: 4vh;
 }
 
 .companyDetails {
     width: 80vw;
-    height: 30vh;
-    margin-top: 10vh;
+    overflow: auto;
+    margin-top: 20vh;
     margin-bottom: 20vh;
     padding-left: 10vw;
 }
@@ -19,7 +21,7 @@
 .bottomDisclosures {
     width: 100%;
     overflow: auto;
-    background-color: rgba(206, 178, 187, 0.6);
+    background-color: #e4f5fe;
     color: #16436A;
     padding-bottom: 10vh;
 }
@@ -27,7 +29,7 @@
 .bottomDisclosureLogo {
 	font-size: 1rem;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 6vh;
 }
 
 .bottomLogoC {
@@ -60,6 +62,12 @@
 
 .bottomDisclosureColOptions {
 	margin-top: 2vh;
+}
+
+.goToIntroPages {
+    width: 100%;
+    overflow: auto;
+    background-color: #E4F5FE;
 }
 
 @media only screen and (max-width: 961px) {

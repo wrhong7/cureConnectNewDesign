@@ -1,11 +1,12 @@
-var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"]
+var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
+
 
 $(document).ready(function() {
   $("#professionalFields").select2();
   $("#zipCodeEntry").select2();
 
   $("#professionalFields").select2({
-    placeholder: "Enter Keywords and Select as many as possible "
+    placeholder: "Select all relevant positions"
   });
 
   $("#zipCodeEntry").select2({
@@ -18,10 +19,10 @@ $(document).ready(function() {
     )
   })
 
-  professionalFields.forEach(function(profession) {
-    $("#zipCodeEntry").append(
-      "<option value="+profession+">"+profession+"</option>"
-    )
-  })
+  // professionalFields.forEach(function(profession) {
+  //   $("#zipCodeEntry").append(
+  //     "<option value="+profession+">"+profession+"</option>"
+  //   )
+  // })
 
 });

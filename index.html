@@ -37,6 +37,10 @@
 	<!-- Stylesheet Components -->
 		<link rel="stylesheet" href="mainStylesheets/companyDetailsSection.css"/>
 
+		<!--Elastic Serach Components-->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
 	</head>
 
 	<body>
@@ -64,9 +68,10 @@
 
 				<div class="searchInputs">
 					<div class="searchFields">
-						<input class="searchPositionType" placeholder="I am a ..."></input>
-						<input class="searchZipCode" placeholder="Location"></input>
-						<div class="searchButton">Search</div>
+						<select class="js-example-basic-multiple" id="professionalFields" multiple="multiple">
+						</select>
+						<!--<input class="searchZipCode" placeholder="Location"></input>-->
+						<div class="button searchButton">Search</div>
 					</div>	
 				</div>
 			</div>
