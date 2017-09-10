@@ -39,7 +39,7 @@
 .cureConnectHeaderLogo {
     float: left;
     margin-top: 5px;
-    min-width: 230px;
+    min-width: 180px;
     font-size: 3.5vh;
 }
 
@@ -93,4 +93,17 @@
     float: left;
     text-align: left;
     font-size: 2.5vh;
+}
+
+.blogButton {
+    float: left;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.dashboardButton {
+    float: left;
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-left: 1vh;
 }
