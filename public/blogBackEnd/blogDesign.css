@@ -1,0 +1,185 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #16436A;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    cursor: default;
+}
+
+.blogHeader {
+    background-color: #189eb2;
+    color: white;
+    padding: 0;
+    width: 100vw;
+    overflow: auto;
+    height: 10vh;
+}
+
+.blogTitleLeft {
+    font-size: 4vh;
+    margin-top: 3vh;
+    margin-left: 5vh;
+}
+
+.contentContainer {
+    width: 50vw;
+    min-width: 400px;
+    height: 70vh;
+     overflow-y: scroll;
+    border: solid 0.2vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    float: left;
+}
+
+.contentDisplay {
+    font-size: 3vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3vh;
+}
+
+.contactAndTitleColumns {
+    float: left;
+    width: 30vw;
+    margin-top: 10vh;
+    margin-left: 2vw;
+    overflow: auto;
+}
+
+.articleTitle {
+    margin-bottom: 3vh;
+    font-weight: 600;
+    font-size: 4vh;
+}
+
+.articleText {
+    margin-top: 3vh;
+    border-bottom: 0.1vh solid #878787;
+    margin-bottom: 5vh;
+    padding-bottom: 3vh;
+}
+
+.articleDate {
+    font-weight: 400;
+    color: #878787;
+    text-align: right;
+}
+
+.contactColumnContainer {
+    border: solid 0.2vh;
+    width: 99%;
+    height: 20vh;
+}
+
+.indexColumnContainer {
+    border: solid 0.2vh;
+    width: 99%;
+    min-height: 22vh;
+    overflow-y: auto;
+    max-height: 44vh;
+    margin-top: 5vh;
+    font-size: 3vh;
+}
+
+.postTitle {
+    margin-top: 2vh;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.postTitle:hover {
+    text-decoration: underline;
+}
+
+.contactColumnTitle {
+    text-align: center;
+    font-size: 3vh;
+}
+
+.blogSubscriptionEmailEntry {
+    border: solid #189eb2 0.2vh;
+    width: 25vw;
+    height: 5vh;
+    border-radius: 1vh;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.subscribeButton {
+    width: 10vw;
+    cursor: pointer;
+    font-size: 3vh;
+    border: solid 0.2vh;
+    border-radius: 1vh;
+    margin-top: 1.5vh;
+    margin-left: 10vw;
+    text-align: center;
+    background-color: #189eb2;
+    color: white;
+    padding: 0.5vh;
+}
+
+.indexColumnContainerCenter {
+    text-align: center;
+}
+
+
+
+/*Here are the configurations for the placeholder design*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 3vh;
+    padding-left: 1vw;
+    font-family: 'Raleway', sans-serif;
+    color: #16436A;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.6;
+    text-align: center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 3vh;
+    padding-left: 1vw;
+    font-family: 'Raleway', sans-serif;
+    color: #16436A;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.6;
+    text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 3vh;
+    padding-left: 1vw;
+    font-family: 'Raleway', sans-serif;
+    color: #16436A;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.6;
+    text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #16436A;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.6;
+    text-align: center;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+    color: #16436A;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.6;
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

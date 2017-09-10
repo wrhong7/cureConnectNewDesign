@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog:: Cure Connect</title>
+    <title>Cure Connect:: Blog</title>
+
+    <!-- Pulling jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Pulling Firebase and establishing finalbase connection thorugh the backEndConnection, Firebase Connection.js -->
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"/>
+    <link rel="stylesheet" href="blogBackEnd/blogDesign.css"/>
+    <script src="/blogBackEnd/blogBackend.js"></script>
+    <script src="/backEndConnection/globalVariables.js"></script>
+
 </head>
 <body>
+
+    <div class="container">
+
+        <div class="blogHeader">
+            <div class="blogTitleLeft">Cure Connect <i>blog</i></div>
+        </div>
+
+        <div class="contentContainer">
+            <div class="contentDisplay"></div>
+            <div class="contentContainerTriangle"></div>
+        </div>
+
+        <div class="contactAndTitleColumns">
+            <div class="contactColumnContainer">
+                <div class="contactColumnTitle">Subscribe to our blog</div>
+                <input class="blogSubscriptionEmailEntry" placeholder="Enter Email"></input>
+                <div class="subscribeButton" onclick="pushEmailToBackEndDb()">Subscribe</div>
+            </div>
+            <div class="indexColumnContainer">
+                <p class="indexColumnContainerCenter">Topics</p>
+            </div>
+        </div>
+
+    </div>
+
+
 
 </body>
 </html>

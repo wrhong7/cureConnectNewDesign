@@ -5,6 +5,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+div {
+	cursor: default;
+}
+
 .button {
 	cursor: pointer;
 }
