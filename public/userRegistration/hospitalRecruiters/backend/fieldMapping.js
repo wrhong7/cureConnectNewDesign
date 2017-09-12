@@ -58,6 +58,8 @@ function submitMappedData() {
     console.log(keysAfterFilteredOut);
     //
     userDB = firebaseDB.ref('jobsDB/'+job["zipCode"]).push(job);
+    uniqueID = userDB.name();
+    console.log(uniqueID)
   })
 
 }

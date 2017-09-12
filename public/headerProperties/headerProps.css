@@ -5,6 +5,7 @@
     margin-top: 2vw;
     padding-left: 2vw;
     padding-right: 2vw;
+    margin-left: 10vh;
 }
 
 .headerLoginSection {
@@ -15,7 +16,7 @@
 
 .headerButtons {
     float: right;
-    min-width: 75px;
+    min-width: 85px;
     text-align: center;
     margin: 0.5vw;
     font-size: 3vh;
@@ -26,7 +27,7 @@
     border: solid 0.2vh;
     text-align: center;
     padding: 0.3vw;
-    min-width: 176px;
+    min-width: 200px;
     margin-left: 0.7vw;
     border-radius: 1vh;
 }
@@ -72,15 +73,16 @@
 }
 
 .userLoginCredentials {
-    width: 18vw;
+    width: 25vw;
     overflow: auto;
     text-align: center;
     float: left;
     font-size: 3.5vh;
+    margin-top: 1vh;
 }
 
 .userProfileButton {
-    width: 8vw;
+    width: 11.5vw;
     margin-right: 1vw;
     float: left;
     text-align: right;
@@ -88,7 +90,7 @@
 }
 
 .userLogOutButton {
-    width: 8vw;
+    width: 11.5vw;
     margin-left: 1vw;
     float: left;
     text-align: left;
@@ -99,6 +101,8 @@
     float: left;
     font-size: 3vh;
     margin-top: 2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .dashboardButton {

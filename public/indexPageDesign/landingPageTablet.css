@@ -6,6 +6,7 @@
 
 	.headerSection {
 		margin-top: 5vh;
+		margin-left: 10vh;
 	}
 
 	.searchSection {
@@ -44,36 +45,25 @@
 
 	.searchPositionType {
 		float: left;
-		width: 97% !important;
-		min-width: 200px;
-		height: 30px;
-		font-size: 30px;
-		height: 35px;
+		width: 99.5% !important;
 	}
 
 	.searchZipCode {
 		float: left;
-		width: 23.9vw;
-		min-width: 200px;
-		margin-left: 0.1vw;
-		height: 30px;
-		font-size: 30px;
-		height: 35px;
-		width: 97% !important;
-		min-width: 200px;
+		width: 97.5% !important;
+		margin: 1vh 0 0 0 !important;
 	}
 
 	.searchButton {
 		float: left;
-		width: 23.9vw;
-		min-width: 200px;
-		margin-left: 0.1vw;
-		height: 30px;
-		font-size: 30px;
-		height: 35px;
-		width: 99.5% !important;
-		min-width: 200px;
-		margin-bottom: 5vh;
+		width: 99% !important;
+		margin: 1vh 0 0 0 !important;
+		background-color: #2AA6B9;
+		color: white;
+	}
+
+	.nonUserView {
+		margin-top: 7vh !important;
 	}
 
 	.searchScript {
@@ -88,5 +78,11 @@
 	.signUpSubScript {
 		display: none;
 	}
+
+	.indexPageBackground {
+		height: 110vh !important;
+	}
+
+
 
 }

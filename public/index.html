@@ -26,9 +26,6 @@
 	<!-- PullingIndexPageJavascript -->
 		<script type="text/javascript" src="indexPageDesign/landingPageScript.js"></script>
 
-	<!-- Pulling font from Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
 	<!-- Pulling header javascript -->
 		<script type="text/javascript" src="headerProperties/headerProperties.js"></script>
 		<script type="text/javascript" src="backEndConnection/userViewRendering.js"></script>
@@ -50,7 +47,7 @@
 		<!--Script for jQuery Autofill-->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
-		<script src="/backEndConnection/searchAutoComplete.js"></script>
+		<script src="/backEndConnection/searchRelated.js"></script>
 
 	</head>
 
@@ -97,8 +94,8 @@
 							</div>
 							<div class="searchButton">
 								<div
-									class="searchButtonText"
-									onclick='location.href="search/Results.html"'
+									class="searchButtonText button"
+									onclick="searchButtonClicked()"
 								>Search</div>
 							</div>
 						</div>	

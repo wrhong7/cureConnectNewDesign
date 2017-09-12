@@ -97,6 +97,7 @@ body {
 	overflow: auto;
 	color: #2AA6B9;
 	margin-top: 1vw;
+	min-height: 10vh;
 }
 
 .searchButton {
@@ -106,24 +107,25 @@ body {
 	float: left;
 	width: 10vw;
 	padding-top: 3px;
-	min-height: 7.5vh;
+	min-height: 7.3vh;
 	height: 2vh;
 	margin-top: 0.5vh;
 	margin-bottom: 0.5vh;
-	margin-left: 0.02vw;
+	margin-left: 1.5vh;
 	font-size: 2.4rem;
-	border-radius: 0.5vh;
+	border-radius: 1vh;
 }
 
 .searchButtonText {
-	margin-top: 0.5vh;
+	margin-top: 1vh;
 	font-size: 4.5vh;
 }
 
 .searchFields {
-	width: 60vw;
-	margin-left: 20vw;
-	height: 8vh;
+	width: 57vw;
+	margin-left: 21vw;
+	min-height: 12vh;
+	overflow: auto;
 }
 
 .scrollDownArrow {
@@ -216,6 +218,7 @@ body {
 .select2-selection--multiple {
 	border: solid 0.2vh #2aa6b9 !important;
 	border-radius: 1vh !important;
+	height: 8.4vh !important;
 }
 
 .select2-container--default .select2-search--inline .select2-search__field {
@@ -239,16 +242,17 @@ body {
 
 .searchZipcodeInputBox {
 	width: 100%;
-	border: solid 0.2vh;
-	height: 100%;
+	border: solid 0.2vh #2aa6b9;
+	height: 7.5vh;
 	border-radius: 1vh;
 	color: #2aa6b9;
 	font-size: 4vh;
+	padding-left: 1vh;
 }
 
 .productIntro {
-	margin-left: 4vh;
 	margin-top: 2vh;
+	text-align: center;
 }
 
 .productIntroHeader {

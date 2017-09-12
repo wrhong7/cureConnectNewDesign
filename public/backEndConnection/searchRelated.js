@@ -1,5 +1,10 @@
 var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
 
+function searchButtonClicked() {
+  localStorage['searchPosition'] = $("#professionalFields").val();
+  localStorage['zipCode'] = $(".searchZipcodeInputBox").val();
+  location.href = "search/Results.html";
+}
 
 $(document).ready(function() {
   $("#professionalFields").select2();

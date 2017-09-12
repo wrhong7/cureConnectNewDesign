@@ -22,9 +22,9 @@ function addNonUserHeader() {
 	showNonUserDashboard();
 	$(".headerLoginSection").append(	
 		'<div class="headerButtonContainer">'+ 
-			'<div class="headerForEmployersButton" onclick="moveToEmployerSection()">Employer\'s Section</div>'+
-			'<div class="loginButton headerButtons" onclick="moveToLoginPage()">Login</div>' + 
-			'<div class="registerationButton headerButtons" onclick="goToRegisterationSection()">' +
+			'<div class="headerForEmployersButton button" onclick="moveToEmployerSection()">Employer\'s Section</div>'+
+			'<div class="loginButton headerButtons button" onclick="moveToLoginPage()">Login</div>' +
+			'<div class="registerationButton headerButtons button" onclick="goToRegisterationSection()">' +
 				'Sign Up' +
 			'</div>' +
 		'</div>'
@@ -38,8 +38,8 @@ function addUserHeader(userName) {
 		$(".headerLoginSection").append(
 			'<div class="userLoginCredentials">' +
 				'<div class="welcomeAndName">Welcome</div>'+
-				'<div class="userProfileButton">Profile</div>'+
-				'<div class="userLogOutButton" onclick="logOutButtonClicked()">Log Out</div>' +
+				'<div class="userProfileButton button">Profile</div>'+
+				'<div class="userLogOutButton button" onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'
 		);
 	} else {
@@ -48,8 +48,8 @@ function addUserHeader(userName) {
 		$(".headerLoginSection").append(
 			'<div class="userLoginCredentials">' +
 				'Hi '+firstNameOnly+'<br>'+
-				'<div class="userProfileButton">Profile</div>' +
-				'<div class="userLogOutButton" onclick="logOutButtonClicked()">Log Out</div>' +
+				'<div class="userProfileButton button">Profile</div>' +
+				'<div class="userLogOutButton button" onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'
 		);	
 	}
