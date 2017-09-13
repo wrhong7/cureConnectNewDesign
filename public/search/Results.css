@@ -140,3 +140,28 @@ body {
     text-align: center;
     margin-top: 4vh;
 }
+
+.select2-selection--multiple {
+    border: solid 0.2vh #2aa6b9 !important;
+    border-radius: 1vh !important;
+    height: 8.2vh !important;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    font-size: 4vh !important;
+}
+
+..select2-container--default .select2-selection--multiple {
+    border-radius: 1vh !important;
+}
+
+.select2-results {
+    font-size: 3.5vh !important;
+}
+.select2-results__option select2-results {
+    font-size: 3.5vh !important;
+}
+
+.select2-results__options {
+    max-height: 30vh !important;
+}

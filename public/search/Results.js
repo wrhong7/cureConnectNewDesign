@@ -36,6 +36,14 @@ $(document).ready(function() {
     })
   })
 
+  axios.get('https://accesscontrolalloworiginall.herokuapp.com/https://www.zipcodeapi.com/rest/F2OcoqDBV22ksHguZeCcTsWQiTxYNpUssIFR9is4lupNcFibTVoNnlDGebF1Azu3/radius.json/10128/100/km')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
 
   // jobPostingData = firebase.database().ref('jobsDB/zipcodes');
   // jobPostingData.on('value', function(data) {
