@@ -1,9 +1,27 @@
 var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
+var zipCodesFetched = [];
+
+var zipCodeRequestURL;
 
 function fetchSearchResults(searchPosition, zipCode) {
   console.log(searchPosition)
   $("#professionalFields").val(searchPosition);
   $(".searchZipcodeInputBox").val(zipCode);
+  pullAllNeighboringZipCode(zipCode)
+}
+
+function pullAllNeighboringZipCode(zipCode) {
+
+  zipCodeRequestURL = "https://accesscontrolalloworiginall.herokuapp.com/https://www.zipcodeapi.com/rest/"+zipcodeAPIKey+"/radius.json/10128/10/km";
+  console.log(zipCodeRequestURL);
+
+  $.ajax({url: zipCodeRequestURL, success: function(result){
+      result = result["zip_codes"]
+      zipCodeArray = result;
+      //   //sorting zipcodes to fetch it by the closest distance
+      zipCodeArray.sort(function(first,second) {return first["distance"]-second["distance"]})
+  }});
+
 }
 
 $(document).ready(function() {
@@ -19,6 +37,7 @@ $(document).ready(function() {
   neighboringZipcodes = ["10001", "10003", "10128", "10028"]
   jobPostingToBeFetched = [];
 
+  //this is a bug this part needs to be fixed
   fetchSearchResults(localStorage['searchPosition'], localStorage['zipCode']);
 
   firebase.initializeApp(config);
@@ -36,13 +55,7 @@ $(document).ready(function() {
     })
   })
 
-  axios.get('https://accesscontrolalloworiginall.herokuapp.com/https://www.zipcodeapi.com/rest/F2OcoqDBV22ksHguZeCcTsWQiTxYNpUssIFR9is4lupNcFibTVoNnlDGebF1Azu3/radius.json/10128/100/km')
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+
 
 
   // jobPostingData = firebase.database().ref('jobsDB/zipcodes');

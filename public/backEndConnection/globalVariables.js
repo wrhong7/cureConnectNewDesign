@@ -9,6 +9,8 @@ window.config = {
 	messagingSenderId: "784234563595"
 };
 
+zipcodeAPIKey = "F2OcoqDBV22ksHguZeCcTsWQiTxYNpUssIFR9is4lupNcFibTVoNnlDGebF1Azu3"
+
 window.firebaseAuth;
 
 window.provider;
