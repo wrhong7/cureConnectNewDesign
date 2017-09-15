@@ -1,44 +1,36 @@
 var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
 var zipCodesFetched = [];
-
 var zipCodeRequestURL;
 
-function fetchSearchResults(searchPosition, zipCode) {
-  console.log(searchPosition)
-  $("#professionalFields").val(searchPosition);
-  $(".searchZipcodeInputBox").val(zipCode);
-  pullAllNeighboringZipCode(zipCode)
+function fetchSearchResults() {
+  searchPosition = $("#professionalFields").val();
+  searchZipCode = $(".searchZipcodeInputBox").val();
+  console.log(searchPosition);
+  console.log(searchZipCode);
+  pullAllNeighboringZipCode(searchZipCode)
 }
 
 function pullAllNeighboringZipCode(zipCode) {
-
-  zipCodeRequestURL = "https://accesscontrolalloworiginall.herokuapp.com/https://www.zipcodeapi.com/rest/"+zipcodeAPIKey+"/radius.json/10128/10/km";
+  zipCodeRequestURL = "https://accesscontrolalloworiginall.herokuapp.com/https://www.zipcodeapi.com/rest/"+zipcodeAPIKey+"/radius.json/"+zipCode+"/10/km";
   console.log(zipCodeRequestURL);
-
   $.ajax({url: zipCodeRequestURL, success: function(result){
       result = result["zip_codes"]
       zipCodeArray = result;
       //   //sorting zipcodes to fetch it by the closest distance
       zipCodeArray.sort(function(first,second) {return first["distance"]-second["distance"]})
   }});
-
 }
 
 $(document).ready(function() {
-
   $("#professionalFields").select2();
-
   professionalFields.forEach(function(profession) {
     $("#professionalFields").append(
       "<option value="+profession+">"+profession+"</option>"
     )
   })
 
-  neighboringZipcodes = ["10001", "10003", "10128", "10028"]
-  jobPostingToBeFetched = [];
-
   //this is a bug this part needs to be fixed
-  fetchSearchResults(localStorage['searchPosition'], localStorage['zipCode']);
+  fetchSearchResults();
 
   firebase.initializeApp(config);
   firebaseDB = firebase.database();
@@ -54,9 +46,6 @@ $(document).ready(function() {
         })
     })
   })
-
-
-
 
   // jobPostingData = firebase.database().ref('jobsDB/zipcodes');
   // jobPostingData.on('value', function(data) {

@@ -13,14 +13,16 @@
 
 .recruiterInfo {
     width: 40vw;
-    height: 70vh;
+    height: 66vh;
     float: left;
     margin-left: 10vw;
+    border: solid 0.2vh #596D84;
 }
 .hospitalInfo {
     width: 40vw;
-    height: 70vh;
+    height: 66vh;
     float: left;
+    border: solid 0.2vh #596D84;
 }
 
 .linkedInButton {
@@ -34,20 +36,30 @@
 
 .sectionTitle {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
+    width: 80%;
+    /* margin-left: 5%; */
+    background-color: #1B3756;
+    color: #4D8CA1;
+    padding-left: 5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .entryTitle {
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 2.5vh;
+    font-style: italic;
+    font-size: 3.5vh;
+    margin-bottom: 1vh;
 }
 
 .entryField {
-    width: 90%;
-    height: 30px;
+    width: 85%;
+    height: 4vh;
+    font-size: 3.5vh;
     margin-left: 5%;
-    margin-top: 2%;
-    font-size: 1.2rem;
+    padding-left: 2vh;
 }
 
 .prevButton {
@@ -71,4 +83,42 @@
     color: #3CAABC;
     cursor: pointer;
     font-size: 15px;
+}
+
+.progressBar {
+    width: 25vw;
+    overflow: auto;
+    position: absolute;
+    bottom: 6vh;
+    left: 38.5vw;
+}
+
+.backgroundBar {
+    width: 98%;
+    height: 0.3vh;
+    margin-top: 4vh;
+    background-color: #009EB3;
+    z-index: -1;
+    position: absolute;
+}
+
+.circles {
+    z-index: 1
+}
+
+.circle {
+    float: left;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 4vw;
+    margin-right: 3.4vw;
+    background-color: #009EB3;
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 100;
+}
+
+.rightMostCircle {
+    margin-right: 0 !important;
 }
