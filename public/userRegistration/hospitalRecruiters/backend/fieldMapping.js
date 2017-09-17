@@ -5,6 +5,11 @@ var cureConnectJobPostingFields = ["internalRequisitionNumber", "recruitingPosit
 var newlyMappedArray = [];
 var objectArrayToBePushedToFirebase = [];
 
+function closeExplanationModal() {
+  $(".cureConnectMappingExplanations").css("display", "none");
+  $(".cureConnectMappingFieldsCover").css("opacity", "1")
+}
+
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -16,7 +21,10 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
+  var targetDivID = ev.target.id;
   ev.target.appendChild(document.getElementById(data));
+  $("#"+ev.target.id).css("background-color", "#009eb3");
+  $("#"+data).css("color", "white");
 
   cureConnectJobPostingFields.forEach(function(eachField) {
     if ($("#"+eachField).children(".csvTableField").text() != null) {
@@ -58,9 +66,11 @@ function submitMappedData() {
     console.log(keysAfterFilteredOut);
     //
     userDB = firebaseDB.ref('jobsDB/'+job["zipCode"]).push(job);
-    uniqueID = userDB.name();
-    console.log(uniqueID)
+    // uniqueID = userDB.name();
+    // console.log(uniqueID)
   })
+
+  location.href="confirmation.html"
 
 }
 

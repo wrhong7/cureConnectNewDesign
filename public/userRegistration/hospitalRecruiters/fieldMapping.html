@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="/headerProperties/headerProps.css"/>
     <link rel="stylesheet" href="/userRegistration/hospitalRecruiters/stylesheets/fieldMapping.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"/>
-
 </head>
 <body>
 
@@ -47,141 +46,170 @@
             <div class="cureConnectHeaderLogo">
                 <span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
             </div>
-
-            <!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
+            <div class="headerLoginSection">
+            </div> <!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
         </div>
     </div>
 
-    <!--<button onclick="">Post Jobs</button>-->
+    <div class="cureConnectMappingExplanations">
+        <div class="explanationsMainContent">
+            <video controls autoplay>
+                <source src="https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/fieldMappingIllustration.m4v?alt=media&token=0261d64f-a29f-40a4-a487-a70e4b8c585e" type="video/mp4">
+            </video>
+        </div>
+        <div class="closeModalButton button" onclick="closeExplanationModal()">
+            Got it
+        </div>
+    </div>
 
-    <div class="cureConnectColumns">
-        <div class="cureConnectColumn cureConnectColumn1">
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Internal Job Requisition #</div>
-                <div id="internalRequisitionNumber" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Recruiting Position</div>
-                <div id="recruitingPosition" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Expected Schedule</div>
-                <div id="expectedSchedule" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Position Unionized?</div>
-                <div id="union" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Required Board License(s)</div>
-                <div id="reqLicense" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Compensation Lower End</div>
-                <div id="compRangeBottom" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Zip Code</div>
-                <div id="zipCode" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-        </div>
-        <div class="cureConnectColumn cureConnectColumn2">
-            <div class="cureConnectColumnContainer">
-                <div class="recruiterName">Assigned Internal Recruiter</div>
-                <div id="recruiterName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="cureConnectMappingFieldsCover">
+
+        <div class="cureConnectColumns">
+            <div class="cureConnectColumn cureConnectColumn1">
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Internal Job Requisition #</div>
+                    <div id="internalRequisitionNumber" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Recruiting Position</div>
+                    <div id="recruitingPosition" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Expected Schedule</div>
+                    <div id="expectedSchedule" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Position Unionized?</div>
+                    <div id="union" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Required Board License(s)</div>
+                    <div id="reqLicense" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Compensation Lower End</div>
+                    <div id="compRangeBottom" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Zip Code</div>
+                    <div id="zipCode" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
             </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Recruiting Department</div>
-                <div id="recruitingDepartment" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="cureConnectColumn cureConnectColumn2">
+                <div class="cureConnectColumnContainer">
+                    <div class="recruiterName">Assigned Internal Recruiter</div>
+                    <div id="recruiterName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Recruiting Department</div>
+                    <div id="recruitingDepartment" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Hours Per Week</div>
+                    <div id="hoursPerWeek" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Job Contract Type</div>
+                    <div id="contractType" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Board Certified States</div>
+                    <div id="boardCertifiedStates" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Compensation Range Top</div>
+                    <div id="compRangeTop" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Insurance Package Offered</div>
+                    <div id="insuranceAndPension" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
             </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Hours Per Week</div>
-                <div id="hoursPerWeek" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cureConnectColumn cureConnectColumn3">
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Hospital Name</div>
+                    <div id="hospitalName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Job Responsibility</div>
+                    <div id="responsibility" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Call Duty</div>
+                    <div id="callDuty" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Patient Types</div>
+                    <div id="patientTypes" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Min Years of Experience</div>
+                    <div id="minExperience" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Education Credit Offered?</div>
+                    <div id="educationCredit" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">To Be Added</div>
+                    <div id="toBeAdded1" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
             </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Job Contract Type</div>
-                <div id="contractType" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Board Certified States</div>
-                <div id="boardCertifiedStates" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Compensation Range Top</div>
-                <div id="compRangeTop" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Insurance Package Offered</div>
-                <div id="insuranceAndPension" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cureConnectColumn cureConnectColumn4">
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Hospital Address</div>
+                    <div id="hospitalAddress" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Job Shift</div>
+                    <div id="shift" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Weekend Duty</div>
+                    <div id="weekendDuty" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Patient Ratio</div>
+                    <div id="patientRatio" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Req. Academic Degree(s)</div>
+                    <div id="requiredAcademicDegree" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">Vacation and Leave Policy</div>
+                    <div id="vacationPolicy" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="cureConnectColumnContainer">
+                    <div class="cureConnectColumnTitle">To be added</div>
+                    <div id="toBeAdded2" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
             </div>
         </div>
-        <div class="cureConnectColumn cureConnectColumn3">
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Hospital Name</div>
-                <div id="hospitalName" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Job Responsibility</div>
-                <div id="responsibility" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Call Duty</div>
-                <div id="callDuty" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Patient Types</div>
-                <div id="patientTypes" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Min Years of Experience</div>
-                <div id="minExperience" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Education Credit Offered?</div>
-                <div id="educationCredit" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">To Be Added</div>
-                <div id="toBeAdded1" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-        </div>
-        <div class="cureConnectColumn cureConnectColumn4">
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Hospital Address</div>
-                <div id="hospitalAddress" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Job Shift</div>
-                <div id="shift" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-             </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Weekend Duty</div>
-                <div id="weekendDuty" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Patient Ratio</div>
-                <div id="patientRatio" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Req. Academic Degree(s)</div>
-                <div id="requiredAcademicDegree" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">Vacation and Leave Policy</div>
-                <div id="vacationPolicy" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="cureConnectColumnContainer">
-                <div class="cureConnectColumnTitle">To be added</div>
-                <div id="toBeAdded2" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="csvColumns">
+            <div class="csvColumnTitle">Drag CSV Fields to Left Boxes</div>
+            <div class="csvColumnField" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
             </div>
         </div>
     </div>
 
-    <div class="csvColumns">
-        <div class="csvColumnTitle">Drag CSV Fields to Left Boxes</div>
-        <div class="csvColumnField" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="progressBar">
+        <div class="backgroundBar"></div>
+        <div class="circles">
+            <div class="circle progressBarOne">
+                <div class="circleText">1</div>
+            </div>
+            <div class="circle progressBarTwo">
+                <div class="circleText">2</div>
+            </div>
+            <div class="circle progressBarThree">
+                <div class="circleText">3</div>
+            </div>
+            <div class="circle rightMostCircle progressBarFour">
+                <div class="circleText">4</div>
+            </div>
         </div>
     </div>
 

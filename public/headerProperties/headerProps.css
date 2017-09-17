@@ -3,12 +3,10 @@
     min-height: 9vh;
     overflow: auto;
     margin-top: 1.5vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
     /* margin-left: 10vh; */
     margin-bottom: 4vh;
     padding-left: 10vh;
-    padding-right: 10vh;
+    padding-right: 0vh;
     border-bottom: 0.1vh solid #8F9DAC;
 }
 

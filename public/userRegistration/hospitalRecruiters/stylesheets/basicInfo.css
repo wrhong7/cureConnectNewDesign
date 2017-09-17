@@ -1,11 +1,3 @@
-.prevButton {
-    position: absolute;
-    left: 10px;
-    top: 45vh;
-    width: 40px;
-    text-align: center;
-}
-
 .basicInfoContainer {
     width: auto;
     overflow: auto;
@@ -35,7 +27,7 @@
 }
 
 .sectionTitle {
-    font-size: 2rem;
+    font-size: 5vh;
     text-align: left;
     width: 80%;
     /* margin-left: 5%; */
@@ -64,26 +56,37 @@
 
 .prevButton {
     position: absolute;
-    left: 30px;
-    width: 80px;
+    left: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
     text-align: center;
-    bottom: 20px;
+    bottom: 6vh;
     border: solid 1px #3CAABC;
     color: #3CAABC;
     cursor: pointer;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .nextButton {
     position: absolute;
-    right: 30px;
-    width: 80px;
+    right: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
     text-align: center;
-    bottom: 20px;
+    bottom: 6vh;
     border: solid 1px #3CAABC;
     color: #3CAABC;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
+
+/*PROGRESS BAR*/
 
 .progressBar {
     width: 25vw;
@@ -108,17 +111,27 @@
 
 .circle {
     float: left;
-    width: 8vh;
-    height: 8vh;
+    width: 7.6vh;
+    height: 7.6vh;
     border-radius: 4vw;
     margin-right: 3.4vw;
-    background-color: #009EB3;
-    color: white;
+    border: solid 0.2vh #009EB3;
+    color: #009EB3;
+    background-color: white;
     text-align: center;
     font-size: 4vh;
     font-weight: 100;
 }
 
+.progressBarOne {
+    background-color: #009EB3 !important;
+    color: white !important;
+}
+
 .rightMostCircle {
     margin-right: 0 !important;
+}
+
+.circleText {
+    margin-top: 1.2vh;
 }
