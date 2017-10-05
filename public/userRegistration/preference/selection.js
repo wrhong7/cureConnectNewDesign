@@ -21,10 +21,10 @@ var selectedFields = {
 function selectThisField(id) {
   console.log(id)
   if (selectedFields[id] == true){
-    $("#"+id).css("background-color", "red");
+    $("#"+id).css("background-color", "white");
     selectedFields[id] = false;
   } else {
-    $("#"+id).css("background-color", "green");
+    $("#"+id).css("background-color", "#009EB3");
     selectedFields[id] = true;
   }
 

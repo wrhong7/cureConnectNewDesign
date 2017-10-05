@@ -65,7 +65,7 @@ body {
 	position: absolute;
 	z-index: -1;
 	width: 100%;
-	height: 105vh;
+	height: 110vh;
 	margin-top: -10vh;
 	background-color: #E4F5FE;
 	background-position: center;
@@ -103,6 +103,8 @@ body {
 .searchButton {
 	text-align: center;
 	border: solid 0.2vh;
+	background-color: #2AA6B9;
+	color: white;
 	border-color: #2AA6B9;
 	float: left;
 	width: 10vw;
@@ -218,14 +220,13 @@ body {
 .select2-selection--multiple {
 	border: solid 0.2vh #2aa6b9 !important;
 	border-radius: 1vh !important;
-	height: 8.3vh !important;
 }
 
 .select2-container--default .select2-search--inline .select2-search__field {
 	font-size: 4vh !important;
 }
 
-..select2-container--default .select2-selection--multiple {
+.select2-container--default .select2-selection--multiple {
 	border-radius: 1vh !important;
 }
 
@@ -243,11 +244,15 @@ body {
 .searchZipcodeInputBox {
 	width: 100%;
 	border: solid 0.2vh #2aa6b9;
-	height: 7.5vh;
+	height: 8vh;
 	border-radius: 1vh;
 	color: #2aa6b9;
 	font-size: 4vh;
 	padding-left: 1vh;
+}
+
+.select2-selection--multiple {
+	width: 100%;
 }
 
 .productIntro {
@@ -312,4 +317,15 @@ input {
 
 textarea:focus, input:focus{
 	outline: none;
+}
+
+.howItWorks {
+	display: none;
+	margin-top: 2vh;
+	font-size: 3vh;
+	margin-left: 2vh;
+}
+
+.mobileMenuButton {
+	display: none;
 }

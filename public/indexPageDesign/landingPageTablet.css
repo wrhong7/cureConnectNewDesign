@@ -6,11 +6,10 @@
 
 	.headerSection {
 		margin-top: 5vh;
-		margin-left: 10vh;
 	}
 
 	.searchSection {
-		margin-top: 5vh !important;
+		margin-top: 5vh;
 		padding-bottom: 5vh;
 	}
 
@@ -81,6 +80,7 @@
 
 	.indexPageBackground {
 		height: 110vh !important;
+
 	}
 
 

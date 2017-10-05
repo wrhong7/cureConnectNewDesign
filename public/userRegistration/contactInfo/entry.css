@@ -1,107 +1,212 @@
 .prevButton {
     position: absolute;
-    left: 10px;
-    top: 45vh;
-    width: 40px;
+    left: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
     text-align: center;
+    bottom: 6vh;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .nextButton {
     position: absolute;
-    right: 10px;
-    top: 45vh;
-    width: 40px;
+    right: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
     text-align: center;
+    bottom: 6vh;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-.container {
-    width: 95%;
-    margin-left: 2.5%;
+.candidateContactBox {
+    width: 80vw;
+    margin-left: 10vw;
 }
 
-.emailContactOptionContainer {
-    font-size: 20px;
+.emailContact {
+
+}
+
+
+
+.contactHeader {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 6vh;
+}
+
+.emailInputFieldContainer {
     width: 100%;
+    min-height: 6vh;
     overflow: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-.emailContactOption {
-    width: 20%;
-    min-width: 200px;
-    border: solid 1px;
-    padding: 5px;
-    text-align: center;
-    float: left;
-    margin-left: 3%;
-}
-
-.emailHeaderSubscript {
-    font-size: 15px;
     margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-left: 1vh;
 }
 
-.mobileContactOptionContainer {
+.emailConfirmation {
+    float: left;
+    height: 6vh;
+    width: 50vw;
+    min-width: 250px;
+    font-size: 4vh;
+    text-align: center;
+}
+
+.changeEmailAddressButton {
+    float: left;
+    border: solid 0.2vh;
+    height: 6.1vh;
+    width: 29vw;
+    text-align: center;
+    padding-top: 1vh;
+    background-color: #16436A;
+    color: white;
+    margin-top: -0.3vh;
+}
+
+.contactPreferenceSelection {
+    float: left;
+    text-align: center;
+    width: 19.6vw;
+    border: solid 0.2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.emailEntryCover {
     width: 100%;
     overflow: auto;
+}
+.emailOptionSection {
+    width: 100%;
+    overflow: auto;
+    margin-top: 3vh;
+}
+
+.mobileContact {
     margin-top: 2vh;
 }
 
-.mobileContactOption {
-    width: 15%;
-    font-size: 20px;
-    min-width: 180px;
-    text-align: center;
-    border: solid 1px;
+.phoneConfirmation {
     float: left;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
-.emailEntryComponent {
-    float: left;
-}
-
-.emailEntryForm {
-    font-size: 20px;
-    width: 30vw;
-    margin-left: 3%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-.emailEntryButton {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    font-size: 20px;
-    border: solid 1px;
-    padding: 1.5px;
-    margin-left: 1vw;
-    width: 250px;
+    height: 6vh;
+    width: 50vw;
+    min-width: 250px;
+    font-size: 4vh;
     text-align: center;
 }
 
-.phoneNumberEntryComponent {
+.enterMobilePhoneButton {
     float: left;
-}
-
-.phoneNumberEntryField {
-    font-size: 20px;
-    width: 30vw;
-    margin-left: 3%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-.phoneNumberEntryButton {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    font-size: 20px;
-    border: solid 1px;
-    padding: 1.5px;
-    margin-left: 1vw;
-    width: 250px;
+    border: solid 0.2vh;
+    height: 6.1vh;
+    width: 29vw;
     text-align: center;
+    padding-top: 1vh;
+    background-color: #16436A;
+    color: white;
+    margin-top: -0.3vh;
+}
+
+.submitCodeButton {
+    float: left;
+    width: 14.5vw;
+    text-align: center;
+    border: solid 0.2vh;
+    padding-top: 1vh;
+    height: 6.1vh;
+    margin-top: -0.3vh;
+    display: none;
+    background-color: #16436A;
+    color: white;
+
+}
+
+.sendCodeButton {
+    float: left;
+    width: 14.5vw;
+    text-align: center;
+    border: solid 0.2vh;
+    padding-top: 1vh;
+    height: 6.1vh;
+    margin-top: -0.3vh;
+    display: none;
+    background-color: #16436A;
+    color: white;
+}
+
+/*PROGRESS BAR*/
+
+.progressBar {
+    width: 25vw;
+    overflow: auto;
+    position: absolute;
+    bottom: 1vh;
+    left: 38.5vw;
+}
+
+.backgroundBar {
+    width: 98%;
+    height: 0.3vh;
+    margin-top: 4vh;
+    background-color: #009EB3;
+    z-index: -1;
+    position: absolute;
+}
+
+.circles {
+    z-index: 1
+}
+
+.circle {
+    float: left;
+    width: 7.6vh;
+    height: 7.6vh;
+    border-radius: 4vw;
+    margin-right: 3.4vw;
+    border: solid 0.2vh #009EB3;
+    color: #009EB3;
+    background-color: white;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 100;
+}
+
+.progressBarOne {
+    background-color: #009EB3 !important;
+    color: white !important;
+}
+
+.rightMostCircle {
+    margin-right: 0 !important;
+}
+
+.circleText {
+    margin-top: 1.2vh;
+}
+
+.progressBarTwo {
+    color: white !important;
+    background-color: #009EB3 !important;
+}
+
+.progressBarThree {
+    color: white !important;
+    background-color: #009EB3 !important;
+}
+
+.progressBarFour {
+    color: white !important;
+    background-color: #009EB3 !important;
 }

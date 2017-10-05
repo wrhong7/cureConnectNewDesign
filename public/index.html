@@ -16,6 +16,16 @@
 		<link rel="stylesheet" href="indexPageDesign/landingPageTablet.css"/>
 		<link rel="stylesheet" href="indexPageDesign/landingPageWeb.css"/>
 
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107546613-1"></script>
+		<script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-107546613-1');
+		</script>
+
 	<!-- Pulling jQuery -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -35,6 +45,9 @@
 
 	<!-- Pulling Login Logout Sessions -->
 		<script type="text/javascript" src="userLogInOut/out.js"></script>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 	<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"/>
@@ -59,10 +72,12 @@
 
 				<div class="headerSection">
 					<div class="cureConnectHeaderLogo">
+						<div class="mobileMenuButton"><i class="fa fa-bars" aria-hidden="true"></i></div>
 						<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
 					</div>
 					<div class="blogButton button" onclick='location.href="/blog.html"'>blog</div>
 					<div class="dashboardButton button">dashboard</div>
+					<div class="howItWorks button">how it works?</div>
 					<div class="headerLoginSection">
 					</div>
 					<!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->

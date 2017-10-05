@@ -1,31 +1,18 @@
-.prevButton {
-    position: absolute;
-    left: 10px;
-    top: 45vh;
-    width: 40px;
-    text-align: center;
-}
-
-.nextButton {
-    position: absolute;
-    right: 10px;
-    top: 45vh;
-    width: 40px;
-    text-align: center;
-}
-
 .container {
     width: 90vw;
-    height: 80vh;
-    margin-left: 5vw;
+    height: 67vh;
+    margin-left: 4vw;
 }
 
 .descriptionContainer {
-    font-size: 30px;
+    font-size: 5vh;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 3vh;
 }
 
 .desiredJobType {
-    width: 100%;
+    width: 90vw;
     overflow: auto;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -33,17 +20,16 @@
 
 .desiredJobTypeOption {
     float: left;
-    font-size: 30px;
-    width: 20%;
+    font-size: 4vh;
+    width: 23%;
     min-width: 150px;
     border: solid 1px;
     text-align: center;
     padding: 10px;
-    margin-right: 3%;
 }
 
 .preferredWorkSettings {
-    width: 100%;
+    width: 90vw;
     overflow: auto;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -51,35 +37,114 @@
 
 .preferredWorkSettingsOption {
     float: left;
-    font-size: 20px;
-    width: 15%;
+    font-size: 3vh;
+    width: 18%;
     min-width: 150px;
     border: solid 1px;
     text-align: center;
     padding: 10px;
-    margin-right: 3%;
-    height: 70px;
+    height: 11vh;
 }
 
 .hospitalSizeSubscripts {
-    font-size: 15px;
+    font-size: 2.5vh;
 }
 
 .tolerableInconveniences {
-    width: 100%;
+    width: 90vw;
     overflow: auto;
 }
 
 .tolerableInconvenienceOption {
     float: left;
-    font-size: 20px;
+    font-size: 3vh;
     border: solid 1px;
     padding: 10px;
-    width: 15%;
-    height: 25px;
-    min-width: 170px;
-    margin-right: 3%;
+    width: 9.5vw;
+    height: 7vh;
     text-align: center;
     margin-top: 2vh;
     margin-bottom: 2vh;
+}
+
+/*PROGRESS BAR*/
+
+.progressBar {
+    width: 25vw;
+    overflow: auto;
+    position: absolute;
+    bottom: 1vh;
+    left: 38.5vw;
+}
+
+.backgroundBar {
+    width: 98%;
+    height: 0.3vh;
+    margin-top: 4vh;
+    background-color: #009EB3;
+    z-index: -1;
+    position: absolute;
+}
+
+.circles {
+    z-index: 1
+}
+
+.circle {
+    float: left;
+    width: 7.6vh;
+    height: 7.6vh;
+    border-radius: 4vw;
+    margin-right: 3.4vw;
+    border: solid 0.2vh #009EB3;
+    color: #009EB3;
+    background-color: white;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 100;
+}
+
+.progressBarOne {
+    background-color: #009EB3 !important;
+    color: white !important;
+}
+
+.rightMostCircle {
+    margin-right: 0 !important;
+}
+
+.circleText {
+    margin-top: 1.2vh;
+}
+
+.prevButton {
+    position: absolute;
+    left: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
+    text-align: center;
+    bottom: 6vh;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.nextButton {
+    position: absolute;
+    right: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
+    text-align: center;
+    bottom: 6vh;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }

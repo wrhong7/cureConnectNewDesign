@@ -1,15 +1,16 @@
 .leftColumn {
-	float: left;
-	width: 20vw;
-	height: 60vh;
-	margin-left: 8vw;
-	margin-right: 0.5vw;
-	border: solid 1px;
+    float: left;
+    width: 15vw;
+    height: 60vh;
+    margin-left: 8vw;
+    margin-right: 0.5vw;
+    /* border: solid 1px; */
+    background-color: #1B3756;
 }
 
 .middleColumn {
 	float: left;
-	width: 29vw;
+	width: 32vw;
 	height: 60vh;
 	margin-right: 0.5vw;
 	border: solid 1px;
@@ -17,69 +18,17 @@
 
 .rightColumn {
 	float: left;
-	width: 29vw;
+	width: 32vw;
 	height: 60vh;
 	margin-right: 8vw;
 	border: solid 1px;
 }
 
 .entryField {
-	width: 99%;
-    margin-top: 1vh;
-    height: 30px;
-}
-
-.circle {
-    float: left;
-    font-size: 30px;
-    border: solid 1px;
-    padding: 3px;
-    border-radius: 100%;
-    margin-right: 9vw;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    z-index: 1;
-    background-color: red;
-}
-
-.progressBarLine {
-    width: 77.5%;
-    height: 5px;
-    background-color: blue;
-    margin-top: 2.9vh;
-    z-index: -1;
-}
-
-.registerationProgressBar {
-	width: 50vw;
-    overflow: auto;
-    margin-left: 30vw;
-    padding-top: 6vh;
-}
-
-.circle1 {
-
-}
-
-.circle2 {
-
-}
-
-.circle3 {
-
-}
-
-.circle4 {
-
-}
-
-.nextButton {
-    position: absolute;
-    right: 10px;
-    top: 45vh;
-    width: 40px;
-    text-align: center;
+    font-size: 4vh;
+    margin-top: 1.5vh;
+    padding-left: 2vh;
+    width: 29vw;
 }
 
 .resumeiFrameContainer {
@@ -109,11 +58,14 @@ iframe {
     text-align: center;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    width: 18vw;
+    width: 13vw;
+    height: 4vh;
+    font-size: 3vh;
     margin-left: 1vw;
     margin-right: 1vw;
     border: solid 1px;
     margin-top: 25vh;
+    color: #009EB3;
 }
 
 .uploadResumeButton {
@@ -122,4 +74,135 @@ iframe {
 
 .csviFrameSizeAdjustment {
     overflow: hidden;
+}
+
+.nameTitle {
+    font-size: 4vh;
+    font-style: italic;
+}
+
+.select2-container {
+    width: 30vw !important;
+    height: 5vh !important;
+    font-size: 4vh;
+}
+
+.select2-selection--multiple {
+    height: 5vh !important;
+}
+
+.select2-search__field {
+    height: 4vh !important;
+    font-size: 4vh !important;
+    padding-left: 1.5vh !important;
+    margin-top: -1vh !important;
+}
+
+.select2-container--open {
+    margin-left: 0vh !important;
+}
+
+.medicalProfessionCover {
+    width: 20vw;
+    margin-left: 3vh;
+    font-size: 4vh;
+    margin-top: 2vh;
+    height: 12vh;
+}
+
+.select2-results__options {
+    max-height: 20vh !important;
+    overflow-y: auto;
+}
+
+.noMargin {
+    margin-left: 0 !important;
+}
+
+.searchPositionType {
+    margin-top: 1.2vh;
+}
+
+.select2-selection__choice {
+    height: 4.2vh !important;
+    margin-top: 0.3vh !important;
+}
+
+.select2-selection--multiple {
+    border: #827775 0.1vh solid !important;
+    border-radius: 0px !important;
+}
+
+.select2-selection__rendered {
+    height: 5vh !important;
+}
+
+.select2-search--inline {
+    height: 5vh !important;
+}
+
+/*PROGRESS BAR*/
+
+.progressBar {
+    width: 25vw;
+    overflow: auto;
+    position: absolute;
+    bottom: 1vh;
+    left: 38.5vw;
+}
+
+.backgroundBar {
+    width: 98%;
+    height: 0.3vh;
+    margin-top: 4vh;
+    background-color: #009EB3;
+    z-index: -1;
+    position: absolute;
+}
+
+.circles {
+    z-index: 1
+}
+
+.circle {
+    float: left;
+    width: 7.6vh;
+    height: 7.6vh;
+    border-radius: 4vw;
+    margin-right: 3.4vw;
+    border: solid 0.2vh #009EB3;
+    color: #009EB3;
+    background-color: white;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 100;
+}
+
+.progressBarOne {
+    background-color: #009EB3 !important;
+    color: white !important;
+}
+
+.rightMostCircle {
+    margin-right: 0 !important;
+}
+
+.circleText {
+    margin-top: 1.2vh;
+}
+
+.nextButton {
+    position: absolute;
+    right: 4vw;
+    font-size: 4vh;
+    width: 8vw;
+    height: 4vh;
+    text-align: center;
+    bottom: 6vh;
+    border: solid 1px #3CAABC;
+    color: #3CAABC;
+    cursor: pointer;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }

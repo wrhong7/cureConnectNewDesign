@@ -44,3 +44,80 @@ function convertToBase64() {
   }
 }
 
+var medicalProfession = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
+var yearsOfExperience = ["1-2 Years", "3-5 Years", "5-7 Years", "7+ Years"];
+var currentEmployerLocation = ["Dallas Metropolitan Area", "New York Metropolitan Area"];
+var certifiedLicenses = ["RN Nursing License", "APN Acute Pain Nurse", "APRN Advanced Nurse Practitioner"];
+var certifiedStates = ["NC North Carolina", "SC South Carolina", "TX Texas"];
+var languages = ["Russian", "Korean", "Polish", "Spanish", "French"];
+var workAuthorization = ["US Citizen or Permanent Resident", "No Sponsorship Required", "Sponsorship Required"];
+
+$(document).ready(function() {
+  $("#medicalProfession").select2();
+  $("#medicalProfession").select2({
+    placeholder: "Select all relevant positions"
+  });
+
+  $("#yearsOfExperience").select2();
+  $("#yearsOfExperience").select2({
+    placeholder: "Years of Experience"
+  });
+
+  $("#certifiedLicenses").select2();
+  $("#certifiedLicenses").select2({
+    placeholder: "i.e. RN Nursing License"
+  });
+
+  $("#certifiedStates").select2();
+  $("#certifiedStates").select2({
+    placeholder: "i.e. NC North Carolina"
+  });
+
+  $("#languages").select2();
+  $("#languages").select2({
+    placeholder: "i.e. Korean"
+  });
+
+  $("#workAuthorization").select2();
+  $("#workAuthorization").select2({
+    placeholder: "i.e. US Citizen"
+  });
+
+  medicalProfession.forEach(function(profession) {
+    $("#medicalProfession").append(
+      "<option value="+profession+">"+profession+"</option>"
+    )
+  })
+
+  yearsOfExperience.forEach(function(profession) {
+    $("#yearsOfExperience").append(
+      "<option value="+profession+">"+profession+"</option>"
+    )
+  })
+
+  certifiedLicenses.forEach(function(profession) {
+    $("#certifiedLicenses").append(
+      "<option value="+profession+">"+profession+"</option>"
+    )
+  })
+
+  certifiedStates.forEach(function(profession) {
+    $("#certifiedStates").append(
+      "<option value="+profession+">"+profession+"</option>"
+    )
+  })
+
+  languages.forEach(function(profession) {
+    $("#languages").append(
+      "<option value="+profession+">"+profession+"</option>"
+    )
+  })
+
+  workAuthorization.forEach(function(profession) {
+    $("#workAuthorization").append(
+      "<option value="+profession+">"+profession+"</option>"
+    )
+  })
+
+});
+

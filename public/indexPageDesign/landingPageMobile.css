@@ -8,8 +8,16 @@
 
 	}
 
+	.mainContainer {
+		width: 102vw;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
 	.headerSection {
-		min-height: 155px !important;
+		min-height: 7vh !important;
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 
 	.searchScript {
@@ -20,22 +28,41 @@
 		display: inline-block !important;
 	}
 
+	.indexPageBackground {
+		width: 102vw !important;
+		margin-top: -5vh !important;
+		background-size: cover !important;
+		background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobileRendering.PNG?alt=media&token=c2404a87-2994-4ee3-8b85-1a5ec77cfd6d') !important;
+	}
+
+	.headerLoginSection {
+		display: none;
+	}
+
+	.blogButton {
+		display: none;
+	}
+
+	.dashboardButton {
+		display: none !important;
+	}
+
 	.cureConnectHeaderLogo {
 		float: left !important;
 	    margin-top: 5px !important;
 	    width: 85vw !important;
 	    text-align: center !important;
 	    margin-left: 5vw !important;
-	    font-size: 60px !important;
+	    font-size: 6vmin !important;
 	}
 
 	.logoC {
-		font-size: 80px !important;
+		font-size: 8vmin !important;
 	}
 
 	.searchButtonText {
-		margin-top: 0vh !important;
-		font-size: 4rem !important;
+		margin-top: 1vh !important;
+		font-size: 4vh!important;
 	}
 
 	.headerLoginSection {
@@ -65,34 +92,33 @@
 	}
 
 	.searchSection {
+		margin-top: 0 !important;
 		width: 100% !important;
 		height: 60vh !important;
 	    min-height: 940px !important;
-		background-size: cover !important;
-		background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobilePortraitImage.png?alt=media&token=64a58ce8-30eb-49a9-883d-03a727572de5') !important;
 	}
 
 	.keyScript {
-		font-size: 6rem !important;
-	    color: #EF4440 !important;
-	    margin-top: 5vh !important;
-	    width: 80vw !important;
+		font-size: 8vw !important;
+		color: #59BACA !important;
+		margin-top: 5vh !important;
+		/*margin-left: 10vw;*/
+		width: 100vw !important;
+		font-weight: 800;
 	}
 
-	.subScript {
-		font-size: 3rem !important;
-		margin-top: 1vw !important;
-		font-weight: 600 !important;
-		width: 50vw !important;
-		margin-left: 25vw !important;
-		margin-top: 5vh !important;
+	.subscript {
+		font-size: 2.5vh !important;
+		margin-top: 1vw;
+		font-weight: 400;
+		font-style: italic;
 	}
 
 	.searchPositionType {
 		float: left !important;
 		width: 90vw !important;
-		min-height: 75px !important;
-	    height: 5vh !important;
+		min-height: 12vw !important;
+	    height: 12vw !important;
 		margin-right: 0.1vw !important;
 		font-size: 30px !important;
 	}
@@ -100,31 +126,41 @@
 	.searchZipCode {
 		float: left !important;
 		width: 90vw !important;
-		min-height: 75px !important;
-	    height: 5vh !important;
+		min-height: 12vw !important;
+	    height: 12vw !important;
 		min-width: 200px !important;
 		margin-left: 0.1vw !important;
 		font-size: 30px !important;
 	}
 
+	.searchZipcodeInputBox {
+		width: 99% !important;
+		border: solid 0.2vh #2aa6b9;
+		height: 6vh !important;
+		border-radius: 1vh;
+		color: #2aa6b9;
+		font-size: 4vh;
+		padding-left: 1vh;
+	}
+
 	.searchButton {
 		text-align: center !important;
 		border: solid 0.2vw !important;
-		border-color: red !important;
+		/*border-color: red !important;*/
 		width: 89.5vw !important;
 		min-width: 100px !important;
 		margin-left: 0.1vw !important;
 		float: left !important;
-		font-size: 3rem !important;
-		min-height: 75px !important;
-	    height: 5vh !important;
+		font-size: 2vh !important;
+		min-height: 12vw !important;
+	    height: 12vw !important;
 	}
 
 	.searchFields {
 		min-height: 160px !important;
 		width: 90vw !important;
-		margin-left: 5vw !important;
-		overflow: auto !important;
+		margin-left: 6vw !important;
+		overflow: hidden !important;
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -196,6 +232,60 @@
 
 	.select2-selection--multiple {
 		min-height: 75px !important;
+	}
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		font-size: 3vh !important;
+		padding-left: 1vw;
+		font-family: 'Raleway', sans-serif;
+		color: #16436A !important;
+		-webkit-font-smoothing: antialiased;
+		opacity: 0.6;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		font-size: 3vh;
+		padding-left: 1vw;
+		font-family: 'Raleway', sans-serif;
+		color: #16436A !important;
+		-webkit-font-smoothing: antialiased;
+		opacity: 0.6;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		font-size: 3vh;
+		padding-left: 1vw;
+		font-family: 'Raleway', sans-serif;
+		color: #16436A !important;
+		-webkit-font-smoothing: antialiased;
+		opacity: 0.6;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		font-size: 3vh;
+		font-family: 'Raleway', sans-serif;
+		color: #16436A !important;
+		-webkit-font-smoothing: antialiased;
+		opacity: 0.6;
+	}
+	::-ms-input-placeholder { /* Microsoft Edge */
+		font-size: 3vh;
+		font-family: 'Raleway', sans-serif;
+		color: #16436A !important;
+		-webkit-font-smoothing: antialiased;
+		opacity: 0.6;
+	}
+
+	.mobileMenuButton {
+		display: inline-block !important;
+		float: left;
+		width: 10vw;
+		margin-top: 1vh;
+	}
+
+	.howItWorks {
+		display: none !important;
+		margin-left: 0;
+		margin-top: 0.5vh;
+		margin-bottom: 1vh;
+		text-align: center;
 	}
 
 }

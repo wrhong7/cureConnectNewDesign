@@ -24,13 +24,18 @@
 	<link rel="stylesheet" href="/headerProperties/headerProps.css"/>
 	<link rel="stylesheet" href="upload.css"/>
 
+	<!--Script for jQuery Autofill-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<script src="/backEndConnection/searchRelated.js"></script>
+
 </head>
 
 <body>
 
 	<div class="button nextButton"
-	onclick='location.href="/userRegistration/preference/selection.html"'>
-		></br>Next
+		 onclick='location.href="/userRegistration/preference/selection.html"'>
+		Next
 	</div>
 
 	<div class="container">
@@ -56,68 +61,98 @@
 				<!--<output id="list"></output>-->
 			</div>
 			<div class="middleColumn">
-				<div class="nameTitle">
-					Name
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Name
+					</div>
+					<input class="candidateName entryField" />
 				</div>
-				<input class="nameEntry entryField" placeholder="Name" />
-				<div class="nameTitle">
-					Zip Code
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Zip Code
+					</div>
+					<input class="zipcodeEntry entryField" placeholder="Zip Code" />
 				</div>
-				<input class="zipcodeEntry entryField" placeholder="Zip Code" />
-				<div class="nameTitle">
-					Medical Profession
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Medical Profession
+					</div>
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="medicalProfession" multiple="multiple"></select>
+					</div>
 				</div>
-				<input 
-					class="positionEntry entryField"
-					placeholder="MedicalProfession"
-				/>
-				<div class="nameTitle">
-					Practicing Since
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Years of Experience
+					</div>
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="yearsOfExperience" multiple="multiple"></select>
+					</div>
 				</div>
-				<input
-					class="practicingSince entryField"
-					placeholder="Practicing Since"
-				/>
 			</div>
 			<div class="rightColumn">
-				<div class="nameTitle">
-					Certified Licenses
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Certified Licenses
+					</div>
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="certifiedLicenses" multiple="multiple"></select>
+					</div>
 				</div>
-				<input 
-					class="certifiedLicenses entryField"
-					placeholder="Certified Licenses"
-				/>
-				<div class="nameTitle">
-					Certified States 
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Certified States
+					</div>
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="certifiedStates" multiple="multiple"></select>
+					</div>
 				</div>
-				<input 
-					class="certifiedStates entryField"
-					placeholder="Certified States"
-				/>
-				<div class="nameTitle">
-					Languages
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Languages
+					</div>
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="languages" multiple="multiple"></select>
+					</div>
 				</div>
-				<input 
-					class="languages entryField"
-					placeholder="Languages"
-				/>
-				<div class="nameTitle">
-					Work Authorization
+
+				<div class="medicalProfessionCover">
+					<div class="nameTitle">
+						Work Authorization
+					</div>
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="workAuthorization" multiple="multiple"></select>
+					</div>
 				</div>
-				<input 
-					class="workAuthorization entryField"
-					placeholder="Work Authorization"
-				/>
+
 			</div>
 		</div>
 
-		<div class="registerationProgressBar">
-			<div class="circle1 circle">1</div>
-			<div class="circle2 circle">2</div>
-			<div class="circle3 circle">3</div>
-			<div class="circle4 circle">4</div>
-			<div class="progressBarLine"></div>
+		<div class="progressBar">
+			<div class="backgroundBar"></div>
+			<div class="circles">
+				<div class="circle progressBarOne">
+					<div class="circleText">1</div>
+				</div>
+				<div class="circle progressBarTwo">
+					<div class="circleText">2</div>
+				</div>
+				<div class="circle progressBarThree">
+					<div class="circleText">3</div>
+				</div>
+				<div class="circle rightMostCircle progressBarFour">
+					<div class="circleText">4</div>
+				</div>
+			</div>
 		</div>
+
 
 	</div>
 

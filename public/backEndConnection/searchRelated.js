@@ -1,4 +1,4 @@
-var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
+var professionalFields = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists", "doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
 
 function searchButtonClicked() {
   localStorage['searchPosition'] = $("#professionalFields").val();

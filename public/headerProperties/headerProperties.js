@@ -18,6 +18,15 @@ function moveToEmployerSection() {
 }
 
 function addNonUserHeader() {
+  $(".dashboardButton").css("display", "none");
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    console.log("nonMobile");
+  } else {
+  	console.log("mobile");
+    $(".howItWorks").css("display", "inline-block");
+	}
+
 	$(".headerLoginSection").empty();
 	showNonUserDashboard();
 	$(".headerLoginSection").append(	
@@ -32,7 +41,9 @@ function addNonUserHeader() {
 }
 
 function addUserHeader(userName) {
-	$(".headerLoginSection").empty();
+  $(".headerLoginSection").empty();
+  $(".dashboardButton").css("display", "inline-block");
+  $(".howItWorks").css("display", "none");
 	showUserDashboard();
 	if (userName === null) {
 		$(".headerLoginSection").append(

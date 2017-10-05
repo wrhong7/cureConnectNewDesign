@@ -67,10 +67,13 @@
 .changeEmailAddressButton {
     float: left;
     border: solid 0.2vh;
-    height: 5.7vh;
+    height: 6.1vh;
     width: 29vw;
     text-align: center;
     padding-top: 1vh;
+    background-color: #16436A;
+    color: white;
+    margin-top: -0.3vh;
 }
 
 .contactPreferenceSelection {
@@ -106,13 +109,14 @@
 
 .enterMobilePhoneButton {
     float: left;
-    height: 5.6vh;
-    width: 29vw;
-    min-width: 250px;
-    font-size: 4vh;
-    text-align: center;
     border: solid 0.2vh;
+    height: 6.1vh;
+    width: 29vw;
+    text-align: center;
     padding-top: 1vh;
+    background-color: #16436A;
+    color: white;
+    margin-top: -0.3vh;
 }
 
 .submitCodeButton {
@@ -121,8 +125,12 @@
     text-align: center;
     border: solid 0.2vh;
     padding-top: 1vh;
-    height: 5.6vh;
+    height: 6.1vh;
+    margin-top: -0.3vh;
     display: none;
+    background-color: #16436A;
+    color: white;
+
 }
 
 .sendCodeButton {
@@ -131,8 +139,11 @@
     text-align: center;
     border: solid 0.2vh;
     padding-top: 1vh;
-    height: 5.6vh;
+    height: 6.1vh;
+    margin-top: -0.3vh;
     display: none;
+    background-color: #16436A;
+    color: white;
 }
 
 /*PROGRESS BAR*/
