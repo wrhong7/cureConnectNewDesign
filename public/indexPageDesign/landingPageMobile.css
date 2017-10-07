@@ -8,11 +8,11 @@
 
 	}
 
-	.mainContainer {
-		width: 102vw;
-		margin: 0 !important;
-		padding: 0 !important;
-	}
+	/*.mainContainer {*/
+		/*width: 102vw;*/
+		/*margin: 0 !important;*/
+		/*padding: 0 !important;*/
+	/*}*/
 
 	.headerSection {
 		min-height: 7vh !important;
@@ -29,7 +29,7 @@
 	}
 
 	.indexPageBackground {
-		width: 102vw !important;
+		width: 100vw !important;
 		margin-top: -5vh !important;
 		background-size: cover !important;
 		background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobileRendering.PNG?alt=media&token=c2404a87-2994-4ee3-8b85-1a5ec77cfd6d') !important;
@@ -37,6 +37,10 @@
 
 	.headerLoginSection {
 		display: none;
+	}
+
+	.select2-search__field {
+		height: 9vw !important;
 	}
 
 	.blogButton {
@@ -62,7 +66,7 @@
 
 	.searchButtonText {
 		margin-top: 1vh !important;
-		font-size: 4vh!important;
+		font-size: 7vw !important;
 	}
 
 	.headerLoginSection {
@@ -108,7 +112,7 @@
 	}
 
 	.subscript {
-		font-size: 2.5vh !important;
+		font-size: 4.5vw !important;
 		margin-top: 1vw;
 		font-weight: 400;
 		font-style: italic;
@@ -126,7 +130,7 @@
 	.searchZipCode {
 		float: left !important;
 		width: 90vw !important;
-		min-height: 12vw !important;
+		min-height: 13vw !important;
 	    height: 12vw !important;
 		min-width: 200px !important;
 		margin-left: 0.1vw !important;
@@ -136,17 +140,16 @@
 	.searchZipcodeInputBox {
 		width: 99% !important;
 		border: solid 0.2vh #2aa6b9;
-		height: 6vh !important;
+		height: 12vw !important;
 		border-radius: 1vh;
 		color: #2aa6b9;
 		font-size: 4vh;
-		padding-left: 1vh;
 	}
 
 	.searchButton {
 		text-align: center !important;
 		border: solid 0.2vw !important;
-		/*border-color: red !important;*/
+		border-color: #2AA6B9 !important;
 		width: 89.5vw !important;
 		min-width: 100px !important;
 		margin-left: 0.1vw !important;
@@ -231,11 +234,11 @@
 	}
 
 	.select2-selection--multiple {
-		min-height: 75px !important;
+		min-height: 12vw !important;
 	}
 
 	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-		font-size: 3vh !important;
+		font-size: 6vw !important;
 		padding-left: 1vw;
 		font-family: 'Raleway', sans-serif;
 		color: #16436A !important;
@@ -287,5 +290,26 @@
 		margin-bottom: 1vh;
 		text-align: center;
 	}
+
+	.mobileMenuButtonComponent  {
+		color: #2AA6B9;
+		text-align: center;
+		font-size: 8vw;
+		width: 98%;
+		padding: 1vw;
+		margin-top: 3vw;
+		padding-top: 1vw;
+		padding-bottom: 3vw;
+		border-bottom: solid 0.1vw;
+
+	}
+
+	.mobileModalClose {
+		margin-top: 5vw !important;
+		margin-bottom: 1vw !important;
+		color: rgb(224, 36, 94);
+		border-bottom: none !important;
+	}
+
 
 }

@@ -19,12 +19,11 @@
 }
 
 .bottomDisclosures {
-    width: 98%;
+    width: 100%;
     overflow: auto;
     background-color: #e4f5fe;
     color: #16436A;
     padding-bottom: 10vh;
-    padding-left: 2vw;
 }
 
 .bottomDisclosureLogo {

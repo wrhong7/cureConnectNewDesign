@@ -72,8 +72,10 @@
 
 				<div class="headerSection">
 					<div class="cureConnectHeaderLogo">
-						<div class="mobileMenuButton"><i class="fa fa-bars" aria-hidden="true"></i></div>
 						<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
+						<div class="mobileMenuButton" onclick="pressedMobileButton()">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
 					</div>
 					<div class="blogButton button" onclick='location.href="/blog.html"'>blog</div>
 					<div class="dashboardButton button">dashboard</div>
@@ -297,7 +299,6 @@
 					</div>
 				</div>
 
-
 				<div class="bottomDisclosures">
 					<div class="bottomDisclosureComponent">
 						<div class="bottomDisclosureCol columnOne">
@@ -383,6 +384,14 @@
 						<span class="bottomLogoC">C</span>ONNECT
 						<span class="bottomLogoC">C</span>ORPORATION
 					</div>
+				</div>
+
+				<div class="mobileMenuContainer">
+					<div class="mobileMenuButtonComponent mobileModalAboutCureConnect">About Cure Connect</div>
+					<div class="mobileMenuButtonComponent mobileModalHowItWorks">How it works?</div>
+					<div class="mobileMenuButtonComponent mobileModalSignUp">Sign Up</div>
+					<div class="mobileMenuButtonComponent mobileModalLogin">Log In</div>
+					<div class="mobileMenuButtonComponent mobileModalClose" onclick="closeModalButton()">Close</div>
 				</div>
 
 			</div>
