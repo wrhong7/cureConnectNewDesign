@@ -1,4 +1,5 @@
 function showNonUserDashboard() {
+	$(".howItWorks").css("display", "inline-block");
 	$(".nonUserView").css("cssText", "display: inline-block;");
 	$(".userView").css("cssText", "display: none;");
 }
@@ -18,8 +19,6 @@ function emptyOutUserDashboard() {
 function showUserDashboard(userType, profileCompletionStatus) {
 	$(".nonUserView").css("cssText", "display: none;");
 	$(".userView").css("cssText", "display: inline-block;");
-
-	console.log(userType, profileCompletionStatus)
 
 	if (profileCompletionStatus == "preCompletion") {
 		$(".postCompletionView").css("cssText", "display: none;");

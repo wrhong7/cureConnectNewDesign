@@ -43,18 +43,17 @@
 <body>
 
 	<div class="headerSection">
-		<div class="headerSectionLeft">
-			<div class="cureConnectHeaderLogo">
+		<div class="cureConnectHeaderLogo">
+			<div class="companyName">
 				<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
 			</div>
-			<div class="searchHeaderAdded">
-				<div class="searchClassifier recommendationsButton">Job Recommendation</div>
-				<div class="searchClassifier favoritesButton">My Favorites</div>
-				<div class="searchClassifier myAppsButton">App Tracking</div>
+			<div class="mobileMenuButton button" onclick="pressedMobileButton()">
+				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="headerLoginSection headerSectionRight">
+		<div class="headerLoginSection">
 		</div>
+	<!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
 	</div>
 
 	<div class="jobSearchFields">
@@ -64,7 +63,7 @@
 					<select class="js-example-basic-multiple" id="professionalFields" multiple="multiple"></select>
 				</div>
 				<div class="searchZipCode">
-					<input class="searchZipcodeInputBox" placeholder="Zip Code or City"></input>
+					<input class="searchZipcodeInputBox" placeholder="Zip Code"></input>
 				</div>
 				<div class="searchButton">
 					<div

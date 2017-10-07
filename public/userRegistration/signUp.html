@@ -1,111 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CureConnect</title>
+	<head>
+		<title>CureConnect</title>
 
-<!-- Pulling jQuery -->
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<!-- Pulling jQuery -->
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 
-<!-- Pulling Firebase -->
-	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-	<script type="text/javascript" src="/userRegistration/backendScript/signUp.js"></script>
-	<script type="text/javascript" src="/backEndConnection/globalVariables.js"></script>
-	<script type="text/javascript" src="/backEndConnection/secondaryPagesBackendConnection.js"></script>
+	<!-- Pulling Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+		<script type="text/javascript" src="/userRegistration/backendScript/signUp.js"></script>
+		<script type="text/javascript" src="/backEndConnection/globalVariables.js"></script>
+		<script type="text/javascript" src="/backEndConnection/secondaryPagesBackendConnection.js"></script>
 
-<!-- Pulling font from Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Pulling font from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-<!-- Connecting this html file to css and js files -->
-	<link rel="stylesheet" href="/mainStylesheets/font.css" />
-	<link rel="stylesheet" href="stylesheets/signUp.css" />
+	<!-- Connecting this html file to css and js files -->
+		<link rel="stylesheet" href="/mainStylesheets/font.css" />
+		<link rel="stylesheet" href="stylesheets/signUp.css" />
 
-<!-- Following three must be rendered to constantly check the user session. -->
-	<script src="/backEndConnection/userViewRendering.js"></script>
-	<script src="/headerProperties/headerProperties.js"></script>
+	<!-- Following three must be rendered to constantly check the user session. -->
+		<script src="/backEndConnection/userViewRendering.js"></script>
+		<script src="/headerProperties/headerProperties.js"></script>
 
-<!-- Following two are just for the registeration purposes -->
-	<script src="backendScript/googleRegister.js"></script>
-	<script src="backendScript/emailRegister.js"></script>
+	<!-- Following two are just for the registeration purposes -->
+		<script src="backendScript/googleRegister.js"></script>
+		<script src="backendScript/emailRegister.js"></script>
 
-</head>
+	</head>
 
-<body>
-
-	<div class="productStrengthSynopsis">
-		<div class="synopsisForProfessionals">
-			Easy: Building profile takes 6 mins and Applying takes 1 click.<br>
-			Transparent: Know compensation, hours and workload before applying.<br>
-			Efficient: Track your application status, schedule interview and message recruiter.<br>
-			Custom Tailored: CureConnect's unique human and machine tailored algorithms recommend you with fitting careers based on your expereience and our data.
-		</div>
-		<div class="synopsisForRecruiters">
-			Quick: Upload all your jobs with CSV upload.<br>
-			Efficient: Candidates Board Certified States, Licenses, Experience, Expected Compensations and other important details are visible to you before you start communicating with candidates.
-			Easy: Instead of emailing back and forth, communicate and schedule interview with candidates one click.
-		</div>
-	</div>
-
-	<div class="registerationContainer">
-		<div class="registerationAccountTypeSelection">
-			I am a
-		</div>
-
-		<div class="userTypeSelectionContainer">
-			<div 
-				class="userTypeSelectionOption optionHospitalRecruiter"
-				onclick="clickAccountType('hospitalRecruiter')"
-			>
-				Hospital Recruiter
+	<body>
+		<div class="indexPageBackground"></div>
+		<div class="registerationContainer">
+			<div class="registerationAccountTypeSelection">
+				I am a
 			</div>
-			<div 
-				class="button userTypeSelectionOption optionHealthcareProfessonal"
-				onclick="clickAccountType('healthcareProfessional')"
-			>
-				Healthcare Professional
+			<div class="userTypeSelectionContainer">
+				<div
+					class="userTypeSelectionOption optionHospitalRecruiter"
+					onclick="clickAccountType('hospitalRecruiter')"
+				>
+					Hospital Recruiter
+				</div>
+				<div
+					class="button userTypeSelectionOption optionHealthcareProfessonal"
+					onclick="clickAccountType('healthcareProfessional')"
+				>
+					Healthcare Professional
+				</div>
+				<div
+					class="button userTypeSelectionOption optionIndepndentRecruiter"
+					onclick="clickAccountType('independentRecruiter')"
+				>
+					Independent Recruiter
+				</div>
 			</div>
-			<div 
-				class="button userTypeSelectionOption optionIndepndentRecruiter"
-				onclick="clickAccountType('independentRecruiter')"
-			>
-				Independent Recruiter
+		<!-- this display is hidden -->
+			<div class="userTypeSelectionCoverHiddenOptions">
+				<select class="userTypeSelection">
+				  <option value="professional">Healthcare Professional</option>
+				  <option value="hospitalRecruiter">Hospital Recruiter</option>
+				  <option value="independentRecruiter">Independent Recruiter</option>
+				</select>
 			</div>
-		</div>
-
-	<!-- this display is hidden -->
-		<div class="userTypeSelectionCoverHiddenOptions">
-			<select class="userTypeSelection">
-			  <option value="professional">Healthcare Professional</option>
-			  <option value="hospitalRecruiter">Hospital Recruiter</option>
-			  <option value="independentRecruiter">Independent Recruiter</option>
-			</select>
-		</div>
-
-
-		<div class="registerationModeSelection">
-			Register with
-		</div>
-
-		<div class="registerationSelectionOptionCover">
-			<div 
-				class="button registerationOption signInWithGoogle"
-				onclick="googleRegister()" 
-			>
-				Google
+			<div class="registerationModeSelection">
+				Register with
 			</div>
-			<div 
-				class="button registerationOption signInWithEmail"
-				onclick='userTypeSelected();'
-			>
-				ID + Password
+			<div class="registerationSelectionOptionCover">
+				<div
+					class="button registerationOption signInWithGoogle"
+					onclick="googleRegister()"
+				>
+					Google
+				</div>
+				<div
+					class="button registerationOption signInWithEmail"
+					onclick='userTypeSelected();'
+				>
+					ID + Password
+				</div>
+			</div>
+			<div class="signUpDisclosure">
+				By signing up you agree to Cure Connect's <u>Terms of Service</u> and <u>Privacy Policy</u>. You also agree to receive subsequent email and affiliated party communications.
 			</div>
 		</div>
 
-		<div class="signUpDisclosure">
-			By signing up you agree to Cure Connect's <u>Terms of Service</u> and <u>Privacy Policy</u>. You also agree to receive subsequent email and affiliated party communications.
-		</div>
-
-	</div>
-
-</body>
+	</body>
 
 </html>

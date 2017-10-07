@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("#zipCodeEntry").select2();
 
   $("#professionalFields").select2({
-    placeholder: "Select all relevant positions"
+    placeholder: "Relevant Field(s)"
   });
 
   $("#zipCodeEntry").select2({

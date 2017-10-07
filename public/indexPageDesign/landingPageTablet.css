@@ -5,7 +5,8 @@
 	}
 
 	.headerSection {
-		margin-top: 5vh;
+		margin-top: -5vh !important;
+		margin-left: 2vw !important;
 	}
 
 	.searchSection {

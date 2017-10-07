@@ -10,32 +10,52 @@ body {
 .jobSearchFields {
     width: 100%;
     overflow: auto;
-    padding-bottom: 5vh;
+    padding-bottom: 12vh;
     background-color: #16436A;
 }
 
 .searchPositionType {
 	float: left;
-	width: 35vw;
-	height: 53px;
+	width: 40vw;
+	height: 9vh;
 	font-size: 1.2rem;
 	margin-right: 0.1vw;
+}
+
+.searchZipcodeInputBox {
+    width: 100%;
+    height: 8vh;
+    border-radius: 1vh;
+    border: none;
+    margin-left: 0.5vh;
+    text-align: center;
+    font-size: 4vh;
+
 }
 
 .searchZipCode {
-	float: left;
-	width: 35vw;
-	height: 53px;
-	font-size: 1.2rem;
-	margin-right: 0.1vw;
+    float: left;
+    width: 20vw;
+    height: 9vh;
+    font-size: 1.2rem;
+    margin-right: 0.1vw;
 }
 
 .searchButton {
-	color: white;
+    color: white;
     float: left;
     border: solid 1px white;
-    padding: 13.5px;
-    height: 30px;
+    width: 17vw;
+    margin-left: 1vh;
+    border-radius: 1vh;
+    height: 6vh;
+    font-size: 4vh;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.select2-container .select2-selection--multiple {
+    height: 8.5vh !important;
 }
 
 .searchFields {
@@ -135,10 +155,15 @@ body {
 }
 
 .advSearchFieldButton {
-    color: red;
     font-size: 1rem;
+    color: white;
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 1vw;
+    text-decoration: underline;
+}
+
+.select2-selection {
+    width: 40vw !important;
 }
 
 .select2-selection--multiple {
@@ -151,17 +176,26 @@ body {
     font-size: 4vh !important;
 }
 
-..select2-container--default .select2-selection--multiple {
+.select2-container--default .select2-selection--multiple {
     border-radius: 1vh !important;
 }
 
 .select2-results {
     font-size: 3.5vh !important;
 }
+
 .select2-results__option select2-results {
     font-size: 3.5vh !important;
 }
 
 .select2-results__options {
     max-height: 30vh !important;
+}
+
+.mobileMenuButton {
+    display: none;
+}
+
+.logoC {
+    font-size: 5vh !important;
 }

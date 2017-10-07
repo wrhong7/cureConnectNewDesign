@@ -5,8 +5,6 @@ var zipCodeRequestURL;
 function fetchSearchResults() {
   searchPosition = $("#professionalFields").val();
   searchZipCode = $(".searchZipcodeInputBox").val();
-  console.log(searchPosition);
-  console.log(searchZipCode);
   pullAllNeighboringZipCode(searchZipCode)
 }
 
@@ -22,6 +20,11 @@ function pullAllNeighboringZipCode(zipCode) {
 }
 
 $(document).ready(function() {
+
+  $("#professionalFields").select2({
+    placeholder: "Relevant Field(s)"
+  });
+
   $("#professionalFields").select2();
   professionalFields.forEach(function(profession) {
     $("#professionalFields").append(

@@ -44,8 +44,11 @@
 
 .select2-container {
 	width: 100% !important;
+	/*overflow-x: hidden;*/
 	float: left;
 }
+
+
 
 body {
 	margin: 0 !important;
@@ -79,7 +82,7 @@ body {
 	width: 30vw;
 	font-size: 5vh;
 	height: 7.5vh;
-	margin-top: 0.5vh;
+	margin-top: 1.7vh;
 }
 
 .searchZipCode {
@@ -87,7 +90,7 @@ body {
 	width: 15vw;
 	font-size: 5vh;
 	height: 8vh;
-	margin-top: 0.5vh;
+	margin-top: 1.7vh !important;
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
 }
@@ -109,11 +112,11 @@ body {
 	float: left;
 	width: 10vw;
 	padding-top: 3px;
-	min-height: 7.3vh;
+	min-height: 7.8vh;
 	height: 2vh;
-	margin-top: 0.5vh;
+	margin-top: 1.7vh;
 	margin-bottom: 0.5vh;
-	margin-left: 1.5vh;
+	margin-left: 0.5vh;
 	font-size: 2.4rem;
 	border-radius: 1vh;
 }
@@ -208,7 +211,19 @@ body {
 }
 
 .productLowerLevelHeader {
-	margin-top: 10vh;
+
+}
+
+.prodLevelLogoFileLink {
+	width: 20vw;
+}
+
+.prodLevelLogoFileLink2 {
+	width: 24vw;
+}
+
+.prodLevelLogoFileLink3 {
+	width: 20vw;
 }
 
 .productLowerLevelDesc {
@@ -248,6 +263,7 @@ body {
 	border-radius: 1vh;
 	color: #2aa6b9;
 	font-size: 4vh;
+	text-align: center;
 }
 
 .select2-selection--multiple {
@@ -278,6 +294,7 @@ body {
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
+	text-align: center;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     font-size: 3vh;
@@ -286,6 +303,7 @@ body {
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
+	text-align: center;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     font-size: 3vh;
@@ -294,6 +312,7 @@ body {
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
+	text-align: center;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-size: 3vh;
@@ -301,6 +320,7 @@ body {
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
+	text-align: center;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
     font-size: 3vh;
@@ -308,6 +328,7 @@ body {
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
+	text-align: center;
 }
 
 input {

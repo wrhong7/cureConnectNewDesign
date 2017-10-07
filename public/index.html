@@ -72,8 +72,10 @@
 
 				<div class="headerSection">
 					<div class="cureConnectHeaderLogo">
-						<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
-						<div class="mobileMenuButton" onclick="pressedMobileButton()">
+						<div class="companyName">
+							<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
+						</div>
+						<div class="mobileMenuButton button" onclick="pressedMobileButton()">
 							<i class="fa fa-bars" aria-hidden="true"></i>
 						</div>
 					</div>
@@ -107,7 +109,7 @@
 								<select class="js-example-basic-multiple" id="professionalFields" multiple="multiple"></select>
 							</div>
 							<div class="searchZipCode">
-								<input class="searchZipcodeInputBox" placeholder="Zip Code or City"></input>
+								<input class="searchZipcodeInputBox" placeholder="Zip Code"></input>
 							</div>
 							<div class="searchButton">
 								<div
@@ -271,12 +273,20 @@
 							<div class="productIntroDefinition">healthcare job board on a steroid</div>
 						</div>
 						<div class="productIntroLowerLevel">
+							<div class="prodLevelLogo">
+								<img class="prodLevelLogoFileLink" src="https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/knowDetails.png.png?alt=media&token=a15df3bc-bd98-4b86-8a11-b86dfc9605ae" />
+							</div>
 							<div class="productLowerLevelHeader">Know all key job details before interview</div>
 							<div class="productLowerLevelDesc"><i>Cure Connect shares compensations, benefits, shifts and patient types before even applying.</i></div>
 
+							<div class="prodLevelLogo">
+								<img class="prodLevelLogoFileLink2" src="https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/easyScheduling.png.png?alt=media&token=9048d505-e0b3-49e0-8d35-8c21df2d7379" />
+							</div>
 							<div class="productLowerLevelHeader">Apply and schedule interview with one click</div>
 							<div class="productLowerLevelDesc"><i>No back-and-forth emailing. With Cure Connect, interview can be scheduled in couple clicks.</i></div>
-
+							<div class="prodLevelLogo">
+								<img class="prodLevelLogoFileLink3" src="https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/workEndlessly.png.png?alt=media&token=9da783f3-80a4-48ba-80ad-1d9425021cd7" />
+							</div>
 							<div class="productLowerLevelHeader">Work with you until you find a career to believe in</div>
 							<div class="productLowerLevelDesc"><i>Custom Tailored Job Search: Algorithms learns what talents love and industry look for.</i></div>
 
@@ -387,11 +397,17 @@
 				</div>
 
 				<div class="mobileMenuContainer">
-					<div class="mobileMenuButtonComponent mobileModalAboutCureConnect">About Cure Connect</div>
-					<div class="mobileMenuButtonComponent mobileModalHowItWorks">How it works?</div>
-					<div class="mobileMenuButtonComponent mobileModalSignUp">Sign Up</div>
-					<div class="mobileMenuButtonComponent mobileModalLogin">Log In</div>
-					<div class="mobileMenuButtonComponent mobileModalClose" onclick="closeModalButton()">Close</div>
+					<div class="mobileMenuButtonComponent mobileModalAboutCureConnect button">About Cure Connect</div>
+					<div class="mobileMenuButtonComponent mobileModalHowItWorks button">How it works?</div>
+					<div
+							class="mobileMenuButtonComponent mobileModalSignUp button"
+							onclick='location.href="userRegistration/signUp.html"'
+					>Sign Up</div>
+					<div
+							class="mobileMenuButtonComponent mobileModalLogin button"
+							onclick='location.href="userLogInOut/in.html"'
+					>Log In</div>
+					<div class="mobileMenuButtonComponent mobileModalClose button" onclick="closeModalButton()">Close</div>
 				</div>
 
 			</div>

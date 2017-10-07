@@ -9,7 +9,7 @@ div {
 	cursor: default;
 }
 
-.button {
+.button:hover {
 	cursor: pointer;
 }
 

@@ -1,6 +1,6 @@
 .detailComponent {
     float: left;
-    width: 49vw;
+    width: 47vw;
     min-width: 200px;
     text-align: center;
     margin-top: 5vh;
@@ -27,9 +27,11 @@
 }
 
 .bottomDisclosureLogo {
-	font-size: 1rem;
+    font-size: 1rem;
     text-align: center;
     padding-top: 6vh;
+    border-top: solid 0.1vh;
+    margin-top: 5vw;
 }
 
 .bottomLogoC {
@@ -75,4 +77,9 @@
     .bottomDisclosureCol {
         margin-left: 12vw !important;
     }
+
+    .detailComponent {
+        width: 100vw !important;
+    }
+
 }

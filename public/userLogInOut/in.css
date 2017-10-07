@@ -1,5 +1,5 @@
 body {
-	background-color: #1A2C37;
+	background-color: #E4F5FE;
 	font-family: 'Muli', sans-serif;
 	color: white;
 	-webkit-font-smoothing: antialiased;
@@ -21,7 +21,7 @@ button:focus {
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	background-color: rgba(0,0,0,0);
 	font-family: 'Muli', sans-serif;
-	color: white;
+	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 	font-size: 30px;
@@ -30,7 +30,7 @@ button:focus {
 ::-moz-placeholder { /* Firefox 19+ */
 	background-color: rgba(0,0,0,0);
 	font-family: 'Muli', sans-serif;
-	color: white;
+	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 	font-size: 30px;
@@ -39,7 +39,7 @@ button:focus {
 :-ms-input-placeholder { /* IE 10+ */
 	background-color: rgba(0,0,0,0);
 	font-family: 'Muli', sans-serif;
-	color: white;
+	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 	font-size: 30px;
@@ -48,7 +48,7 @@ button:focus {
 :-moz-placeholder { /* Firefox 18- */
 	background-color: rgba(0,0,0,0);
 	font-family: 'Muli', sans-serif;
-	color: white;
+	color: #16436A;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 	font-size: 30px;
@@ -87,7 +87,7 @@ button:focus {
     border-bottom: solid 1px #979797 !important;
     border: 0;
     background-color: rgba(0,0,0,0);
-    color: white;
+    color: #16436A;
     text-align: center;
     font-size: 30px;
     margin-left: calc( 48vw - 300px);
@@ -107,20 +107,20 @@ button:focus {
 	float: left;
     width: 300px;
     height: 5vh;
-    color: white;
+    color: #16436A;
     text-align: center;
     padding-top: 12px;
-    border: 1px solid white;
+    border: 1px solid #16436A;
 }
 
 .groupRight {
 	float: left;
     width: 300px;
     height: 5vh;
-    color: white;
+    color: #16436A;
     text-align: center;
     padding-top: 12px;
-    border: 1px solid white;
+    border: 1px solid #16436A;
 }
 
 .emailRegisterationFields {
@@ -135,17 +135,14 @@ button:focus {
 	margin-top: 30px;
 	margin-left: -40px;
 	cursor: pointer;
+	color: #16436A;
 }
 
 .groupLeft:hover {
-	color: #231F20;
-	background-color: white;
 	cursor: pointer;
 }
 
 .groupRight:hover {
-	color: #231F20;
-	background-color: white;
 	cursor: pointer;
 }
 
@@ -156,6 +153,7 @@ button:focus {
     margin-left: calc( 48vw - 200px);
     margin-top: 15px;
     line-height: 2;
+	color: rgb(224, 36, 94) !important;
 }
 
 .headerSection {
@@ -164,4 +162,28 @@ button:focus {
     width: 99vw;
     height: 5vh;
     background-color: red;
+}
+
+
+
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+	.groupLeft {
+		font-size: 5vw !important;
+	}
+
+	.groupRight {
+		font-size: 5vw !important;
+	}
+
+	.forgotPassword {
+		font-size: 5vw !important;
+	}
+
+	.forgotPassword {
+		margin-left: 0 !important;
+	}
+
+	.errorMessageSection {
+		font-size: 4.5vw;
+	}
 }

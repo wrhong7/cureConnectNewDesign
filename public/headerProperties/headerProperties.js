@@ -20,12 +20,12 @@ function moveToEmployerSection() {
 function addNonUserHeader() {
   $(".dashboardButton").css("display", "none");
 
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    console.log("nonMobile");
-  } else {
-  	console.log("mobile");
-    $(".howItWorks").css("display", "inline-block");
-	}
+  // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+   //  console.log("nonMobile");
+  // } else {
+  	// console.log("mobile");
+   //  $(".howItWorks").css("display", "inline-block");
+	// }
 
 	$(".headerLoginSection").empty();
 	showNonUserDashboard();
@@ -58,7 +58,7 @@ function addUserHeader(userName) {
 		firstNameOnly = userName.substr(0,userName.indexOf(' '));
 		$(".headerLoginSection").append(
 			'<div class="userLoginCredentials">' +
-				'Hi '+firstNameOnly+'<br>'+
+				'<div class="welcomeAndName">Hi '+firstNameOnly+'<br></div>'+
 				'<div class="userProfileButton button">Profile</div>' +
 				'<div class="userLogOutButton button" onclick="logOutButtonClicked()">Log Out</div>' +
 			'</div>'

@@ -70,6 +70,6 @@ $(document).ready(function() {
 
 	setTimeout(function() {
 		callFirebase();
-	}, 2000)
+	}, 4000)
 });
 

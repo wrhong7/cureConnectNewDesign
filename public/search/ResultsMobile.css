@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
 	.searchPositionType {
 		width: 80vw !important;
 	}
@@ -8,5 +8,119 @@
 	.searchButton {
 	    width: 76vw !important;
 	    text-align: center;
+	}
+	.companyName {
+		float: left;
+		width: 105%;
+		margin-left: 0%;
+	}
+
+	.mobileMenuButton {
+		display: inline-block !important;
+	}
+
+	.logoC {
+		font-size: 8vw !important;
+	}
+
+	.headerSection {
+		min-height: 7vh !important;
+		padding: 0 !important;
+		margin-top: 3vw !important;
+	}
+
+	.mobileMenuButton {
+		position: absolute;
+		right: 5vw;
+		top: 5vw;
+	}
+
+	.cureConnectHeaderLogo {
+		float: left !important;
+		margin-top: 5px !important;
+		width: 85vw !important;
+		text-align: center !important;
+		margin-left: 3vw !important;
+		font-size: 6vmin !important;
+	}
+
+	.headerLoginSection {
+		width: 80vw !important;
+		overflow: auto !important;
+		margin-left: 10vw !important;
+		float: left !important;
+	}
+
+	.headerForEmployersButton {
+		display: none !important;
+	}
+
+	.headerButtons {
+		min-width: 75px !important;
+		text-align: center !important;
+		margin: 0.5vw !important;
+		font-size: 2.5rem !important;
+		text-align: center !important;
+		width: 29vw !important;
+	}
+
+	.headerButtonContainer {
+		width: 60vw !important;
+		margin-left: 10vw !important;
+		overflow: auto !important;
+	}
+
+	.headerSection {
+		margin-bottom: 0 !important;
+	}
+
+	.headerSectionLeft {
+		width: 80% !important;
+	}
+
+	.select2-selection {
+		width: 80vw !important;
+		height: 8vw !important;
+	}
+
+	.select2 {
+		width: 100% !important;
+	}
+
+	.searchZipCode {
+		height: 15vw !important;
+	}
+
+
+
+	.searchZipcodeInputBox {
+		margin-left: 0;
+	}
+
+	.searchZipcodeInputBox {
+		font-size: 4vh;
+	}
+
+	.searchHeaderAdded {
+		display: none;
+	}
+
+	.select2-selection__choice {
+		font-size: 8vw !important;
+	}
+
+	.searchButton {
+		width: 76vw !important;
+		text-align: center;
+		margin-top: 0.5vw;
+		border-radius: 1.5vw;
+	}
+
+	.jobSearchFields {
+		padding-bottom: 2vw !important;
+	}
+
+	.advSearchFieldButton {
+		font-size: 4vw !important;
 	}
 }

@@ -8,16 +8,8 @@
 
 	}
 
-	/*.mainContainer {*/
-		/*width: 102vw;*/
-		/*margin: 0 !important;*/
-		/*padding: 0 !important;*/
-	/*}*/
-
-	.headerSection {
-		min-height: 7vh !important;
-		margin: 0 !important;
-		padding: 0 !important;
+	.select2-selection__choice {
+		font-size: 8vw !important;
 	}
 
 	.searchScript {
@@ -35,10 +27,6 @@
 		background-image: url('https://firebasestorage.googleapis.com/v0/b/cureconnectdevenv.appspot.com/o/mobileRendering.PNG?alt=media&token=c2404a87-2994-4ee3-8b85-1a5ec77cfd6d') !important;
 	}
 
-	.headerLoginSection {
-		display: none;
-	}
-
 	.select2-search__field {
 		height: 9vw !important;
 	}
@@ -51,14 +39,7 @@
 		display: none !important;
 	}
 
-	.cureConnectHeaderLogo {
-		float: left !important;
-	    margin-top: 5px !important;
-	    width: 85vw !important;
-	    text-align: center !important;
-	    margin-left: 5vw !important;
-	    font-size: 6vmin !important;
-	}
+
 
 	.logoC {
 		font-size: 8vmin !important;
@@ -67,6 +48,21 @@
 	.searchButtonText {
 		margin-top: 1vh !important;
 		font-size: 7vw !important;
+	}
+
+	.headerSection {
+		min-height: 7vh !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.cureConnectHeaderLogo {
+		float: left !important;
+		margin-top: 5px !important;
+		width: 85vw !important;
+		text-align: center !important;
+		margin-left: 3vw !important;
+		font-size: 6vmin !important;
 	}
 
 	.headerLoginSection {
@@ -106,8 +102,7 @@
 		font-size: 8vw !important;
 		color: #59BACA !important;
 		margin-top: 5vh !important;
-		/*margin-left: 10vw;*/
-		width: 100vw !important;
+		width: 90vw !important;
 		font-weight: 800;
 	}
 
@@ -301,7 +296,6 @@
 		padding-top: 1vw;
 		padding-bottom: 3vw;
 		border-bottom: solid 0.1vw;
-
 	}
 
 	.mobileModalClose {
@@ -311,5 +305,44 @@
 		border-bottom: none !important;
 	}
 
+	.select2-container {
+		max-width: 90vw !important;
+	}
 
+	.userLoginCredentials {
+		margin-top: 0;
+		width: 100% !important;
+	}
+
+	.userProfileButton {
+		margin-left: 18vw !important;
+		width: 20vw !important;
+		margin-bottom: 1vw;
+		font-size: 5vw !important;
+	}
+
+	.userLogOutButton {
+		width: 20vw !important;
+		margin-left: 1vw !important;
+		margin-bottom: 1vw;
+		font-size: 5vw !important;
+	}
+
+	.companyName {
+		float: left;
+		width: 90vw;
+	}
+
+	.mobileMenuButton {
+		position: absolute;
+		right: 2vw;
+	}
+
+	.userLoginCredentials {
+		display: none;
+	}
+
+	.subscript {
+		display: none;
+	}
 }
