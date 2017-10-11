@@ -1,3 +1,56 @@
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+
+    .entryField {
+        width: 85%;
+        height: 10vw;
+        font-size: 3.5vh;
+        margin-left: 6%;
+        margin-top: 2vw;
+        padding-left: 2vh;
+    }
+
+    .recruiterInfo {
+        padding-bottom: 5vw;
+    }
+
+    .nextButton {
+        width: 15vw !important;
+    }
+}
+
+@media only screen and (max-width: 961px) {
+    .recruiterInfo {
+        width: 90% !important;
+        float: left !important;
+        margin-left: 5% !important;
+        margin-top: 4vh;
+    }
+
+    .hospitalInfo {
+        width: 90% !important;
+        height: 65vh !important;
+        float: left !important;
+        margin-left: 5% !important;
+    }
+
+    .progressBar {
+        display: none !important;
+    }
+
+    .linkedInButton {
+        margin-left: 38vw;
+        position: absolute !important;
+        top: 13vh !important;
+    }
+
+    .nextButton {
+        position: relative !important;
+        margin-top: 10vh !important;
+        margin-left: 87vw !important;
+    }
+
+}
+
 .basicInfoContainer {
     width: auto;
     overflow: auto;
@@ -5,7 +58,7 @@
 
 .recruiterInfo {
     width: 40vw;
-    height: 66vh;
+    overflow: auto;
     float: left;
     margin-left: 10vw;
     border: solid 0.2vh #596D84;

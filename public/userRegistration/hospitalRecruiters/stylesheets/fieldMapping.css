@@ -1,3 +1,19 @@
+@media only screen and (max-width: 961px) {
+    .cureConnectMappingExplanations {
+        width: 90% !important;
+        margin-left: 5% !important;
+        right: 5% !important;
+    }
+
+    .closeModalButton {
+        margin-left: 40vw !important;
+    }
+}
+
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Raleway', sans-serif;
@@ -176,7 +192,7 @@ body {
 
 .cureConnectMappingExplanations {
     width: 50vw;
-    height: 70vh;
+    overflow: auto;
     top: 10vh;
     right: 25vw;
     background-color: white;
