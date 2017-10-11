@@ -35,3 +35,11 @@ div {
 	font-size: 20px !important;
 	min-height: 2.3rem !important;
 }
+
+input {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: solid 1px;
+	border: solid #827775 0.1vh;
+}

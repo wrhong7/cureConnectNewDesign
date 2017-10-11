@@ -112,8 +112,8 @@ body {
 	float: left;
 	width: 10vw;
 	padding-top: 3px;
-	min-height: 7.8vh;
-	height: 2vh;
+	height: 7.5vh;
+	padding: 0;
 	margin-top: 1.7vh;
 	margin-bottom: 0.5vh;
 	margin-left: 0.5vh;
@@ -244,6 +244,7 @@ body {
 
 .select2-container--default .select2-selection--multiple {
 	border-radius: 1vh !important;
+	height: 8vh !important;
 }
 
 .select2-results {
@@ -259,12 +260,14 @@ body {
 
 .searchZipcodeInputBox {
 	width: 100%;
+	padding: 0.3vh !important;
+	height: 7vh;
 	border: solid 0.2vh #2aa6b9;
-	height: 8vh;
 	border-radius: 1vh;
 	color: #2aa6b9;
 	font-size: 4vh;
 	text-align: center;
+	background-color: rgba(255,255,255,1);
 }
 
 .select2-selection--multiple {
@@ -294,7 +297,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
-	opacity: 0.6;
 	text-align: center;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -303,7 +305,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
-	opacity: 0.6;
 	text-align: center;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
@@ -312,7 +313,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
-	opacity: 0.6;
 	text-align: center;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -320,7 +320,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
-	opacity: 0.6;
 	text-align: center;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
@@ -328,7 +327,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #16436A;
 	-webkit-font-smoothing: antialiased;
-	opacity: 0.6;
 	text-align: center;
 }
 

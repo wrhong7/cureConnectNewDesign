@@ -1,0 +1,132 @@
+@media only screen and (max-width: 961px) {
+    .upperFloor {
+        width: 80% !important;
+        height: 5vw;
+        background-color: white !important;
+        border: solid white 0.5vh;
+        color: white;
+        margin-top: 0 !important;
+    }
+
+    .buttonOne {
+        width: 100% !important;
+        margin-left: 0 !important;
+        height: auto !important;
+        background-color: #16436A;
+        border: solid #16436A 0.5vh;
+        color: white;
+        padding: 0vh;
+        margin-top: 0 !important;
+        text-align: center;
+    }
+
+    .buttonOneCaption {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-top: 5vw !important;
+        padding-bottom: 5vw !important;
+    }
+
+    .menuButton br {
+        display: none;
+    }
+}
+
+.dashboardContainer {
+
+}
+
+.dashboardButtonCover {
+
+}
+
+.upperFloor {
+    width: 80vw;
+    height: 35vh;
+    margin-left: 10vw;
+}
+
+.lowerFloor {
+    width: 80vw;
+    height: 35vh;
+    margin-left: 10vw;
+}
+
+.menuButton {
+    float: left;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+}
+
+.buttonOne {
+    width: 15vw;
+    margin-left: 20vw;
+    height: 15vw;
+    background-color: #16436A;
+    border: solid #16436A 0.5vh;
+    color: white;
+    padding: 0vh;
+    margin-top: calc( 35vh - 15vw );
+}
+
+.buttonOneCaption {
+    width: 80%;
+    overflow: auto;
+    padding-top: 10vh;
+    padding-left: 5vh;
+}
+
+.buttonTwoCaption {
+    width: 80%;
+    overflow: auto;
+    padding-top: 8vh;
+    padding-left: 10vh;
+    color: #2AA6B9;
+}
+
+.buttonTwo {
+    width: 30vw;
+    height: 25vh;
+    margin-top: 10vh;
+    border: #2AA6B9 solid 0.5vh;
+}
+
+.buttonThree {
+    height: 25vh;
+    width: 30vw;
+    border: solid 0.5vh;
+    padding: 0;
+    margin-left: 5vw;
+}
+
+.buttonThreeCaption {
+    width: 80%;
+    overflow: auto;
+    padding-top: 7vh;
+    padding-left: 14vh;
+}
+
+.buttonFour {
+    width: 20%;
+    height: 40vh;
+    border: solid #2AA6B9 0.5vh;
+    padding: 0;
+    background-color: #2AA6B9;
+    color: white;
+}
+
+.buttonFourCaption {
+    width: 100%;
+    height: 20vh;
+    padding-top: 12vh;
+    padding-left: 4vh;
+}
+
+
+

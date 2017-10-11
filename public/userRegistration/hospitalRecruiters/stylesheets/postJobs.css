@@ -5,7 +5,35 @@
 }
 
 @media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+    .jobOptionLeft {
+        width: 75vw !important;
+        height: 35vw !important;
+    }
 
+    .jobOptionRight {
+        width: 75vw !important;
+        height: 35vw !important;
+    }
+
+    .jobOptionTitleContainer {
+        font-size: 5vw !important;
+        margin-top: 15vw !important;
+    }
+
+    .prevButton {
+        width: 15vw !important;
+    }
+
+    .nextButton {
+        width: 15vw !important;
+    }
+
+    .onlyOnPC {
+        display: inline-block !important;
+        text-align: center;
+        margin-top: 2vw;
+        width: 100%;
+    }
 }
 
 .prevButton {
@@ -147,4 +175,8 @@ tr, td {
 
 .headerSection {
     margin-bottom: 0 !important;
+}
+
+.onlyOnPC {
+    display: none;
 }

@@ -1,8 +1,8 @@
 function highlightOptionButton(selector) {
-	$(".optionHealthcareProfessonal").css("background-color", "#F3F3F3");
-	$(".optionHospitalRecruiter").css("background-color", "#F3F3F3");
-	$(".optionIndepndentRecruiter").css("background-color", "#F3F3F3");
-	$(selector).css("background-color", "#e56262");
+	$(".optionHealthcareProfessonal").css("background-color", "#E4F5FE");
+	$(".optionHospitalRecruiter").css("background-color", "#E4F5FE");
+	$(".optionIndepndentRecruiter").css("background-color", "#E4F5FE");
+	$(selector).css("background-color", "#A4DEE0");
 }	
 
 function clickAccountType(accountType) {

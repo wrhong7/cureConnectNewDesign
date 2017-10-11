@@ -5,17 +5,17 @@ var zipCodeRequestURL;
 function fetchSearchResults() {
   searchPosition = $("#professionalFields").val();
   searchZipCode = $(".searchZipcodeInputBox").val();
-  pullAllNeighboringZipCode(searchZipCode)
+  pullAllNeighboringZipCode(searchZipCode);
 }
 
 function pullAllNeighboringZipCode(zipCode) {
   zipCodeRequestURL = "https://accesscontrolalloworiginall.herokuapp.com/https://www.zipcodeapi.com/rest/"+zipcodeAPIKey+"/radius.json/"+zipCode+"/10/km";
   console.log(zipCodeRequestURL);
   $.ajax({url: zipCodeRequestURL, success: function(result){
-      result = result["zip_codes"]
+      result = result["zip_codes"];
       zipCodeArray = result;
       //   //sorting zipcodes to fetch it by the closest distance
-      zipCodeArray.sort(function(first,second) {return first["distance"]-second["distance"]})
+      zipCodeArray.sort(function(first,second) {return first["distance"]-second["distance"]});
   }});
 }
 

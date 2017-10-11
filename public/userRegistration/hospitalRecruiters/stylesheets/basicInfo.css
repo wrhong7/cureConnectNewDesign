@@ -58,7 +58,7 @@
 
 .recruiterInfo {
     width: 40vw;
-    overflow: auto;
+    height: 66vh;
     float: left;
     margin-left: 10vw;
     border: solid 0.2vh #596D84;

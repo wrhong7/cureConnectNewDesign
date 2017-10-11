@@ -192,6 +192,14 @@ body {
     max-height: 30vh !important;
 }
 
+.select2-dropdown {
+    width: 40vw !important;
+}
+
+.select2-selection__choice {
+    font-size: 5vh !important;
+}
+
 .mobileMenuButton {
     display: none;
 }
