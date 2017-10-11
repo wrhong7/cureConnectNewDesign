@@ -38,6 +38,9 @@
 	<!-- Pulling search results javascript -->
 		<script type="text/javascript" src="Results.js"></script>
 
+		<script type="text/javascript" src="/mobileModalLoading/modals.js"></script>
+		<link rel="stylesheet" href="/mobileModalLoading/modals.css"/>
+
 </head>
 
 <body>
@@ -47,7 +50,7 @@
 			<div class="companyName">
 				<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
 			</div>
-			<div class="mobileMenuButton button" onclick="pressedMobileButton()">
+			<div class="mobileMenuButton button" onclick="triggerModal('searchResultPage')">
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
 		</div>
@@ -56,201 +59,209 @@
 	<!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
 	</div>
 
-	<div class="jobSearchFields">
-		<div class="searchInputs">
-			<div class="searchFields">
-				<div class="searchPositionType">
-					<select class="js-example-basic-multiple" id="professionalFields" multiple="multiple"></select>
+	<div class="jobSearchCover">
+		<div class="jobSearchFields">
+			<div class="searchInputs">
+				<div class="searchFields">
+					<div class="searchPositionType">
+						<select class="js-example-basic-multiple" id="professionalFields" multiple="multiple"></select>
+					</div>
+					<div class="searchZipCode">
+						<input class="searchZipcodeInputBox" placeholder="Zip Code"></input>
+					</div>
+					<div class="searchButton">
+						<div
+								class="searchButtonText button"
+								onclick="fetchSearchResults()"
+						>Search</div>
+					</div>
 				</div>
-				<div class="searchZipCode">
-					<input class="searchZipcodeInputBox" placeholder="Zip Code"></input>
+			</div>
+			<div class="advSearchFieldButton">Advanced Search Fields</div>
+		</div>
+
+		<div class="jobSearchResults">
+			<div class="jobPostingCover">
+				<div class="upperFloor">
+					<div class="jobTitle">
+						Nurse Practitioner - Urgent Care
+					</div>
+					<div class="addToFavorites">
+						+
+					</div>
 				</div>
-				<div class="searchButton">
-					<div
-							class="searchButtonText button"
-							onclick="fetchSearchResults()"
-					>Search</div>
+
+				<div class="lowerFloor">
+					<div class="lowerFloorLeft">
+						<div class="employerName">
+							Barton Associates
+						</div>
+						<div class="location">
+							Niagara Falls, NY
+						</div>
+					</div>
+					<div class="lowerFloorRight">
+						<div class="compRange">
+							$45-$55/hr
+						</div>
+						<div class="location">
+							20 hr/wk
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jobPostingCover">
+				<div class="upperFloor">
+					<div class="jobTitle">
+						Nurse Practitioner - Urgent Care
+					</div>
+					<div class="addToFavorites">
+						+
+					</div>
+				</div>
+
+				<div class="lowerFloor">
+					<div class="lowerFloorLeft">
+						<div class="employerName">
+							Barton Associates
+						</div>
+						<div class="location">
+							Niagara Falls, NY
+						</div>
+					</div>
+					<div class="lowerFloorRight">
+						<div class="compRange">
+							$45-$55/hr
+						</div>
+						<div class="location">
+							20 hr/wk
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jobPostingCover">
+				<div class="upperFloor">
+					<div class="jobTitle">
+						Nurse Practitioner - Urgent Care
+					</div>
+					<div class="addToFavorites">
+						+
+					</div>
+				</div>
+
+				<div class="lowerFloor">
+					<div class="lowerFloorLeft">
+						<div class="employerName">
+							Barton Associates
+						</div>
+						<div class="location">
+							Niagara Falls, NY
+						</div>
+					</div>
+					<div class="lowerFloorRight">
+						<div class="compRange">
+							$45-$55/hr
+						</div>
+						<div class="location">
+							20 hr/wk
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jobPostingCover">
+				<div class="upperFloor">
+					<div class="jobTitle">
+						Nurse Practitioner - Urgent Care
+					</div>
+					<div class="addToFavorites">
+						+
+					</div>
+				</div>
+
+				<div class="lowerFloor">
+					<div class="lowerFloorLeft">
+						<div class="employerName">
+							Barton Associates
+						</div>
+						<div class="location">
+							Niagara Falls, NY
+						</div>
+					</div>
+					<div class="lowerFloorRight">
+						<div class="compRange">
+							$45-$55/hr
+						</div>
+						<div class="location">
+							20 hr/wk
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jobPostingCover">
+				<div class="upperFloor">
+					<div class="jobTitle">
+						Nurse Practitioner - Urgent Care
+					</div>
+					<div class="addToFavorites">
+						+
+					</div>
+				</div>
+
+				<div class="lowerFloor">
+					<div class="lowerFloorLeft">
+						<div class="employerName">
+							Barton Associates
+						</div>
+						<div class="location">
+							Niagara Falls, NY
+						</div>
+					</div>
+					<div class="lowerFloorRight">
+						<div class="compRange">
+							$45-$55/hr
+						</div>
+						<div class="location">
+							20 hr/wk
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jobPostingCover">
+				<div class="upperFloor">
+					<div class="jobTitle">
+						Nurse Practitioner - Urgent Care
+					</div>
+					<div class="addToFavorites">
+						+
+					</div>
+				</div>
+
+				<div class="lowerFloor">
+					<div class="lowerFloorLeft">
+						<div class="employerName">
+							Barton Associates
+						</div>
+						<div class="location">
+							Niagara Falls, NY
+						</div>
+					</div>
+					<div class="lowerFloorRight">
+						<div class="compRange">
+							$45-$55/hr
+						</div>
+						<div class="location">
+							20 hr/wk
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="advSearchFieldButton">Advanced Search Fields</div>
 	</div>
 
-	<div class="jobSearchResults">
-		<div class="jobPostingCover">
-			<div class="upperFloor">
-				<div class="jobTitle">
-					Nurse Practitioner - Urgent Care
-				</div>
-				<div class="addToFavorites">
-					+
-				</div>
-			</div>
+	<div class="mobileModalContainer">
 
-			<div class="lowerFloor">
-				<div class="lowerFloorLeft">
-					<div class="employerName">
-						Barton Associates
-					</div>
-					<div class="location">
-						Niagara Falls, NY
-					</div>
-				</div>
-				<div class="lowerFloorRight">
-					<div class="compRange">
-						$45-$55/hr
-					</div>
-					<div class="location">
-						20 hr/wk
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="jobPostingCover">
-			<div class="upperFloor">
-				<div class="jobTitle">
-					Nurse Practitioner - Urgent Care
-				</div>
-				<div class="addToFavorites">
-					+
-				</div>
-			</div>
 
-			<div class="lowerFloor">
-				<div class="lowerFloorLeft">
-					<div class="employerName">
-						Barton Associates
-					</div>
-					<div class="location">
-						Niagara Falls, NY
-					</div>
-				</div>
-				<div class="lowerFloorRight">
-					<div class="compRange">
-						$45-$55/hr
-					</div>
-					<div class="location">
-						20 hr/wk
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="jobPostingCover">
-			<div class="upperFloor">
-				<div class="jobTitle">
-					Nurse Practitioner - Urgent Care
-				</div>
-				<div class="addToFavorites">
-					+
-				</div>
-			</div>
 
-			<div class="lowerFloor">
-				<div class="lowerFloorLeft">
-					<div class="employerName">
-						Barton Associates
-					</div>
-					<div class="location">
-						Niagara Falls, NY
-					</div>
-				</div>
-				<div class="lowerFloorRight">
-					<div class="compRange">
-						$45-$55/hr
-					</div>
-					<div class="location">
-						20 hr/wk
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="jobPostingCover">
-			<div class="upperFloor">
-				<div class="jobTitle">
-					Nurse Practitioner - Urgent Care
-				</div>
-				<div class="addToFavorites">
-					+
-				</div>
-			</div>
-
-			<div class="lowerFloor">
-				<div class="lowerFloorLeft">
-					<div class="employerName">
-						Barton Associates
-					</div>
-					<div class="location">
-						Niagara Falls, NY
-					</div>
-				</div>
-				<div class="lowerFloorRight">
-					<div class="compRange">
-						$45-$55/hr
-					</div>
-					<div class="location">
-						20 hr/wk
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="jobPostingCover">
-			<div class="upperFloor">
-				<div class="jobTitle">
-					Nurse Practitioner - Urgent Care
-				</div>
-				<div class="addToFavorites">
-					+
-				</div>
-			</div>
-
-			<div class="lowerFloor">
-				<div class="lowerFloorLeft">
-					<div class="employerName">
-						Barton Associates
-					</div>
-					<div class="location">
-						Niagara Falls, NY
-					</div>
-				</div>
-				<div class="lowerFloorRight">
-					<div class="compRange">
-						$45-$55/hr
-					</div>
-					<div class="location">
-						20 hr/wk
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="jobPostingCover">
-			<div class="upperFloor">
-				<div class="jobTitle">
-					Nurse Practitioner - Urgent Care
-				</div>
-				<div class="addToFavorites">
-					+
-				</div>
-			</div>
-
-			<div class="lowerFloor">
-				<div class="lowerFloorLeft">
-					<div class="employerName">
-						Barton Associates
-					</div>
-					<div class="location">
-						Niagara Falls, NY
-					</div>
-				</div>
-				<div class="lowerFloorRight">
-					<div class="compRange">
-						$45-$55/hr
-					</div>
-					<div class="location">
-						20 hr/wk
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 </body>

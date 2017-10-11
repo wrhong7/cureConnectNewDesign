@@ -55,12 +55,12 @@ var workAuthorization = ["US Citizen or Permanent Resident", "No Sponsorship Req
 $(document).ready(function() {
   $("#medicalProfession").select2();
   $("#medicalProfession").select2({
-    placeholder: "Select all relevant positions"
+    placeholder: "Relevant Field(s)"
   });
 
   $("#yearsOfExperience").select2();
   $("#yearsOfExperience").select2({
-    placeholder: "Years of Experience"
+    placeholder: "i.e. 2-5 Years"
   });
 
   $("#certifiedLicenses").select2();

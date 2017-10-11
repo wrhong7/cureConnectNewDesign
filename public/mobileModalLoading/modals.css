@@ -1,0 +1,51 @@
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+
+    .mobileMenuButton {
+        display: inline-block !important;
+        float: left;
+        width: 10vw;
+    }
+
+    .howItWorks {
+        display: none !important;
+        margin-left: 0;
+        margin-top: 0.5vh;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+
+    .mobileMenuButtonComponent  {
+        color: #2AA6B9;
+        text-align: center;
+        font-size: 8vw;
+        width: 98%;
+        padding: 1vw;
+        margin-top: 3vw;
+        padding-top: 1vw;
+        padding-bottom: 3vw;
+        border-bottom: solid 0.1vw;
+    }
+
+    .mobileModalClose {
+        margin-top: 5vw !important;
+        margin-bottom: 1vw !important;
+        color: rgb(224, 36, 94);
+        border-bottom: none !important;
+    }
+
+    .mobileMenuContainer {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        bottom: 0px;
+        background-color: white;
+    }
+}
+
+
+
+
+
+
+
+

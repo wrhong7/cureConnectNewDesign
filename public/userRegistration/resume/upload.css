@@ -1,3 +1,8 @@
+.resumeUploadCover {
+    width: auto;
+    overflow: auto;
+}
+
 .leftColumn {
     float: left;
     width: 15vw;
@@ -28,7 +33,7 @@
     font-size: 4vh;
     margin-top: 1.5vh;
     padding-left: 2vh;
-    width: 29vw;
+    width: 28.5vw;
 }
 
 .resumeiFrameContainer {
@@ -168,7 +173,7 @@ iframe {
     float: left;
     width: 7.6vh;
     height: 7.6vh;
-    border-radius: 4vw;
+    border-radius: 100%;
     margin-right: 3.4vw;
     border: solid 0.2vh #009EB3;
     color: #009EB3;
@@ -205,4 +210,172 @@ iframe {
     font-size: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+@media only screen and (max-width: 961px) {
+    .leftColumn {
+        float: left;
+        width: 85vw;
+        height: 60vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        background-color: #1B3756;
+    }
+
+    .middleColumn {
+        width: 85vw;
+        height: 60vh;
+        margin-left: 5vw;
+    }
+
+    .rightColumn {
+        width: 85vw;
+        height: 60vh;
+        margin-left: 5vw;
+    }
+
+    .entryField {
+        width: 78vw !important;
+        padding-left: 2vh;
+        margin-top: 2vw !important;
+        border: solid 0.1vw;
+    }
+
+    .uploadResumeButtonContainer {
+        width: 50vw;
+        margin-left: 20vw;
+        margin-top: 25vh;
+    }
+
+    .select2 {
+        width: 79vw !important;
+    }
+
+    .select2-selection select2-selection--multiple {
+        width: 79vw !important;
+    }
+
+    .medicalProfessionCover {
+        width: 80vw !important;
+    }
+
+    .progressBar {
+        position: relative;
+        width: 70vw;
+        margin-top: 5vh;
+        left: 15vw;
+    }
+
+    .circle {
+        margin-right: 24%;
+    }
+
+    .backgroundBar {
+        width: 95% !important;
+    }
+
+    .nextButton {
+        width: 20vw !important;
+        z-index: 5 !important;
+        background-color: white !important;
+        position: relative !important;
+        margin-left: 74vw;
+        margin-top: 8vw;
+    }
+
+    .headerLoginSection {
+        display: none;
+    }
+
+    .progressBar {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+
+    .middleColumn {
+        width: 85vw !important;
+        height: 110vw !important;
+    }
+
+    .entryField {
+        width: 70vw !important;
+    }
+
+    .rightColumn {
+        width: 85vw !important;
+        height: 110vw !important;
+    }
+
+    .select2 {
+        width: 74vw !important;
+    }
+
+    .progressBar {
+        display: none;
+    }
+
+    .nextButton {
+        margin-top: 15vw !important;
+    }
+
+    .select2-selection__choice {
+        font-size: 3.5vw !important;
+    }
+
+    .medicalProfessionCover {
+        height: auto !important;
+        overflow: auto !important;
+        min-height: 22vw !important;
+    }
+
+    .select2-selection--multiple {
+        height: auto !important;
+        overflow: auto !important;
+    }
+
+    .select2-selection__rendered {
+        height: auto !important;
+        oveflow: auto !important;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        font-size: 6vw !important;
+        padding-left: 1vw;
+        font-family: 'Raleway', sans-serif;
+        color: #16436A !important;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.6;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        font-size: 3vh;
+        padding-left: 1vw;
+        font-family: 'Raleway', sans-serif;
+        color: #16436A !important;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.6;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        font-size: 3vh;
+        padding-left: 1vw;
+        font-family: 'Raleway', sans-serif;
+        color: #16436A !important;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.6;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 3vh;
+        font-family: 'Raleway', sans-serif;
+        color: #16436A !important;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.6;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 3vh;
+        font-family: 'Raleway', sans-serif;
+        color: #16436A !important;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.6;
+    }
 }

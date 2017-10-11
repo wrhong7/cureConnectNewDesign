@@ -89,6 +89,15 @@
 		width: 60vw !important;
 		margin-left: 10vw !important;
 		overflow: auto !important;
+		display: none;
+	}
+
+	.signUpScript {
+		display: none !important;
+	}
+
+	.goToIntroPages {
+		display: none !important;
 	}
 
 	.searchSection {
@@ -130,6 +139,7 @@
 		min-width: 200px !important;
 		margin-left: 0.1vw !important;
 		font-size: 30px !important;
+		margin-top: 1.7vh !important;
 	}
 
 	.searchZipcodeInputBox {
@@ -138,7 +148,7 @@
 		height: 12vw !important;
 		border-radius: 1vh;
 		color: #2aa6b9;
-		font-size: 4vh;
+		font-size: 8vw !important;
 	}
 
 	.searchButton {

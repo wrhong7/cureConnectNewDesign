@@ -1,6 +1,35 @@
+@media only screen and (max-width: 961px) {
+    .desiredJobTypeOption {
+        width: 45% !important;
+    }
+
+    .preferredWorkSettingsOption {
+        width: 45% !important;
+    }
+
+    .tolerableInconvenienceOption {
+        width: 18.5vw !important;
+    }
+
+    .prevButton {
+        position: relative !important;
+        float: left !important;
+        margin-top: 15vw !important;
+        width: 25vw !important;
+    }
+
+    .nextButton {
+        position: relative !important;
+        float: left!important;
+        width: 25vw !important;
+        margin-left: 44vw !important;
+        margin-top: 15vw !important;
+    }
+}
+
 .container {
     width: 90vw;
-    height: 67vh;
+    overflow: auto;
     margin-left: 4vw;
 }
 
@@ -147,4 +176,32 @@
     font-size: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+    .desiredJobTypeOption {
+        width: 46% !important;
+    }
+    .preferredWorkSettingsOption {
+        width: 96% !important;
+    }
+    .tolerableInconvenienceOption {
+        width: 46% !important;
+    }
+
+    .prevButton {
+        position: relative;
+        float: left;
+        width: 15vw !important;
+        margin-top: 15vw !important;
+        width: 15vw !important;
+    }
+
+    .nextButton {
+        position: relative;
+        float: left;
+        width: 15vw !important;
+        margin-left: 66vw !important;
+        margin-top: 15vw !important;
+    }
 }

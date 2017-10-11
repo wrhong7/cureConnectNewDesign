@@ -1,3 +1,64 @@
+@media only screen and (max-width: 961px) {
+    .candidateContactBox {
+        width: 90vw !important;
+        margin-left: 5vw !important;
+    }
+
+    .emailInputFieldContainer {
+        width: 100%;
+        min-height: 6vh;
+        overflow: auto;
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+
+    .emailEntryCover {
+        overflow: hidden !important;
+    }
+
+    .changeEmailAddressButton {
+        width: 33vw;
+        font-size: 3vh;
+    }
+
+    .emailConfirmation {
+        width: 53vw !important;
+    }
+
+    .contactPreferenceSelection {
+        width: 41vw !important;
+    }
+
+    .progressBar {
+        display: none !important;
+    }
+
+    .phoneConfirmation {
+        width: 53vw !important;
+    }
+
+    .enterMobilePhoneButton {
+        width: 29vw !important;
+        font-size: 2.5vh !important;
+    }
+
+    .prevButton {
+        margin-top: 10vh !important;
+        margin-left: 2vh !important;
+        width: 15vw !important;
+        position: relative !important;
+        float: left !important;
+    }
+
+    .nextButton {
+        margin-top: 10vh !important;
+        margin-right: 2.5vh !important;
+        width: 15vw !important;
+        position: relative !important;
+        float: right !important;
+    }
+}
+
 .prevButton {
     position: absolute;
     left: 4vw;
@@ -209,4 +270,65 @@
 .progressBarFour {
     color: white !important;
     background-color: #009EB3 !important;
+}
+
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+    .candidateContactBox {
+        width: 90vw !important;
+        margin-left: 3vw !important;
+    }
+
+    .emailConfirmation {
+        width: 86vw !important;
+        margin-top: 3vw !important;
+        margin-bottom: 3vw !important;
+        margin-left: 1vw;
+    }
+
+    .changeEmailAddressButton {
+        width: 88vw !important;
+        height: 10vw !important;
+        font-size: 7vw !important;
+    }
+
+    .phoneConfirmation {
+        margin-left: 1vw !important;
+    }
+
+    .progressBar {
+        display: none;
+    }
+
+    .emailOptionSection {
+        margin-top: 0vh !important;
+    }
+
+    .contactPreferenceSelection {
+        width: 43.5vw !important;
+        font-size: 5vw !important;
+    }
+
+    .enterMobilePhoneButton {
+        width: 36.5vw !important;
+        font-size: 4vw !important;
+    }
+
+    .contactHeader {
+        text-align: center;
+    }
+
+    .prevButton {
+        position: relative;
+        float: left;
+        margin-top: 15vw !important;
+        width: 25vw !important;
+    }
+
+    .nextButton {
+        position: relative;
+        float: left;
+        width: 25vw !important;
+        margin-left: 46vw !important;
+        margin-top: 15vw !important;
+    }
 }

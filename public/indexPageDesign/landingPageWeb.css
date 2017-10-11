@@ -90,7 +90,7 @@ body {
 	width: 15vw;
 	font-size: 5vh;
 	height: 8vh;
-	margin-top: 1.7vh !important;
+	margin-top: 1.7vh;
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
 }
@@ -177,6 +177,7 @@ body {
 .select2-search__field {
 	color: #2aa6b9;
 	height: 4vh;
+	font-size: 8vw !important;
 }
 
 .productIntroUpperLevel {
@@ -329,6 +330,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	opacity: 0.6;
 	text-align: center;
+}
+
+input {
+	-webkit-border-radius:0;
+	border-radius:0;
 }
 
 input {

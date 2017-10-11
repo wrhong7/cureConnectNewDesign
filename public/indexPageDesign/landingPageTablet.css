@@ -33,9 +33,8 @@
 	}
 
 	.searchFields {
-	    width: 72vw;
-	    margin-left: 13vw;
-	    overflow: auto;
+		width: 88vw;
+		margin-left: 6vw;
 	}
 
 	.searchButtonText {
@@ -45,19 +44,19 @@
 
 	.searchPositionType {
 		float: left;
-		width: 99.5% !important;
+		width: 99% !important;
 	}
 
 	.searchZipCode {
 		float: left;
-		width: 99% !important;
-		margin: 1vh 0 0 0 !important;
+		width: 98.5% !important;
+		margin: 3.7vh 0 0 0 !important;
 	}
 
 	.searchButton {
 		float: left;
-		width: 99% !important;
-		margin: 1vh 0 0 0 !important;
+		width: 98% !important;
+		margin: 1vh 0 0 0;
 		background-color: #2AA6B9;
 		color: white;
 	}
@@ -82,6 +81,10 @@
 	.indexPageBackground {
 		height: 110vh !important;
 
+	}
+
+	.select2-container--default {
+		margin-top: 1vw !important;
 	}
 
 
