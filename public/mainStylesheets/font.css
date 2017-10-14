@@ -36,6 +36,10 @@ div {
 	min-height: 2.3rem !important;
 }
 
+.logoC {
+	font-size: 4.5vh;
+}
+
 input {
 	appearance: none;
 	-moz-appearance: none;

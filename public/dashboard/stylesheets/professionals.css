@@ -1,9 +1,19 @@
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+    .menuButton {
+        padding: 6vw 0 6vw 0 !important
+    }
+
+    .dashboardContainer {
+        font-size: 6vw;
+    }
+}
+
 @media only screen and (max-width: 961px) {
     .upperFloor {
         width: 80% !important;
         height: 5vw;
         background-color: white !important;
-        border: solid white 0.5vh;
+        border: solid white 0vh;
         color: white;
         margin-top: 0 !important;
     }
@@ -11,7 +21,6 @@
     .buttonOne {
         width: 100% !important;
         margin-left: 0 !important;
-        height: auto !important;
         background-color: #16436A;
         border: solid #16436A 0.5vh;
         color: white;
@@ -25,6 +34,49 @@
         padding-left: 0 !important;
         padding-top: 5vw !important;
         padding-bottom: 5vw !important;
+    }
+
+    .buttonTwo {
+        margin-top: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .buttonTwoCaption {
+        width: 100% !important;
+        margin-left: 0 !important;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        padding-left: 0 !important;
+    }
+
+    .buttonThree {
+        width: 100% !important;
+        height: auto !important;
+        border: solid 0.5vh;
+        margin-left: 0 !important;
+    }
+
+    .buttonThreeCaption {
+        width: 100% !important;
+        overflow: auto;
+        text-align: center;
+        padding: 5vw 0 5vw 0 !important;
+    }
+
+    .buttonFour {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .buttonFourCaption {
+        width: 100%;
+        height: auto !important;
+        padding-top: 5vw !important;
+        padding-left: 0 !important;
+        padding-bottom: 5vw !important;
+        text-align: center;
     }
 
     .menuButton br {
@@ -42,13 +94,13 @@
 
 .upperFloor {
     width: 80vw;
-    height: 35vh;
+    height: auto;
     margin-left: 10vw;
 }
 
 .lowerFloor {
-    width: 80vw;
-    height: 35vh;
+    width: 80%;
+    height: auto;
     margin-left: 10vw;
 }
 
@@ -85,9 +137,10 @@
 .buttonTwoCaption {
     width: 80%;
     overflow: auto;
-    padding-top: 8vh;
-    padding-left: 10vh;
     color: #2AA6B9;
+    padding-top: 5vw;
+    padding-left: 1vw;
+    padding-bottom: 5vw;
 }
 
 .buttonTwo {
@@ -108,8 +161,8 @@
 .buttonThreeCaption {
     width: 80%;
     overflow: auto;
-    padding-top: 7vh;
-    padding-left: 14vh;
+padding-top: 7vh;
+padding-left: 14vh;
 }
 
 .buttonFour {

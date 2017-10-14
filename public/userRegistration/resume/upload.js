@@ -44,6 +44,53 @@ function convertToBase64() {
   }
 }
 
+//there should be two functions; post and load whatever they have put in before.
+
+function loadEnteredInformationFromServer() {
+  currentUser = firebase.auth().currentUser.m;
+  firebaseDB = firebase.database();
+  userProfileInfo = firebase.database().ref('usersDB/professional/1Nm3H6ZJxZUh9WO5R25CAEx5gM53');
+  userProfileInfo.on('value', function(data) {
+      jobPostingData = firebase.database().ref('usersDB/professional/1Nm3H6ZJxZUh9WO5R25CAEx5gM53/userProfile');
+      jobPostingData.on('value', function(data) {
+        userProfile.log(data.val());
+      })
+  })
+}
+
+//1. this needs to be loaded every time when page is fully loaded
+//2. this information needs to fill up the user registeration section
+//3. every time the next button gets clicked, this button should be clicked and moved on.
+
+function enterInformationAndSubmitToServer() {
+
+  resumeBinary = resumePDFBinary;
+  userName = $(".candidateName").val();
+  userZipCode= $(".zipcodeEntry").val();
+  userProfession = $("#medicalProfession").val();
+  userYearsOfExperience = $("#yearsOfExperience").val();
+  userLicenses= $("#certifiedLicenses").val();
+  userLicenseStates= $("#certifiedStates").val();
+  userLanguages = $("#languages").val();
+  userWorkAuthorization= $("#workAuthorization").val();
+
+  userDB = firebaseDB.ref('usersDB/professional/'+firebase.auth().currentUser.uid).update({
+    professionalProfile: {
+      userID: firebase.auth().currentUser.uid,
+      userResume: resumeBinary,
+      userName: userName,
+      userZipCode: userZipCode,
+      userProfession: userProfession,
+      userYearsOfExperience: userYearsOfExperience,
+      userLicenses: userLicenses,
+      userLicenseStates: userLicenseStates,
+      userLanguages: userLanguages,
+      userWorkAuthorization: userWorkAuthorization,
+      completionStatus: "preCompletion"
+    }
+  });
+}
+
 var medicalProfession = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
 var yearsOfExperience = ["1-2 Years", "3-5 Years", "5-7 Years", "7+ Years"];
 var currentEmployerLocation = ["Dallas Metropolitan Area", "New York Metropolitan Area"];

@@ -21,22 +21,32 @@ function showUserDashboard(userType, profileCompletionStatus) {
 	$(".userView").css("cssText", "display: inline-block;");
 
 	if (profileCompletionStatus == "preCompletion") {
-		$(".postCompletionView").css("cssText", "display: none;");
-		$(".preCompletionView").css("cssText", "display: inline-block;");
+		//if user is not fully registered, they should be redirected to the registeration section.
+		//Depending on the user, user should be redirected to either the recruiter or professional registeration section.
+		console.log("This user did not finish the registeration")
+
+		// $(".postCompletionView").css("cssText", "display: none;");
+		// $(".preCompletionView").css("cssText", "display: inline-block;");
 		if (userType == "professional") {
-			$(".professionalPreCompletionView").css("cssText", "display: inline-block;");
+			$(".finishRegisterationForProfessionals").css("cssText", "display: inline-block;");
 		} else if (userType == "hospitalRecruiter") {
-			$(".hospitalRecruiterPreCompletionView").css("cssText", "display: inline-block;");
+			$(".finishRegisterationForRecruiters").css("cssText", "display: inline-block;");
 		} else if (userType == "independentRecruiter") {
 			$(".independentRecruiterPreCompletionView").css("cssText", "display: inline-block;");
 		}
 	} else if (profileCompletionStatus == "postCompletion") {
+		//if user profile is completed, they should be allowed to click each one's dashbaord.
+
+
+    // dashboardForRecruiters
+    // dashboardForProfessionals
+
 		$(".preCompletionView").css("cssText", "display: none;");
 		$(".postCompletionView").css("cssText", "display: inline-block;");
 		if (userType == "professional") {
-			$(".professionalCompletionView").css("cssText", "display: inline-block;");
+			$(".dashboardForProfessionals").css("cssText", "display: inline-block;");
 		} else if (userType == "hospitalRecruiter") {
-			$(".hospitalRecruiterCompletionView").css("cssText", "display: inline-block;");
+			$(".dashboardForRecruiters").css("cssText", "display: inline-block;");
 		} else if (userType == "independentRecruiter") {
 			$(".independentRecruiterCompletionView").css("cssText", "display: inline-block;");
 		}

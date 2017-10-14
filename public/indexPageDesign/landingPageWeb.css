@@ -236,6 +236,7 @@ body {
 .select2-selection--multiple {
 	border: solid 0.2vh #2aa6b9 !important;
 	border-radius: 1vh !important;
+	height: 8vh !important;
 }
 
 .select2-container--default .select2-search--inline .select2-search__field {
@@ -244,7 +245,7 @@ body {
 
 .select2-container--default .select2-selection--multiple {
 	border-radius: 1vh !important;
-	height: 8vh !important;
+	min-height: 8vh !important;
 }
 
 .select2-results {
@@ -362,4 +363,22 @@ textarea:focus, input:focus{
 	z-index: 4;
 	background-color: white;
 	bottom: -2vh;
+}
+
+.dashboardForRecruiters {
+	display: none;
+}
+
+.dashboardForProfessionals {
+	display: none;
+}
+
+.finishRegisterationForRecruiters {
+	color: rgb(224, 36, 94);
+	display: none;
+}
+
+.finishRegisterationForProfessionals {
+	color: rgb(224, 36, 94);
+	display: none;
 }
