@@ -21,12 +21,17 @@
     <!-- Following two are just for the registeration purposes -->
     <script src="/userRegistration/backendScript/googleRegister.js"></script>
     <script src="/userRegistration/backendScript/emailRegister.js"></script>
+    <script src="backend/basicInfo.js"></script>
 
     <!-- Upload Stylesheets -->
     <link rel="stylesheet" href="/headerProperties/headerProps.css"/>
     <link rel="stylesheet" href="/userRegistration/hospitalRecruiters/stylesheets/basicInfo.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"/>
     <link rel="stylesheet" href="/mainStylesheets/font.css"/>
+
+    <!--Script for jQuery Autofill-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
     <script type="text/javascript" src="https://platform.linkedin.com/in.js">
       api_key: 77a98y6t2xsvbb
@@ -57,7 +62,9 @@
             <div class="entryTitle">Recruiter Title</div>
             <input class="entryField recruiterJobTitle"></input>
             <div class="entryTitle">Recruiting Speciality</div>
-            <input class="entryField recruitingSpecialty"></input>
+            <div class="recruitingSpecialtyContainer">
+                <select class="js-example-basic-multiple" id="recruitingSpecialty" multiple="multiple"></select>
+            </div>
         </div>
 
         <div class="hospitalInfo">
@@ -68,8 +75,8 @@
             <input class="entryField hospitalLocation"></input>
             <div class="entryTitle">Hospital Zip Code</div>
             <input class="entryField hospitalZipCode"></input>
-            <div class="entryTitle">Total Number of Employees</div>
-            <input class="entryField hospitalEmployeeCount"></input>
+            <div class="entryTitle">Hospital Address (Exact)</div>
+            <input class="entryField hospitalAddress"></input>
         </div>
     </div>
 
@@ -97,7 +104,7 @@
 
 
 <div class="button nextButton"
-     onclick='location.href="/userRegistration/hospitalRecruiters/postJobs.html"'>
+     onclick="enterInformationAndSubmitToServer();">
     Next
 </div>
 

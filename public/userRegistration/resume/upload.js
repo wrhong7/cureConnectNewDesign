@@ -1,6 +1,16 @@
 //Resume Uploader:
 var resumePDFBinary;
 
+function viewServerResume() {
+  $(".uploadResumeButtonContainer").css("margin-top", "1vh");
+  $(".uploadResumeButtonContainer").css("margin-bottom", "1vh");
+  $(".uploadResumeButton").empty();
+  $(".uploadResumeButton").append('Replace Resume');
+  $(".resumeContainer").append(
+    '<object class="csviFrameSizeAdjustment" data='+resumePDFBinary+' type="application/pdf" height="100%" width="100%"></object>'
+  );
+}
+
 function convertToBase64() {
   //Read File
   var selectedFile = document.getElementById("file").files;
@@ -47,13 +57,55 @@ function convertToBase64() {
 //there should be two functions; post and load whatever they have put in before.
 
 function loadEnteredInformationFromServer() {
-  currentUser = firebase.auth().currentUser.m;
+  currentUser = firebase.auth().currentUser.uid;
   firebaseDB = firebase.database();
-  userProfileInfo = firebase.database().ref('usersDB/professional/1Nm3H6ZJxZUh9WO5R25CAEx5gM53');
+  url = "usersDB/professional/"+currentUser;
+
+  userProfileInfo = firebase.database().ref(url);
   userProfileInfo.on('value', function(data) {
-      jobPostingData = firebase.database().ref('usersDB/professional/1Nm3H6ZJxZUh9WO5R25CAEx5gM53/userProfile');
+      userProfileURL = url + "/professionalProfile"
+      jobPostingData = firebase.database().ref(userProfileURL);
+      console.log(jobPostingData);
       jobPostingData.on('value', function(data) {
-        userProfile.log(data.val());
+        userAttributes = data.val();
+        userAttributesObjectKeys = Object.keys(userAttributes);
+
+        userAttributesObjectKeys.forEach(function(objectKey) {
+          if (objectKey=="userResume") {
+            resumePDFBinary = userAttributes["userResume"];
+            viewServerResume();
+          }
+          if (objectKey == "userLanguages") {
+            languageArray = userAttributes["userLanguages"];
+            $("#languages").val(languageArray).trigger("change");
+          }
+          if (objectKey == "userProfession") {
+            array = userAttributes["userProfession"];
+            $("#medicalProfession").val(array).trigger("change");
+          }
+          if (objectKey == "userYearsOfExperience") {
+            array = userAttributes["userYearsOfExperience"];
+            $("#yearsOfExperience").val(array).trigger("change");
+          }
+          if (objectKey == "userLicenses") {
+            array = userAttributes["userLicenses"];
+            $("#certifiedLicenses").val(array).trigger("change");
+          }
+          if (objectKey == "userLicenseStates") {
+            array = userAttributes["userLicenseStates"];
+            $("#certifiedStates").val(array).trigger("change");
+          }
+          if (objectKey == "userWorkAuthorization") {
+            array = userAttributes["userWorkAuthorization"];
+            $("#workAuthorization").val(array).trigger("change");
+          }
+          if (objectKey == "userName") {
+            $(".candidateName").val(userAttributes["userName"]);
+          }
+          if (objectKey == "userZipCode") {
+            $(".zipcodeEntry").val(userAttributes["userZipCode"]);
+          }
+        });
       })
   })
 }
@@ -74,21 +126,29 @@ function enterInformationAndSubmitToServer() {
   userLanguages = $("#languages").val();
   userWorkAuthorization= $("#workAuthorization").val();
 
-  userDB = firebaseDB.ref('usersDB/professional/'+firebase.auth().currentUser.uid).update({
-    professionalProfile: {
-      userID: firebase.auth().currentUser.uid,
-      userResume: resumeBinary,
-      userName: userName,
-      userZipCode: userZipCode,
-      userProfession: userProfession,
-      userYearsOfExperience: userYearsOfExperience,
-      userLicenses: userLicenses,
-      userLicenseStates: userLicenseStates,
-      userLanguages: userLanguages,
-      userWorkAuthorization: userWorkAuthorization,
-      completionStatus: "preCompletion"
+  userProfessionalProfileObjects = {
+    resumeBinary: resumeBinary,
+    userName: userName,
+    userZipCode: userZipCode,
+    userProfession: userProfession,
+    userYearsOfExperience: userYearsOfExperience,
+    userLicenses: userLicenses,
+    userLicenseStates: userLicenseStates,
+    userLanguages: userLanguages,
+    userWorkAuthorization: userWorkAuthorization,
+  }
+
+  $.each(userProfessionalProfileObjects, function(key, value){
+    if (value === "" || value === null || value == undefined){
+      delete userProfessionalProfileObjects[key];
     }
   });
+
+  url = 'usersDB/professional/'+firebase.auth().currentUser.uid+'/professionalProfile';
+
+  userDB = firebaseDB.ref(url).set(userProfessionalProfileObjects);
+
+  location.href="/userRegistration/preference/selection.html";
 }
 
 var medicalProfession = ["doctor", "nurse", "recruiter", "psychologist", "physical therapists"];
@@ -100,6 +160,9 @@ var languages = ["Russian", "Korean", "Polish", "Spanish", "French"];
 var workAuthorization = ["US Citizen or Permanent Resident", "No Sponsorship Required", "Sponsorship Required"];
 
 $(document).ready(function() {
+
+  setTimeout(function(){ loadEnteredInformationFromServer(); }, 4500);
+
   $("#medicalProfession").select2();
   $("#medicalProfession").select2({
     placeholder: "Relevant Field(s)"
@@ -132,37 +195,37 @@ $(document).ready(function() {
 
   medicalProfession.forEach(function(profession) {
     $("#medicalProfession").append(
-      "<option value="+profession+">"+profession+"</option>"
+      "<option class="+profession+"value="+profession+">"+profession+"</option>"
     )
   })
 
   yearsOfExperience.forEach(function(profession) {
     $("#yearsOfExperience").append(
-      "<option value="+profession+">"+profession+"</option>"
+      "<option class="+profession+"value="+profession+">"+profession+"</option>"
     )
   })
 
   certifiedLicenses.forEach(function(profession) {
     $("#certifiedLicenses").append(
-      "<option value="+profession+">"+profession+"</option>"
+      "<option class="+profession+"value="+profession+">"+profession+"</option>"
     )
   })
 
   certifiedStates.forEach(function(profession) {
     $("#certifiedStates").append(
-      "<option value="+profession+">"+profession+"</option>"
+      "<option class="+profession+"value="+profession+">"+profession+"</option>"
     )
   })
 
   languages.forEach(function(profession) {
     $("#languages").append(
-      "<option value="+profession+">"+profession+"</option>"
+      "<option class="+profession+"value="+profession+">"+profession+"</option>"
     )
   })
 
   workAuthorization.forEach(function(profession) {
     $("#workAuthorization").append(
-      "<option value="+profession+">"+profession+"</option>"
+      "<option class="+profession+"value="+profession+">"+profession+"</option>"
     )
   })
 

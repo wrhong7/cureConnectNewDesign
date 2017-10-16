@@ -93,7 +93,7 @@
 
 .entryTitle {
     margin-left: 5%;
-    margin-top: 2.5vh;
+    margin-top: 1vh;
     font-style: italic;
     font-size: 3.5vh;
     margin-bottom: 1vh;
@@ -101,7 +101,7 @@
 
 .entryField {
     width: 85%;
-    height: 4vh;
+    height: 7vh;
     font-size: 3.5vh;
     margin-left: 5%;
     padding-left: 2vh;
@@ -187,4 +187,22 @@
 
 .circleText {
     margin-top: 1.2vh;
+}
+
+.recruitingSpecialtyContainer {
+    margin-left: 2vw;
+    width: 35vw;
+    height: 7vh;
+}
+
+.select2-container--default {
+    width: 100% !important;
+}
+
+.select2-container--open {
+    width: 80% !important;
+}
+
+.select2-container--above {
+    width: 100% !important;
 }

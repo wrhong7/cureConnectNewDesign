@@ -9,6 +9,8 @@ function sendConfCodeButtonClicked() {
   $(".sendCodeButton").css("display", "inline");
 }
 
+
+
 $( document ).ready(function() {
   setTimeout(function(){
     $(".emailConfirmation").val(firebase.auth().currentUser.email);
