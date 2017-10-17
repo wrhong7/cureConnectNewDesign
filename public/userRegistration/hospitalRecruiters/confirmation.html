@@ -55,10 +55,14 @@
                     <div class="button changeEmailAddressButton" onclick="updateEmailAddress()">Change Email Address</div>
                 </div>
             <div class="emailOptionSection">
-                <div class="button contactPreferenceSelection">Application<br>Received</div>
-                <div class="button contactPreferenceSelection">Interview<br>Scheduled</div>
-                <div class="button contactPreferenceSelection">Message<br>Received</div>
-                <div class="button contactPreferenceSelection">Candidate<br>Recommendation</div>
+                <div class="button contactPreferenceSelection emailappReceivedNotification"
+                     onclick="selectionButtonClicked('email','appReceivedNotification')">Application<br>Received</div>
+                <div class="button contactPreferenceSelection emailinterviewScheduledNotification"
+                     onclick="selectionButtonClicked('email','interviewScheduledNotification')">Interview<br>Scheduled</div>
+                <div class="button contactPreferenceSelection emailmessageReceivedNotification"
+                     onclick="selectionButtonClicked('email','messageReceivedNotification')">Message<br>Received</div>
+                <div class="button contactPreferenceSelection emailcandidateRecommendationNotification"
+                     onclick="selectionButtonClicked('email','candidateRecommendationNotification')">Candidate<br>Recommendation</div>
             </div>
         </div>
     </div>
@@ -74,10 +78,14 @@
                     <div class="button sendCodeButton">Resend Code</div>
                 </div>
                 <div class="emailOptionSection">
-                    <div class="button contactPreferenceSelection">Application<br>Received</div>
-                    <div class="button contactPreferenceSelection">Interview<br>Scheduled</div>
-                    <div class="button contactPreferenceSelection">Message<br>Received</div>
-                    <div class="button contactPreferenceSelection">Candidate<br>Recommendation</div>
+                    <div class="button contactPreferenceSelection cellappReceivedNotification"
+                        onclick="selectionButtonClicked('cell','appReceivedNotification')">Application<br>Received</div>
+                    <div class="button contactPreferenceSelection cellinterviewScheduledNotification"
+                         onclick="selectionButtonClicked('cell','interviewScheduledNotification')">Interview<br>Scheduled</div>
+                    <div class="button contactPreferenceSelection cellmessageReceivedNotification"
+                         onclick="selectionButtonClicked('cell','messageReceivedNotification')">Message<br>Received</div>
+                    <div class="button contactPreferenceSelection cellcandidateRecommendationNotification"
+                         onclick="selectionButtonClicked('cell','candidateRecommendationNotification')">Candidate<br>Recommendation</div>
                 </div>
             </div>
         </div>

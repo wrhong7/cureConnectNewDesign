@@ -14,10 +14,30 @@ var cellContactInfo = {
   candidateRecommendationNotification: true,
 };
 
+function changeButtonColor(emailOrCell, buttonType) {
+  classNameToBeChanged = "."+emailOrCell+buttonType;
+  console.log(classNameToBeChanged);
+  contactInfo = emailOrCell == "email" ?
+    emailContactInfo : cellContactInfo;
+
+  contactInfo[buttonType] ?
+    $(classNameToBeChanged).css("background-color", "#EC4545") :
+    $(classNameToBeChanged).css("background-color", "white") ;
+
+  contactInfo[buttonType] ?
+    $(classNameToBeChanged).css("color", "white") :
+    $(classNameToBeChanged).css("color", "#16436A") ;
+
+  contactInfo[buttonType] ?
+    $(classNameToBeChanged).css("border-color", "#EC4545") :
+    $(classNameToBeChanged).css("border-color", "#16436A") ;
+}
+
 function selectionButtonClicked(emailOrCell, buttonType) {
   emailOrCell === "email" ?
     emailContactInfo[buttonType] = !emailContactInfo[buttonType] :
     cellContactInfo[buttonType] = !cellContactInfo[buttonType];
+  changeButtonColor(emailOrCell, buttonType);
 }
 
 
@@ -32,8 +52,8 @@ function sendConfCodeButtonClicked() {
   $(".sendCodeButton").css("display", "inline");
 }
 
-$( document ).ready(function() {
-  setTimeout(function(){
+$(document).ready(function () {
+  setTimeout(function () {
     $(".emailConfirmation").val(firebase.auth().currentUser.email);
   }, 3000);
 });
