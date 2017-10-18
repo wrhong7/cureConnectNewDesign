@@ -9,6 +9,9 @@ div {
 	cursor: default;
 }
 
+div::-moz-selection { background:transparent; }
+div::selection { background:transparent; }
+
 .button:hover {
 	cursor: pointer;
 }

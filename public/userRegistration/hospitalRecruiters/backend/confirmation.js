@@ -14,23 +14,76 @@ var cellContactInfo = {
   candidateRecommendationNotification: true,
 };
 
+function loadContactInformationFromServer(emailOrCell) {
+  currentUser = firebase.auth().currentUser.uid;
+  firebaseDB = firebase.database();
+  url = "usersDB/hospitalRecruiter/"+currentUser;
+
+  userProfileInfo = firebase.database().ref(url);
+  userProfileInfo.on('value', function(data) {
+
+    recruiterProfileURL = emailOrCell == "email" ?
+      'usersDB/hospitalRecruiter/'+currentUser+'/emailContactInfo' :
+      'usersDB/hospitalRecruiter/'+currentUser+'/cellContactInfo';
+
+    dictToBeChanged = emailOrCell == "email" ?
+      emailContactInfo : cellContactInfo;
+
+    console.log(dictToBeChanged);
+
+    recruiterData = firebase.database().ref(recruiterProfileURL);
+    recruiterData.on('value', function(data) {
+      recruiterAttributes = data.val();
+      recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
+      recruiterAttributesObjectKeys.forEach(function(objectKey) {
+        if (objectKey == "appReceivedNotification") {
+          dictToBeChanged["appReceivedNotification"] = recruiterAttributes[objectKey];
+          changeButtonColor(emailOrCell, "appReceivedNotification");
+        }
+        if (objectKey == "interviewScheduledNotification") {
+          dictToBeChanged["interviewScheduledNotification"] = recruiterAttributes[objectKey];
+          changeButtonColor(emailOrCell, "interviewScheduledNotification");
+        }
+        if (objectKey == "messageReceivedNotification") {
+          dictToBeChanged["messageReceivedNotification"] = recruiterAttributes[objectKey];
+          changeButtonColor(emailOrCell, "messageReceivedNotification");
+        }
+        if (objectKey == "candidateRecommendationNotification") {
+          dictToBeChanged["candidateRecommendationNotification"] = recruiterAttributes[objectKey];
+          changeButtonColor(emailOrCell, "candidateRecommendationNotification");
+        }
+      });
+    })
+  })
+}
+
+function submitContactInformationToServer() {
+
+  emailUrl = 'usersDB/hospitalRecruiter/'+firebase.auth().currentUser.uid+'/emailContactInfo';
+  cellUrl = 'usersDB/hospitalRecruiter/'+firebase.auth().currentUser.uid+'/cellContactInfo';
+
+  userDB = firebaseDB.ref(emailUrl).set(emailContactInfo);
+  userDB = firebaseDB.ref(cellUrl).set(cellContactInfo);
+
+  location.href="/"
+}
+
 function changeButtonColor(emailOrCell, buttonType) {
   classNameToBeChanged = "."+emailOrCell+buttonType;
-  console.log(classNameToBeChanged);
   contactInfo = emailOrCell == "email" ?
     emailContactInfo : cellContactInfo;
 
   contactInfo[buttonType] ?
-    $(classNameToBeChanged).css("background-color", "#EC4545") :
+    $(classNameToBeChanged).css("background-color", "#92CC47") :
     $(classNameToBeChanged).css("background-color", "white") ;
 
   contactInfo[buttonType] ?
     $(classNameToBeChanged).css("color", "white") :
     $(classNameToBeChanged).css("color", "#16436A") ;
 
-  contactInfo[buttonType] ?
-    $(classNameToBeChanged).css("border-color", "#EC4545") :
-    $(classNameToBeChanged).css("border-color", "#16436A") ;
+  // contactInfo[buttonType] ?
+  //   $(classNameToBeChanged).css("border-color", "#EC4545") :
+  //   $(classNameToBeChanged).css("border-color", "#16436A") ;
 }
 
 function selectionButtonClicked(emailOrCell, buttonType) {
@@ -39,7 +92,6 @@ function selectionButtonClicked(emailOrCell, buttonType) {
     cellContactInfo[buttonType] = !cellContactInfo[buttonType];
   changeButtonColor(emailOrCell, buttonType);
 }
-
 
 function sendConfCodeButtonClicked() {
   phoneNumberEntered = $(".phoneConfirmation").val();
@@ -53,7 +105,15 @@ function sendConfCodeButtonClicked() {
 }
 
 $(document).ready(function () {
+  emailObjectKeys = Object.keys(emailContactInfo);
+  cellObjectKeys = Object.keys(cellContactInfo);
+
+  emailObjectKeys.splice(0,1);
+  cellObjectKeys.splice(0,1);
+
   setTimeout(function () {
     $(".emailConfirmation").val(firebase.auth().currentUser.email);
-  }, 3000);
+    loadContactInformationFromServer("email");
+    loadContactInformationFromServer("cell");
+  }, 5000);
 });
