@@ -382,3 +382,8 @@ textarea:focus, input:focus{
 	color: rgb(224, 36, 94);
 	display: none;
 }
+
+.userView {
+	/*temporary ducktaping */
+	display: none !important;
+}

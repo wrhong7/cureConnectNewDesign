@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d88003d-de4c-4e83-b69c-bbff1edb6514" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js" afterPath="$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/backEndConnection/searchRelated.js" afterPath="$PROJECT_DIR$/public/backEndConnection/searchRelated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js" afterPath="$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/backEndConnection/userViewRendering.js" afterPath="$PROJECT_DIR$/public/backEndConnection/userViewRendering.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/headerProperties/headerProperties.js" afterPath="$PROJECT_DIR$/public/headerProperties/headerProperties.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/headerProperties/headerProps.css" afterPath="$PROJECT_DIR$/public/headerProperties/headerProps.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blogBackEnd/blogBackend.js" afterPath="$PROJECT_DIR$/public/blogBackEnd/blogBackend.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/indexPageDesign/landingPageMobile.css" afterPath="$PROJECT_DIR$/public/indexPageDesign/landingPageMobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/indexPageDesign/landingPageTablet.css" afterPath="$PROJECT_DIR$/public/indexPageDesign/landingPageTablet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css" afterPath="$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mainStylesheets/companyDetailsSection.css" afterPath="$PROJECT_DIR$/public/mainStylesheets/companyDetailsSection.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mainStylesheets/font.css" afterPath="$PROJECT_DIR$/public/mainStylesheets/font.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/search/Results.css" afterPath="$PROJECT_DIR$/public/search/Results.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/search/Results.html" afterPath="$PROJECT_DIR$/public/search/Results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/search/Results.js" afterPath="$PROJECT_DIR$/public/search/Results.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/search/ResultsMobile.css" afterPath="$PROJECT_DIR$/public/search/ResultsMobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userLogInOut/in.css" afterPath="$PROJECT_DIR$/public/userLogInOut/in.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userLogInOut/in.html" afterPath="$PROJECT_DIR$/public/userLogInOut/in.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegistration/signUp.html" afterPath="$PROJECT_DIR$/public/userRegistration/signUp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegistration/stylesheets/credential.css" afterPath="$PROJECT_DIR$/public/userRegistration/stylesheets/credential.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegistration/stylesheets/signUp.css" afterPath="$PROJECT_DIR$/public/userRegistration/stylesheets/signUp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js" afterPath="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +24,184 @@
     <favorites_list name="devLoginImproved" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <splitter split-orientation="horizontal" split-proportion="0.5552083">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+          <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/userRegistration/resume/upload.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1050">
+                  <caret line="143" column="5" lean-forward="false" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+                  <folding>
+                    <element signature="n#!!block;n#viewServerResume#0" expanded="false" />
+                    <element signature="n#!!block;n#convertToBase64#0" expanded="false" />
+                    <element signature="n#!!block;n#loadEnteredInformationFromServer#0" expanded="false" />
+                    <element signature="e#6433#8251#0" expanded="false" />
+                    <element signature="e#6696#6735#0" expanded="false" />
+                    <element signature="e#6810#6858#0" expanded="false" />
+                    <element signature="e#6929#6976#0" expanded="false" />
+                    <element signature="e#7035#7071#0" expanded="false" />
+                    <element signature="e#7146#7186#0" expanded="false" />
+                    <element signature="e#7419#7547#0" expanded="false" />
+                    <element signature="e#7599#7727#0" expanded="false" />
+                    <element signature="e#7777#7903#0" expanded="false" />
+                    <element signature="e#7947#8067#0" expanded="false" />
+                    <element signature="e#8119#8247#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="basicInfo.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/basicInfo.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2650">
+                  <caret line="106" column="51" lean-forward="false" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="basicInfo.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/basicInfo.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="925">
+                  <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#657#1769#0" expanded="false" />
+                    <element signature="e#3117#3492#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="confirmation.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/confirmation.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/blog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-275">
+                  <caret line="7" column="88" lean-forward="false" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blogBackend.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/blogBackEnd/blogBackend.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="350">
+                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="175">
+                  <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="550">
+                  <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+          <file leaf-file-name="confirmation.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#23#217#0" expanded="false" />
+                    <element signature="e#242#425#0" expanded="false" />
+                    <element signature="n#!!block;n#loadCellPhoneNumberAndUpdateOnThePage#0" expanded="false" />
+                    <element signature="n#!!block;n#loadContactInformationFromServer#0" expanded="false" />
+                    <element signature="e#1517#2743#0" expanded="false" />
+                    <element signature="n#!!block;n#submitContactInformationToServer#0" expanded="false" />
+                    <element signature="n#!!block;n#changeButtonColor#0" expanded="false" />
+                    <element signature="n#!!block;n#selectionButtonClicked#0" expanded="false" />
+                    <element signature="e#4780#5145#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="landingPageWeb.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="389">
+                  <caret line="374" column="0" lean-forward="false" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="font.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/mainStylesheets/font.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="350">
+                  <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="confirmation.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/confirmation.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2050">
+                  <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,36 +214,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.registerationAccountTypeSelection</find>
-      <find>groupLEft</find>
-      <find>emailReg</find>
-      <find>select all rel</find>
-      <find>errorMEssage</find>
-      <find>.registerationOption</find>
-      <find>.keyScript</find>
-      <find>Select</find>
-      <find>.searchPositionType</find>
-      <find>Select</find>
-      <find>mobileMenuButton</find>
-      <find>.productLowerLevelHeader</find>
-      <find>zipcode</find>
-      <find>.detailComponent</find>
-      <find>bottomDis</find>
-      <find>detailComponent</find>
-      <find>.cureConnectHeaderLogo</find>
-      <find>searchPAge</find>
-      <find>select2-selection</find>
-      <find>.searchFields</find>
-      <find>advance</find>
-      <find>.select2-selection</find>
-      <find>.searchZipCode</find>
-      <find>.headerSection</find>
-      <find>advField</find>
-      <find>header</find>
-      <find>mobileMenuButton</find>
-      <find>mobileMen</find>
-      <find>.searchZipcodeInputBox</find>
-      <find>font.css</find>
+      <find>:-ms-input-placeholder</find>
+      <find>.recruiterInfo</find>
+      <find>zip</find>
+      <find>addUserHeader</find>
+      <find>jquery</find>
+      <find>hover</find>
+      <find>.buttonOneCaption</find>
+      <find>.buttonTwoCaption</find>
+      <find>menuButton</find>
+      <find>.select2-container--default .select2-selection--multiple</find>
+      <find>select2-container</find>
+      <find>select2-selection--multiple</find>
+      <find>.select2-selection--multiple</find>
+      <find>logoC</find>
+      <find>out.js</find>
+      <find>logout</find>
+      <find>blog</find>
+      <find>renderUserView</find>
+      <find>rend</find>
+      <find>hospitalRecruiterCompletionView</find>
+      <find>showUserDashboard</find>
+      <find>dashboardButton</find>
+      <find>how it works</find>
+      <find>dashboardG</find>
+      <find>userLanguages</find>
+      <find>select</find>
+      <find>entry</find>
+      <find>contactPreferenceSelection</find>
+      <find>on</find>
+      <find>2016</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -98,57 +260,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/preComp/healthcareProfessionals/resumeUpload.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/contactInfo.html" />
-        <option value="$PROJECT_DIR$/public/scrathboard.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/backendScript/signUp.js" />
-        <option value="$PROJECT_DIR$/public/blog.html" />
-        <option value="$PROJECT_DIR$/public/blogBackEnd/blogBackend.js" />
-        <option value="$PROJECT_DIR$/public/backEndConnection/searchAutoComplete.js" />
-        <option value="$PROJECT_DIR$/public/backEndConnection/globalVariables.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/postJobs.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/basicInfo.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/fieldMapping.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/fieldMapping.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/basicInfo.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/postJobs.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/fieldMapping.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/confirmation.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/confirmation.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/resume/upload.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/resume/upload.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/preference/selection.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/preference/selection.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/contactInfo/entry.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/contactInfo/entry.html" />
-        <option value="$PROJECT_DIR$/public/userRegistration/contactInfo/entry.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/resume/upload.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/preference/selection.css" />
-        <option value="$PROJECT_DIR$/public/indexPageDesign/landingPageScript.js" />
-        <option value="$PROJECT_DIR$/public/backEndConnection/userViewRendering.js" />
-        <option value="$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js" />
-        <option value="$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js" />
         <option value="$PROJECT_DIR$/public/headerProperties/headerProperties.js" />
-        <option value="$PROJECT_DIR$/public/userRegistration/signUp.html" />
         <option value="$PROJECT_DIR$/public/blogBackEnd/blogDesign.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/stylesheets/credential.css" />
         <option value="$PROJECT_DIR$/public/userLogInOut/in.html" />
         <option value="$PROJECT_DIR$/public/userLogInOut/in.css" />
-        <option value="$PROJECT_DIR$/public/indexPageDesign/landingPageTablet.css" />
-        <option value="$PROJECT_DIR$/public/userRegistration/stylesheets/signUp.css" />
-        <option value="$PROJECT_DIR$/public/headerProperties/headerProps.css" />
         <option value="$PROJECT_DIR$/public/backEndConnection/searchRelated.js" />
-        <option value="$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css" />
-        <option value="$PROJECT_DIR$/public/mainStylesheets/companyDetailsSection.css" />
-        <option value="$PROJECT_DIR$/public/search/Results.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/mainStylesheets/font.css" />
+        <option value="$PROJECT_DIR$/public/modalLoading/modals.js" />
         <option value="$PROJECT_DIR$/public/search/ResultsMobile.css" />
+        <option value="$PROJECT_DIR$/public/mobileModalLoading/modals.css" />
+        <option value="$PROJECT_DIR$/public/mobileModalLoading/modals.js" />
+        <option value="$PROJECT_DIR$/public/userRegistration/stylesheets/signUp.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/preference/selection.html" />
+        <option value="$PROJECT_DIR$/public/userRegistration/contactInfo/entry.html" />
+        <option value="$PROJECT_DIR$/public/userRegistration/resume/upload.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/preference/selection.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/contactInfo/entry.css" />
         <option value="$PROJECT_DIR$/public/indexPageDesign/landingPageMobile.css" />
-        <option value="$PROJECT_DIR$/public/search/Results.html" />
+        <option value="$PROJECT_DIR$/public/indexPageDesign/landingPageTablet.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/fieldMapping.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/postJobs.html" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/postJobs.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/backendScript/signUp.js" />
+        <option value="$PROJECT_DIR$/public/userRegistration/stylesheets/credential.css" />
+        <option value="$PROJECT_DIR$/public/mainStylesheets/companyDetailsSection.css" />
         <option value="$PROJECT_DIR$/public/search/Results.css" />
+        <option value="$PROJECT_DIR$/public/search/Results.html" />
+        <option value="$PROJECT_DIR$/public/search/Results.js" />
+        <option value="$PROJECT_DIR$/public/dashboard/recruiterDashboard.html" />
+        <option value="$PROJECT_DIR$/public/dashboard/stylesheets/recruiters.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/signUp.html" />
+        <option value="$PROJECT_DIR$/public/dashboard/stylesheets/professionals.css" />
+        <option value="$PROJECT_DIR$/public/dashboard/professionals.html" />
+        <option value="$PROJECT_DIR$/public/dashboard/recruiters.html" />
+        <option value="$PROJECT_DIR$/public/headerProperties/headerProps.css" />
+        <option value="$PROJECT_DIR$/public/dashboard/stylesheets/dashboard.js" />
+        <option value="$PROJECT_DIR$/public/dashboard/dashboard.js" />
+        <option value="$PROJECT_DIR$/public/backEndConnection/userViewRendering.js" />
+        <option value="$PROJECT_DIR$/public/userRegistration/resume/upload.html" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/basicInfo.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/basicInfo.html" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/basicInfo.js" />
+        <option value="$PROJECT_DIR$/public/userRegistration/resume/upload.js" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/confirmation.css" />
+        <option value="$PROJECT_DIR$/public/mainStylesheets/font.css" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/confirmation.html" />
+        <option value="$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js" />
+        <option value="$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css" />
+        <option value="$PROJECT_DIR$/public/blogBackEnd/blogBackend.js" />
+        <option value="$PROJECT_DIR$/public/package.json" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/index.js" />
+        <option value="$PROJECT_DIR$/public/.gitignore" />
       </list>
     </option>
   </component>
@@ -165,8 +327,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/public/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="372" />
+    <option name="y" value="-39" />
     <option name="width" value="980" />
     <option name="height" value="1030" />
   </component>
@@ -188,6 +354,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,23 +368,10 @@
               <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="devLoginImproved" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="indexPageDesign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devLoginImproved" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devLoginImproved" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,6 +380,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/authorizeduser/Documents/cureConnect/CureConnect/devLoginImproved/public/userRegistration/preference/selection.css" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -284,12 +440,18 @@
       <workItem from="1506178057549" duration="15229000" />
       <workItem from="1506254043727" duration="3415000" />
       <workItem from="1507030588652" duration="10752000" />
-      <workItem from="1507320959756" duration="31203000" />
+      <workItem from="1507320959756" duration="57492000" />
+      <workItem from="1507683168218" duration="3100000" />
+      <workItem from="1507728269813" duration="6739000" />
+      <workItem from="1507748889820" duration="10196000" />
+      <workItem from="1507907584865" duration="5011000" />
+      <workItem from="1508010313058" duration="43736000" />
+      <workItem from="1508325927473" duration="3160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234520000" />
+    <option name="totallyTimeSpent" value="332751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,43 +463,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -350,334 +495,45 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/index.html</url>
-          <line>116</line>
-          <properties />
+          <line>122</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/userRegistration/resume/upload.js</url>
+          <line>161</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/basicInfo.js</url>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/basicInfo.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js</url>
+          <line>108</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/headerProperties/modifyAccounts/account.js">
+    <entry file="file://$PROJECT_DIR$/private/userLogInOut/in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/blogBackEnd/blogBackend.js">
+    <entry file="file://$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/linkedin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/csvUpload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/framework.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/postJobs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/fieldMapping.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/fieldMapping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/resume/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/basicInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/basicInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="86" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/resume/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/postJobs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/fieldMapping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="213" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/preference/selection.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="56" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/confirmation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="211" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/preference/selection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/contactInfo/entry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/contactInfo/entry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/resume/upload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3725">
-          <caret line="149" column="13" lean-forward="false" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/preference/selection.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userLogInOut/out.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/contactInfo/entry.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/indexPageDesign/landingPageScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/headerProperties/headerProperties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/backEndConnection/userViewRendering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/signUp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/headerProperties/headerProperties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/blogBackEnd/blogDesign.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userLogInOut/in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/stylesheets/credential.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userLogInOut/in.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4575">
-          <caret line="183" column="5" lean-forward="true" selection-start-line="183" selection-start-column="5" selection-end-line="183" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/indexPageDesign/landingPageTablet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userRegistration/stylesheets/signUp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/backEndConnection/userViewRendering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/mainStylesheets/companyDetailsSection.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="218" column="1" lean-forward="true" selection-start-line="218" selection-start-column="1" selection-end-line="218" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/headerProperties/headerProps.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/backEndConnection/searchRelated.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="-719">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -685,81 +541,384 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/backEndConnection/firebaseConnection.js">
+    <entry file="file://$PROJECT_DIR$/public/backEndConnection/searchRelated.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/search/Results.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/search/Results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="62" column="79" lean-forward="false" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/indexPageDesign/landingPageMobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/search/ResultsMobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="69" column="75" lean-forward="true" selection-start-line="69" selection-start-column="75" selection-end-line="71" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/search/Results.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="259">
+          <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard/stylesheets/recruiters.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/headerProperties/headerProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard/stylesheets/professionals.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preComp/hospitalRecruiters/disclaimer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preComp/hospitalRecruiters/contactInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preComp/hospitalRecruiters/postPositions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/postComp/hospitalRecruiters/basicInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/postComp/hospitalRecruiters/candidates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/postComp/hospitalRecruiters/openPosition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preComp/hospitalRecruiters/hospitalInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/fieldMapping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard/stylesheets/dashboard.js" />
+    <entry file="file://$PROJECT_DIR$/public/dashboard/recruiters.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard/professionals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/headerProperties/headerProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444">
+          <caret line="22" column="71" lean-forward="false" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/headerProperties/headerProps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/backEndConnection/userViewRendering.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/fieldMapping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/csvUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/linkedin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/backendScript/emailRegister.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/signUp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1106">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/framework.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/credential.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/backEndConnection/secondaryPagesBackendConnection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/search/Results.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/backendScript/signUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/backendScript/googleRegister.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/resume/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/basicInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4925">
+          <caret line="197" column="29" lean-forward="false" selection-start-line="197" selection-start-column="29" selection-end-line="197" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/basicInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2650">
+          <caret line="106" column="51" lean-forward="false" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/stylesheets/confirmation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2050">
+          <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mainStylesheets/font.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/basicInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+          <folding>
+            <element signature="e#657#1769#0" expanded="false" />
+            <element signature="e#3117#3492#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/resume/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="143" column="5" lean-forward="false" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#viewServerResume#0" expanded="false" />
+            <element signature="n#!!block;n#convertToBase64#0" expanded="false" />
+            <element signature="n#!!block;n#loadEnteredInformationFromServer#0" expanded="false" />
+            <element signature="e#6433#8251#0" expanded="false" />
+            <element signature="e#6696#6735#0" expanded="false" />
+            <element signature="e#6810#6858#0" expanded="false" />
+            <element signature="e#6929#6976#0" expanded="false" />
+            <element signature="e#7035#7071#0" expanded="false" />
+            <element signature="e#7146#7186#0" expanded="false" />
+            <element signature="e#7419#7547#0" expanded="false" />
+            <element signature="e#7599#7727#0" expanded="false" />
+            <element signature="e#7777#7903#0" expanded="false" />
+            <element signature="e#7947#8067#0" expanded="false" />
+            <element signature="e#8119#8247#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/backend/confirmation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#217#0" expanded="false" />
+            <element signature="e#242#425#0" expanded="false" />
+            <element signature="n#!!block;n#loadCellPhoneNumberAndUpdateOnThePage#0" expanded="false" />
+            <element signature="n#!!block;n#loadContactInformationFromServer#0" expanded="false" />
+            <element signature="e#1517#2743#0" expanded="false" />
+            <element signature="n#!!block;n#submitContactInformationToServer#0" expanded="false" />
+            <element signature="n#!!block;n#changeButtonColor#0" expanded="false" />
+            <element signature="n#!!block;n#selectionButtonClicked#0" expanded="false" />
+            <element signature="e#4780#5145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/indexPageDesign/landingPageWeb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="374" column="0" lean-forward="false" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userRegistration/hospitalRecruiters/confirmation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="7" column="88" lean-forward="false" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/blogBackEnd/blogBackend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="87" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="550">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/mainStylesheets/font.css">
+    <entry file="file://$PROJECT_DIR$/public/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,5 @@
 var emailContactInfo = {
-  email: "wjh261@stern.nyu.edu",
+  // email: "wjh261@stern.nyu.edu",
   appReceivedNotification: true,
   interviewScheduledNotification: true,
   messageReceivedNotification: true,
@@ -7,12 +7,18 @@ var emailContactInfo = {
 };
 
 var cellContactInfo = {
-  cell: "3476107626",
+  // cell: "3476107626",
   appReceivedNotification: true,
   interviewScheduledNotification: true,
   messageReceivedNotification: true,
   candidateRecommendationNotification: true,
 };
+
+function loadCellPhoneNumberAndUpdateOnThePage() {
+  cellNumber = cellContactInfo["cell"];
+  cellNumberReorganized = cellNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+  $(".phoneConfirmation").val(cellNumberReorganized);
+}
 
 function loadContactInformationFromServer(emailOrCell) {
   currentUser = firebase.auth().currentUser.uid;
@@ -29,13 +35,17 @@ function loadContactInformationFromServer(emailOrCell) {
     dictToBeChanged = emailOrCell == "email" ?
       emailContactInfo : cellContactInfo;
 
-    console.log(dictToBeChanged);
-
     recruiterData = firebase.database().ref(recruiterProfileURL);
     recruiterData.on('value', function(data) {
       recruiterAttributes = data.val();
       recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
       recruiterAttributesObjectKeys.forEach(function(objectKey) {
+        if (objectKey == "email") {
+          dictToBeChanged["email"] = recruiterAttributes[objectKey];
+        }
+        if (objectKey == "cell") {
+          dictToBeChanged["cell"] = recruiterAttributes[objectKey];
+        }
         if (objectKey == "appReceivedNotification") {
           dictToBeChanged["appReceivedNotification"] = recruiterAttributes[objectKey];
           changeButtonColor(emailOrCell, "appReceivedNotification");
@@ -51,13 +61,23 @@ function loadContactInformationFromServer(emailOrCell) {
         if (objectKey == "candidateRecommendationNotification") {
           dictToBeChanged["candidateRecommendationNotification"] = recruiterAttributes[objectKey];
           changeButtonColor(emailOrCell, "candidateRecommendationNotification");
+          console.log(dictToBeChanged);
         }
       });
-    })
+
+    });
+
   })
+  setTimeout(function(){ loadCellPhoneNumberAndUpdateOnThePage(); }, 300);
+
 }
 
 function submitContactInformationToServer() {
+
+  //pinging updated email and cell phone number to the database
+
+  emailContactInfo["email"] = $(".emailConfirmation").val();
+  cellContactInfo["cell"] = $(".phoneConfirmation").val();
 
   emailUrl = 'usersDB/hospitalRecruiter/'+firebase.auth().currentUser.uid+'/emailContactInfo';
   cellUrl = 'usersDB/hospitalRecruiter/'+firebase.auth().currentUser.uid+'/cellContactInfo';
@@ -97,6 +117,7 @@ function sendConfCodeButtonClicked() {
   phoneNumberEntered = $(".phoneConfirmation").val();
   x = phoneNumberEntered.replace(/-/g, '');
   console.log(x);
+
   $(".phoneConfirmation").val('');
   $(".phoneConfirmation").attr("placeholder", "Please enter your confirmation code here")
   $(".enterMobilePhoneButton").css("display", "none");
@@ -104,14 +125,14 @@ function sendConfCodeButtonClicked() {
   $(".sendCodeButton").css("display", "inline");
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
   emailObjectKeys = Object.keys(emailContactInfo);
   cellObjectKeys = Object.keys(cellContactInfo);
 
   emailObjectKeys.splice(0,1);
   cellObjectKeys.splice(0,1);
 
-  setTimeout(function () {
+  setTimeout(function() {
     $(".emailConfirmation").val(firebase.auth().currentUser.email);
     loadContactInformationFromServer("email");
     loadContactInformationFromServer("cell");

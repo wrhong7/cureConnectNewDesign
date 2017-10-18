@@ -1,7 +1,7 @@
 var blogArticle = [
   {
     articleNumber: "article1",
-    articleDate: "September 8, 2016",
+    articleDate: "September 8, 2017",
     articleName: "Suburban Nursing is Interesting",
     articleContent:
     "If you analyze the population data, you will soon figure out American suburbs have the greatest number of qualified and experienced RNs. I am talking about Long Island of New York City and Pasadena of LA. At the same time, suburban and rural clinics are the ones suffering from chronic nursing shortage.<br><br>" +
@@ -15,7 +15,7 @@ var blogArticle = [
   },
   {
     articleNumber: "article2",
-    articleDate: "September 6, 2016",
+    articleDate: "September 6, 2017",
     articleName: "Why is healthcare recruiting so costly?",
     articleContent:
     "We know America’s healthcare is broken, and recruiting is one of its many facets. While hospitals suffer from understaffing, professionals often have difficulty finding their careers. It has been a mystery to me.<br><br>" +
