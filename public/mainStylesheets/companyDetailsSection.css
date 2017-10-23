@@ -1,5 +1,6 @@
 .detailComponent {
     float: left;
+    margin-left: 1.5vw;
     width: 47vw;
     min-width: 200px;
     text-align: center;
@@ -27,7 +28,7 @@
 }
 
 .bottomDisclosureLogo {
-    font-size: 1rem;
+    font-size: 3vh;
     text-align: center;
     padding-top: 6vh;
     border-top: solid 0.1vh;
@@ -35,7 +36,7 @@
 }
 
 .bottomLogoC {
-	font-size: 1.2rem;
+	font-size: 4vh;
 }
 
 .bottomDisclosureComponent {
@@ -48,7 +49,7 @@
     min-width: 200px;
     margin-left: 4vw;
     margin-top: 5vh;
-    font-size: 1rem;
+    font-size: 3vh;
 }
 
 .companyAddress {

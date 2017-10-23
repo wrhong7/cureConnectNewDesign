@@ -1,6 +1,6 @@
 .nonUserView {
 	display: none;
-	margin-top: 15vh;
+	margin-top: 5vh;
 }
 
 .userView {
@@ -48,8 +48,6 @@
 	float: left;
 }
 
-
-
 body {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -57,19 +55,20 @@ body {
 
 .searchSection {
 	text-align: center;
-	min-height: 50vh;
 	width: auto;
 	overflow: auto;
 	padding: 0;
 	text-align: center;
+	height: auto;
+	min-height: 60vh;
 }
 
 .indexPageBackground {
 	position: absolute;
 	z-index: -1;
-	width: 100%;
-	height: 110vh;
-	margin-top: -10vh;
+	width: 100vw;
+    height: 95vh;
+    margin-top: 5vh;
 	background-color: #E4F5FE;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -79,7 +78,7 @@ body {
 
 .searchPositionType {
 	float: left;
-	width: 30vw;
+	width: 50%;
 	font-size: 5vh;
 	height: 7.5vh;
 	margin-top: 1.7vh;
@@ -87,7 +86,7 @@ body {
 
 .searchZipCode {
 	float: left;
-	width: 15vw;
+	width: 30%;
 	font-size: 5vh;
 	height: 8vh;
 	margin-top: 1.7vh;
@@ -110,7 +109,7 @@ body {
 	color: white;
 	border-color: #2AA6B9;
 	float: left;
-	width: 10vw;
+	width: 17%;
 	padding-top: 3px;
 	height: 7.5vh;
 	padding: 0;
@@ -127,18 +126,17 @@ body {
 }
 
 .searchFields {
-	width: 57vw;
-	margin-left: 21vw;
-	min-height: 12vh;
+	width: 60%;
+	margin-left: 20%;
 	overflow: auto;
 }
 
 .scrollDownArrow {
 	position: absolute;
-	bottom: 3vh;
-	width: 20vw;
-	margin-left: 40vw;
-	margin-right: 40vw;
+	bottom: 8vh;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
 	text-align: center;
 	font-size: 4vh;
 }
@@ -239,6 +237,10 @@ body {
 	height: 8vh !important;
 }
 
+.select2-selection__rendered {
+	padding-top: 1% !important;
+}
+
 .select2-container--default .select2-search--inline .select2-search__field {
 	font-size: 4vh !important;
 }
@@ -260,7 +262,7 @@ body {
 }
 
 .searchZipcodeInputBox {
-	width: 100%;
+	width: 99.5%;
 	padding: 0.3vh !important;
 	height: 7vh;
 	border: solid 0.2vh #2aa6b9;
@@ -345,10 +347,9 @@ textarea:focus, input:focus{
 }
 
 .howItWorks {
-	display: none;
 	margin-top: 2vh;
-	font-size: 3vh;
-	margin-left: 2vh;
+    font-size: 2.5vh;
+    margin-left: 2vh;
 }
 
 .mobileMenuButton {
@@ -387,3 +388,10 @@ textarea:focus, input:focus{
 	/*temporary ducktaping */
 	display: none !important;
 }
+
+h4 {
+	-webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+}
+
+

@@ -9,37 +9,40 @@ function loadEnteredInformationFromServer() {
     recruiterData = firebase.database().ref(recruiterProfileURL);
     recruiterData.on('value', function(data) {
       recruiterAttributes = data.val();
-      recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
 
-      recruiterAttributesObjectKeys.forEach(function(objectKey) {
+      if (recruiterAttributes != null) {
+        recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
 
-        if (objectKey == "recruitingSpecialty") {
-          array = recruiterAttributes["recruitingSpecialty"];
-          $("#recruitingSpecialty").val(array).trigger("change");
-        }
-        if (objectKey == "hospitalAddress") {
-          $(".hospitalAddress").val(recruiterAttributes["hospitalAddress"]);
-        }
-        if (objectKey == "hospitalLocation") {
-          $(".hospitalLocation").val(recruiterAttributes["hospitalLocation"]);
-        }
-        if (objectKey == "hospitalName") {
-          $(".hospitalName").val(recruiterAttributes["hospitalName"]);
-        }
-        if (objectKey == "hospitalZipCode") {
-          $(".hospitalZipCode").val(recruiterAttributes["hospitalZipCode"]);
-        }
-        if (objectKey == "recruiterEmail") {
-          $(".recruiterEmail").val(recruiterAttributes["recruiterEmail"]);
-        }
-        if (objectKey == "recruiterName") {
-          $(".recruiterName").val(recruiterAttributes["recruiterName"]);
-        }
-        if (objectKey == "recruiterTitle") {
-          $(".recruiterTitle").val(recruiterAttributes["recruiterTitle"]);
-        }
+        recruiterAttributesObjectKeys.forEach(function(objectKey) {
 
-      });
+          if (objectKey == "recruitingSpecialty") {
+            array = recruiterAttributes["recruitingSpecialty"];
+            $("#recruitingSpecialty").val(array).trigger("change");
+          }
+          if (objectKey == "hospitalAddress") {
+            $(".hospitalAddress").val(recruiterAttributes["hospitalAddress"]);
+          }
+          if (objectKey == "hospitalLocation") {
+            $(".hospitalLocation").val(recruiterAttributes["hospitalLocation"]);
+          }
+          if (objectKey == "hospitalName") {
+            $(".hospitalName").val(recruiterAttributes["hospitalName"]);
+          }
+          if (objectKey == "hospitalZipCode") {
+            $(".hospitalZipCode").val(recruiterAttributes["hospitalZipCode"]);
+          }
+          if (objectKey == "recruiterEmail") {
+            $(".recruiterEmail").val(recruiterAttributes["recruiterEmail"]);
+          }
+          if (objectKey == "recruiterName") {
+            $(".recruiterName").val(recruiterAttributes["recruiterName"]);
+          }
+          if (objectKey == "recruiterTitle") {
+            $(".recruiterTitle").val(recruiterAttributes["recruiterTitle"]);
+          }
+
+        });
+      }
     })
   })
 }

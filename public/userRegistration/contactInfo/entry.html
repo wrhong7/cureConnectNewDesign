@@ -35,73 +35,53 @@
 	</div>
 </div>
 
-<div class="candidateContactBox">
-	<div class="emailContact">
-		<div class="contactHeader">
-			Contact Email
-			<span class="contactHeaderExplanations"></span>
-		</div>
-		<div class="emailInputFieldContainer">
-			<div class="emailEntryCover">
-				<input class="emailConfirmation" type="email" />
-				<div class="button changeEmailAddressButton" onclick="updateEmailAddress()">Change Email Address</div>
-			</div>
-			<div class="emailOptionSection">
-				<div
-						class="button contactPreferenceSelection"
-						id="emailApplicationScheduled"
-						onclick="selectThisField('emailApplicationScheduled')"
-				>Application<br>Received</div>
-				<div
-						class="button contactPreferenceSelection"
-						id="emailInterviewScheduled"
-						onclick="selectThisField('emailInterviewScheduled')"
-				>Interview<br>Scheduled</div>
-				<div
-						class="button contactPreferenceSelection"
-						id="emailMessagesReceived"
-						onclick="selectThisField('emailMessagesReceived')"
-				>Message<br>Received</div>
-				<div
-						class="button contactPreferenceSelection"
-						id="emailJobRecommendation"
-						onclick="selectThisField('emailJobRecommendation')"
-				>Job<br>Recommendation</div>
-			</div>
-		</div>
-	</div>
-	<div class="mobileContact">
-		<div class="contactHeader">
-			Mobile Contacts
-		</div>
-		<div class="emailInputFieldContainer">
-			<div class="emailEntryCover">
-				<input class="phoneConfirmation" placeholder="xxx-xxx-xxxx" />
-				<div class="button enterMobilePhoneButton" onclick="sendConfCodeButtonClicked()">Send Confirmation Code</div>
-				<div class="button submitCodeButton">Enter Code</div>
-				<div class="button sendCodeButton">Resend Code</div>
-			</div>
-			<div class="emailOptionSection">
-				<div
-						class="button contactPreferenceSelection"
-						id="messageApplicationReceived"
-						onclick="selectThisField('messageApplicationReceived')">Application<br>Received</div>
-				<div
-						class="button contactPreferenceSelection"
-						id="messageInterviewScheduled"
-						onclick="selectThisField('messageInterviewScheduled')">Interview<br>Scheduled</div>
-				<div
-						class="button contactPreferenceSelection"
-						id="messageMessageReceived"
-						onclick="selectThisField('messageMessageReceived')">Message<br>Received</div>
-				<div
-						class="button contactPreferenceSelection"
-						id="messageJobRecommendation"
-						onclick="selectThisField('messageJobRecommendation')">Job<br>Recommendation</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="candidateContactBox">
+        <div class="emailContact">
+            <div class="contactHeader">
+                Enter Your Email
+            </div>
+            <div class="emailInputFieldContainer">
+                <div class="emailEntryCover">
+                    <input class="emailConfirmation" type="email" />
+<!--                     <div class="button changeEmailAddressButton" onclick="updateEmailAddress()">Change Email Address</div> -->
+                </div>
+            <div class="emailOptionSection">
+            	<div class="directions">Let us contact you! (click to opt out)</div>
+                <div class="button contactPreferenceSelection emailappReceivedNotification"
+                     onclick="selectionButtonClicked('email','appReceivedNotification')">Application<br>Received</div>
+                <div class="button contactPreferenceSelection emailinterviewScheduledNotification"
+                     onclick="selectionButtonClicked('email','interviewScheduledNotification')">Interview<br>Scheduled</div>
+                <div class="button contactPreferenceSelection emailmessageReceivedNotification"
+                     onclick="selectionButtonClicked('email','messageReceivedNotification')">Message<br>Received</div>
+                <div class="button contactPreferenceSelection emailcandidateRecommendationNotification"
+                     onclick="selectionButtonClicked('email','candidateRecommendationNotification')">Candidate<br>Recommendation</div>
+            </div>
+        </div>
+        <div class="mobileContact">
+            <div class="contactHeader">
+                Mobile Contacts
+            </div>
+            <div class="emailInputFieldContainer">
+                <div class="emailEntryCover">
+                    <input class="phoneConfirmation" placeholder="xxx-xxx-xxxx" />
+                    <div class="button enterMobilePhoneButton" onclick="sendConfCodeButtonClicked()">Send Confirmation Code</div>
+                    <div class="button submitCodeButton">Enter Code</div>
+                    <div class="button sendCodeButton">Resend Code</div>
+                </div>
+                <div class="emailOptionSection">
+                	<div class="directions">Let us contact you! (click to opt out)</div>
+                    <div class="button contactPreferenceSelection cellappReceivedNotification"
+                        onclick="selectionButtonClicked('cell','appReceivedNotification')">Application<br>Received</div>
+                    <div class="button contactPreferenceSelection cellinterviewScheduledNotification"
+                         onclick="selectionButtonClicked('cell','interviewScheduledNotification')">Interview<br>Scheduled</div>
+                    <div class="button contactPreferenceSelection cellmessageReceivedNotification"
+                         onclick="selectionButtonClicked('cell','messageReceivedNotification')">Message<br>Received</div>
+                    <div class="button contactPreferenceSelection cellcandidateRecommendationNotification"
+                         onclick="selectionButtonClicked('cell','candidateRecommendationNotification')">Candidate<br>Recommendation</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="progressBar">
 	<div class="backgroundBar"></div>
@@ -126,7 +106,7 @@
 </div>
 
 <div class="button nextButton"
-	 onclick='submitMappedData()'>
+	 onclick='submitContactInformationToServer()'>
 	Complete
 </div>
 

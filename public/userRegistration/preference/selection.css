@@ -99,7 +99,7 @@
 /*PROGRESS BAR*/
 
 .progressBar {
-    width: 25vw;
+    width: 28vw;
     overflow: auto;
     position: absolute;
     bottom: 1vh;
@@ -107,7 +107,7 @@
 }
 
 .backgroundBar {
-    width: 98%;
+    width: 95%;
     height: 0.3vh;
     margin-top: 4vh;
     background-color: #009EB3;
@@ -123,8 +123,8 @@
     float: left;
     width: 7.6vh;
     height: 7.6vh;
-    border-radius: 4vw;
-    margin-right: 3.4vw;
+    border-radius: 100%;
+    margin-right: 3.5vw;
     border: solid 0.2vh #009EB3;
     color: #009EB3;
     background-color: white;
@@ -134,6 +134,11 @@
 }
 
 .progressBarOne {
+    background-color: #009EB3 !important;
+    color: white !important;
+}
+
+.progressBarTwo {
     background-color: #009EB3 !important;
     color: white !important;
 }

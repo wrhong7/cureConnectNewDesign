@@ -15,9 +15,11 @@ var cellContactInfo = {
 };
 
 function loadCellPhoneNumberAndUpdateOnThePage() {
-  cellNumber = cellContactInfo["cell"];
-  cellNumberReorganized = cellNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
-  $(".phoneConfirmation").val(cellNumberReorganized);
+  if (cellContactInfo["cell"] != null) {
+    cellNumber = cellContactInfo["cell"];
+    cellNumberReorganized = cellNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+    $(".phoneConfirmation").val(cellNumberReorganized);
+  }
 }
 
 function loadContactInformationFromServer(emailOrCell) {
@@ -36,34 +38,50 @@ function loadContactInformationFromServer(emailOrCell) {
       emailContactInfo : cellContactInfo;
 
     recruiterData = firebase.database().ref(recruiterProfileURL);
+
     recruiterData.on('value', function(data) {
       recruiterAttributes = data.val();
-      recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
-      recruiterAttributesObjectKeys.forEach(function(objectKey) {
-        if (objectKey == "email") {
-          dictToBeChanged["email"] = recruiterAttributes[objectKey];
+
+      if (recruiterAttributes != null) {
+        if (emailOrCell == "email") {
+          emailContactInfo = recruiterAttributes;
         }
-        if (objectKey == "cell") {
-          dictToBeChanged["cell"] = recruiterAttributes[objectKey];
+
+        if (emailOrCell == "cell") {
+          cellContactInfo = recruiterAttributes;
         }
-        if (objectKey == "appReceivedNotification") {
-          dictToBeChanged["appReceivedNotification"] = recruiterAttributes[objectKey];
-          changeButtonColor(emailOrCell, "appReceivedNotification");
-        }
-        if (objectKey == "interviewScheduledNotification") {
-          dictToBeChanged["interviewScheduledNotification"] = recruiterAttributes[objectKey];
-          changeButtonColor(emailOrCell, "interviewScheduledNotification");
-        }
-        if (objectKey == "messageReceivedNotification") {
-          dictToBeChanged["messageReceivedNotification"] = recruiterAttributes[objectKey];
-          changeButtonColor(emailOrCell, "messageReceivedNotification");
-        }
-        if (objectKey == "candidateRecommendationNotification") {
-          dictToBeChanged["candidateRecommendationNotification"] = recruiterAttributes[objectKey];
-          changeButtonColor(emailOrCell, "candidateRecommendationNotification");
-          console.log(dictToBeChanged);
-        }
-      });
+      }
+
+
+
+      if (recruiterAttributes != null) {
+        recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
+        recruiterAttributesObjectKeys.forEach(function(objectKey) {
+          if (objectKey == "email") {
+            dictToBeChanged["email"] = recruiterAttributes[objectKey];
+          }
+          if (objectKey == "cell") {
+            dictToBeChanged["cell"] = recruiterAttributes[objectKey];
+          }
+          if (objectKey == "appReceivedNotification") {
+            dictToBeChanged["appReceivedNotification"] = recruiterAttributes[objectKey];
+            changeButtonColor(emailOrCell, "appReceivedNotification");
+          }
+          if (objectKey == "interviewScheduledNotification") {
+            dictToBeChanged["interviewScheduledNotification"] = recruiterAttributes[objectKey];
+            changeButtonColor(emailOrCell, "interviewScheduledNotification");
+          }
+          if (objectKey == "messageReceivedNotification") {
+            dictToBeChanged["messageReceivedNotification"] = recruiterAttributes[objectKey];
+            changeButtonColor(emailOrCell, "messageReceivedNotification");
+          }
+          if (objectKey == "candidateRecommendationNotification") {
+            dictToBeChanged["candidateRecommendationNotification"] = recruiterAttributes[objectKey];
+            changeButtonColor(emailOrCell, "candidateRecommendationNotification");
+            console.log(dictToBeChanged);
+          }
+        });
+      }
 
     });
 

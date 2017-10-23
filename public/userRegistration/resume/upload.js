@@ -62,50 +62,55 @@ function loadEnteredInformationFromServer() {
   url = "usersDB/professional/"+currentUser;
 
   userProfileInfo = firebase.database().ref(url);
+
+
   userProfileInfo.on('value', function(data) {
       userProfileURL = url + "/professionalProfile"
       jobPostingData = firebase.database().ref(userProfileURL);
-      console.log(jobPostingData);
       jobPostingData.on('value', function(data) {
         userAttributes = data.val();
-        userAttributesObjectKeys = Object.keys(userAttributes);
+        
+        if (userAttributes != null) {
 
-        userAttributesObjectKeys.forEach(function(objectKey) {
-          if (objectKey=="userResume") {
-            resumePDFBinary = userAttributes["userResume"];
-            viewServerResume();
-          }
-          if (objectKey == "userLanguages") {
-            languageArray = userAttributes["userLanguages"];
-            $("#languages").val(languageArray).trigger("change");
-          }
-          if (objectKey == "userProfession") {
-            array = userAttributes["userProfession"];
-            $("#medicalProfession").val(array).trigger("change");
-          }
-          if (objectKey == "userYearsOfExperience") {
-            array = userAttributes["userYearsOfExperience"];
-            $("#yearsOfExperience").val(array).trigger("change");
-          }
-          if (objectKey == "userLicenses") {
-            array = userAttributes["userLicenses"];
-            $("#certifiedLicenses").val(array).trigger("change");
-          }
-          if (objectKey == "userLicenseStates") {
-            array = userAttributes["userLicenseStates"];
-            $("#certifiedStates").val(array).trigger("change");
-          }
-          if (objectKey == "userWorkAuthorization") {
-            array = userAttributes["userWorkAuthorization"];
-            $("#workAuthorization").val(array).trigger("change");
-          }
-          if (objectKey == "userName") {
-            $(".candidateName").val(userAttributes["userName"]);
-          }
-          if (objectKey == "userZipCode") {
-            $(".zipcodeEntry").val(userAttributes["userZipCode"]);
-          }
-        });
+          userAttributesObjectKeys = Object.keys(userAttributes);
+        
+          userAttributesObjectKeys.forEach(function(objectKey) {
+            if (objectKey=="userResume") {
+              resumePDFBinary = userAttributes["userResume"];
+              viewServerResume();
+            }
+            if (objectKey == "userLanguages") {
+              languageArray = userAttributes["userLanguages"];
+              $("#languages").val(languageArray).trigger("change");
+            }
+            if (objectKey == "userProfession") {
+              array = userAttributes["userProfession"];
+              $("#medicalProfession").val(array).trigger("change");
+            }
+            if (objectKey == "userYearsOfExperience") {
+              array = userAttributes["userYearsOfExperience"];
+              $("#yearsOfExperience").val(array).trigger("change");
+            }
+            if (objectKey == "userLicenses") {
+              array = userAttributes["userLicenses"];
+              $("#certifiedLicenses").val(array).trigger("change");
+            }
+            if (objectKey == "userLicenseStates") {
+              array = userAttributes["userLicenseStates"];
+              $("#certifiedStates").val(array).trigger("change");
+            }
+            if (objectKey == "userWorkAuthorization") {
+              array = userAttributes["userWorkAuthorization"];
+              $("#workAuthorization").val(array).trigger("change");
+            }
+            if (objectKey == "userName") {
+              $(".candidateName").val(userAttributes["userName"]);
+            }
+            if (objectKey == "userZipCode") {
+              $(".zipcodeEntry").val(userAttributes["userZipCode"]);
+            }
+          });      
+        }
       })
   })
 }

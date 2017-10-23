@@ -61,7 +61,6 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 		<script src="/backEndConnection/searchRelated.js"></script>
-		<script src="/index.js"></script>
 
 	</head>
 
@@ -72,23 +71,27 @@
 			<div class="containerWebView">
 
 				<div class="headerSection">
-					<div class="cureConnectHeaderLogo">
-						<div class="companyName">
-							<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
+					<div class="headerLeft">
+						<div class="cureConnectHeaderLogo">
+							<div class="companyName">
+								<span class="logoC">C</span>URE <span class="logoC">C</span>ONNECT
+							</div>
+							<div class="mobileMenuButton button" onclick="pressedMobileButton()">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
 						</div>
-						<div class="mobileMenuButton button" onclick="pressedMobileButton()">
-							<i class="fa fa-bars" aria-hidden="true"></i>
+						<div class="blogButton button" onclick='location.href="/blog.html"'>blog</div>
+						<div class="dashboardButton button">
+							<div class="dashboardForRecruiters button" onclick='location.href="/dashboard/recruiters.html"'>dashboard</div>
+							<div class="dashboardForProfessionals button" onclick='location.href="/dashboard/professionals.html"'>dashboard</div>
+							<div class="finishRegisterationForRecruiters button" onclick='location.href="/userRegistration/hospitalRecruiters/basicInfo"'>Finish Registeration</div>
+							<div class="finishRegisterationForProfessionals button" onclick='location.href="/userRegistration/resume/upload.html"'>Finish Registeration</div>
 						</div>
+						<div class="howItWorks button">how it works</div>
 					</div>
-					<div class="blogButton button" onclick='location.href="/blog.html"'>blog</div>
-				<div class="dashboardButton button">
-					<div class="dashboardForRecruiters button" onclick='location.href="/dashboard/recruiters.html"'>dashboard</div>
-					<div class="dashboardForProfessionals button" onclick='location.href="/dashboard/professionals.html"'>dashboard</div>
-					<div class="finishRegisterationForRecruiters button" onclick='location.href="/userRegistration/hospitalRecruiters/basicInfo"'>Finish Registeration</div>
-					<div class="finishRegisterationForProfessionals button" onclick='location.href="/userRegistration/resume/upload.html"'>Finish Registeration</div>
-				</div>
-					<div class="howItWorks button">how it works?</div>
-					<div class="headerLoginSection">
+					<div class="headerRight">
+						<div class="headerLoginSection">
+						</div>
 					</div>
 					<!--This is where javascript inserts the login logout and signup information based on the record they pull from the browser.-->
 				</div>
@@ -96,7 +99,9 @@
 				<div class="searchSection">
 
 					<div class="searchScript">
-						<div class="keyScript">Transparent Healthcare Recruiting</div>
+						<div class="keyScript">
+							Transparent Healthcare Recruiting
+						</div>
 						<div class="subscript">
 							Know everything and apply with one click.
 						</div>

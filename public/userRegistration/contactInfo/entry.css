@@ -59,6 +59,10 @@
     }
 }
 
+body {
+    background-color: #E0F6FF;
+}
+
 .prevButton {
     position: absolute;
     left: 4vw;
@@ -106,20 +110,21 @@
     font-weight: 600;
     font-style: italic;
     font-size: 6vh;
+    text-align: center;
 }
 
 .emailInputFieldContainer {
     width: 100%;
     min-height: 6vh;
     overflow: auto;
-    margin-top: 1vh;
+    margin-top: 1.5vh;
     margin-left: 1vh;
 }
 
 .emailConfirmation {
     float: left;
     height: 6vh;
-    width: 50vw;
+    width: 79vw;
     min-width: 250px;
     font-size: 4vh;
     text-align: center;
@@ -128,10 +133,10 @@
 .changeEmailAddressButton {
     float: left;
     border: solid 0.2vh;
-    height: 6.1vh;
+    height: 3.5vh;
     width: 29vw;
     text-align: center;
-    padding-top: 1vh;
+    padding: 1.5vh 0 1.5vh 0;
     background-color: #16436A;
     color: white;
     margin-top: -0.3vh;
@@ -141,18 +146,25 @@
     float: left;
     text-align: center;
     width: 19.6vw;
-    border: solid 0.2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    border: solid 0.2vh #E0F6FF;
+    padding: 2vh 0 1vh 0;
+    border-radius: 2vh;
 }
 .emailEntryCover {
     width: 100%;
     overflow: auto;
 }
+
+.directions {
+    margin-bottom: 1.5vh;
+    text-align: center;
+}
+
 .emailOptionSection {
     width: 100%;
     overflow: auto;
-    margin-top: 3vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
 }
 
 .mobileContact {
@@ -171,7 +183,7 @@
 .enterMobilePhoneButton {
     float: left;
     border: solid 0.2vh;
-    height: 6.1vh;
+    height: 5.5vh;
     width: 29vw;
     text-align: center;
     padding-top: 1vh;
@@ -210,7 +222,7 @@
 /*PROGRESS BAR*/
 
 .progressBar {
-    width: 25vw;
+    width: 27vw;
     overflow: auto;
     position: absolute;
     bottom: 1vh;
@@ -218,7 +230,7 @@
 }
 
 .backgroundBar {
-    width: 98%;
+    width: 95%;
     height: 0.3vh;
     margin-top: 4vh;
     background-color: #009EB3;
