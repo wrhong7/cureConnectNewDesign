@@ -14,12 +14,22 @@ var cellContactInfo = {
   candidateRecommendationNotification: true,
 };
 
-function loadCellPhoneNumberAndUpdateOnThePage() {
-  if (cellContactInfo["cell"] != null) {
-    cellNumber = cellContactInfo["cell"];
-    cellNumberReorganized = cellNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
-    $(".phoneConfirmation").val(cellNumberReorganized);
-  }
+function loadUserRegCompletionInfoFromServer() {
+  currentUser = firebase.auth().currentUser.uid;
+  firebaseDB = firebase.database();
+  url = "usersDB/hospitalRecruiter/"+currentUser+"/userProfile";
+
+  userProfileInfo = firebase.database().ref(url);
+  userProfileInfo.on('value', function(data) {
+    userCompletionAttributes = data.val();
+    userProfile = userCompletionAttributes;
+    userProfile["completionStatus"] = "postCompletion";
+  })
+}
+
+function submitUserRegCompletionInfoToServer() {
+  url = 'usersDB/hospitalRecruiter/'+firebase.auth().currentUser.uid+'/userProfile';
+  userDB = firebaseDB.ref(url).set(userProfile);
 }
 
 function loadContactInformationFromServer(emailOrCell) {
@@ -52,8 +62,6 @@ function loadContactInformationFromServer(emailOrCell) {
         }
       }
 
-
-
       if (recruiterAttributes != null) {
         recruiterAttributesObjectKeys = Object.keys(recruiterAttributes);
         recruiterAttributesObjectKeys.forEach(function(objectKey) {
@@ -62,6 +70,7 @@ function loadContactInformationFromServer(emailOrCell) {
           }
           if (objectKey == "cell") {
             dictToBeChanged["cell"] = recruiterAttributes[objectKey];
+            $(".phoneConfirmation").val(recruiterAttributes[objectKey]);
           }
           if (objectKey == "appReceivedNotification") {
             dictToBeChanged["appReceivedNotification"] = recruiterAttributes[objectKey];
@@ -86,13 +95,14 @@ function loadContactInformationFromServer(emailOrCell) {
     });
 
   })
-  setTimeout(function(){ loadCellPhoneNumberAndUpdateOnThePage(); }, 300);
 
 }
 
 function submitContactInformationToServer() {
 
   //pinging updated email and cell phone number to the database
+
+  submitUserRegCompletionInfoToServer();
 
   emailContactInfo["email"] = $(".emailConfirmation").val();
   cellContactInfo["cell"] = $(".phoneConfirmation").val();
@@ -152,6 +162,7 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $(".emailConfirmation").val(firebase.auth().currentUser.email);
+    loadUserRegCompletionInfoFromServer();
     loadContactInformationFromServer("email");
     loadContactInformationFromServer("cell");
   }, 5000);

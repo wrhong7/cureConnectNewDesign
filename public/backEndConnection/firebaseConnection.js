@@ -24,7 +24,6 @@ function hideEmployerNameForNonUsers() {
 }
 
 function callFirebase() { 
-
 	if (document.readyState === 'complete') {
 	    // if userid is not, render addNonUserHeader() to add the header to all main pages
    		// if userid is verified, render addUserHeader(user information details) to add the header
@@ -35,27 +34,40 @@ function callFirebase() {
 		} else {
 		//There is one case 
 			// var userData;
-			userData = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);
-			userData.on('value', function(data) {
-				var userDataDecrypted = data.val();
-				if (userDataDecrypted == null) {
-					console.log("force move the user to register section")
-					//There might be a weird case where a user will fail to register with google
-					//but directly logs in with google, a case in which registeraton is not complete.
-					//for this case, we will force user to register by redirecting them.
-				} else {
-          userType = userDataDecrypted["userProfile"].userType;
-          userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
-					if (userInfomation == null) {
-						userName = userDataDecrypted["userProfile"].userName;
-						console.log(userName);
-            renderUserView(userName, userType, userCompletionStatus);
-					} else {
-            renderUserView(userInfomation.displayName, userType, userCompletionStatus);
-					}
-				}
 
-			})	
+			userType = firebase.database().ref('usersDB/allUsers/'+userInfomation.uid);	
+
+			userType.on('value', function(data) {
+				userDataDecrypted = data.val();
+				isUserProfessionalOrRecruiter = userDataDecrypted["userProfile"].userType
+				console.log(isUserProfessionalOrRecruiter);
+				userData = firebase.database().ref('usersDB/'+isUserProfessionalOrRecruiter+'/'+userInfomation.uid);
+
+				// if (userData.val() == null) {
+				// 	userData = firebase.database().ref('usersDB/hospitalRecruiter/'+userInfomation.uid);
+				// 	console.log("rendered");
+				// }
+
+				userData.on('value', function(data) {
+					userDataDecrypted = data.val();
+					console.log(userDataDecrypted);
+					if (userDataDecrypted == null) {
+						console.log("force move the user to register section")
+						//There might be a weird case where a user will fail to register with google
+						//but directly logs in with google, a case in which registeraton is not complete.
+						//for this case, we will force user to register by redirecting them.
+					} else {
+			          userType = userDataDecrypted["userProfile"].userType;
+			          userCompletionStatus = userDataDecrypted["userProfile"].completionStatus;
+						if (userInfomation == null) {
+							userName = userDataDecrypted["userProfile"].userName;
+	            			renderUserView(userName, userType, userCompletionStatus);
+						} else {
+	            			renderUserView(userInfomation.displayName, userType, userCompletionStatus);
+						}
+					}
+				})	
+			})
 		}
 	}
 }

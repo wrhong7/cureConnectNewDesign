@@ -14,6 +14,31 @@ var cellContactInfo = {
   candidateRecommendationNotification: true,
 };
 
+function loadUserRegCompletionInfoFromServer() {
+  currentUser = firebase.auth().currentUser.uid;
+  firebaseDB = firebase.database();
+  url = "usersDB/professional/"+currentUser+"/userProfile";
+
+  userProfileInfo = firebase.database().ref(url);
+  userProfileInfo.on('value', function(data) {
+    userCompletionAttributes = data;
+    console.log(userCompletionAttributes);
+  }
+
+}
+
+function submitUserRegCompletionInfoToServer() {
+  
+}
+
+function loadCellPhoneNumberAndUpdateOnThePage() {
+  if (cellContactInfo["cell"] != null) {
+    cellNumber = cellContactInfo["cell"];
+    cellNumberReorganized = cellNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+    $(".phoneConfirmation").val(cellNumberReorganized);
+  }
+}
+
 function loadCellPhoneNumberAndUpdateOnThePage() {
   if (cellContactInfo["cell"] != null) {
     cellNumber = cellContactInfo["cell"];
