@@ -106,6 +106,7 @@
 
 .menuButton {
     float: left;
+    font-size: 4vh;
 }
 
 .button:hover {
@@ -128,10 +129,10 @@
 }
 
 .buttonOneCaption {
-    width: 80%;
+    width: 90%;
     overflow: auto;
     padding-top: 10vh;
-    padding-left: 5vh;
+    padding-left: 2vh;
 }
 
 .buttonTwoCaption {

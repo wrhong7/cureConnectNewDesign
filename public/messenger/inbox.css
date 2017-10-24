@@ -1,0 +1,43 @@
+.messengerBody {
+	width: 90vw;
+    margin-left: 5vw;
+    height: 80vh;
+    background-color: red;
+}
+
+.sectionHeader {
+	width: 10vw;
+	float: left;
+	background-color: blue;
+	margin-left: 1vw;
+	padding: 2vh;
+	text-align: center;
+	background-color: #00A1B6;
+	color: white;
+	font-style: italic;
+}
+
+.upperFloor {
+	width: 100%;
+	overflow: auto;
+}
+
+.lowerFloor {
+	width: 100%;
+	overflow: auto;
+}
+
+.contactList {
+	float: left;
+	width: 20vw;
+	margin-left: 1vw;
+	height: 70vh;
+	background-color: white;
+}
+
+.conversationSection {
+	float: left;
+	width: 68vw;
+	height: 70vh;
+	background-color: yellow;
+}
