@@ -2,7 +2,7 @@ var incomingContacts = [];
 
 var listOfContacts = [];
 
-var fakeDB = {
+var DB = {
 	user1user2: {
 		timestamp1: {
 			from: "Goksu Kaptanoglu",
@@ -85,7 +85,7 @@ var incomingMessages;
 
 var userId = "user1";
 
-DBKeys = Object.keys(fakeDB);
+DBKeys = Object.keys(DB);
 
 DBKeys.forEach(function(key) {
 	console.log(key);
@@ -95,17 +95,34 @@ DBKeys.forEach(function(key) {
 	}
 });
 
-DBKeyToCall.forEach(function(key) {
-	conversationKey = Object.keys(fakeDB[key]);
-	listOfContacts.push(key.replace(userId, ""));
+function fetchUserConversation(contact) {
+	alphabeticalllyRearrangeSenderAndReceiver = [userId, contact]
+	alphabeticalllyRearrangeSenderAndReceiver.sort();
+
+	DBConversationKeyToCall = alphabeticalllyRearrangeSenderAndReceiver[0]+alphabeticalllyRearrangeSenderAndReceiver[1];
+	console.log(DBConversationKeyToCall);
+}
+
+function addContactListToMessengerPage() {
+	listOfContacts.forEach(function(contact) {
+		$(".contactList").append(
+			`<div id="${contact}" onclick="fetchUserConversation('${contact}')">${contact}</div>`
+		)
+	})
+}
+
+function filterOutOwnUserID() {
+ 	DBKeyToCall.forEach(function(key) {
+		conversationKey = Object.keys(DB[key]);
+		listOfContacts.push(key.replace(userId, ""));
+	})
+}
+
+$(document).ready(function() {
+	//For the future, promise will have to be implemented here
+	filterOutOwnUserID();
+	addContactListToMessengerPage();
 })
-
-//need to call each of list of the contactas and add to the contact list.
-
-//once each member of the list is being clicked, then, 
-//the conversation log will be wiped out and fetch the the conversation
-//log with the new contacts
-
 
 
 
