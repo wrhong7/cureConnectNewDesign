@@ -3,27 +3,27 @@ var incomingContacts = [];
 var listOfContacts = [];
 
 var DB = {
-	user1user2: {
-		timestamp1: {
+	bBSSOBAG7ygj6BARCHQl60Gm3cF2user2: {
+		"1509061592558": {
 			from: "Goksu Kaptanoglu",
 			to: "Ece Ozalp",
 			timestamp: "2012-12-31-05:44:44",
 			message: "We are Turksih people 1",
 		},
-		timestamp2: {
+		"1509061522558": {
 			from: "Goksu Kaptanoglu",
 			to: "Ece Ozalp",
 			timestamp: "2012-12-31-05:44:44",
 			message: "We are Turksih people 2",
 		},
-		timestamp3: {
+		"1209061592558": {
 			from: "Goksu Kaptanoglu",
 			to: "Ece Ozalp",
 			timestamp: "2012-12-31-05:44:44",
 			message: "We are Turksih people 3",
 		}
 	},
-	user3user4: {
+	bBSSOBAG7ygj6BARCHQl60Gm3cF2user4: {
 		timestamp1: {
 			from: "Rachel Simon",
 			to: "Sarah Sprull",
@@ -43,7 +43,7 @@ var DB = {
 			message: "We are Alabama people 3",
 		}
 	},
-	user5user6: {
+	bBSSOBAG7ygj6BARCHQl60Gm3cF2user6: {
 		timestamp1: {
 			from: "Daniel J Scott",
 			to: "Gorkem Garpier",
@@ -63,7 +63,7 @@ var DB = {
 			message: "We are facists 3",
 		}
 	},
-	user1user7: {
+	bBSSOBAG7ygj6BARCHQl60Gm3cF2user7: {
 		timestamp1: {
 			from: "Goksu Kaptanoglu",
 			to: "Sinem Binicioglu",
@@ -83,7 +83,7 @@ DBKeyToCall = [];
 
 var incomingMessages;
 
-var userId = "user1";
+userId = "user1";
 
 DBKeys = Object.keys(DB);
 
@@ -95,15 +95,91 @@ DBKeys.forEach(function(key) {
 	}
 });
 
-function fetchUserConversation(contact) {
-	alphabeticalllyRearrangeSenderAndReceiver = [userId, contact]
+function pushUserConversationToDB() {
+	alphabeticalllyRearrangeSenderAndReceiver = [userId, contactTarget];
 	alphabeticalllyRearrangeSenderAndReceiver.sort();
-
 	DBConversationKeyToCall = alphabeticalllyRearrangeSenderAndReceiver[0]+alphabeticalllyRearrangeSenderAndReceiver[1];
-	console.log(DBConversationKeyToCall);
+	dateNow = Date.now();
+	message = $(".conversationTextField").val();
+	$(".conversationTextField").val("");
+	// DB[DBConversationKeyToCall][dateNow] = {
+	// 		from: userId,
+	// 		to: contactTarget,
+	// 		timestamp: dateNow,
+	// 		message: message,
+	// }
+
+	//pushing the caht content to the database
+	url = 'chatDB/'+DBConversationKeyToCall+'/'+dateNow;
+  	userDB = firebaseDB.ref(url).set({
+		from: userId,
+		to: contactTarget,
+		timestamp: dateNow,
+		message: message,
+  	});
+}
+
+
+function fetchUserConversation(contact) {
+	alphabeticalllyRearrangeSenderAndReceiver = [userId, contact];
+	alphabeticalllyRearrangeSenderAndReceiver.sort();
+	DBConversationKeyToCall = alphabeticalllyRearrangeSenderAndReceiver[0]+alphabeticalllyRearrangeSenderAndReceiver[1];
+	contactTarget = contact;
+
+	chatURL = "chatDB/"+DBConversationKeyToCall;
+	chatData = firebase.database().ref(chatURL);
+	chatData.on('value', function(chat) {
+		chatDB = chat.val();
+		chatTimestampObjectKey = Object.keys(chatDB);
+		chatTimestampObjectKey.reverse();
+		$(".dialogueSection").empty();
+		chatTimestampObjectKey.forEach(function(key) {
+			console.log(key, chatDB[key]["message"]);
+			$(".dialogueSection").append(
+				`<div class="messageReceived">${chatDB[key]["message"]}</div>`
+			)
+		});
+	})
+
+
+
+
+
+
+	// conversationObjectKeys = Object.keys(DB[DBConversationKeyToCall]);
+
+
+
+
+
+
+}
+
+function fetchingContactList(userAccountTypeSelected) {
+	url = "usersDB/"+userAccountTypeSelected+"/"+userId+"/listOfContacts";
+	console.log(url);
+	listOfContactsInfo = firebase.database().ref(url);
+	listOfContactsInfo.on('value', function(data) {
+		listOfContacts = data.val();
+		console.log(listOfContacts);
+	})
 }
 
 function addContactListToMessengerPage() {
+
+	userId = firebase.auth().currentUser.uid;
+	firebaseDB = firebase.database();
+	accountTypeIdentificationUrl = "usersDB/allUsers/"+userId+"/userProfile/userType";
+	userAccountType = firebase.database().ref(accountTypeIdentificationUrl);
+	userAccountType.on('value', function(data) {
+		userAccountType = data.val();
+		if (userAccountType == "professional") {
+			fetchingContactList("professional")
+		} else if (userAccountType == "hospitalRecruiter") {
+			fetchingContactList("hospitalRecruiter")
+		}
+	})
+
 	listOfContacts.forEach(function(contact) {
 		$(".contactList").append(
 			`<div id="${contact}" onclick="fetchUserConversation('${contact}')">${contact}</div>`
@@ -111,17 +187,20 @@ function addContactListToMessengerPage() {
 	})
 }
 
-function filterOutOwnUserID() {
- 	DBKeyToCall.forEach(function(key) {
-		conversationKey = Object.keys(DB[key]);
-		listOfContacts.push(key.replace(userId, ""));
-	})
-}
+// function filterOutOwnUserID() {
+//  	DBKeyToCall.forEach(function(key) {
+// 		conversationKey = Object.keys(DB[key]);
+// 		listOfContacts.push(key.replace(userId, ""));
+// 	})
+// }
 
 $(document).ready(function() {
 	//For the future, promise will have to be implemented here
-	filterOutOwnUserID();
-	addContactListToMessengerPage();
+	// filterOutOwnUserID();
+	setTimeout(function(){ 
+		addContactListToMessengerPage();
+	}, 5000);
+	
 })
 
 

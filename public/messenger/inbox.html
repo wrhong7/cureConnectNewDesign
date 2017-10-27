@@ -11,6 +11,7 @@
 	<!-- Pulling Firebase and establishing finalbase connection thorugh the backEndConnection, Firebase Connection.js -->
 	<script type="text/javascript" src="/backEndConnection/globalVariables.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script type="text/javascript" src="/backEndConnection/secondaryPagesBackendConnection.js"></script>
 
 	<!-- Header Stylesheets -->
 	<link rel="stylesheet" href="/headerProperties/headerProps.css"/>
@@ -61,10 +62,10 @@
 					</div>
 					<div class="conversationEntryContainer">
 						<div class="conversationEntry">
-							
+							<textarea class="conversationTextField"></textarea>
 						</div>
-						<div class="sendMessageButton">
-							
+						<div class="sendMessageButton" onclick="pushUserConversationToDB()">
+							Send
 						</div>
 					</div>
 				</div>

@@ -41,3 +41,26 @@
 	height: 70vh;
 	background-color: yellow;
 }
+
+.conversationEntry {
+	width: 80%;
+    float: left;
+}
+
+.conversationTextField {
+    width: 100%;
+    min-height: 8vh;
+    max-height: 30vh;
+}
+
+.dialogueSection {
+	width: 100%;
+    height: 61vh;
+}
+
+.sendMessageButton {
+	width: 18%;
+    padding: 2.3vh 0;
+    float: right;
+    text-align: center;
+}
