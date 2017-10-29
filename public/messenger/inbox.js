@@ -117,6 +117,8 @@ function pushUserConversationToDB() {
 		timestamp: dateNow,
 		message: message,
   	});
+
+  	$(".dialogueSection").animate({ scrollTop: $(".dialogueSection")[0].scrollHeight}, 500);
 }
 
 
@@ -131,27 +133,34 @@ function fetchUserConversation(contact) {
 	chatData.on('value', function(chat) {
 		chatDB = chat.val();
 		chatTimestampObjectKey = Object.keys(chatDB);
-		chatTimestampObjectKey.reverse();
+		// chatTimestampObjectKey.reverse();
 		$(".dialogueSection").empty();
 		chatTimestampObjectKey.forEach(function(key) {
-			console.log(key, chatDB[key]["message"]);
-			$(".dialogueSection").append(
-				`<div class="messageReceived">${chatDB[key]["message"]}</div>`
-			)
+
+			if (chatDB[key]["from"] == userId) {
+				console.log(key, chatDB[key]["message"]);
+				$(".dialogueSection").append(
+					`
+					<div class="messageSentCover">
+						<div class="messageSent">${chatDB[key]["message"]}</div>
+					</div>
+					`
+				)		
+
+			} else if (chatDB[key]["from"] == contact) {
+				console.log(key, chatDB[key]["message"]);
+				$(".dialogueSection").append(
+					`
+					<div class="messageReceivedCover">
+						<div class="messageReceived">${chatDB[key]["message"]}</div>
+					</div>
+					`
+				)		
+			}
 		});
 	})
 
-
-
-
-
-
-	// conversationObjectKeys = Object.keys(DB[DBConversationKeyToCall]);
-
-
-
-
-
+	$(".dialogueSection").animate({ scrollTop: $(".dialogueSection")[0].scrollHeight}, 500);
 
 }
 
@@ -182,7 +191,7 @@ function addContactListToMessengerPage() {
 
 	listOfContacts.forEach(function(contact) {
 		$(".contactList").append(
-			`<div id="${contact}" onclick="fetchUserConversation('${contact}')">${contact}</div>`
+			`<div id="${contact}" class="contactNameSelection" onclick="fetchUserConversation('${contact}')">${contact}</div>`
 		)
 	})
 }

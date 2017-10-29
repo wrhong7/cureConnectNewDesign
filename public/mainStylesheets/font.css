@@ -50,3 +50,7 @@ input {
 	border: solid 1px;
 	border: solid #827775 0.1vh;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}

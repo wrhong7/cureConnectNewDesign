@@ -2,7 +2,6 @@
 	width: 90vw;
     margin-left: 5vw;
     height: 80vh;
-    background-color: red;
 }
 
 .sectionHeader {
@@ -12,7 +11,6 @@
 	margin-left: 1vw;
 	padding: 2vh;
 	text-align: center;
-	background-color: #00A1B6;
 	color: white;
 	font-style: italic;
 }
@@ -24,22 +22,24 @@
 
 .lowerFloor {
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .contactList {
-	float: left;
-	width: 20vw;
-	margin-left: 1vw;
-	height: 70vh;
-	background-color: white;
+    float: left;
+    width: 19vw;
+    margin-left: 1vw;
+    height: 70.7vh;
+    background-color: white;
+    border: solid #D9DEE4;
 }
 
 .conversationSection {
-	float: left;
-	width: 68vw;
-	height: 70vh;
-	background-color: yellow;
+    float: left;
+    width: 68vw;
+    height: 71vh;
+    background-color: #D9DEE4;
+    border: solid 0.3vh #D9DEE4;
 }
 
 .conversationEntry {
@@ -48,19 +48,109 @@
 }
 
 .conversationTextField {
-    width: 100%;
-    min-height: 8vh;
+	width: 100%;
+    min-height: 7.4vh;
     max-height: 30vh;
+    border: #00A1B6 0.5vh solid;
+    font-size: 3vh;
+    padding-left: 1vh;
+    color: #16436A;
 }
 
 .dialogueSection {
 	width: 100%;
-    height: 61vh;
+    height: 46vh;
+    background-color: white;
+    overflow: scroll;
+    padding-bottom: 3vh;
 }
 
 .sendMessageButton {
-	width: 18%;
+	width: 19%;
     padding: 2.3vh 0;
     float: right;
     text-align: center;
+    background-color: #00a1b6;
+    font-style: italic;
+    color: white;
+    font-size: 4vh;
+}
+
+.messageReceived {
+    width: auto;
+    float: left;
+    font-size: 3vh;
+    padding: 0.5vh 2vh;
+    margin: 1vh 0 0 1vh;
+    border: solid 0.1vh #D9DEE4;
+    border-radius: 1vh;
+}
+
+.messageReceivedCover {
+	width: 100%;
+	overflow: auto;
+}
+
+.messageSentCover {
+	width: 100%;
+	overflow: auto;
+}
+
+.messageSent {
+    width: auto;
+    float: right;
+    font-size: 3vh;
+    padding: 0.5vh 2vh;
+    margin: 1vh 1vh 0 0;
+    border: solid 0.1vh #D9DEE4;
+    border-radius: 1vh;
+}
+
+.contactSerachBox {
+	width: 94%;
+    margin: 0;
+    font-size: 4vh;
+    padding-left: 2vh;
+    color: #00a1b6;
+   	border: none;
+    border-bottom: solid 0.1vh #D9DEE4;
+}
+
+.contactNameSelection {
+	padding: 1vh;
+    color: #00A4B9;
+    font-style: italic;
+}
+
+.goToMessengerSectionButton {
+	background-color: #00a1b6;
+	color: white;
+	border: solid 0.3vh #00a1b6;
+}
+
+.goToInterviewSectionButton {
+	background-color: white;
+    color: #00a1b6;
+    border: solid 0.3vh #D9DEE4;
+}
+
+.contactDescription {
+	padding: 2vh 0 3vh 2vh;
+    background-color: #00A4B9;
+    color: white;
+}
+
+.contactName {
+	font-size: 4vh;
+    font-style: italic;
+}
+
+.contactTitle {
+	font-size: 3vh;
+    font-style: italic;
+}
+
+::placeholder { 
+	color: #D9DEE4;
+	text-align: center;
 }

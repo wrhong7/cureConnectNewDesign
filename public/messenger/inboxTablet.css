@@ -1,0 +1,15 @@
+@media only screen and (max-width: 961px) {
+
+	.conversationSection {
+		width: 67vw !important;
+	}
+
+	.sectionHeader {
+		min-width: 150px;
+	}
+
+	::placeholder {
+		font-size: 2vh;
+	}
+
+}
