@@ -154,3 +154,7 @@
 	color: #D9DEE4;
 	text-align: center;
 }
+
+.goToContactListButton {
+	display: none;
+}

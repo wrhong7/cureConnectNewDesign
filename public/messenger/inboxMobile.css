@@ -1,0 +1,48 @@
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+	.goToContactListButton {
+		display: inline-block !important;
+		background-color: #00a1b6;
+		color: white;
+		border: solid 0.3vh #00a1b6;
+	}
+
+	.goToMessengerSectionButton {
+		background-color: white;
+		color: #00a1b6;
+		border: solid 0.3vh #D9DEE4;
+	}
+
+	.sectionHeader {
+		width: 20.5vw !important;
+		font-size: 3.5vw;
+	}
+
+	.contactList {
+		width: 87vw;
+		font-size: 8vw;
+		text-align: center;
+		overflow: auto;
+    	height: 77vh;
+	}
+
+	.conversationSection {
+		display: none;
+	}
+
+	.container {
+		height: 90vh;
+	}
+
+	.conversationSection {
+		width: 88vw;
+		height: 131vw;
+	}
+
+	.conversationEntry {
+		width: 70%;
+	}
+
+	.sendMessageButton {
+		width: 30%;
+	}
+}

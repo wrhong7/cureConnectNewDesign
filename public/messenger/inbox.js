@@ -95,6 +95,80 @@ DBKeys.forEach(function(key) {
 	}
 });
 
+function sectionHeaderButtonClicked(clickedHeader) {
+
+	console.log(clickedHeader)
+
+	if (clickedHeader == "goToContactListButton") {
+		$(".goToMessengerSectionButton").css({
+			"background-color": "white",
+		    "color": "#00a1b6",
+		    "border": "solid 0.3vh #D9DEE4"
+		});
+
+		$(".goToInterviewSectionButton").css({
+			"background-color": "white",
+		    "color": "#00a1b6",
+		    "border": "solid 0.3vh #D9DEE4"
+		});
+
+		$(".goToContactListButton").css({
+			"background-color": "#00a1b6",
+		    "color": "white",
+		    "border": "solid 0.3vh #00a1b6"
+		});
+
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$(".contactList").css("display", "inline-block");
+			$(".conversationSection").css("display", "none");
+		};
+
+	} else if (clickedHeader == "goToMessengerSectionButton") {
+		$(".goToContactListButton").css({
+			"background-color": "white",
+		    "color": "#00a1b6",
+		    "border": "solid 0.3vh #D9DEE4"
+		});
+
+		$(".goToInterviewSectionButton").css({
+			"background-color": "white",
+		    "color": "#00a1b6",
+		    "border": "solid 0.3vh #D9DEE4"
+		});
+
+		$(".goToMessengerSectionButton").css({
+			"background-color": "#00a1b6",
+		    "color": "white",
+		    "border": "solid 0.3vh #00a1b6"
+		});
+
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$(".conversationSection").css("display", "inline-block");
+			$(".contactList").css("display", "none");
+		}
+
+	} else if (clickedHeader == "goToInterviewSectionButton") {
+		$(".goToMessengerSectionButton").css({
+			"background-color": "white",
+		    "color": "#00a1b6",
+		    "border": "solid 0.3vh #D9DEE4"
+		});
+
+		$(".goToContactListButton").css({
+			"background-color": "white",
+		    "color": "#00a1b6",
+		    "border": "solid 0.3vh #D9DEE4"
+		});
+
+		$(".goToInterviewSectionButton").css({
+			"background-color": "#00a1b6",
+		    "color": "white",
+		    "border": "solid 0.3vh #00a1b6"
+		});
+	}
+
+}
+
 function pushUserConversationToDB() {
 	alphabeticalllyRearrangeSenderAndReceiver = [userId, contactTarget];
 	alphabeticalllyRearrangeSenderAndReceiver.sort();
@@ -102,12 +176,6 @@ function pushUserConversationToDB() {
 	dateNow = Date.now();
 	message = $(".conversationTextField").val();
 	$(".conversationTextField").val("");
-	// DB[DBConversationKeyToCall][dateNow] = {
-	// 		from: userId,
-	// 		to: contactTarget,
-	// 		timestamp: dateNow,
-	// 		message: message,
-	// }
 
 	//pushing the caht content to the database
 	url = 'chatDB/'+DBConversationKeyToCall+'/'+dateNow;
@@ -121,12 +189,18 @@ function pushUserConversationToDB() {
   	$(".dialogueSection").animate({ scrollTop: $(".dialogueSection")[0].scrollHeight}, 500);
 }
 
-
 function fetchUserConversation(contact) {
 	alphabeticalllyRearrangeSenderAndReceiver = [userId, contact];
 	alphabeticalllyRearrangeSenderAndReceiver.sort();
 	DBConversationKeyToCall = alphabeticalllyRearrangeSenderAndReceiver[0]+alphabeticalllyRearrangeSenderAndReceiver[1];
 	contactTarget = contact;
+
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		console.log("tiggered");
+		sectionHeaderButtonClicked("goToMessengerSectionButton");
+	}
+
+
 
 	chatURL = "chatDB/"+DBConversationKeyToCall;
 	chatData = firebase.database().ref(chatURL);
@@ -196,12 +270,6 @@ function addContactListToMessengerPage() {
 	})
 }
 
-// function filterOutOwnUserID() {
-//  	DBKeyToCall.forEach(function(key) {
-// 		conversationKey = Object.keys(DB[key]);
-// 		listOfContacts.push(key.replace(userId, ""));
-// 	})
-// }
 
 $(document).ready(function() {
 	//For the future, promise will have to be implemented here

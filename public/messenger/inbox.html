@@ -30,8 +30,8 @@
 	<!-- Stylesheet Components -->
 	<link rel="stylesheet" href="inbox.css"/>
 	<link rel="stylesheet" href="inboxTablet.css"/>
+	<link rel="stylesheet" href="inboxMobile.css"/>
 	<script type="text/javascript" src="inbox.js"></script>
-
 </head>
 <body>
 	<div class="container">
@@ -47,10 +47,19 @@
 
 		<div class="messengerBody">
 			<div class="upperFloor">
-				<div class="sectionHeader goToMessengerSectionButton">
+				<div 
+					class="sectionHeader goToContactListButton"
+					onclick="sectionHeaderButtonClicked('goToContactListButton')">
+					Contact List
+				</div>
+				<div 
+					class="sectionHeader goToMessengerSectionButton"
+					onclick="sectionHeaderButtonClicked('goToMessengerSectionButton')">
 					Messages
 				</div>
-				<div class="sectionHeader goToInterviewSectionButton">
+				<div 
+					class="sectionHeader goToInterviewSectionButton"
+					onclick="sectionHeaderButtonClicked('goToInterviewSectionButton')">
 					Interviews
 				</div>
 			</div>
