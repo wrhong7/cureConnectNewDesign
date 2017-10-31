@@ -1,0 +1,95 @@
+.container {
+	width: 100vw;
+	overflow: auto;
+}
+
+.upperFloor {
+	width: 100%;
+	overflow: auto;
+}
+
+.upperFloorLeft {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.upperFloorLeftImage {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.upperFloorLeftCaption {
+	width: 47%;
+    height: 25vh;
+    float: left;
+    padding-top: 7%;
+    padding-left: 3%;
+}
+
+.upperFloorRight {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.upperFloorRightImage {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.upperFloorRightCaption {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.middleFloor {
+	width: 100%;
+	height: 25vh;
+}
+
+.middleFloorLeft {
+	width: 33%;
+	height: 25vh;
+	float: left;
+}
+
+.middleFloorMiddle {
+	width: 33%;
+	height: 25vh;
+	float: left;
+}
+
+.middleFloorRight {
+	width: 33%;
+	height: 25vh;
+	float: left;
+}
+
+.lowerFloor {
+	width: 100%;
+	height: 25vh;
+}
+
+.lowerFloorLeft {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.lowerFloorRight {
+	width: 50%;
+	height: 25vh;
+	float: left;
+}
+
+.standingImage {
+	width: 19%;
+	margin-left: 80%;
+}
+
+
+

@@ -57,10 +57,10 @@
         position: relative !important;
         float: right !important;
     }
-}
 
-body {
-    background-color: #E0F6FF;
+    .emailConfirmation {
+        width: 82vw !important;
+    }
 }
 
 .prevButton {

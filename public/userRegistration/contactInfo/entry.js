@@ -14,6 +14,8 @@ var cellContactInfo = {
   candidateRecommendationNotification: true,
 };
 
+var userType;
+
 function loadUserRegCompletionInfoFromServer() {
   currentUser = firebase.auth().currentUser.uid;
   firebaseDB = firebase.database();
@@ -23,12 +25,7 @@ function loadUserRegCompletionInfoFromServer() {
   userProfileInfo.on('value', function(data) {
     userCompletionAttributes = data;
     console.log(userCompletionAttributes);
-  }
-
-}
-
-function submitUserRegCompletionInfoToServer() {
-  
+  })
 }
 
 function loadCellPhoneNumberAndUpdateOnThePage() {
@@ -110,21 +107,20 @@ function loadContactInformationFromServer(emailOrCell) {
 
   })
   setTimeout(function(){ loadCellPhoneNumberAndUpdateOnThePage(); }, 300);
-
 }
 
 function submitContactInformationToServer() {
-
   //pinging updated email and cell phone number to the database
-
   emailContactInfo["email"] = $(".emailConfirmation").val();
   cellContactInfo["cell"] = $(".phoneConfirmation").val();
 
   emailUrl = 'usersDB/professional/'+firebase.auth().currentUser.uid+'/emailContactInfo';
   cellUrl = 'usersDB/professional/'+firebase.auth().currentUser.uid+'/cellContactInfo';
+  userProfileUrl = 'usersDB/professional/'+firebase.auth().currentUser.uid+'/userProfile/completionStatus';
 
   userDB = firebaseDB.ref(emailUrl).set(emailContactInfo);
   userDB = firebaseDB.ref(cellUrl).set(cellContactInfo);
+  userDB = firebaseDB.ref(userProfileUrl).set('postCompletion');
 
   location.href="/"
 }
