@@ -1,0 +1,26 @@
+.recruiterProfileView {
+	display: none;
+}
+
+.professionalProfileView {
+	width: 90vw;
+    margin-left: 5vw;
+    min-height: 30vh;
+    background-color: yellow;
+}
+
+.leftSection {
+	width: 30%;
+    height: 60vh;
+    float: left;
+}
+
+.centralSection {
+	width: 70%;
+    height: auto;
+    float: left;
+}
+
+.tab {
+	padding: 5% 10%;
+}

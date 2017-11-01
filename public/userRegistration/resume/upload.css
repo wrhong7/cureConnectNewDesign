@@ -235,13 +235,13 @@ iframe {
 
     .middleColumn {
         width: 85vw;
-        height: 60vh;
+        min-height: 60vh;
         margin-left: 5vw;
     }
 
     .rightColumn {
         width: 85vw;
-        height: 60vh;
+        min-height: 60vh;
         margin-left: 5vw;
     }
 
