@@ -47,38 +47,46 @@
 
 		<div class="professionalProfileView">
 			<div class="leftSection">
-				<div class="tab">Account Settings</div>
-				<div class="tab">Professional Profile</div>
-				<div class="tab">Remove Account</div>
+				<div class="tab accountSettingTab" onclick="accountSettingTabClicked()">Account Settings</div>
+				<div class="tab changePasswordTab" onclick="changePasswordTabClicked()">Change Password</div>
+				<div class="tab changeProfileTab" onclick="goToChangeProfileSection()">Update Profile</div>
 			</div>
-			<div class="centralSection">
+			<div class="centralSection centralSection1">
 				<div class="accountInformation">
 					<div class="accountHeader">User Name</div>
-					<div class="userName">Won Jun Hong</div>
+					<div class="userName userInfoField">Won Jun Hong</div>
+					<div class="editButton">edit</div>
 				</div>
 				<div class="accountInformation">
 					<div class="accountHeader">User Email</div>
-					<div class="userEmail">won.hong@stern.nyu.edu</div>
+					<div class="userEmail userInfoField">won.hong@stern.nyu.edu</div>
+					<div class="editButton">edit</div>
 				</div>
 				<div class="accountInformation">
 					<div class="accountHeader">Account Type</div>
-					<div class="accountType">Professional Account</div>
-				</div>
-				<div class="accountInformation">
-					<div class="changePassword">Click Here to Change Password</div>
+					<div class="accountType userInfoField">Professional Account</div>
+					<div class="editButton">edit</div>
 				</div>
 				<div class="accountInformation">
 					<div class="accountHeader">Phone Number</div>
-					<div class="phoneNumber">347-610-7626</div>
-					<div class="changePhoneNumberButton">Change Phone Number</div>
-				</div>
-				<div class="accountInformation">
-					<div class="accountHeader">Change Professional Profile</div>
-					<div class="accountHeaderSubscript">i.e. Resume, Preference and etc</div>
+					<div class="phoneNumber userInfoField">347-610-7626</div>
+					<div class="editButton">edit</div>
 				</div>
 			</div>
-			<div class="rightSection">
-				
+			<div class="centralSection centralSection2">
+				<div class="accountInformation">
+					<div class="changePWSecitonHeader">Current Password</div>
+					<input class="enterOldPassword passWordEntryField" />
+				</div>	
+				<div class="accountInformation">
+					<div class="changePWSecitonHeader">New Password</div>
+					<input class="enterNewPassword1 passWordEntryField" />
+				</div>		
+				<div class="accountInformation">
+					<div class="changePWSecitonHeader">Confirm New Password</div>
+					<input class="enterNewPassword2 passWordEntryField" />
+				</div>
+				<div class="changePasswordButton">Change Password Button</div>	
 			</div>
 		</div>
 

@@ -1,3 +1,5 @@
+
+
 function goToRegisterationSection() {
 //Warning -- this home URL needs to be changed
 	var homeUrl = '/';	
@@ -9,6 +11,10 @@ function goToRegisterationSection() {
 
 	// var url = "userRegistration/signUp.html";
 	// location.href = document.URL === homeUrl ? url : ("/" + url);
+}
+
+function goToProfilePage() {
+	location.href="/profile/view.html"
 }
 
 function moveToLoginPage() {
@@ -54,7 +60,7 @@ function addUserHeader(userName) {
 			'<div class="userLoginCredentials">' +
 				'<div class="welcomeAndName">Welcome</div>'+
 				'<div class="userLogOutButton button" onclick="logOutButtonClicked()">Log Out</div>' +
-				'<div class="userProfileButton button">Profile</div>'+
+				'<div class="userProfileButton button" onclick="goToProfilePage()">Profile</div>'+
 			'</div>'
 		);
 	} else {
@@ -64,7 +70,7 @@ function addUserHeader(userName) {
 			'<div class="userLoginCredentials">' +
 				'<div class="welcomeAndName">Hi '+firstNameOnly+'<br></div>'+
 				'<div class="userLogOutButton button" onclick="logOutButtonClicked()">Log Out</div>' +
-				'<div class="userProfileButton button">Profile</div>' +
+				'<div class="userProfileButton button" onclick="goToProfilePage()">Profile</div>' +
 			'</div>'
 		);	
 	}

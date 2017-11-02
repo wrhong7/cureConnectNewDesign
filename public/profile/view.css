@@ -5,22 +5,112 @@
 .professionalProfileView {
 	width: 90vw;
     margin-left: 5vw;
-    min-height: 30vh;
-    background-color: yellow;
+    overflow: auto;
 }
 
 .leftSection {
-	width: 30%;
-    height: 60vh;
+	width: 25%;
+    height: 80vh;
     float: left;
+    border-right: #00A9BC 0.2vh solid;
 }
 
 .centralSection {
-	width: 70%;
-    height: auto;
+    width: 70%;
+    height: 80vh;
     float: left;
 }
 
 .tab {
-	padding: 5% 10%;
+	padding: 10% 10%;
 }
+
+.tab:hover {
+	background-color: #E9EBEE;
+	cursor: pointer;
+}
+
+.accountHeader {
+    width: 30%;
+    float: left;
+}
+
+.userInfoField {
+	width: 50%;
+    float: left;
+}
+
+.editButton {
+	width: 20%;
+    float: left;
+}
+
+.editButton:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.accountInformation {
+	width: 100%;
+    overflow: auto;
+	padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 10%;
+    border-bottom: solid 0.1vh #E9EBEE;
+}
+
+.accountInformation:hover {
+	background-color: #E9EBEE;
+	cursor: pointer;
+}
+
+.changePassword {
+	text-align: center;
+    width: 85%;
+    text-decoration: underline;
+}
+
+.changeProfessionalProfileButton {
+    width: 85%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.accountSettingTab {
+	background-color: #E9EBEE;
+}
+
+.changePWSecitonHeader {
+    width: 40%;
+    float: left;
+}
+
+.passWordEntryField {
+	width: 40%;
+    height: 4vh;
+    border: none;
+    border-bottom: solid 0.1vh #7295AC;
+    font-size: 4vh;
+}
+
+.centralSection2 {
+	display: none;
+}
+
+.changePasswordButton {
+	padding: 3%;
+    margin-top: 3%;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    border: solid 0.1vh;
+    border-radius: 2vh;
+}
+
+.changePasswordButton:hover {
+	cursor: pointer;
+	background-color: #7295AC;
+}
+
+
+
