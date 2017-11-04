@@ -5,7 +5,7 @@ var zipCodeListingFromDB;
 
 //we need to assign this on cache. If there is nothing entered on cache variable, we should fetch nothing and tell
 //users to answer the job type and zip code. we should log every search results.
-var zipCodeEnteredFromPreviousPage = "10003";
+var zipCodeEnteredFromPreviousPage = "99501";
 
 // for instance from the pervious search page, the user should have entered the job catergory along with the zipcode.
 // there should be two scenarios. 1) there should be one situation where zipcode is available.
