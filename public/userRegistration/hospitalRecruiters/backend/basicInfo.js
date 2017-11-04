@@ -1,3 +1,5 @@
+recruitingSpecialty = ["Doctors", "Researchers", "Residents", "Nurse Practitioners", "Nurses", "Surgeons", "Hospital Admins"];
+
 function loadEnteredInformationFromServer() {
   currentUser = firebase.auth().currentUser.uid;
   firebaseDB = firebase.database();
@@ -81,8 +83,6 @@ function enterInformationAndSubmitToServer() {
 
   location.href="/userRegistration/hospitalRecruiters/postJobs.html"
 }
-
-recruitingSpecialty = ["Doctors", "Researchers", "Residents", "Nurse Practitioners", "Nurses", "Surgeons", "Hospital Admins"];
 
 $( document ).ready(function() {
 

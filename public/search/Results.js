@@ -71,8 +71,8 @@ function loadAllJobsUnderSearchingZipCode() {
     jobDB.on('value',function(data){
       jobs = data.val();
       listOfJobsToBeAdded = Object.keys(jobs);
-      listOfJobsToBeAdded.forEach(function(x) {
-        console.log(jobs[x]);
+      listOfJobsToBeAdded.forEach(function(objKey) {
+        console.log(jobs[objKey]);
 
         //when this thing gets clicked, we need to pass onto the zipcode and object key used for the details section
         //fetching
@@ -82,7 +82,7 @@ function loadAllJobsUnderSearchingZipCode() {
           <div class="jobPostingCover">
             <div class="upperFloor">
               <div class="jobTitle">
-                Nurse Practitioner - Urgent Care
+                ${jobs[objKey]["jobInfo"]["recruitingPosition"]}
               </div>
               <div class="addToFavorites">
                 +
@@ -92,18 +92,18 @@ function loadAllJobsUnderSearchingZipCode() {
             <div class="lowerFloor">
               <div class="lowerFloorLeft">
                 <div class="employerName">
-                  Barton Associates
+                  ${jobs[objKey]["hospitalInfo"]["hospitalName"]}
                 </div>
                 <div class="location">
-                  Niagara Falls, NY
+                  ${jobs[objKey]["hospitalAddress"]}
                 </div>
               </div>
               <div class="lowerFloorRight">
                 <div class="compRange">
-                  $45-$55/hr
+                  $${jobs[objKey]["compensations"]["compRangeBottom"]}-$${jobs[objKey]["compensations"]["compRangeTop"]}/yr
                 </div>
                 <div class="location">
-                  20 hr/wk
+                  ${jobs[objKey]["jobInfo"]["hoursPerWeek"]} hr/wk
                 </div>
               </div>
             </div>

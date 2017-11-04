@@ -4,10 +4,13 @@ var cureConnectJobPostingFields = ["internalRequisitionNumber", "recruitingPosit
   "patientRatio", "requiredAcademicDegree", "vacationPolicy"]
 var newlyMappedArray = [];
 var objectArrayToBePushedToFirebase = [];
+var jobDBZipCodeArray = [];
+var zipCodesToBePushedToDB = [];
+var listOfZipCodesAboutToBeEntered = [];
 
 function closeExplanationModal() {
   $(".cureConnectMappingExplanations").css("display", "none");
-  $(".cureConnectMappingFieldsCover").css("opacity", "1")
+  $(".cureConnectMappingFieldsCover").css("opacity", "1");
 }
 
 function allowDrop(ev) {
@@ -41,9 +44,36 @@ function filterOutNullObjects(obj) {
   }
 }
 
+function loadDatabaseZipCodes() {
+  firebaseDB = firebase.database();
+  url = "jobsDB/zipcodes";
+  jobDBZipCodes = firebase.database().ref(url);
+  jobDBZipCodes.on('value', function(data) {
+    jobDBZipCodeArray = data.val();
+    console.log(jobDBZipCodeArray);
+  })
+}
+
+function filterDuplicatedZipCodes() {
+  zipCodesToBePushedToDB = listOfZipCodesAboutToBeEntered.filter( function(n) { 
+    return !this.has(n) 
+  }, new Set(jobDBZipCodeArray));
+
+  jobDBZipCodeArray.forEach(function(zip) {
+    zipCodesToBePushedToDB.push(zip)
+  })
+
+  zipCodeURL = 'jobsDB/zipcodes';
+  userDB = firebaseDB.ref(zipCodeURL).set(zipCodesToBePushedToDB);
+  location.href="confirmation.html"
+}
+
+function pushNewZipcodesIntoDB() {
+  filterDuplicatedZipCodes();
+}
+
 function submitMappedData() {
   loadCSVArray.forEach(function(jobObject) {
-
     var eachJobObject = {};
     cureConnectJobPostingFields.forEach(function(eachField) {
       if ($("#"+eachField).children(".csvTableField").text() != null) {
@@ -56,21 +86,30 @@ function submitMappedData() {
 
   newlyMappedArray.forEach(function(job) {
 
+    console.log(job);
+
     //get all the objects if the value is not null
 
     filterOutNullObjects(job);
-    console.log(job);
 
     var keysAfterFilteredOut = Object.keys(job);
 
     console.log(keysAfterFilteredOut);
     //
     userDB = firebaseDB.ref('jobsDB/'+job["zipCode"]).push(job);
+
+    listOfZipCodesAboutToBeEntered.push(job["zipCode"]);
+
+    pushNewZipcodesIntoDB();
+
+    console.log("this part has been triggered.")
+
+    // zipDB = firebaseDB.ref('jobsDB/zipcodes').push(job["zipCode"]);
     // uniqueID = userDB.name();
     // console.log(uniqueID)
   })
 
-  location.href="confirmation.html"
+
 
 }
 
@@ -87,6 +126,7 @@ $( document ).ready(function() {
       "<div class=\"csvTableField\" id=\"drop"+keyValue+"\" draggable=\"true\" ondragstart=\"drag(event)\">"+keyValue+"</div>"
     )
   });
+  loadDatabaseZipCodes();
 });
 
 
