@@ -45,4 +45,8 @@
 	.sendMessageButton {
 		width: 30%;
 	}
+
+	.mobileMezzanine {
+		display: inline-block !important;
+	}
 }

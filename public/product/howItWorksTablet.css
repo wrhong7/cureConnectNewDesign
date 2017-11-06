@@ -1,0 +1,79 @@
+@media only screen and (max-width: 961px) {
+
+	.upperFloor {
+		margin-top: 5% !important;
+	}
+
+	.upperFloorLeft {
+		height: auto !important;
+	}
+
+	.upperFloorLeftCaption {
+	    height: auto !important;
+	    padding-left: 0 !important;
+	    margin-right: 7% !important;
+	}
+
+	.upperFloorLeftImage {
+		height: auto !important;
+	}
+
+	.standingImage {
+		margin-left: 65% !important;
+	}
+
+	.upperFloorRight {
+		height: auto !important;
+	}
+
+	.upperFloorRightImage {
+		margin-left: 5% !important;
+		margin-right: 2% !important;
+		height: auto !important;
+	}
+
+	.upperFloorRightCaption {
+		height: auto !important;
+	}
+
+	.clinicImage {
+		width: 75%;
+	}
+
+	.middleFloor {
+		width: 100% !important;
+	    height: auto !important;
+	    margin-top: 3% !important;
+	}
+
+	.middleFloorMiddle {
+		width: 25% !important;
+	    margin-left: 2.5% !important;
+	    margin-right: 2.5% !important;
+	    margin-top: 5vh !important;
+	}
+
+	.middleFloorLeft {
+		height: auto !important;
+	}
+
+	.middleFloorRight {
+		height: auto !important;
+	}
+
+	.arrow3 {
+		margin-left: 48% !important;
+	}
+
+	.arrow4 {
+		width: 50% !important;
+    	margin-left: 45% !important;
+	}
+
+	.lowerFloorRight {
+		font-size: 3vh !important;
+	    line-height: 1.5 !important;
+	    margin-top: 2% !important;
+	}
+
+}

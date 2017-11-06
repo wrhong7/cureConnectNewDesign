@@ -1,0 +1,102 @@
+@media only screen and (max-device-width: 480px) and (max-aspect-ratio: 13/9) {
+
+	.container {
+		width: 100vw;
+	    overflow: auto;
+	    color: #13A8BB;
+	    font-size: 6vw !important;
+	}
+
+	.upperFloorLeftImage {
+		height: auto !important;
+		margin-top: 5% !important;
+	}
+
+	.upperFloorLeftCaption {
+		width: 80% !important;
+	    height: auto !important; 
+	    float: right;
+	    padding: 0 !important;
+	    margin-right: 10% !important;
+	    margin-left: 10% !important;
+	}
+
+	.standingImage {
+		width: 40%;
+    	margin-left: 60%;
+	}
+
+	.upperFloorRightCaption {
+		width: 100% !important;
+	    height: auto !important; 
+	    float: left;
+	    margin-left: 5% !important;
+	    margin-top: 5% !important;
+	}
+
+	.upperFloorRightImage {
+		width: 80%;
+	    margin-right: 0% !important; 
+	    margin-left: 10%;
+	    padding-top: 0% !important; 
+	    height: auto !important; 
+	    float: left;
+	}
+
+	.middleFloor {
+		height: auto !important;
+	}
+
+	.middleFloorMiddle {
+		width: 90% !important;
+    	margin-left: 5% !important;
+    	margin-top: 0 !important;
+    	height: auto !important;
+	}
+
+	.mobileMezzanine {
+		display: inline-block !important;
+		width: 98%;
+	}
+
+	.middleFloorLeft {
+		display: none !important;
+	}
+
+	.middleFloorRight {
+		display: none !important;
+	}
+
+	.arrow3 {
+		margin-top: 3%;
+	}
+
+	.arrow5 {
+		width: 5%;
+	    margin-left: 17.5%;
+	    float: left;
+	}
+
+	.arrow6 {
+		width: 5%;
+	    margin-left: 45%;
+	    float: left;
+	}
+
+	.lowerFloorLeft {
+		width: 100% !important;
+	    height: auto !important; 
+	}
+
+	.arrow4 {
+		width: 40% !important;
+    	margin-left: 30% !important;
+	}
+
+	.lowerFloorRight {
+		width: 100% !important;
+		text-align: center;
+		height: auto !important;
+	}
+
+}

@@ -1,17 +1,18 @@
 .container {
 	width: 100vw;
 	overflow: auto;
+	color: #13A8BB;
 }
 
 .upperFloor {
-	width: 100%;
+	width: 98%;
 	overflow: auto;
 }
 
 .upperFloorLeft {
 	width: 50%;
-	height: 25vh;
-	float: left;
+    height: 25vh;
+    float: left;
 }
 
 .upperFloorLeftImage {
@@ -21,11 +22,12 @@
 }
 
 .upperFloorLeftCaption {
-	width: 47%;
-    height: 25vh;
-    float: left;
+	width: auto;
+    height: 15vh;
+    float: right;
     padding-top: 7%;
     padding-left: 3%;
+    margin-right: 20%;
 }
 
 .upperFloorRight {
@@ -35,15 +37,19 @@
 }
 
 .upperFloorRightImage {
-	width: 50%;
-	height: 25vh;
-	float: left;
+	width: auto;
+    margin-right: 4%;
+    margin-left: 20%;
+    padding-top: 7%;
+    height: 15vh;
+    float: left;
 }
 
 .upperFloorRightCaption {
-	width: 50%;
-	height: 25vh;
-	float: left;
+	width: 48%;
+    height: 25vh;
+    float: left;
+    margin-left: 2%;
 }
 
 .middleFloor {
@@ -58,9 +64,12 @@
 }
 
 .middleFloorMiddle {
-	width: 33%;
-	height: 25vh;
-	float: left;
+    width: 33%;
+    height: 10vh;
+    margin-top: 15vh;
+    float: left;
+    text-align: center;
+    font-weight: 600;
 }
 
 .middleFloorRight {
@@ -72,6 +81,7 @@
 .lowerFloor {
 	width: 100%;
 	height: 25vh;
+	margin-top: 2%;
 }
 
 .lowerFloorLeft {
@@ -81,9 +91,10 @@
 }
 
 .lowerFloorRight {
-	width: 50%;
-	height: 25vh;
-	float: left;
+	width: 47%;
+    margin-left: 2%;
+    height: 25vh;
+    float: left;
 }
 
 .standingImage {
@@ -91,5 +102,33 @@
 	margin-left: 80%;
 }
 
+.clinicImage {
+	width: 70%;
+}
+
+.arrow1 {
+	width: 30%;
+    margin-left: 70%;
+    margin-top: 10%;
+}
+
+.arrow2 {
+	width: 30%;
+    margin-top: 10%;
+}
+
+.arrow3 {
+	width: auto;
+    margin-left: 49%;
+}
+
+.arrow4 {
+	width: 25%;
+    margin-left: 65%;
+}
+
+/*.mobileMezzanine {
+	display: none;
+}*/
 
 

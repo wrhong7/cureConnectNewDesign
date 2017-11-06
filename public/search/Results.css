@@ -207,3 +207,9 @@ body {
 .logoC {
     font-size: 5vh !important;
 }
+
+.searchCriteriaQuery {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 4vh;
+}
