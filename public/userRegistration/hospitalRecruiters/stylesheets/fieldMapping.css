@@ -53,7 +53,7 @@ body {
 
 
 .cureConnectColumns {
-    width: 69vw;
+    width: 30vw;
     margin-left: 5vw;
     height: 80vh;
     float: left;
@@ -61,7 +61,7 @@ body {
 }
 
 .csvColumns {
-    width: 21vw;
+    width: 50vw;
     min-width: 149px;
     height: 80vh;
     float: left;
@@ -70,12 +70,14 @@ body {
 }
 
 .csvColumnTitle {
-    color: #4F6A8C;
-    font-size: 18px;
+    color: #189eb2;
+    font-size: 4vh;
+    margin-bottom: 1vh;
 }
 
 .dragDropBox {
-    width: 200px;
+    min-width: 200px;
+    width: 98%;
     height: 35px;
     margin-top: 0.2vh;
     border: solid 1px #9FACBE;
@@ -90,23 +92,29 @@ body {
 }
 
 .cureConnectColumnContainer {
-    height: 60px;
+    height: 12vh;
     margin-top: 5px;
     font-size: 16px;
     overflow: hidden;
 }
 
+.cureConnectColumnTitle {
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+}
+
 .csvColumnField {
     border: solid 1px #9FACBE;
     overflow-y: auto;
-    height: 72.7vh;
-    width: 21vw;
+    height: 68vh;
+    width: 100%;
 }
 
 .csvTableField {
-    margin-top: 10px;
-    padding-left: 10px;
-    color: #4F6A8C;
+    width: 45%;
+    float: left;
+    font-size: 3vh;
+    padding: 1vh;
 }
 
 .cureConnectHeaderLogo {
@@ -122,7 +130,7 @@ body {
 /*PROGRESS BAR*/
 
 .progressBar {
-    width: 25vw;
+    width: 27vw;
     overflow: auto;
     position: absolute;
     bottom: 1vh;
@@ -130,7 +138,7 @@ body {
 }
 
 .backgroundBar {
-    width: 98%;
+    width: 95%;
     height: 0.3vh;
     margin-top: 4vh;
     background-color: #009EB3;
@@ -181,13 +189,9 @@ body {
 
 .cureConnectMappingFieldsCover {
     width: auto;
-    height: auto;
-}
-
-.cureConnectMappingFieldsCover {
-    width: auto;
     overflow: auto;
     opacity: 0.3;
+    margin-top: 5vh;
 }
 
 .cureConnectMappingExplanations {
@@ -220,4 +224,52 @@ video {
     text-align: center;
     border: solid 0.2vh;
     border-radius: 2vh;
+}
+
+.priorityFields {
+    float: left;
+    width: 99%;
+    margin-right: 1%;
+}
+
+.priorityColumns {
+    width: 100%;
+    overflow: auto;
+}
+
+.advancedFieldColumns {
+    width: 40vw;
+    overflow: auto;
+    display: none;
+}
+
+.additionalOptionDirections {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 2vh;
+}
+
+.instructionsArrow {
+    width: 10vw;
+    float: left;
+}
+
+.instructionsText {
+    text-align: left;
+    color: #189eb2;
+    font-size: 3vh;
+    padding-left: 3vw;
+}
+
+.arrow3 {
+    width: 20%;
+    transform: rotate(90deg);
+    margin-left: 40%;
+    margin-top: 30vh;
+}
+
+.advancedFieldTitle {
+    
 }

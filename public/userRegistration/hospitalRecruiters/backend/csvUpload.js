@@ -74,7 +74,7 @@ function printTable(file) {
     for(var row in data) {
       html += '<tr>\r\n';
       for(var item in data[row]) {
-        html += '<td>' + data[row][item] + '</td>\r\n';
+        html += '<td><input class="tableInput" value="' + data[row][item] + '""></input></td>\r\n';
       }
       html += '</tr>\r\n';
     }

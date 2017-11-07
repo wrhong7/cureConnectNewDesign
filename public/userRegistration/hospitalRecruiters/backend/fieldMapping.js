@@ -108,13 +108,15 @@ function submitMappedData() {
     // uniqueID = userDB.name();
     // console.log(uniqueID)
   })
-
-
-
 }
 
 function mandatoryFieldEnforcer() {
   //Pleaes complete this functionality to ensure users to fill up the mandatory fields.
+}
+
+function expandAdvancedFields() {
+  console.log("expand button has been clicked");
+  $(".advancedFieldColumns").css("display","inline-block");
 }
 
 $( document ).ready(function() {
