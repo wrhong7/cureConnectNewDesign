@@ -78,28 +78,28 @@ body {
 .dragDropBox {
     min-width: 200px;
     width: 98%;
-    height: 4.5vh;
+    height: 3.5vh;
     margin-top: 0.2vh;
     border: solid 1px #9FACBE;
     overflow: hidden;
 }
 
 .cureConnectColumn {
-    width: 210px;
+    width: 31%;
     overflow: auto;
     margin-right: 10px;
     float: left;
 }
 
 .cureConnectColumnContainer {
-    height: 8.5vh;
+    height: 7.5vh;
     margin-top: 5px;
     font-size: 16px;
     overflow: hidden;
 }
 
 .cureConnectColumnTitle {
-    font-size: 2.5vh;
+    font-size: 15px;
 }
 
 .csvColumnField {
@@ -191,7 +191,7 @@ body {
     width: auto;
     overflow: auto;
     opacity: 0.3;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .cureConnectMappingExplanations {
@@ -272,6 +272,16 @@ video {
     margin-top: 30vh;
 }
 
-.advancedFieldTitle {
-    
+.advancedFieldColumnHeader {
+    width: 100%;
+}
+
+.mappingFieldsCoverHeader {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2vh;
+}
+
+.onHover {
+    display: none;
 }

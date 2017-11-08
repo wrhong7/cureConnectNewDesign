@@ -63,9 +63,13 @@
     </div>
 
     <div class="cureConnectMappingFieldsCover">
+        <div class="mappingFieldsCoverHeader" onmouseover="showOnHover()" onmouseleave="showNormal()">
+            <div class="normalStatus">Field Mapping</div>
+            <div class="onHover">Drag and drop your CSV columns to CureConnect Columns.</div>
+        </div>
         <div class="cureConnectColumns">
             <div class="priorityColumns">
-                <div class="priorityColumnsIntro">Cure Connect Required Fields</div>
+                <div class="priorityColumnsIntro">Required Fields</div>
                 <div class="cureConnectColumnContainer priorityFields">
                     <div class="cureConnectColumnTitle">Recruiting Position</div>
                     <div id="recruitingPosition" class="dragDropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -86,6 +90,9 @@
             </div>
         </div>
         <div class="advancedFieldColumns">
+            <div class="advancedFieldColumnHeader">
+                Advanced Columns
+            </div>
             <div class="cureConnectColumn cureConnectColumn1">
                 <div class="cureConnectColumnContainer advancedFieldContainer">
                     <div class="cureConnectColumnTitle advancedFieldTitle">Internal Job Requisition #</div>

@@ -128,6 +128,16 @@ function expandAdvancedFields() {
   $(".instructionsText").css("padding-left", "0")
 }
 
+function showOnHover() {
+  $(".normalStatus").css("display", "none");
+  $(".onHover").css("display", "inline-block");
+}
+
+function showNormal() {
+  $(".normalStatus").css("display", "inline-block");
+  $(".onHover").css("display", "none");
+}
+
 $( document ).ready(function() {
   loadCSVArray = JSON.parse(localStorage.getItem("csvArray"));
   mappedDict = {};
