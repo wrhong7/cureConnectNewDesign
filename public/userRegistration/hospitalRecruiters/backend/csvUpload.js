@@ -62,21 +62,50 @@ function printTable(file) {
     data = $.csv.toArrays(csv);
     //this data is being fed into the functions to show the user the imported csv fields
 
+    //this result is being fet into the databse through string
 
     result = $.csv.toObjects(csv);
+
+    resultIndex = 1
+
+    result.forEach(function(individualJob) {
+      individualJob["index"] = resultIndex;
+      resultIndex += 1;
+    })
 
     jobPostings = result;
 
     localStorage.setItem("csvArray", JSON.stringify(jobPostings));
 
     //this obj data is fed into the functions to feed the data to firebase
+    
+    rowNumber = 0;
+
     var html = '';
     for(var row in data) {
-      html += '<tr>\r\n';
+
+      if (rowNumber == 0 ) {
+        html += '<tr><td class="deleteRowButton deleteRowButtonHeader">Delete Row</td>\r\n';
+      } else {
+        html += `<tr id="row${rowNumber}"><td class="deleteRowButton" onclick="removeRowClicked(${rowNumber})">x</td>\r\n`;
+      }
+
       for(var item in data[row]) {
-        html += '<td><input class="tableInput" value="' + data[row][item] + '""></input></td>\r\n';
+
+        if (rowNumber == 0 ) {
+          html += `<td class='columnHeader column${item}' onclick="removeColumnClicked(${item}, '${data[row][item]}')">${data[row][item]}</br>x</td>\r\n`;
+        } else {
+          html += `<td class='column${item}'>
+                    <input class="tableInput" 
+                      id="column${item}Row${rowNumber}" 
+                      value="${data[row][item]}" 
+                      onkeypress="editCellClick('${item}', ${rowNumber}, '${data[row][item]}')"
+                    ></td>\r\n`;
+        }
       }
       html += '</tr>\r\n';
+
+      rowNumber += 1;
     }
 
     $('#contents').html(html);

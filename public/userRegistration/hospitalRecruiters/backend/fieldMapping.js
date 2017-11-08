@@ -117,6 +117,15 @@ function mandatoryFieldEnforcer() {
 function expandAdvancedFields() {
   console.log("expand button has been clicked");
   $(".advancedFieldColumns").css("display","inline-block");
+  $(".cureConnectColumns").css({"width": "16vw", "margin-left": "2vw"});
+  $(".csvColumns").css({"width": "20vw", "float": "right", "margin-right": "3vw"});
+  $(".csvTableField").css("width", "95%");
+  $(".instructionsArrow").css("width", "5vw");
+  $(".arrow3").css({
+    "width": "35%",
+    "margin-left": "20%",
+  })
+  $(".instructionsText").css("padding-left", "0")
 }
 
 $( document ).ready(function() {

@@ -52,7 +52,6 @@
     padding-bottom: 1vh;
 }
 
-
 .nextButton {
     position: absolute;
     right: 4vw;
@@ -68,7 +67,6 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
-
 
 .postJobOptionContainer {
     width: 80vw;
@@ -199,4 +197,12 @@ tr, td {
 
 .tableInput {
     border: none;
+}
+
+.deleteRowButton {
+    text-align: center;
+}
+
+.columnHeader {
+    text-align: center;
 }
