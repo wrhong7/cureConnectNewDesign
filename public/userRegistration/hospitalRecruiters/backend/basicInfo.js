@@ -85,13 +85,13 @@ function enterInformationAndSubmitToServer() {
 }
 
 $( document ).ready(function() {
-
   setTimeout(function(){ loadEnteredInformationFromServer(); }, 3000);
 
   $("#recruitingSpecialty").select2();
   $("#recruitingSpecialty").select2({
     placeholder: "Relevant Field(s)"
   });
+
   recruitingSpecialty.forEach(function(specialty) {
     $("#recruitingSpecialty").append(
       "<option class="+specialty+"value="+specialty+">"+specialty+"</option>"

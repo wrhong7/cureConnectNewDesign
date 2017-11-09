@@ -7,6 +7,7 @@ function searchButtonClicked() {
 }
 
 $(document).ready(function() {
+
   $("#professionalFields").select2();
   $("#zipCodeEntry").select2();
 
