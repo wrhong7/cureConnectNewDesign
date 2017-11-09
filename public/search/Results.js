@@ -120,7 +120,8 @@ $(document).ready(function() {
   if (localStorage["searchPosition"] != null || localStorage['zipCode'] != null) {
     // // $(".").val(localStorage['searchPosition']);
     setTimeout(function() {
-      $("#professionalFields").val(localStorage['searchPosition']).trigger("change");
+      searchPositionArray = localStorage['searchPosition'].split(',')
+      $("#professionalFields").val(searchPositionArray).trigger("change");
       $(".searchZipcodeInputBox").val(localStorage['zipCode']).trigger("change");
     }, 300)
   }
